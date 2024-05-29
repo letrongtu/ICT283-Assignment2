@@ -1,0 +1,6 @@
+<map id="testClearFunction" name="testClearFunction">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,129,83"/>
+<area shape="rect" id="node2" href="$class_vector.html#a87f73b09903e16a1caaaae559a04036a" title="add the element at the end of the array" alt="" coords="182,5,271,32"/>
+<area shape="rect" id="node3" href="$class_vector.html#a06640b5a57e692928364c727def3c5de" title="Function to delete all elements in the vector." alt="" coords="177,56,276,83"/>
+<area shape="rect" id="node4" href="$class_vector.html#a6649abb641317b77f343b51e11fa6db7" title="function to return the number of element stored in the array" alt="" coords="179,107,274,133"/>
+</map>

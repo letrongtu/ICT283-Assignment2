@@ -1,0 +1,5 @@
+<map id="WeatherRecord" name="WeatherRecord">
+<area shape="rect" id="node1" title="A struct to store weather record." alt="" coords="63,277,175,384"/>
+<area shape="rect" id="node2" href="$class_time.html" title="Represents a time with hour and minute." alt="" coords="5,27,108,193"/>
+<area shape="rect" id="node3" href="$class_date.html" title="Represents a date including date, month and year." alt="" coords="133,5,231,215"/>
+</map>

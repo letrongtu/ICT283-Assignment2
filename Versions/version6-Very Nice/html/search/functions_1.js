@@ -1,0 +1,9 @@
+var searchData=
+[
+  ['calculateaverage_148',['calculateAverage',['../_helper_functions_8cpp.html#a0eb1c81a787b58885f3195d20b7318b9',1,'calculateAverage(const double *array, LongInt size):&#160;HelperFunctions.cpp'],['../_helper_functions_8h.html#a0eb1c81a787b58885f3195d20b7318b9',1,'calculateAverage(const double *array, LongInt size):&#160;HelperFunctions.cpp']]],
+  ['calculatesdevi_149',['calculateSDevi',['../_helper_functions_8cpp.html#afc322349225a1724d5063fd2f1eff497',1,'calculateSDevi(const double *array, double mean, LongInt size):&#160;HelperFunctions.cpp'],['../_helper_functions_8h.html#afc322349225a1724d5063fd2f1eff497',1,'calculateSDevi(const double *array, double mean, LongInt size):&#160;HelperFunctions.cpp']]],
+  ['calculatesumsquared_150',['calculateSumSquared',['../_helper_functions_8cpp.html#aa32fb04940ba85122bb7a0f13c1cf310',1,'calculateSumSquared(const double *array, double mean, LongInt size):&#160;HelperFunctions.cpp'],['../_helper_functions_8h.html#aa32fb04940ba85122bb7a0f13c1cf310',1,'calculateSumSquared(const double *array, double mean, LongInt size):&#160;HelperFunctions.cpp']]],
+  ['calculatetotal_151',['calculateTotal',['../_helper_functions_8cpp.html#a04c611eae5e4f418af43caf41eca2714',1,'calculateTotal(const double *array, LongInt size):&#160;HelperFunctions.cpp'],['../_helper_functions_8h.html#a04c611eae5e4f418af43caf41eca2714',1,'calculateTotal(const double *array, LongInt size):&#160;HelperFunctions.cpp']]],
+  ['clear_152',['Clear',['../class_vector.html#a06640b5a57e692928364c727def3c5de',1,'Vector']]],
+  ['createheaderarray_153',['createHeaderArray',['../_data_processor_8cpp.html#a5d997a00d2239e3b828c795a2ced7375',1,'createHeaderArray(stringstream &amp;headerStream, Vector&lt; string &gt; &amp;header):&#160;DataProcessor.cpp'],['../_data_processor_8h.html#a5d997a00d2239e3b828c795a2ced7375',1,'createHeaderArray(stringstream &amp;headerStream, Vector&lt; string &gt; &amp;header):&#160;DataProcessor.cpp']]]
+];

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="assignment1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ex05-lab05" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ex05-lab05" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="BST.h" />
+		<Unit filename="DATE.CPP" />
+		<Unit filename="DATE.H" />
+		<Unit filename="DataProcessor.cpp" />
+		<Unit filename="DataProcessor.h" />
+		<Unit filename="DataStructure.h" />
+		<Unit filename="FileNameReader.cpp" />
+		<Unit filename="FileNameReader.h" />
+		<Unit filename="HelperFunctions.cpp" />
+		<Unit filename="HelperFunctions.h" />
+		<Unit filename="MenuFunctions.cpp" />
+		<Unit filename="MenuFunctions.h" />
+		<Unit filename="Node.h" />
+		<Unit filename="OutputFunctions.cpp" />
+		<Unit filename="OutputFunctions.h" />
+		<Unit filename="TIME.CPP" />
+		<Unit filename="TIME.H" />
+		<Unit filename="VECTOR.H" />
+		<Unit filename="Validator.cpp" />
+		<Unit filename="Validator.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

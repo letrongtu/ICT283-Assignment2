@@ -1,0 +1,6 @@
+<map id="readHeader" name="readHeader">
+<area shape="rect" id="node1" title=" " alt="" coords="413,5,501,32"/>
+<area shape="rect" id="node2" href="$_data_processor_8h.html#a3aa48e98a9a9a17cc54a71b708c2bb73" title="Contains all functions that read and store the read data from data file." alt="" coords="291,5,365,32"/>
+<area shape="rect" id="node3" href="$_file_name_reader_8h.html#abb388dcb5bcf8927fbce050041896fcb" title="Contains all functions need to read the input file name." alt="" coords="104,5,243,32"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+</map>

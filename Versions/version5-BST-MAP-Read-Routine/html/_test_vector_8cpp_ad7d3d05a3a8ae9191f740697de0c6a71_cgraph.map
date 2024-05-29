@@ -1,0 +1,6 @@
+<map id="testDestructor" name="testDestructor">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,109,83"/>
+<area shape="rect" id="node2" href="$class_vector.html#a87f73b09903e16a1caaaae559a04036a" title="add the element at the end of the array" alt="" coords="170,5,259,32"/>
+<area shape="rect" id="node3" href="$class_vector.html#a6649abb641317b77f343b51e11fa6db7" title="function to return the number of element stored in the array" alt="" coords="167,56,262,83"/>
+<area shape="rect" id="node4" href="$class_vector.html#afd524fac19e6d3d69db5198ffe2952b0" title="Destructor to release dynamically allocated memory." alt="" coords="157,107,272,133"/>
+</map>

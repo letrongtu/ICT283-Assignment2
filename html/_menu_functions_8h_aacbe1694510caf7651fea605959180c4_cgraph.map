@@ -1,0 +1,43 @@
+<map id="menu" name="menu">
+<area shape="rect" id="node1" title="Contains all menu&#45;related functions including displaying the menu, handling choices,..." alt="" coords="5,917,60,943"/>
+<area shape="rect" id="node2" href="$_menu_functions_8cpp.html#ac255327aabdea8f3331510cb82394a44" title=" " alt="" coords="108,757,216,783"/>
+<area shape="rect" id="node40" href="$_helper_functions_8cpp.html#aaecae98220d32d4f42172d7d865d1ddd" title="Contains all functions that calculate the required thing related to weather data." alt="" coords="119,917,205,943"/>
+<area shape="rect" id="node41" href="$_menu_functions_8cpp.html#aba5bd9067aa6f261123165a337c7957d" title=" " alt="" coords="120,967,204,994"/>
+<area shape="rect" id="node3" href="$_menu_functions_8cpp.html#a37b8e11fe7642a1ec706a438d524d199" title=" " alt="" coords="275,757,392,783"/>
+<area shape="rect" id="node22" href="$_menu_functions_8cpp.html#add2de9ea68056159710d684994f87e24" title=" " alt="" coords="269,615,397,642"/>
+<area shape="rect" id="node32" href="$_menu_functions_8cpp.html#a1883d746b4d16c5a0e29c8daaf9c93cb" title=" " alt="" coords="264,895,403,922"/>
+<area shape="rect" id="node35" href="$_menu_functions_8cpp.html#a406951e717f06b22ee289463f51ae02c" title=" " alt="" coords="273,407,394,434"/>
+<area shape="rect" id="node4" href="$class_speed_collector.html#a5e3b5ad3482266b916360f74ab4a76f6" title=" " alt="" coords="463,575,649,616"/>
+<area shape="rect" id="node6" href="$class_map.html#a940dcce0b4490af7406db9fe95a7927f" title="Retrieves the value corresponding to a key." alt="" coords="523,1026,589,1053"/>
+<area shape="rect" id="node7" href="$class_speed_collector.html#ac433497a8661f928211ee2fbd3f26346" title=" " alt="" coords="483,458,629,485"/>
+<area shape="rect" id="node9" href="$class_map.html#a21817f63324636803318e47c2a88b02e" title="Checks if the map contains a key." alt="" coords="504,925,608,951"/>
+<area shape="rect" id="node10" href="$_menu_functions_8cpp.html#a44c57b1a7fea1601e8402a8200c1e555" title=" " alt="" coords="500,706,612,733"/>
+<area shape="rect" id="node16" href="$class_speed_collector.html#a6b37a0a3727fa908f751d2d342349b1a" title=" " alt="" coords="451,407,661,434"/>
+<area shape="rect" id="node17" href="$_helper_functions_8cpp.html#a346bb9af3ac12b57fd793d6a897c46f6" title=" " alt="" coords="515,807,597,834"/>
+<area shape="rect" id="node20" href="$_helper_functions_8cpp.html#a963a1de6c5f3d4fe5a052af2f83be316" title=" " alt="" coords="519,975,593,1002"/>
+<area shape="rect" id="node5" href="$class_vector.html#a87f73b09903e16a1caaaae559a04036a" title="add the element at the end of the array" alt="" coords="754,469,843,495"/>
+<area shape="rect" id="node8" href="$class_vector.html#a06640b5a57e692928364c727def3c5de" title="Function to delete all elements in the vector." alt="" coords="749,418,848,445"/>
+<area shape="rect" id="node11" href="$_helper_functions_8cpp.html#a44468ca3edb66d1f67cfdca110afa5c7" title=" " alt="" coords="951,773,1071,799"/>
+<area shape="rect" id="node12" href="$class_vector.html#a6649abb641317b77f343b51e11fa6db7" title="function to return the number of element stored in the array" alt="" coords="1133,722,1228,749"/>
+<area shape="rect" id="node13" href="$_helper_functions_8cpp.html#a7db2f6bf2a3667a2a875c0808dfe41ae" title=" " alt="" coords="709,671,888,698"/>
+<area shape="rect" id="node15" href="$_output_functions_8cpp.html#a28e05cc5cad358a4e0de1c451be60386" title="Contains all needed output functions." alt="" coords="736,570,861,597"/>
+<area shape="rect" id="node14" href="$_helper_functions_8cpp.html#a9d5f7796334cb753305c810e4d5679f3" title=" " alt="" coords="936,722,1085,749"/>
+<area shape="rect" id="node18" href="$_validator_8cpp.html#ac5bd0a571f7bd173f55c1dfc6fee07c8" title=" " alt="" coords="750,925,847,951"/>
+<area shape="rect" id="node19" href="$_validator_8cpp.html#a23c4e1c0702aa77ed10a60a29acb5f09" title="Contains all functions that do the validations of the user input." alt="" coords="745,975,852,1002"/>
+<area shape="rect" id="node21" href="$_validator_8cpp.html#a61544b32391e0579f222c45b1a0af56a" title=" " alt="" coords="755,1026,843,1053"/>
+<area shape="rect" id="node23" href="$class_temperature_collector.html#a07b9238d17f1964da90d63c7db68688c" title=" " alt="" coords="483,640,629,681"/>
+<area shape="rect" id="node24" href="$class_solar_rad_collector.html#a4a59667c9d105b18a16a33e6b0672914" title=" " alt="" coords="485,341,627,383"/>
+<area shape="rect" id="node25" href="$class_solar_rad_collector.html#a74c7b3aca5a41e8b1f61246a8638a7ff" title=" " alt="" coords="489,211,623,252"/>
+<area shape="rect" id="node26" href="$class_temperature_collector.html#a8d95e2593fc0ed34e1ec05bed5f24389" title=" " alt="" coords="483,509,629,551"/>
+<area shape="rect" id="node27" href="$_menu_functions_8cpp.html#a6a33b59754eb697fee1b6b309005c22f" title=" " alt="" coords="495,757,617,783"/>
+<area shape="rect" id="node30" href="$class_solar_rad_collector.html#aff526fed05bef9a91be58080f7a5734f" title=" " alt="" coords="489,276,623,317"/>
+<area shape="rect" id="node31" href="$class_temperature_collector.html#ada927d97bf364b0bc462b50d7bafd034" title=" " alt="" coords="483,859,629,900"/>
+<area shape="rect" id="node28" href="$_helper_functions_8cpp.html#a72123685500842e3cd92ffa891109b86" title=" " alt="" coords="747,823,850,850"/>
+<area shape="rect" id="node29" href="$_helper_functions_8cpp.html#adf45bdc6425cc718344cedfed6365bec" title=" " alt="" coords="959,874,1062,901"/>
+<area shape="rect" id="node33" href="$_menu_functions_8cpp.html#a737f4db754e20737d01730595066e6cb" title=" " alt="" coords="489,1127,623,1154"/>
+<area shape="rect" id="node34" href="$_output_functions_8cpp.html#ac58382caeb19288bf8125dc801edbe0d" title=" " alt="" coords="745,1127,852,1154"/>
+<area shape="rect" id="node36" href="$class_map.html#a3f31e719d41dd3d8ecfad559339678f1" title="Returns an iterator to the beginning." alt="" coords="513,109,599,135"/>
+<area shape="rect" id="node37" href="$_helper_functions_8cpp.html#a2edf70cda092f7761323ec0cd986dc88" title=" " alt="" coords="717,367,880,394"/>
+<area shape="rect" id="node38" href="$class_map.html#a07bccdb62ff24632be0e9ffdf64d63b7" title="Returns an iterator to the end." alt="" coords="518,159,594,186"/>
+<area shape="rect" id="node39" href="$_output_functions_8cpp.html#a242d9033ce722c5c49f45e06f40a5014" title=" " alt="" coords="483,58,629,85"/>
+</map>

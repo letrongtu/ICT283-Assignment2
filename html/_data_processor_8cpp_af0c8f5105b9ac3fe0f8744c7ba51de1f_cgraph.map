@@ -1,0 +1,16 @@
+<map id="readWeatherRecord" name="readWeatherRecord">
+<area shape="rect" id="node1" title=" " alt="" coords="5,157,143,184"/>
+<area shape="rect" id="node2" href="$class_map.html#a940dcce0b4490af7406db9fe95a7927f" title="Retrieves the value corresponding to a key." alt="" coords="220,132,287,159"/>
+<area shape="rect" id="node3" href="$_data_processor_8cpp.html#a2d99b03343534baef0bb07effb8760cd" title=" " alt="" coords="191,183,316,209"/>
+<area shape="rect" id="node4" href="$_data_processor_8cpp.html#ad4fffef2d6663efb9fb038fb6979fd28" title=" " alt="" coords="364,132,439,159"/>
+<area shape="rect" id="node11" href="$_data_processor_8cpp.html#a5a1b67153a042c1913994557b6237c67" title=" " alt="" coords="364,259,439,285"/>
+<area shape="rect" id="node5" href="$_validator_8cpp.html#acd5665d75328e4daed639814334542d1" title=" " alt="" coords="501,31,589,57"/>
+<area shape="rect" id="node8" href="$class_date.html#ac75fa21654d30e90c2cdb74dd5033803" title="Set the day." alt="" coords="493,81,597,108"/>
+<area shape="rect" id="node9" href="$class_date.html#ae47ff4dbe38076b995703ecb4aa5c602" title="Set the month." alt="" coords="489,132,602,159"/>
+<area shape="rect" id="node10" href="$class_date.html#ae77d46d475c904d1fabcb91933034514" title="Set the year." alt="" coords="493,183,597,209"/>
+<area shape="rect" id="node6" href="$_validator_8cpp.html#ac5bd0a571f7bd173f55c1dfc6fee07c8" title=" " alt="" coords="652,5,749,32"/>
+<area shape="rect" id="node7" href="$_validator_8cpp.html#a61544b32391e0579f222c45b1a0af56a" title=" " alt="" coords="657,56,745,83"/>
+<area shape="rect" id="node12" href="$_validator_8cpp.html#a78df34cd0e5e380d00b530031c514891" title=" " alt="" coords="501,233,590,260"/>
+<area shape="rect" id="node13" href="$class_time.html#ab8c6582ad99c617c821ad3d10b9a872e" title="Set the hour." alt="" coords="493,284,598,311"/>
+<area shape="rect" id="node14" href="$class_time.html#a08cdbeef8e01ad48aadab6db90665d85" title="Set the minute." alt="" coords="487,335,604,361"/>
+</map>

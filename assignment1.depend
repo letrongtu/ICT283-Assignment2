@@ -1,0 +1,135 @@
+# depslib dependency file v1.0
+1716961065 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\week 10\lab10-e\main.cpp
+	"DataStructure.h"
+	"FileNameReader.h"
+	"MenuFunctions.h"
+	<iostream>
+
+1716903828 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\week 10\lab10-e\data structures\date.cpp
+	"date.h"
+
+1716903854 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\week 10\lab10-e\data structures\date.h
+
+1713015172 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\week 10\lab10-e\data structures\time.cpp
+	"time.h"
+
+1716899872 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\week 10\lab10-e\data structures\time.h
+
+1716904674 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\week 10\lab10-e\data structures\weatherrecord.cpp
+	"WeatherRecord.h"
+
+1716943372 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\week 10\lab10-e\data structures\weatherrecord.h
+	"Date.h"
+	"Time.h"
+
+1716960893 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\week 10\lab10-e\helper functions\validator.cpp
+	"Validator.h"
+	<regex>
+
+1716960895 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\week 10\lab10-e\helper functions\validator.h
+	<string>
+
+1716960807 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\week 10\lab10-e\data collectors\solarradcollector.cpp
+	"SolarRadCollector.h"
+
+1716961698 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\week 10\lab10-e\data collectors\solarradcollector.h
+	"../Data Structures/vector.h"
+	"../Data Structures/DataStructure.h"
+
+1716944888 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\week 10\lab10-e\data structures\vector.h
+	<vector>
+
+1716943344 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\week 10\lab10-e\data structures\datastructure.h
+	"Map.h"
+	"BST.h"
+	"WeatherRecord.h"
+	<string>
+
+1716899592 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\week 10\lab10-e\data structures\map.h
+	<map>
+
+1716941476 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\week 10\lab10-e\data structures\bst.h
+	"Node.h"
+	"vector.h"
+
+1716961061 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\week 10\lab10-e\data structures\node.h
+
+1716960780 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\week 10\lab10-e\data collectors\speedcollector.cpp
+	"SpeedCollector.h"
+
+1716961707 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\week 10\lab10-e\data collectors\speedcollector.h
+	"../Data Structures/vector.h"
+	"../Data Structures/DataStructure.h"
+
+1716960760 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\week 10\lab10-e\data collectors\temparaturecollector.cpp
+	"TemperatureCollector.h"
+
+1716961712 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\week 10\lab10-e\data collectors\temperaturecollector.h
+	"../Data Structures/vector.h"
+	"../Data Structures/DataStructure.h"
+
+1716960042 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\week 10\lab10-e\data processor\filenamereader.cpp
+	"FileNameReader.h"
+	"DataProcessor.h"
+	<iostream>
+	<fstream>
+	<string>
+
+1716961726 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\week 10\lab10-e\data processor\filenamereader.h
+	"../Data Structures/DataStructure.h"
+
+1716961722 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\week 10\lab10-e\data processor\dataprocessor.h
+	"../Data Structures/DataStructure.h"
+	"../Data Structures/vector.h"
+	"../Data Structures/Date.h"
+	"../Data Structures/Time.h"
+	"../Data Structures/Map.h"
+	<string>
+	<fstream>
+
+1716960914 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\week 10\lab10-e\helper functions\helperfunctions.cpp
+	"HelperFunctions.h"
+	"Validator.h"
+	<iostream>
+	<string>
+	<cmath>
+
+1716961729 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\week 10\lab10-e\helper functions\helperfunctions.h
+	"../Data Structures/DataStructure.h"
+
+1716943284 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\week 10\lab10-e\operator\operator.cpp
+	"operator.h"
+
+1716961736 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\week 10\lab10-e\operator\operator.h
+	"../Data Structures/DataStructure.h"
+
+1716960366 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\week 10\lab10-e\output functions\outputfunctions.cpp
+	"OutputFunctions.h"
+	<iostream>
+	<iomanip>
+
+1716961739 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\week 10\lab10-e\output functions\outputfunctions.h
+	"../Data Structures/DataStructure.h"
+
+1716961789 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\week 10\lab10-e\data processor\dataprocessor.cpp
+	"../Data Processor/DataProcessor.h"
+	"../Helper Functions/Validator.h"
+	"../Operator/operator.h"
+	<iostream>
+	<fstream>
+	<sstream>
+
+1716961844 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\week 10\lab10-e\menu functions\menufunctions.cpp
+	"MenuFunctions.h"
+	"../Helper Functions/HelperFunctions.h"
+	"../Output Functions/OutputFunctions.h"
+	"../Data Collectors/SpeedCollector.h"
+	"../Data Collectors/TemperatureCollector.h"
+	"../Data Collectors/SolarRadCollector.h"
+	<iostream>
+	<iomanip>
+
+1716961733 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\week 10\lab10-e\menu functions\menufunctions.h
+	"../Data Structures/DataStructure.h"
+	<fstream>
+

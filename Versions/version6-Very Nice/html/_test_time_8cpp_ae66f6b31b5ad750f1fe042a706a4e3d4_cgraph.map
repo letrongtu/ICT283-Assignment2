@@ -1,0 +1,12 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,56,133"/>
+<area shape="rect" id="node2" href="$_test_time_8cpp.html#a24abc1bb2e49d097a6159da224dcc460" title=" " alt="" coords="104,5,188,32"/>
+<area shape="rect" id="node3" href="$_test_time_8cpp.html#a4e54697603f5228cda7a6aaf33fcf628" title=" " alt="" coords="119,56,173,83"/>
+<area shape="rect" id="node6" href="$_test_time_8cpp.html#a21f73154a152345946bc1627d7f35ff2" title=" " alt="" coords="119,107,173,133"/>
+<area shape="rect" id="node7" href="$_test_time_8cpp.html#a2ea0b2804015eed0d4ec7b4b87edc6db" title=" " alt="" coords="119,208,173,235"/>
+<area shape="rect" id="node10" href="$_test_time_8cpp.html#abdbf649d5c736fb254b5c11eb80b721f" title=" " alt="" coords="119,157,173,184"/>
+<area shape="rect" id="node4" href="$class_time.html#aaf65e0dc73514ffab9b3dd643cef9bdb" title="Get the hour." alt="" coords="242,107,349,133"/>
+<area shape="rect" id="node5" href="$class_time.html#a86302564cc0783b402dc5f0e137a43c1" title="Get the minute." alt="" coords="236,157,355,184"/>
+<area shape="rect" id="node8" href="$class_time.html#ab8c6582ad99c617c821ad3d10b9a872e" title="Set the hour." alt="" coords="243,208,348,235"/>
+<area shape="rect" id="node9" href="$class_time.html#a08cdbeef8e01ad48aadab6db90665d85" title="Set the minute." alt="" coords="237,259,354,285"/>
+</map>
