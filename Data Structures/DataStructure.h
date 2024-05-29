@@ -42,4 +42,4 @@ const double RadiationExchangeRate = 0.000167;
 /// Data Structure to store weather data
 typedef Map<int,Map<int, BST<WeatherRecord>>> WeatherLog;
 
-#endif // DATASTRUCTURE_H
+#endif

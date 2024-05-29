@@ -6,7 +6,8 @@
 // This file is used to test Time class
 //----------------------------------------------------------------------------
 
-#include "../time.h"
+#include "../../Data Structures/time.h"
+#include "../../Data Structures/time.cpp"
 #include <iostream>
 
 using namespace std;

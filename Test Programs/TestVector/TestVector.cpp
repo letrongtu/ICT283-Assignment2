@@ -5,9 +5,9 @@
 //
 // This file is used to test Vector class
 //---------------------------------------------------------------------------------
-#include "../vector.h"
-#include "../date.h"
-#include "../time.h"
+#include "../../Data Structures/vector.h"
+#include "../../Data Structures/date.h"
+#include "../../Data Structures/time.h"
 #include <iostream>
 #include <string>
 
@@ -17,7 +17,7 @@ using namespace std;
 
 void printResult(string testName, bool result);
 int testDefaultConstructor();
-int testParameterizedConstructor();
+int testCopyConstructor();
 int testDestructor();
 int testAddFunction();
 int testGetOperator();
@@ -34,8 +34,8 @@ int main() {
     printResult("testDefaultConstructor", testDefaultConstructor());
 
     //--------------------------------------
-    //Test Vector's parameterized constructor
-    printResult("testParameterizedConstructor", testParameterizedConstructor());
+    //Test Vector's copy constructor
+    printResult("testCopyConstructor", testCopyConstructor());
 
     //--------------------------------------
     //Test Vector's Destructor
@@ -87,11 +87,13 @@ int testDefaultConstructor(){
 
 //---------------------------------------------------------------------------------
 
-// Function to test Vector's parameterized constructor
-int testParameterizedConstructor(){
-    Vector<int> v1(-1);
-    Vector<int> v2(8);
-    return v1.Size() == 0 && v2.Size() == 0? 1 : 0;
+// Function to test Vector's copy constructor
+int testCopyConstructor(){
+    Vector<int> v1;
+    v1.add(2);
+    Vector<int> v2(v1);
+
+    return v2.Size() == 1 && v2[0] == 2 ? 1 : 0;
 }
 
 //---------------------------------------------------------------------------------

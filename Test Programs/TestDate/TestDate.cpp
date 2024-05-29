@@ -6,8 +6,8 @@
 // This file is used to test Vector class
 
 //----------------------------------------------------------------------------
-
-#include "../date.h"
+#include "../../Data Structures/date.h"
+#include "../../Data Structures/date.cpp"
 #include <iostream>
 
 //----------------------------------------------------------------------------
