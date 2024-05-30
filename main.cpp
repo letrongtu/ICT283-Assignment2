@@ -1,9 +1,9 @@
 // MAIN.CPP
 // Main program:
 // Open an input file stream, read recorded data, display the menu, and handle the menu options.
-#include "DataStructure.h"
-#include "FileNameReader.h"
-#include "MenuFunctions.h"
+#include "./Data Structures/DataStructure.h"
+#include "./Data Processor/FileNameReader.h"
+#include "./Menu Functions/MenuFunctions.h"
 #include <iostream>
 
 /**

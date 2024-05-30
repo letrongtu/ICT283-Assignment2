@@ -2,6 +2,7 @@
 #define MENUFUNCTIONS_H
 
 #include "../Data Structures/DataStructure.h"
+#include "../Data Structures/vector.h"
 #include <fstream>
 
 //---------------------------------------------------------------------------------
@@ -48,6 +49,8 @@ bool processChoice(const WeatherLog& weather_data, int choice);
  */
 void firstCaseHandler(const WeatherLog& weather_data);
 
+void accumulateSpeed(Vector<double>& windSpeeds, const Vector<WeatherRecord>& data);
+
 /**
  * @brief Outputs the wind speed data for a specific month and year.
  *
@@ -66,6 +69,8 @@ void firstCaseOutput(const Vector<double>& windSpeeds, int month, int year);
  */
 void secondCaseHandler(const WeatherLog& weather_data);
 
+void accumulateAirTemp(Vector<double>& temperatures, const Vector<WeatherRecord>& data);
+
 /**
  * @brief Outputs the temperature data for a specific month and year.
  *
@@ -83,6 +88,8 @@ void secondCaseOutput(const Vector<double>& temperatures, int month);
  * @param weather_data The WeatherLog object containing weather records.
  */
 void thirdCaseHandler(const WeatherLog& weather_data);
+
+void accumulateSolarRad(Vector<double>& solarRads, const Vector<WeatherRecord>& data);
 
 /**
  * @brief Handles the fourth case from the menu.

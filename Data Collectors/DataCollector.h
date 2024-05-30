@@ -24,22 +24,7 @@ public:
      */
     static void accumulateData(const WeatherRecord& record);
 
-    static void indexData();
-
-    /**
-     * @brief Retrieves the collected weather data.
-     *
-     * @return
-     */
-    static Vector<WeatherRecord> getDataByMonth(int month);
-
-    static Vector<WeatherRecord> getDataByMonthAndYear(int month, int year);
-
-    static bool contains(int year);
-
-    static const Vector<WeatherRecord>& getData(){
-        return weather_data;
-    }
+    static const Vector<WeatherRecord>& getData();
 
     /**
      * @brief Clears the collected weather data.
@@ -47,8 +32,7 @@ public:
     static void clear();
 
 private:
-    static Vector<WeatherRecord> weather_data; /// Vector to store collected weather data.
-    static Map<int, Map<int, std::pair<int, int>>> indexMap; /// Map to store indexes of the data
+    static Vector<WeatherRecord> data; /// Vector to store collected weather data.
 };
 
 #endif

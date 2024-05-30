@@ -2,6 +2,7 @@
 #define HELPERFUNCTIONS_H
 
 #include "../Data Structures/DataStructure.h"
+#include "../Data Structures/vector.h"
 
 //---------------------------------------------------------------------------------
 

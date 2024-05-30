@@ -7,7 +7,7 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/ex05-lab05" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/assignment2" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -16,7 +16,7 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/ex05-lab05" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/assignment2" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -32,12 +32,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="Data Collectors/SolarRadCollector.cpp" />
-		<Unit filename="Data Collectors/SolarRadCollector.h" />
-		<Unit filename="Data Collectors/SpeedCollector.cpp" />
-		<Unit filename="Data Collectors/SpeedCollector.h" />
-		<Unit filename="Data Collectors/TemparatureCollector.cpp" />
-		<Unit filename="Data Collectors/TemperatureCollector.h" />
+		<Unit filename="Data Collectors/DataCollector.cpp" />
+		<Unit filename="Data Collectors/DataCollector.h" />
 		<Unit filename="Data Processor/DataProcessor.cpp" />
 		<Unit filename="Data Processor/DataProcessor.h" />
 		<Unit filename="Data Processor/FileNameReader.cpp" />
@@ -48,6 +44,8 @@
 		<Unit filename="Data Structures/DataStructure.h" />
 		<Unit filename="Data Structures/Map.h" />
 		<Unit filename="Data Structures/Node.h" />
+		<Unit filename="Data Structures/Pair.cpp" />
+		<Unit filename="Data Structures/Pair.h" />
 		<Unit filename="Data Structures/TIME.CPP" />
 		<Unit filename="Data Structures/TIME.H" />
 		<Unit filename="Data Structures/VECTOR.H" />

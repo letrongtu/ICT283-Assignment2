@@ -39,6 +39,10 @@ bool operator>(const Date& lhs, const Date& rhs);
  */
 bool operator==(const Date& lhs, const Date& rhs);
 
+bool operator<(const Time& lhs, const Time& rhs);
+
+bool operator>(const Time& lhs, const Time& rhs);
+
 /**
  * @brief Equality operator for Time.
  *

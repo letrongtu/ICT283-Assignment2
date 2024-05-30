@@ -1,60 +1,14 @@
 # depslib dependency file v1.0
-1716960807 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data collectors\solarradcollector.cpp
-	"SolarRadCollector.h"
-
-1716961698 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data collectors\solarradcollector.h
-	"../Data Structures/vector.h"
-	"../Data Structures/DataStructure.h"
-
-1716944888 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\vector.h
-	<vector>
-
-1716973206 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\datastructure.h
-	"Map.h"
-	"BST.h"
-	"WeatherRecord.h"
-	<string>
-
-1716975936 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\map.h
-	<map>
-
-1716976829 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\bst.h
-	"Node.h"
-	"vector.h"
-
-1716961061 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\node.h
-
-1716943372 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\weatherrecord.h
-	"Date.h"
-	"Time.h"
-
-1716973748 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\date.h
-
-1716899872 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\time.h
-
-1716960780 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data collectors\speedcollector.cpp
-	"SpeedCollector.h"
-
-1716961707 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data collectors\speedcollector.h
-	"../Data Structures/vector.h"
-	"../Data Structures/DataStructure.h"
-
-1716960760 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data collectors\temparaturecollector.cpp
-	"TemperatureCollector.h"
-
-1716961712 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data collectors\temperaturecollector.h
-	"../Data Structures/vector.h"
-	"../Data Structures/DataStructure.h"
-
-1716961789 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data processor\dataprocessor.cpp
+1717078820 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data processor\dataprocessor.cpp
 	"../Data Processor/DataProcessor.h"
 	"../Helper Functions/Validator.h"
 	"../Operator/operator.h"
+	"../Data Collectors/DataCollector.h"
 	<iostream>
 	<fstream>
 	<sstream>
 
-1716961722 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data processor\dataprocessor.h
+1717076532 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data processor\dataprocessor.h
 	"../Data Structures/DataStructure.h"
 	"../Data Structures/vector.h"
 	"../Data Structures/Date.h"
@@ -63,20 +17,53 @@
 	<string>
 	<fstream>
 
-1716960895 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\helper functions\validator.h
+1717078799 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\datastructure.h
+	"Map.h"
+	"AVL.H"
+	"WeatherRecord.h"
+	"Pair.h"
 	<string>
 
-1716961736 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\operator\operator.h
+1716975938 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\map.h
+	<map>
+
+1717077310 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\bst.h
+	"Node.h"
+
+1717076980 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\node.h
+
+1716943372 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\weatherrecord.h
+	"Date.h"
+	"Time.h"
+
+1716973750 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\date.h
+
+1716899872 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\time.h
+
+1717078261 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\pair.h
+
+1716944888 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\vector.h
+	<vector>
+
+1716960896 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\helper functions\validator.h
+	<string>
+
+1717080455 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\operator\operator.h
 	"../Data Structures/DataStructure.h"
 
-1716960042 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data processor\filenamereader.cpp
+1717080691 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data collectors\datacollector.h
+	"../Data Structures/vector.h"
+	"../Data Structures/DataStructure.h"
+	"../Data Structures/Map.h"
+
+1716960044 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data processor\filenamereader.cpp
 	"FileNameReader.h"
 	"DataProcessor.h"
 	<iostream>
 	<fstream>
 	<string>
 
-1716961726 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data processor\filenamereader.h
+1717078491 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data processor\filenamereader.h
 	"../Data Structures/DataStructure.h"
 
 1716903828 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\date.cpp
@@ -88,181 +75,56 @@
 1716904674 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\weatherrecord.cpp
 	"WeatherRecord.h"
 
-1716960914 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\helper functions\helperfunctions.cpp
+1716960916 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\helper functions\helperfunctions.cpp
 	"HelperFunctions.h"
 	"Validator.h"
 	<iostream>
 	<string>
 	<cmath>
 
-1716961729 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\helper functions\helperfunctions.h
+1717075994 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\helper functions\helperfunctions.h
 	"../Data Structures/DataStructure.h"
+	"../Data Structures/vector.h"
 
-1716973419 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\helper functions\validator.cpp
+1716973420 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\helper functions\validator.cpp
 	"Validator.h"
 	<regex>
 
-1716961065 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\main.cpp
-	"DataStructure.h"
-	"FileNameReader.h"
-	"MenuFunctions.h"
+1717079824 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\main.cpp
+	"./Data Structures/DataStructure.h"
+	"./Data Processor/FileNameReader.h"
+	"./Menu Functions/MenuFunctions.h"
 	<iostream>
 
-1716961844 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\menu functions\menufunctions.cpp
-	"MenuFunctions.h"
-	"../Helper Functions/HelperFunctions.h"
-	"../Output Functions/OutputFunctions.h"
-	"../Data Collectors/SpeedCollector.h"
-	"../Data Collectors/TemperatureCollector.h"
-	"../Data Collectors/SolarRadCollector.h"
-	<iostream>
-	<iomanip>
-
-1716961733 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\menu functions\menufunctions.h
+1717079982 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\menu functions\menufunctions.h
 	"../Data Structures/DataStructure.h"
+	"../Data Structures/vector.h"
 	<fstream>
 
-1716961739 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\output functions\outputfunctions.h
-	"../Data Structures/DataStructure.h"
-
-1716943284 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\operator\operator.cpp
+1717080407 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\operator\operator.cpp
 	"operator.h"
 
-1716960366 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\output functions\outputfunctions.cpp
-	"OutputFunctions.h"
-	<iostream>
-	<iomanip>
+1717078282 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\pair.cpp
+	"Pair.h"
 
-1716960808 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\versions\version7-cleaning\data collectors\solarradcollector.cpp
-	"SolarRadCollector.h"
-
-1716961700 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\versions\version7-cleaning\data collectors\solarradcollector.h
-	"../Data Structures/vector.h"
-	"../Data Structures/DataStructure.h"
-
-1716944888 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\versions\version7-cleaning\data structures\vector.h
-	<vector>
-
-1716973208 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\versions\version7-cleaning\data structures\datastructure.h
-	"Map.h"
-	"BST.h"
-	"WeatherRecord.h"
-	<string>
-
-1716975938 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\versions\version7-cleaning\data structures\map.h
-	<map>
-
-1716976830 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\versions\version7-cleaning\data structures\bst.h
+1717078504 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\avl.h
 	"Node.h"
-	"vector.h"
 
-1716961062 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\versions\version7-cleaning\data structures\node.h
-
-1716943372 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\versions\version7-cleaning\data structures\weatherrecord.h
-	"Date.h"
-	"Time.h"
-
-1716973750 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\versions\version7-cleaning\data structures\date.h
-
-1716899872 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\versions\version7-cleaning\data structures\time.h
-
-1716960782 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\versions\version7-cleaning\data collectors\speedcollector.cpp
-	"SpeedCollector.h"
-
-1716961708 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\versions\version7-cleaning\data collectors\speedcollector.h
-	"../Data Structures/vector.h"
-	"../Data Structures/DataStructure.h"
-
-1716960762 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\versions\version7-cleaning\data collectors\temparaturecollector.cpp
-	"TemperatureCollector.h"
-
-1716961714 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\versions\version7-cleaning\data collectors\temperaturecollector.h
-	"../Data Structures/vector.h"
-	"../Data Structures/DataStructure.h"
-
-1716961790 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\versions\version7-cleaning\data processor\dataprocessor.cpp
-	"../Data Processor/DataProcessor.h"
-	"../Helper Functions/Validator.h"
-	"../Operator/operator.h"
-	<iostream>
-	<fstream>
-	<sstream>
-
-1716961724 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\versions\version7-cleaning\data processor\dataprocessor.h
-	"../Data Structures/DataStructure.h"
-	"../Data Structures/vector.h"
-	"../Data Structures/Date.h"
-	"../Data Structures/Time.h"
-	"../Data Structures/Map.h"
-	<string>
-	<fstream>
-
-1716960896 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\versions\version7-cleaning\helper functions\validator.h
-	<string>
-
-1716961738 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\versions\version7-cleaning\operator\operator.h
-	"../Data Structures/DataStructure.h"
-
-1716960044 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\versions\version7-cleaning\data processor\filenamereader.cpp
-	"FileNameReader.h"
-	"DataProcessor.h"
-	<iostream>
-	<fstream>
-	<string>
-
-1716961728 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\versions\version7-cleaning\data processor\filenamereader.h
-	"../Data Structures/DataStructure.h"
-
-1716903828 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\versions\version7-cleaning\data structures\date.cpp
-	"date.h"
-
-1713015172 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\versions\version7-cleaning\data structures\time.cpp
-	"time.h"
-
-1716904674 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\versions\version7-cleaning\data structures\weatherrecord.cpp
-	"WeatherRecord.h"
-
-1716960916 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\versions\version7-cleaning\helper functions\helperfunctions.cpp
-	"HelperFunctions.h"
-	"Validator.h"
-	<iostream>
-	<string>
-	<cmath>
-
-1716961730 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\versions\version7-cleaning\helper functions\helperfunctions.h
-	"../Data Structures/DataStructure.h"
-
-1716973420 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\versions\version7-cleaning\helper functions\validator.cpp
-	"Validator.h"
-	<regex>
-
-1716961066 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\versions\version7-cleaning\main.cpp
-	"DataStructure.h"
-	"FileNameReader.h"
-	"MenuFunctions.h"
-	<iostream>
-
-1716984550 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\versions\version7-cleaning\menu functions\menufunctions.cpp
+1717080955 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\menu functions\menufunctions.cpp
 	"MenuFunctions.h"
 	"../Helper Functions/HelperFunctions.h"
 	"../Output Functions/OutputFunctions.h"
-	"../Data Collectors/SpeedCollector.h"
-	"../Data Collectors/TemperatureCollector.h"
-	"../Data Collectors/SolarRadCollector.h"
+	"../Data Collectors/DataCollector.h"
 	<iostream>
 	<iomanip>
 
-1716984560 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\versions\version7-cleaning\menu functions\menufunctions.h
-	"../Data Structures/DataStructure.h"
-	<fstream>
-
-1716961740 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\versions\version7-cleaning\output functions\outputfunctions.h
+1716961740 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\output functions\outputfunctions.h
 	"../Data Structures/DataStructure.h"
 
-1716943284 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\versions\version7-cleaning\operator\operator.cpp
-	"operator.h"
+1717080688 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data collectors\datacollector.cpp
+	"DataCollector.h"
 
-1716960368 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\versions\version7-cleaning\output functions\outputfunctions.cpp
+1716960368 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\output functions\outputfunctions.cpp
 	"OutputFunctions.h"
 	<iostream>
 	<iomanip>

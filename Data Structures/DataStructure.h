@@ -2,8 +2,9 @@
 #define DATASTRUCTURE_H
 
 #include "Map.h"
-#include "BST.h"
+#include "AVL.H"
 #include "WeatherRecord.h"
+#include "Pair.h"
 
 #include <string>
 
@@ -40,6 +41,6 @@ const double RadiationExchangeRate = 0.000167;
 //---------------------------------------------------------------------------------
 
 /// Data Structure to store weather data
-typedef Map<std::pair<int, int>, AVL<WeatherRecord>> WeatherLog;
+typedef Map<int, Map<int, AVL<WeatherRecord>>> WeatherLog;
 
 #endif

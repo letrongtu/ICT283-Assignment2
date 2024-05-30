@@ -5,8 +5,8 @@
 
 // Less than operator for Date.
 bool operator<(const Date& lhs, const Date& rhs) {
-    if (lhs.GetYear() != rhs.GetYear()) return lhs.GetYear() < rhs.GetYear();
-    if (lhs.GetMonth() != rhs.GetMonth()) return lhs.GetMonth() < rhs.GetMonth();
+    if (lhs.GetYear() < rhs.GetYear()) return true;
+    if (lhs.GetMonth() > rhs.GetMonth()) return false;
     return lhs.GetDate() < rhs.GetDate();
 }
 
@@ -14,8 +14,8 @@ bool operator<(const Date& lhs, const Date& rhs) {
 
 // Greater than operator for Date.
 bool operator>(const Date& lhs, const Date& rhs) {
-    if (lhs.GetYear() != rhs.GetYear()) return lhs.GetYear() > rhs.GetYear();
-    if (lhs.GetMonth() != rhs.GetMonth()) return lhs.GetMonth() > rhs.GetMonth();
+    if (lhs.GetYear() > rhs.GetYear()) return true;
+    if (lhs.GetMonth() < rhs.GetMonth()) return false;
     return lhs.GetDate() > rhs.GetDate();
 }
 
@@ -31,6 +31,18 @@ bool operator==(const Date& lhs, const Date& rhs) {
 //----------------------------------------------------------------------------
 // Time
 
+bool operator<(const Time& lhs, const Time& rhs) {
+    if(lhs.GetHour() < rhs.GetHour()) return true;
+    if(lhs.GetHour() > rhs.GetHour()) return false;
+    return lhs.GetMinute() < rhs.GetMinute();
+}
+
+bool operator>(const Time& lhs, const Time& rhs) {
+    if(lhs.GetHour() > rhs.GetHour()) return true;
+    if(lhs.GetHour() < rhs.GetHour()) return false;
+    return lhs.GetMinute() > rhs.GetMinute();
+}
+
 // Equality operator for Time.
 bool operator==(const Time& lhs, const Time& rhs) {
     return lhs.GetHour() == rhs.GetHour() &&
@@ -42,14 +54,18 @@ bool operator==(const Time& lhs, const Time& rhs) {
 
 // Less than operator for WeatherRecord.
 bool operator<(const WeatherRecord& lhs, const WeatherRecord& rhs) {
-    return lhs.date < rhs.date;
+    if(lhs.date < rhs.date) return true;
+    if(lhs.date > rhs.date) return false;
+    return (lhs.time < rhs.time);
 }
 
 //----------------------------------------------------------------------------
 
 // Greater than operator for WeatherRecord.
 bool operator>(const WeatherRecord& lhs, const WeatherRecord& rhs) {
-    return lhs.date > rhs.date;
+    if(lhs.date > rhs.date) return true;
+    if(lhs.date < rhs.date) return false;
+    return (lhs.time > rhs.time);
 }
 
 //----------------------------------------------------------------------------

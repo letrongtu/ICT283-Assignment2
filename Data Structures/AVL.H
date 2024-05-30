@@ -10,7 +10,6 @@
 template <class T>
 class AVL {
 public:
-    int size;
     using outputFunction = void (*)(const T& data);
 
     explicit AVL();
@@ -94,7 +93,6 @@ void AVL<T>::insert(const T& data) {
 template <class T>
 Node<T>* AVL<T>::insertHelper(Node<T>*& node, const T& data) {
     if (node == nullptr) {
-        size++;
         return new Node<T>(data);
     }
     if (data < node->data) {
@@ -143,11 +141,14 @@ template <class T>
 bool AVL<T>::searchHelper(const Node<T>* node, const T& data) const {
     if (node == nullptr) {
         return false;
-    } else if (data == node->data) {
+    }
+    else if (data == node->data) {
         return true;
-    } else if (data < node->data) {
+    }
+    else if (data < node->data) {
         return searchHelper(node->left, data);
-    } else {
+    }
+    else {
         return searchHelper(node->right, data);
     }
 }

@@ -1,13 +1,12 @@
 #include "../Data Processor/DataProcessor.h"
 #include "../Helper Functions/Validator.h"
 #include "../Operator/operator.h"
+#include "../Data Collectors/DataCollector.h"
 #include <iostream>
 #include <fstream>
 #include <sstream>
 
 //---------------------------------------------------------------------------------
-
-// Reads weather data from a file and stores it in the WeatherLog.
 void readData(const std::string& fileName, WeatherLog& weather_data) {
     std::cout << "Reading file: " << fileName << std::endl;
     std::string fullFileName = "data/" + fileName;
@@ -24,55 +23,47 @@ void readData(const std::string& fileName, WeatherLog& weather_data) {
         return;
     }
 
+    int lineRead = 0;
+    int lineDropped = 0;
     std::string line;
     WeatherRecord record;
-    Vector<std::string> rows;
 
-    while (getline(inFile, line)) {
-        splitString(line, ',', rows);
+    const int wastIndex = headerMap.at("WAST");
+    const int speedIndex = headerMap.at("S");
+    const int solarRadIndex = headerMap.at("SR");
+    const int airTempIndex = headerMap.at("T");
 
-        if (readWeatherRecord(rows, headerMap, record)) {
-            int year = record.date.GetYear();
-            int month = record.date.GetMonth();
+    while (std::getline(inFile, line)) {
+        if (readWeatherRecord(line, wastIndex, speedIndex, solarRadIndex, airTempIndex, record)) {
 
-            if (!weather_data.contains(year)) {
-                weather_data[year] = Map<int, BST<WeatherRecord>>();
-            }
-
-            if (!weather_data[year].contains(month)) {
-                weather_data[year][month] = BST<WeatherRecord>();
-            }
-
-            weather_data[year][month].insert(record);
+            weather_data[record.date.GetYear()][record.date.GetMonth()].insert(record);
+            lineRead++;
+        } else {
+            lineDropped++;
         }
     }
 
     inFile.close();
 
     std::cout << "<<<Data read successfully>>>\n"
+              << "Line Read: " << lineRead << "\n"
+              << "Line Dropped: " << lineDropped << "\n"
               << "-------------------------------------------------------------------------------------------------------------------" << std::endl;
 }
 
-//---------------------------------------------------------------------------------
-
-// Reads the header of the weather data file and fills the provided map with header names and their indices.
 void readHeader(std::ifstream& inFile, Map<std::string, int>& headerMap) {
     std::string line;
-    getline(inFile, line);
+    std::getline(inFile, line);
 
     std::istringstream headerStream(line);
     std::string header;
     int index = 0;
 
     while (std::getline(headerStream, header, ',')) {
-        headerMap.insert(header, index);
-        index++;
+        headerMap.insert(header, index++);
     }
 }
 
-//---------------------------------------------------------------------------------
-
-// Validates the headers of the weather data file.
 bool isValidHeaders(const Map<std::string, int>& headerMap) {
     return headerMap.contains("WAST") &&
            headerMap.contains("S") &&
@@ -80,40 +71,44 @@ bool isValidHeaders(const Map<std::string, int>& headerMap) {
            headerMap.contains("T");
 }
 
-//---------------------------------------------------------------------------------
+bool readWeatherRecord(const std::string& line, int wastIndex, int speedIndex, int solarRadIndex, int airTempIndex, WeatherRecord& record) {
+    std::istringstream lineStream(line);
+    std::string cell;
+    int currentIndex = 0;
 
-// Function to split a string by a delimiter and store the result in a provided Vector
-void splitString(const std::string& str, char delimiter, Vector<std::string>& tokens) {
-    tokens.Clear();
-    std::string token;
-    std::istringstream tokenStream(str);
-    while (std::getline(tokenStream, token, delimiter)) {
-        tokens.add(token);
-    }
-}
-
-//---------------------------------------------------------------------------------
-
-// Reads a weather record from a vector of strings and a header map.
-bool readWeatherRecord(const Vector<std::string>& rows, const Map<std::string, int>& headerMap, WeatherRecord& record) {
-    if (!readDateAndTime(rows[headerMap.at("WAST")], record.date, record.time)) {
-        return false;
-    }
-
-    try {
-        record.speed = std::stod(rows[headerMap.at("S")]);
-        record.solarRad = std::stod(rows[headerMap.at("SR")]);
-        record.airTemp = std::stod(rows[headerMap.at("T")]);
-    } catch (const std::invalid_argument& e) {
-        return false;
+    while (std::getline(lineStream, cell, ',')) {
+        if (currentIndex == wastIndex) {
+            if (!readDateAndTime(cell, record.date, record.time)) {
+                return false;
+            }
+        }
+        else if (currentIndex == speedIndex) {
+            try {
+                record.speed = std::stod(cell);
+            } catch (const std::invalid_argument&) {
+                return false;
+            }
+        }
+        else if (currentIndex == solarRadIndex) {
+            try {
+                record.solarRad = std::stod(cell);
+            } catch (const std::invalid_argument&) {
+                return false;
+            }
+        }
+        else if (currentIndex == airTempIndex) {
+            try {
+                record.airTemp = std::stod(cell);
+            } catch (const std::invalid_argument&) {
+                return false;
+            }
+        }
+        currentIndex++;
     }
 
     return true;
 }
 
-//---------------------------------------------------------------------------------
-
-// Reads a date and time from a template string.
 bool readDateAndTime(const std::string& dateTimeTemplate, Date& date, Time& time) {
     std::istringstream ss(dateTimeTemplate);
     std::string dateTemplate, timeTemplate;
@@ -125,9 +120,6 @@ bool readDateAndTime(const std::string& dateTimeTemplate, Date& date, Time& time
     return readDate(dateTemplate, date) && readTime(timeTemplate, time);
 }
 
-//---------------------------------------------------------------------------------
-
-// Reads a date from a template string.
 bool readDate(const std::string& dateTemplate, Date& date) {
     std::istringstream ss(dateTemplate);
     int day, month, year;
@@ -149,9 +141,6 @@ bool readDate(const std::string& dateTemplate, Date& date) {
     return true;
 }
 
-//---------------------------------------------------------------------------------
-
-// Reads a time from a template string.
 bool readTime(const std::string& timeTemplate, Time& time) {
     std::istringstream ss(timeTemplate);
     int hour, minute;
@@ -170,5 +159,3 @@ bool readTime(const std::string& timeTemplate, Time& time) {
 
     return true;
 }
-
-//---------------------------------------------------------------------------------
