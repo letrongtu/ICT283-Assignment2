@@ -76,6 +76,14 @@ public:
     bool contains(const K& key) const;
 
     /**
+     * @brief Returns the size of the map
+     *
+     * @param key The key to check
+     * @return True if the key is found, false otherwise
+     */
+    bool size() const;
+
+    /**
      * @brief Checks if the map is empty
      *
      * @return True if the map is empty, false otherwise
@@ -183,6 +191,14 @@ const V& Map<K, V>::at(const K& key) const {
 template <class K, class V>
 bool Map<K, V>::contains(const K &key) const{
     return map.find(key) != map.end();
+}
+
+//---------------------------------------------------------------------------------
+
+// Function to check if the map is empty
+template <class K, class V>
+bool Map<K, V>::size() const{
+    return map.size();
 }
 
 //---------------------------------------------------------------------------------

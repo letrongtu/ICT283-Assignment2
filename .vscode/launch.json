@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "u:/MURDOCH UNIVERSITY/Semester 4 - 2024/ICT283 - Data Structures and Abstractions/Assignment 2/assignment2",
-      "program": "u:/MURDOCH UNIVERSITY/Semester 4 - 2024/ICT283 - Data Structures and Abstractions/Assignment 2/assignment2/build/Debug/outDebug",
+      "cwd": "u:/MURDOCH UNIVERSITY/Semester 4 - 2024/ICT283 - Data Structures and Abstractions/Assignment 2/Versions/assignment2",
+      "program": "u:/MURDOCH UNIVERSITY/Semester 4 - 2024/ICT283 - Data Structures and Abstractions/Assignment 2/Versions/assignment2/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

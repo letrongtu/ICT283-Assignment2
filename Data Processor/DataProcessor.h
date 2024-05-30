@@ -23,76 +23,65 @@
 /**
  * @brief Reads weather data from a file and stores it in the WeatherLog.
  *
- * @param fileName The name of the file containing the weather data.
- * @param weather_data The WeatherLog object to be populated with data from the file.
+ * @param fileName The name of the file to read data from.
+ * @param weather_data The WeatherLog to store the weather records.
  */
-void readData(const std::string& fileName, WeatherLog& weather_data);
+void readData(const std::string& fileName);
 
 /**
  * @brief Reads the header of the weather data file and fills the provided map with header names and their indices.
  *
- * @param inFile The input file stream of the weather data file.
- * @param headerMap The map to be filled with header names and their corresponding indices.
+ * @param inFile The input file stream.
+ * @param headerMap The map to store the header names and their indices.
  */
 void readHeader(std::ifstream& inFile, Map<std::string, int>& headerMap);
 
 /**
  * @brief Validates the headers of the weather data file.
  *
- * @param headerMap The map of header names to indices.
- * @return true if the headers are valid.
- * @return false if the headers are invalid.
+ * @param headerMap The map containing the header names and their indices.
+ * @return True if the required headers are present, false otherwise.
  */
 bool isValidHeaders(const Map<std::string, int>& headerMap);
 
 /**
- * @brief Splits a string by a delimiter and stores the result in a provided vector.
+ * @brief Reads a weather record from a line and a header map.
  *
- * @param str The string to split.
- * @param delimiter The delimiter to use for splitting.
- * @param tokens The vector to store the split tokens.
+ * @param line The line from the weather data file.
+ * @param wastIndex The index of the WAST header.
+ * @param speedIndex The index of the speed header.
+ * @param solarRadIndex The index of the solar radiation header.
+ * @param airTempIndex The index of the air temperature header.
+ * @param record The WeatherRecord to store the parsed data.
+ * @return True if the record was successfully read, false otherwise.
  */
-void splitString(const std::string& str, char delimiter, Vector<std::string>& tokens);
-
-/**
- * @brief Reads a weather record from a vector of strings and a header map.
- *
- * @param rows The vector of strings representing a row of data.
- * @param headerMap The map of header names to indices.
- * @param record The WeatherRecord object to be populated with data from the row.
- * @return true if the weather record was read successfully.
- * @return false if there was an error reading the weather record.
- */
-bool readWeatherRecord(const Vector<std::string>& rows, const Map<std::string, int>& headerMap, WeatherRecord& record);
+bool readWeatherRecord(const std::string& line, int wastIndex, int speedIndex, int solarRadIndex, int airTempIndex, WeatherRecord& record);
 
 /**
  * @brief Reads a date and time from a template string.
  *
- * @param dateTimeTemplate The string template containing the date and time.
- * @param date The Date object to be populated with the date.
- * @param time The Time object to be populated with the time.
- * @return true if the date and time were read successfully.
- * @return false if there was an error reading the date and time.
+ * @param dateTimeTemplate The template string containing the date and time.
+ * @param date The Date object to store the parsed date.
+ * @param time The Time object to store the parsed time.
+ * @return True if the date and time were successfully read, false otherwise.
  */
 bool readDateAndTime(const std::string& dateTimeTemplate, Date& date, Time& time);
 
 /**
  * @brief Reads a date from a template string.
  *
- * @param dateTemplate The string template containing the date.
- * @param date The Date object to be populated with the date.
- * @return true if the date was read successfully.
- * @return false if there was an error reading the date.
+ * @param dateTemplate The template string containing the date.
+ * @param date The Date object to store the parsed date.
+ * @return True if the date was successfully read, false otherwise.
  */
 bool readDate(const std::string& dateTemplate, Date& date);
 
 /**
  * @brief Reads a time from a template string.
  *
- * @param timeTemplate The string template containing the time.
- * @param time The Time object to be populated with the time.
- * @return true if the time was read successfully.
- * @return false if there was an error reading the time.
+ * @param timeTemplate The template string containing the time.
+ * @param time The Time object to store the parsed time.
+ * @return True if the time was successfully read, false otherwise.
  */
 bool readTime(const std::string& timeTemplate, Time& time);
 

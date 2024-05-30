@@ -22,6 +22,6 @@
  * @param sourceFile The name of the file to read weather data from.
  * @param weather_data The WeatherLog structure to store the read weather data.
  */
-void readFileFromSource(const std::string& sourceFile, WeatherLog& weather_data);
+void readFileFromSource(const std::string& sourceFile);
 
 #endif

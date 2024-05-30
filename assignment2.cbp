@@ -32,12 +32,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="Data Collectors/SolarRadCollector.cpp" />
-		<Unit filename="Data Collectors/SolarRadCollector.h" />
-		<Unit filename="Data Collectors/SpeedCollector.cpp" />
-		<Unit filename="Data Collectors/SpeedCollector.h" />
-		<Unit filename="Data Collectors/TemparatureCollector.cpp" />
-		<Unit filename="Data Collectors/TemperatureCollector.h" />
+		<Unit filename="Data Collectors/DataCollector.cpp" />
+		<Unit filename="Data Collectors/DataCollector.h" />
 		<Unit filename="Data Processor/DataProcessor.cpp" />
 		<Unit filename="Data Processor/DataProcessor.h" />
 		<Unit filename="Data Processor/FileNameReader.cpp" />

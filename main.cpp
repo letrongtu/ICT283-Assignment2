@@ -1,9 +1,9 @@
 // MAIN.CPP
 // Main program:
 // Open an input file stream, read recorded data, display the menu, and handle the menu options.
-#include "DataStructure.h"
-#include "FileNameReader.h"
-#include "MenuFunctions.h"
+#include "./Data Structures/DataStructure.h"
+#include "./Data Processor/FileNameReader.h"
+#include "./Menu Functions/MenuFunctions.h"
 #include <iostream>
 
 /**
@@ -19,11 +19,10 @@ int main()
 {
 //-----------------------------------------------------
 // Read and Store data
-    WeatherLog weather_data;
-    readFileFromSource("data/data_source.txt", weather_data);
+    readFileFromSource("data/data_source.txt");
 //-----------------------------------------------------
 // Menu
-    menu(weather_data);
+    menu();
 //-----------------------------------------------------
     std::cout << "Quit" << std::endl;
     return 0;

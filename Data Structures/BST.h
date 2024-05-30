@@ -215,7 +215,7 @@ void BST<T>::insertHelper(Node<T>*& node, const T& data){
     else if (data < node->data) {
         insertHelper(node->left, data);
     }
-    else {
+    else if(data > node->data){
         insertHelper(node->right, data);
     }
 }
