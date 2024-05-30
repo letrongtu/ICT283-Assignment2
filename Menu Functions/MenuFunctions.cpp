@@ -7,20 +7,23 @@
 #include "MenuFunctions.h"
 #include "../Helper Functions/HelperFunctions.h"
 #include "../Output Functions/OutputFunctions.h"
-#include "../Data Collectors/DataCollector.h"
+#include "../Data Collectors/SpeedCollector.h"
+#include "../Data Collectors/TemperatureCollector.h"
+#include "../Data Collectors/SolarRadCollector.h"
+
 #include <iostream>
 #include <iomanip>
 
 //---------------------------------------------------------------------------------
 
 // Displays the menu and processes user choices.
-void menu() {
+void menu(const WeatherLog& weather_data) {
     bool exit = false;
 
     while (!exit) {
         showMenu();
         int choice = readChoice();
-        exit = processChoice(choice);
+        exit = processChoice(weather_data, choice);
     }
 }
 
@@ -41,19 +44,19 @@ void showMenu() {
 //---------------------------------------------------------------------------------
 
 // Function to process user's menu choice and call the appropriate handler.
-bool processChoice(int choice) {
+bool processChoice(const WeatherLog& weather_data, int choice) {
     switch (choice) {
         case 1:
-            firstCaseHandler();
+            firstCaseHandler(weather_data);
             return false;
         case 2:
-            secondCaseHandler();
+            secondCaseHandler(weather_data);
             return false;
         case 3:
-            thirdCaseHandler();
+            thirdCaseHandler(weather_data);
             return false;
         case 4:
-            fourthCaseHandler();
+            fourthCaseHandler(weather_data);
             return false;
         case 5:
             std::cout << "Exiting the program..." << std::endl;
@@ -68,28 +71,21 @@ bool processChoice(int choice) {
 //---------------------------------------------------------------------------------
 
 // Handles the first case: processes wind speed data for a specific month and year.
-void firstCaseHandler() {
+void firstCaseHandler(const WeatherLog& weather_data) {
     int year = readYear();
     int month = readMonth();
 
-    Vector<double> windSpeeds;
-
-    Map<int, Map<int, Vector<WeatherRecord>>> weather_data = DataCollector::getData();
     if (weather_data.contains(year) && weather_data.at(year).contains(month)) {
-        accumulateSpeed(windSpeeds, weather_data[year][month]);
+        weather_data.at(year).at(month).inOrder(SpeedCollector::accumulateSpeed);
     }
 
     std::cout << "-------------------------------------------------------------------------------------------------------------------" << std::endl;
-    firstCaseOutput(windSpeeds, month, year);
+    firstCaseOutput(SpeedCollector::getWindSpeeds(), month, year);
     std::cout << "-------------------------------------------------------------------------------------------------------------------" << std::endl;
+
+    SpeedCollector::clear();
 }
 
-//---------------------------------------------------------------------------------
-void accumulateSpeed(Vector<double>& windSpeeds, const Vector<WeatherRecord>& record_data){
-    for(int i = 0; i < record_data.Size(); i++){
-        windSpeeds.add(record_data[i].speed*SpeedExchangeRate);
-    }
-}
 //---------------------------------------------------------------------------------
 
 // Outputs the wind speed data for a specific month and year.
@@ -106,35 +102,25 @@ void firstCaseOutput(const Vector<double>& windSpeeds, int month, int year) {
 //---------------------------------------------------------------------------------
 
 // Handles the second case: processes temperature data for a specific year.
-void secondCaseHandler() {
+void secondCaseHandler(const WeatherLog& weather_data) {
     int year = readYear();
-
-    Vector<double> temperatures;
-    Map<int, Map<int, Vector<WeatherRecord>>> weather_data = DataCollector::getData();
 
     std::cout << "-------------------------------------------------------------------------------------------------------------------" << std::endl;
     std::cout << year << ":" << std::endl;
     if (weather_data.contains(year)) {
         for (int month = 1; month <= MonthCounts; month++) {
             if (weather_data.at(year).contains(month)) {
-                accumulateAirTemp(temperatures, weather_data[year][month]);
+                weather_data.at(year).at(month).inOrder(TemperatureCollector::accumulateAirTemp);
             }
-            secondCaseOutput(temperatures, month);
-
-            temperatures.Clear();
+            secondCaseOutput(TemperatureCollector::getTemperatures(), month);
+            TemperatureCollector::clear();
         }
     } else {
         std::cout << "No data" << std::endl;
     }
     std::cout << "-------------------------------------------------------------------------------------------------------------------" << std::endl;
-}
 
-//---------------------------------------------------------------------------------
-
-void accumulateAirTemp(Vector<double>& temperatures, const Vector<WeatherRecord>& record_data){
-    for(int i = 0; i < record_data.Size(); i++){
-        temperatures.add(record_data[i].airTemp);
-    }
+    TemperatureCollector::clear();
 }
 
 //---------------------------------------------------------------------------------
@@ -153,38 +139,35 @@ void secondCaseOutput(const Vector<double>& temperatures, int month) {
 //---------------------------------------------------------------------------------
 
 // Handles the third case: processes and outputs correlation coefficients.
-void thirdCaseHandler() {
+void thirdCaseHandler(const WeatherLog& weather_data) {
     int month = readMonth();
-
-    Vector<double> windSpeeds, temperatures, solarRads;
-    Map<int, Map<int, Vector<WeatherRecord>>> weather_data = DataCollector::getData();
 
     std::cout << "-------------------------------------------------------------------------------------------------------------------" << std::endl;
     for (auto it = weather_data.begin(); it != weather_data.end(); it++) {
         if (it->second.contains(month)) {
-            accumulateSpeed(windSpeeds, it->second[month]);
-            accumulateAirTemp(temperatures, it->second[month]);
-            accumulateSolarRad(solarRads, it->second[month]);
+            it->second.at(month).inOrder(SpeedCollector::accumulateSpeed);
+            it->second.at(month).inOrder(TemperatureCollector::accumulateAirTemp);
+            it->second.at(month).inOrder(SolarRadCollector::accumulateSolarRad);
         }
     }
 
-    double S_T = calculateCorrelationCoef(windSpeeds, temperatures);
-    double S_R = calculateCorrelationCoef(windSpeeds, solarRads);
-    double T_R = calculateCorrelationCoef(temperatures, solarRads);
+    double S_T = calculateCorrelationCoef(SpeedCollector::getWindSpeeds(), TemperatureCollector::getTemperatures());
+    double S_R = calculateCorrelationCoef(SpeedCollector::getWindSpeeds(), SolarRadCollector::getSolarRads());
+    double T_R = calculateCorrelationCoef(TemperatureCollector::getTemperatures(), SolarRadCollector::getSolarRads());
 
     outputCorrelationCoef(S_T, S_R, T_R, month);
     std::cout << "-------------------------------------------------------------------------------------------------------------------" << std::endl;
+
+    // Cleaning the collectors
+    SpeedCollector::clear();
+    TemperatureCollector::clear();
+    SolarRadCollector::clear();
 }
 
-void accumulateSolarRad(Vector<double>& solarRads, const Vector<WeatherRecord>& record_data){
-    for(int i = 0; i < record_data.Size(); i++){
-        solarRads.add(record_data[i].solarRad*RadiationExchangeRate);
-    }
-}
 //---------------------------------------------------------------------------------
 
 // Handles the fourth case: processes and outputs multiple types of weather data for a specific year.
-void fourthCaseHandler() {
+void fourthCaseHandler(const WeatherLog& weather_data) {
     int year = readYear();
 
     std::cout << "-------------------------------------------------------------------------------------------------------------------" << std::endl;
@@ -196,21 +179,18 @@ void fourthCaseHandler() {
     }
     outFile << year << std::endl;
 
-    Vector<double> windSpeeds, temperatures, solarRads;
-    Map<int, Map<int, Vector<WeatherRecord>>> weather_data = DataCollector::getData();
-
     if (weather_data.contains(year)) {
         for (int month = 1; month <= MonthCounts; month++) {
             if (weather_data.at(year).contains(month)) {
-                 accumulateSpeed(windSpeeds, weather_data[year][month]);
-                accumulateAirTemp(temperatures, weather_data[year][month]);
-                accumulateSolarRad(solarRads, weather_data[year][month]);
+                weather_data.at(year).at(month).inOrder(SpeedCollector::accumulateSpeed);
+                weather_data.at(year).at(month).inOrder(TemperatureCollector::accumulateAirTemp);
+                weather_data.at(year).at(month).inOrder(SolarRadCollector::accumulateSolarRad);
             }
-            fourthCaseOutput(outFile, windSpeeds, temperatures, solarRads, month);
+            fourthCaseOutput(outFile, SpeedCollector::getWindSpeeds(), TemperatureCollector::getTemperatures(), SolarRadCollector::getSolarRads(), month);
 
-            windSpeeds.Clear();
-            temperatures.Clear();
-            solarRads.Clear();
+            SpeedCollector::clear();
+            TemperatureCollector::clear();
+            SolarRadCollector::clear();
         }
     } else {
         outFile << "No data" << std::endl;
@@ -219,6 +199,11 @@ void fourthCaseHandler() {
     std::cout << "Write Data to WindTempSolar.csv Successfully" << std::endl;
     std::cout << "-------------------------------------------------------------------------------------------------------------------" << std::endl;
     outFile.close();
+
+    // Cleaning the collectors
+    SpeedCollector::clear();
+    TemperatureCollector::clear();
+    SolarRadCollector::clear();
 }
 
 //---------------------------------------------------------------------------------

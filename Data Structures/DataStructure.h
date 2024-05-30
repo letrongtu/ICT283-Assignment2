@@ -40,6 +40,6 @@ const double RadiationExchangeRate = 0.000167;
 //---------------------------------------------------------------------------------
 
 /// Data Structure to store weather data
-typedef BST<WeatherRecord> WeatherLog;
+typedef Map<std::pair<int, int>, AVL<WeatherRecord>> WeatherLog;
 
 #endif

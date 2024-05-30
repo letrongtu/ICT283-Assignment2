@@ -1,194 +1,84 @@
-#ifndef BST_H
-#define BST_H
+#ifndef AVL_H
+#define AVL_H
 
-//-------------------------------------------------------------------------------------------
 #include "Node.h"
-#include "vector.h"
-//-------------------------------------------------------------------------------------------
 
 /**
- * @brief Template class for Binary Search Tree
- * @tparam T Data type of the elements in BST
+ * @brief Template class for AVL Tree
+ * @tparam T Data type of the elements in AVL Tree
  */
 template <class T>
-class BST{
+class AVL {
 public:
-
-    /**
-     * @brief Function pointer
-     * */
+    int size;
     using outputFunction = void (*)(const T& data);
 
-    /**
-     * @brief Constructor for the BST
-     * @param root Initial root node of the BST (default is nullptr)
-     */
-    explicit BST();
+    explicit AVL();
+    AVL(const AVL<T>& avl);
+    ~AVL();
+    AVL<T>& operator=(const AVL<T>& avl);
 
-    /**
-     * @brief Deep copy constructor
-     * @param bst The BST to copy from
-     */
-    BST(const BST<T>& bst);
-
-    /**
-     * @brief Destructor to clean up the tree
-     */
-    ~BST();
-
-    /**
-     * @brief Assign Operator to copy bst
-     * @param bst The BST to copy from
-     */
-    BST<T>& operator=(const BST<T>& bst);
-
-    /**
-     * @brief Insert a node into the BST.
-     * @param data Data value to be inserted
-     * @return void
-     */
     void insert(const T& data);
-
-    /**
-     * @brief Search for a data value in the BST.
-     * @param data Data to search for
-     * @return True if data is found, false otherwise
-     */
     bool search(const T& data) const;
-
-    /** @brief In-order traversal of the BST.
-     *  @param f Function pointer to be called on each node's data.
-     *  @return void
-    */
     void inOrder(const outputFunction f) const;
-
-    /** @brief Pre-order traversal of the BST.
-     *  @param f Function pointer to be called on each node's data.
-     *  @return void
-    */
     void preOrder(const outputFunction f) const;
-
-    /** @brief Post-order traversal of the BST.
-     *  @param f Function pointer to be called on each node's data.
-     *  @return void
-    */
     void postOrder(const outputFunction f) const;
 
 private:
-    Node<T>* root; /// Root node of the tree
-    /**
-     * @brief Helper function to copy the data and its child from a node
-     * @param node The node to copy from
-     * @return void
-     */
+    Node<T>* root;
+
     Node<T>* copyHelper(const Node<T>* node);
-
-    /**
-     * @brief Utility to clear the tree starting from a node.
-     * @param node The starting node to clear from
-     * @return void
-     */
     void clear(Node<T>*& node);
-
-    /**
-     * @brief Helper function to recursively insert a node.
-     * @param node Root node of the current subtree.
-     * @param data Data value to be inserted.
-     * @return New root of the subtree.
-     */
-    void insertHelper(Node<T>*& node, const T& data);
-
-    /**
-     * @brief Helper function to recursively search for a data value.
-     * @param node Root node of the current subtree.
-     * @param data Data value to search for.
-     * @return True if data is found, false otherwise.
-     */
+    Node<T>* insertHelper(Node<T>*& node, const T& data);
     bool searchHelper(const Node<T>* node, const T& data) const;
-
-    /**
-     * @brief Helper function for in-order traversal.
-     * @param node Root node of the current subtree.
-     * @param f Function pointer to be called on each node's data.
-     * @return void
-     */
-    void inOrderHelper(const Node<T>* node,  const outputFunction f) const;
-
-    /**
-     * @brief Helper function for pre-order traversal.
-     * @param node Root node of the current subtree.
-     * @param f Function pointer to be called on each node's data.
-     * @return void
-     */
+    void inOrderHelper(const Node<T>* node, const outputFunction f) const;
     void preOrderHelper(const Node<T>* node, const outputFunction f) const;
-
-    /**
-     * @brief Helper function for post-order traversal.
-     * @param node Root node of the current subtree.
-     * @param f Function pointer to be called on each node's data.
-     * @return void
-     */
     void postOrderHelper(const Node<T>* node, const outputFunction f) const;
+
+    // AVL-specific helper functions
+    int height(const Node<T>* node) const;
+    int getBalance(const Node<T>* node) const;
+    Node<T>* rightRotate(Node<T>* y);
+    Node<T>* leftRotate(Node<T>* x);
 };
 
-//-------------------------------------------------------------------------------------------
-//Functions Implementations
+// Functions Implementations
 
-// Constructor for the BST
 template <class T>
-BST<T>::BST() : root(nullptr) {
-}
+AVL<T>::AVL() : root(nullptr) {}
 
-//-------------------------------------------------------------------------------------------
-
-// Deep copy constructor
 template <class T>
-BST<T>::BST(const BST<T>& bst) : root(copyHelper(bst.root)) {
-}
+AVL<T>::AVL(const AVL<T>& avl) : root(copyHelper(avl.root)) {}
 
-//-------------------------------------------------------------------------------------------
-
-// Helper function to copy the data and its child from a node
 template <class T>
-Node<T>* BST<T>::copyHelper(const Node<T>* node){
-    if(node == nullptr){
+Node<T>* AVL<T>::copyHelper(const Node<T>* node) {
+    if (node == nullptr) {
         return nullptr;
-    }
-    else{
-        Node<T>* copy = new Node<T>();
-        copy->data = node->data;
+    } else {
+        Node<T>* copy = new Node<T>(node->data);
         copy->left = copyHelper(node->left);
         copy->right = copyHelper(node->right);
         return copy;
     }
 }
 
-//-------------------------------------------------------------------------------------------
-
-// Assign Operator to copy bst
 template <class T>
-BST<T>& BST<T>::operator=(const BST<T>& bst){
-    if(this->root != bst.root){
-        this->root = copyHelper(bst.root);
+AVL<T>& AVL<T>::operator=(const AVL<T>& avl) {
+    if (this != &avl) {
+        clear(this->root);
+        this->root = copyHelper(avl.root);
     }
-
     return *this;
 }
 
-//-------------------------------------------------------------------------------------------
-
-// Destructor to clean up the tree
 template <class T>
-BST<T>::~BST() {
+AVL<T>::~AVL() {
     clear(this->root);
     this->root = nullptr;
 }
 
-//-------------------------------------------------------------------------------------------
-
-// Utility to clear the tree starting from a node.
 template <class T>
-void BST<T>::clear(Node<T>*& node) {
+void AVL<T>::clear(Node<T>*& node) {
     if (node != nullptr) {
         clear(node->left);
         clear(node->right);
@@ -196,117 +86,152 @@ void BST<T>::clear(Node<T>*& node) {
     }
 }
 
-//-------------------------------------------------------------------------------------------
-
-//Insert a node into the BST.
 template <class T>
-void BST<T>::insert(const T& data){
-    insertHelper(this->root, data);
+void AVL<T>::insert(const T& data) {
+    root = insertHelper(this->root, data);
 }
 
-//-------------------------------------------------------------------------------------------
-
-// Helper function to recursively insert a node.
 template <class T>
-void BST<T>::insertHelper(Node<T>*& node, const T& data){
+Node<T>* AVL<T>::insertHelper(Node<T>*& node, const T& data) {
     if (node == nullptr) {
-        node = new Node<T>(data);
+        size++;
+        return new Node<T>(data);
     }
-    else if (data < node->data) {
-        insertHelper(node->left, data);
+    if (data < node->data) {
+        node->left = insertHelper(node->left, data);
+    } else if (data > node->data) {
+        node->right = insertHelper(node->right, data);
+    } else {
+        return node; // Duplicate data is not allowed
     }
-    else if(data > node->data){
-        insertHelper(node->right, data);
+
+    node->height = 1 + std::max(height(node->left), height(node->right));
+
+    int balance = getBalance(node);
+
+    // Left Left Case
+    if (balance > 1 && data < node->left->data) {
+        return rightRotate(node);
     }
+
+    // Right Right Case
+    if (balance < -1 && data > node->right->data) {
+        return leftRotate(node);
+    }
+
+    // Left Right Case
+    if (balance > 1 && data > node->left->data) {
+        node->left = leftRotate(node->left);
+        return rightRotate(node);
+    }
+
+    // Right Left Case
+    if (balance < -1 && data < node->right->data) {
+        node->right = rightRotate(node->right);
+        return leftRotate(node);
+    }
+
+    return node;
 }
 
-//-------------------------------------------------------------------------------------------
-
-// Search for a data value in the BST.
 template <class T>
-bool BST<T>::search(const T& data) const{
+bool AVL<T>::search(const T& data) const {
     return searchHelper(this->root, data);
 }
 
-//-------------------------------------------------------------------------------------------
-
-// Helper function to recursively search for a data value.
 template <class T>
-bool BST<T>::searchHelper(const Node<T>* node, const T& data) const{
-    if(node == nullptr){
+bool AVL<T>::searchHelper(const Node<T>* node, const T& data) const {
+    if (node == nullptr) {
         return false;
-    }
-    else if (data == node->data){
+    } else if (data == node->data) {
         return true;
-    }
-    else if(data < node->data){
+    } else if (data < node->data) {
         return searchHelper(node->left, data);
-    }
-    else{
+    } else {
         return searchHelper(node->right, data);
     }
 }
 
-//-------------------------------------------------------------------------------------------
-
-// In-order traversal of the BST.
 template <class T>
-void BST<T>::inOrder(const outputFunction f) const{
+void AVL<T>::inOrder(const outputFunction f) const {
     inOrderHelper(this->root, f);
 }
 
-//-------------------------------------------------------------------------------------------
-
-// Helper function for in-order traversal.
 template <class T>
-void BST<T>::inOrderHelper(const Node<T>* node, const outputFunction f) const{
-    if(node != nullptr){
+void AVL<T>::inOrderHelper(const Node<T>* node, const outputFunction f) const {
+    if (node != nullptr) {
         inOrderHelper(node->left, f);
         f(node->data);
         inOrderHelper(node->right, f);
     }
 }
 
-//-------------------------------------------------------------------------------------------
-
-// Pre-order traversal of the BST.
 template <class T>
-void BST<T>::preOrder(const outputFunction f) const{
+void AVL<T>::preOrder(const outputFunction f) const {
     preOrderHelper(this->root, f);
 }
 
-//-------------------------------------------------------------------------------------------
-
-// Helper function for pre-order traversal.
 template <class T>
-void BST<T>::preOrderHelper(const Node<T>* node, const outputFunction f) const{
-     if(node != nullptr){
+void AVL<T>::preOrderHelper(const Node<T>* node, const outputFunction f) const {
+    if (node != nullptr) {
         f(node->data);
         preOrderHelper(node->left, f);
         preOrderHelper(node->right, f);
     }
 }
 
-//-------------------------------------------------------------------------------------------
-
-// Post-order traversal of the BST.
 template <class T>
-void BST<T>::postOrder(const outputFunction f) const{
+void AVL<T>::postOrder(const outputFunction f) const {
     postOrderHelper(this->root, f);
 }
 
-//-------------------------------------------------------------------------------------------
-
-// Helper function for post-order traversal.
 template <class T>
-void BST<T>::postOrderHelper(const Node<T>* node, const outputFunction f) const{
-    if(node != nullptr){
+void AVL<T>::postOrderHelper(const Node<T>* node, const outputFunction f) const {
+    if (node != nullptr) {
         postOrderHelper(node->left, f);
         postOrderHelper(node->right, f);
         f(node->data);
     }
 }
 
-//-------------------------------------------------------------------------------------------
+// AVL-specific helper functions
 
-#endif
+template <class T>
+int AVL<T>::height(const Node<T>* node) const {
+    return (node == nullptr) ? 0 : node->height;
+}
+
+template <class T>
+int AVL<T>::getBalance(const Node<T>* node) const {
+    return (node == nullptr) ? 0 : height(node->left) - height(node->right);
+}
+
+template <class T>
+Node<T>* AVL<T>::rightRotate(Node<T>* y) {
+    Node<T>* x = y->left;
+    Node<T>* T2 = x->right;
+
+    x->right = y;
+    y->left = T2;
+
+    y->height = std::max(height(y->left), height(y->right)) + 1;
+    x->height = std::max(height(x->left), height(x->right)) + 1;
+
+    return x;
+}
+
+template <class T>
+Node<T>* AVL<T>::leftRotate(Node<T>* x) {
+    Node<T>* y = x->right;
+    Node<T>* T2 = y->left;
+
+    y->left = x;
+    x->right = T2;
+
+    x->height = std::max(height(x->left), height(x->right)) + 1;
+    y->height = std::max(height(y->left), height(y->right)) + 1;
+
+    return y;
+}
+
+#endif // AVL_H

@@ -14,6 +14,7 @@ struct Node {
     T data;       /// Data value
     Node* left;   /// Pointer to the left child
     Node* right;  /// Pointer to the right child
+    int height;
 
     /**
      * @brief Constructor to initialize a node with a value and optional children pointers.
@@ -22,15 +23,15 @@ struct Node {
      * @param leftChild Pointer to the left child node (default is nullptr).
      * @param rightChild Pointer to the right child node (default is nullptr).
      */
-    explicit Node(const T& value = T(), Node* leftChild = nullptr, Node* rightChild = nullptr);
+    explicit Node(const T& value = T(), Node* leftChild = nullptr, Node* rightChild = nullptr, int hei = 1);
 };
 
 //---------------------------------------------------------------------------------
 
 // Constructor to initialize a node with a value and optional children pointers.
 template <class T>
-Node<T>::Node(const T& value, Node* leftChild, Node* rightChild)
-    : data(value), left(leftChild), right(rightChild) {
+Node<T>::Node(const T& value, Node* leftChild, Node* rightChild, int hei)
+    : data(value), left(leftChild), right(rightChild), height(hei){
 }
 
 #endif

@@ -16,10 +16,13 @@
  * @file MenuFunctions.h
  * @author Trong Tu Le
  */
+
 /**
  * @brief Displays the menu and processes user choices.
+ *
+ * @param weather_data The WeatherLog object containing weather records.
  */
-void menu();
+void menu(const WeatherLog& weather_data);
 
 /**
  * @brief Displays the menu options.
@@ -27,82 +30,77 @@ void menu();
 void showMenu();
 
 /**
- * @brief Function to process user's menu choice and call the appropriate handler.
+ * @brief Processes the user's choice from the menu.
  *
- * @param choice The user's menu choice.
- * @return True if the user chooses to exit, false otherwise.
+ * @param weather_data The WeatherLog object containing weather records.
+ * @param choice The user's choice as an integer.
+ * @return true if the choice was processed successfully.
+ * @return false if the choice was invalid or indicated an exit.
  */
-bool processChoice(int choice);
+bool processChoice(const WeatherLog& weather_data, int choice);
 
 /**
- * @brief Handles the first case: processes wind speed data for a specific month and year.
- */
-void firstCaseHandler();
-
-/**
- * @brief Accumulates wind speed data from weather records.
+ * @brief Handles the first case from the menu.
  *
- * @param windSpeeds Vector to store wind speed data.
- * @param record_data Vector of weather records.
+ * This function processes wind speed data for a specific month and year.
+ *
+ * @param weather_data The WeatherLog object containing weather records.
  */
-void accumulateSpeed(Vector<double>& windSpeeds, const Vector<WeatherRecord>& record_data);
+void firstCaseHandler(const WeatherLog& weather_data);
 
 /**
  * @brief Outputs the wind speed data for a specific month and year.
  *
- * @param windSpeeds Vector of wind speed data.
- * @param month The month for which data is being processed.
- * @param year The year for which data is being processed.
+ * @param windSpeeds A vector containing the wind speed data.
+ * @param month The month for which the data is output.
+ * @param year The year for which the data is output.
  */
 void firstCaseOutput(const Vector<double>& windSpeeds, int month, int year);
 
 /**
- * @brief Handles the second case: processes temperature data for a specific year.
+ * @brief Handles the second case from the menu.
+ *
+ * This function processes temperature data for a specific month and year.
+ *
+ * @param weather_data The WeatherLog object containing weather records.
  */
-void secondCaseHandler();
+void secondCaseHandler(const WeatherLog& weather_data);
 
 /**
- * @brief Accumulates temperature data from weather records.
+ * @brief Outputs the temperature data for a specific month and year.
  *
- * @param temperatures Vector to store temperature data.
- * @param record_data Vector of weather records.
- */
-void accumulateAirTemp(Vector<double>& temperatures, const Vector<WeatherRecord>& record_data);
-
-/**
- * @brief Outputs the temperature data for a specific month.
- *
- * @param temperatures Vector of temperature data.
- * @param month The month for which data is being processed.
+ * @param temperatures A vector containing the air temperature data.
+ * @param month The month for which the data is output.
+ * @param year The year for which the data is output.
  */
 void secondCaseOutput(const Vector<double>& temperatures, int month);
 
 /**
- * @brief Handles the third case: processes and outputs correlation coefficients.
- */
-void thirdCaseHandler();
-
-/**
- * @brief Accumulates solar radiation data from weather records.
+ * @brief Handles the third case from the menu.
  *
- * @param solarRads Vector to store solar radiation data.
- * @param record_data Vector of weather records.
+ * This function processes solar radiation data for a specific month and year.
+ *
+ * @param weather_data The WeatherLog object containing weather records.
  */
-void accumulateSolarRad(Vector<double>& solarRads, const Vector<WeatherRecord>& record_data);
+void thirdCaseHandler(const WeatherLog& weather_data);
 
 /**
- * @brief Handles the fourth case: processes and outputs multiple types of weather data for a specific year.
+ * @brief Handles the fourth case from the menu.
+ *
+ * This function processes and outputs multiple types of weather data for a specific month.
+ *
+ * @param weather_data The WeatherLog object containing weather records.
  */
-void fourthCaseHandler();
+void fourthCaseHandler(const WeatherLog& weather_data);
 
 /**
  * @brief Outputs the weather data to a file for a specific month.
  *
- * @param outFile Output file stream.
- * @param windSpeeds Vector of wind speed data.
- * @param temperatures Vector of temperature data.
- * @param solarRadiations Vector of solar radiation data.
- * @param month The month for which data is being processed.
+ * @param outFile The output file stream.
+ * @param windSpeeds A vector containing the wind speed data.
+ * @param temperatures A vector containing the temperature data.
+ * @param solarRadiations A vector containing the solar radiation data.
+ * @param month The month for which the data is output.
  */
 void fourthCaseOutput(std::ofstream& outFile, const Vector<double>& windSpeeds, const Vector<double>& temperatures, const Vector<double>& solarRadiations, int month);
 
