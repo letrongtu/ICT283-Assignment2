@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1716974092 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\test programs\testvector\testvector.cpp
+	"../../Data Structures/vector.h"
+	"../../Data Structures/date.h"
+	"../../Data Structures/time.h"
+	<iostream>
+	<string>
+
+1717318129 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\vector.h
+	<vector>
+
+1717318161 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\date.h
+
+1717318167 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\time.h
+

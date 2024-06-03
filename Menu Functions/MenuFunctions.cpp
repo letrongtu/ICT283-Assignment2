@@ -87,6 +87,9 @@ void firstCaseHandler(const WeatherLog& weather_data) {
     DataCollector::clear();
 }
 
+//---------------------------------------------------------------------------------
+
+// Accumulates wind speed data from weather records.
 void accumulateSpeed(Vector<double>& windSpeeds, const Vector<WeatherRecord>& data){
     for(LongInt i = 0; i < data.Size(); i++){
         windSpeeds.add(data[i].speed*SpeedExchangeRate);
@@ -135,6 +138,9 @@ void secondCaseHandler(const WeatherLog& weather_data) {
     DataCollector::clear();
 }
 
+//---------------------------------------------------------------------------------
+
+// Accumulates air temperature data from weather records.
 void accumulateAirTemp(Vector<double>& temperatures, const Vector<WeatherRecord>& data){
     for(LongInt i = 0; i < data.Size(); i++){
         temperatures.add(data[i].airTemp);
@@ -184,6 +190,9 @@ void thirdCaseHandler(const WeatherLog& weather_data) {
     DataCollector::clear();
 }
 
+//---------------------------------------------------------------------------------
+
+// Accumulates solar radiation data from weather records.
 void accumulateSolarRad(Vector<double>& solarRads, const Vector<WeatherRecord>& data){
     for(LongInt i = 0; i < data.Size(); i++){
         solarRads.add(data[i].solarRad*RadiationExchangeRate);

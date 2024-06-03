@@ -3,6 +3,7 @@
 
 //---------------------------------------------------------------------------------
 #include <map>
+#include <stdexcept>
 //---------------------------------------------------------------------------------
 
 /**
@@ -185,7 +186,10 @@ void Map<K, V>::insert(const K& key, const V& value) {
 // Function to retrieve the value corresponding to a key
 template<class K, class V>
 const V& Map<K, V>::at(const K& key) const {
-    auto it = map.find(key);
+    typename std::map<K, V>::const_iterator it = map.find(key);
+    if (it == map.end()) {
+        throw std::out_of_range("Key not found");
+    }
     return it->second;
 }
 

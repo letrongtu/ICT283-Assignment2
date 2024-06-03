@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1716974200 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\test programs\testdate\testdate.cpp
+	"../../Data Structures/date.h"
+	"../../Data Structures/date.cpp"
+	<iostream>
+
+1717318161 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\date.h
+
+1717318143 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\date.cpp
+	"date.h"
+

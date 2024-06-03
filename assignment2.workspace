@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="assignment2.cbp" />
+		<Project filename="Test Programs/TestDate/TestDate.cbp" />
+		<Project filename="Test Programs/TestMap/TestMap.cbp" />
+		<Project filename="Test Programs/TestTime/TestTime.cbp" />
+		<Project filename="Test Programs/TestVector/TestVector.cbp" />
+		<Project filename="Test Programs/TestAVL/TestAVL.cbp" />
+		<Project filename="Test Programs/TestDataProcessorFunctions/TestDataProcessorFunctions.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

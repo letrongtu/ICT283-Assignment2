@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1717377702 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\test programs\testmap\testmap.cpp
+	<iostream>
+	"../../Data Structures/Map.h"
+
+1717377796 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\map.h
+	<map>
+	<stdexcept>
+

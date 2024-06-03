@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1717377015 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\test programs\testavl\testavl.cpp
+	<iostream>
+	"../../Data Structures/AVL.h"
+
+1717376521 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\avl.h
+	"Node.h"
+
+1717312807 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\node.h
+

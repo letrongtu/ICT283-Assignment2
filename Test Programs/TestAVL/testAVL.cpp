@@ -1,12 +1,13 @@
 #include <iostream>
-#include "../../Data Structures/BST.h"
+#include "../../Data Structures/AVL.h"
 
 using namespace std;
 
 template<class T>
-void outputFunction(const T& data){
+void outputFunction(const T& data) {
     cout << data << endl;
 }
+
 template<class T>
 void result(T expected, T actual, const string& testMessage) {
     cout << testMessage << ": ";
@@ -17,19 +18,9 @@ void result(T expected, T actual, const string& testMessage) {
     }
 }
 
-template<class T>
-void resultPtr(const T* expected, const T* actual, const string& testMessage) {
-    cout << testMessage << ": ";
-    if (expected == actual) {
-        cout << "PASSED" << endl;
-    } else {
-        cerr << "FAILED" << "\n    Expected pointer: " << static_cast<const void*>(expected) << " but got pointer: " << static_cast<const void*>(actual) << endl;
-    }
-}
-
 void testInsertSearch() {
     cout << "Test 1: Testing Insert and Search Functions" << endl;
-    BST<int> tree;
+    AVL<int> tree;
     tree.insert(10);
     tree.insert(20);
     tree.insert(5);
@@ -42,7 +33,7 @@ void testInsertSearch() {
 
 void testTraversal() {
     cout << "Test 2: Testing Traversals" << endl;
-    BST<int> tree;
+    AVL<int> tree;
     tree.insert(50);
     tree.insert(30);
     tree.insert(70);
@@ -60,14 +51,14 @@ void testTraversal() {
     cout << "-----------------------------------------" << endl;
 }
 
-void testCopyConstructor(){
+void testCopyConstructor() {
     cout << "Test 3: Testing Copy Constructor" << endl;
-    BST<int> tree;
+    AVL<int> tree;
     tree.insert(50);
     tree.insert(30);
     tree.insert(70);
 
-    BST<int> other(tree);
+    AVL<int> other(tree);
     other.insert(20);
 
     cout << "In-order Traversal (Should be 20, 30, 50, 70): \n";
@@ -75,14 +66,14 @@ void testCopyConstructor(){
     cout << "-----------------------------------------" << endl;
 }
 
-void testAssignOperator(){
+void testAssignOperator() {
     cout << "Test 4: Testing Assign Operator" << endl;
-    BST<int> tree;
+    AVL<int> tree;
     tree.insert(50);
     tree.insert(30);
     tree.insert(70);
 
-    BST<int> other;
+    AVL<int> other;
     other = tree;
     other.insert(20);
 
@@ -91,14 +82,14 @@ void testAssignOperator(){
     cout << "-----------------------------------------" << endl;
 }
 
-void testDestructor(){
-    cout << "Test 5: Testing Assign Operator" << endl;
-    BST<int> tree;
+void testDestructor() {
+    cout << "Test 5: Testing Destructor" << endl;
+    AVL<int> tree;
     tree.insert(50);
     tree.insert(30);
     tree.insert(70);
 
-    tree.~BST();
+    tree.~AVL();
     cout << "<<In-order Traversal should not print anything>>\n";
     cout << "Tree: ";
     tree.inOrder(outputFunction);
@@ -106,9 +97,9 @@ void testDestructor(){
     cout << "-----------------------------------------" << endl;
 }
 
-BST<int> testReturnByValue(){
+AVL<int> testReturnByValue() {
     cout << "Test 6: Testing Return By Value" << endl;
-    BST<int> tree;
+    AVL<int> tree;
     tree.insert(50);
     tree.insert(30);
     tree.insert(70);
@@ -118,7 +109,7 @@ BST<int> testReturnByValue(){
     return tree;
 }
 
-void testPassByReference(BST<int>& tree){
+void testPassByReference(AVL<int>& tree) {
     cout << "Test 7: Testing Pass By Reference" << endl;
     tree.insert(20);
 
@@ -127,14 +118,14 @@ void testPassByReference(BST<int>& tree){
     cout << "-----------------------------------------" << endl;
 }
 
-void testPassByConstReference(const BST<int>& tree){
+void testPassByConstReference(const AVL<int>& tree) {
     cout << "Test 8: Testing Pass By Const Reference" << endl;
-     result(true, tree.search(70), "8. Testing Pass By Const Reference");
+    result(true, tree.search(70), "8. Testing Pass By Const Reference");
     cout << "-----------------------------------------" << endl;
 }
 
-void testPassByValue(BST<int> tree){
-    cout << "Test 8: Testing Pass By Value" << endl;
+void testPassByValue(AVL<int> tree) {
+    cout << "Test 9: Testing Pass By Value" << endl;
     tree.insert(100);
 
     cout << "In-order Traversal (Should be 20, 30, 50, 70, 100): \n";
@@ -148,7 +139,7 @@ int main() {
     testCopyConstructor();
     testAssignOperator();
     testDestructor();
-    BST<int> tree = testReturnByValue();
+    AVL<int> tree = testReturnByValue();
     testPassByReference(tree);
     testPassByConstReference(tree);
     testPassByValue(tree);

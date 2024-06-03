@@ -1,7 +1,6 @@
 #include "../Data Processor/DataProcessor.h"
 #include "../Helper Functions/Validator.h"
 #include "../Operator/operator.h"
-#include "../Data Collectors/DataCollector.h"
 #include <iostream>
 #include <fstream>
 #include <sstream>
