@@ -1,0 +1,12 @@
+<map id="accumulateSolarRad" name="accumulateSolarRad">
+<area shape="rect" id="node1" title="Accumulates solar radiation data from weather records." alt="" coords="801,87,944,113"/>
+<area shape="rect" id="node2" href="$_menu_functions_8h.html#add2de9ea68056159710d684994f87e24" title="Handles the fourth case from the menu." alt="" coords="625,61,753,88"/>
+<area shape="rect" id="node9" href="$_menu_functions_8h.html#a406951e717f06b22ee289463f51ae02c" title="Handles the third case from the menu." alt="" coords="629,112,750,139"/>
+<area shape="rect" id="node3" href="$_menu_functions_8h.html#ac255327aabdea8f3331510cb82394a44" title="Processes the user&#39;s choice from the menu." alt="" coords="450,75,558,101"/>
+<area shape="rect" id="node8" href="$_test_menu_8cpp.html#a5cdc8bf7eb4319532cdf3aa40ef6a3e5" title=" " alt="" coords="228,5,383,32"/>
+<area shape="rect" id="node4" href="$_menu_functions_8h.html#aacbe1694510caf7651fea605959180c4" title="Displays the menu and processes user choices." alt="" coords="278,75,333,101"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="117,96,167,123"/>
+<area shape="rect" id="node6" href="$_test_menu_8cpp.html#aa5f9d8702556c317f863cc2b616c0135" title=" " alt="" coords="104,45,180,72"/>
+<area shape="rect" id="node7" href="$_test_menu_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,45,56,72"/>
+<area shape="rect" id="node10" href="$_test_menu_8cpp.html#ab4634b1f4a8b8d9fb71389c10870e458" title=" " alt="" coords="431,137,577,164"/>
+</map>

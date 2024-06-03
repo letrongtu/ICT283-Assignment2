@@ -9,5 +9,5 @@ var class_vector =
     [ "operator[]", "class_vector.html#a856bb42b8d9f42a5f6c1917c20872e34", null ],
     [ "operator[]", "class_vector.html#aa9985d953e9d6c22294d2e7f6519ac4e", null ],
     [ "Size", "class_vector.html#a6649abb641317b77f343b51e11fa6db7", null ],
-    [ "vec", "class_vector.html#af8db56611321a3a264d1f8a511073b11", null ]
+    [ "vec", "class_vector.html#a17a84f8b6e3ddb98be282192514eaf03", null ]
 ];

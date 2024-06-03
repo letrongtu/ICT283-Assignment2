@@ -8,5 +8,8 @@
 		<Project filename="Test Programs/TestVector/TestVector.cbp" />
 		<Project filename="Test Programs/TestAVL/TestAVL.cbp" />
 		<Project filename="Test Programs/TestDataProcessorFunctions/TestDataProcessorFunctions.cbp" />
+		<Project filename="Test Programs/TestValidateFunctions/TestValidateFunctions.cbp" />
+		<Project filename="Test Programs/TestHelperFunctions/TestHelperFunctions.cbp" />
+		<Project filename="Test Programs/TestMenu/TestMenu.cbp" />
 	</Workspace>
 </CodeBlocks_workspace_file>

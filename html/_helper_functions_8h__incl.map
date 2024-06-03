@@ -1,13 +1,15 @@
-<map id="HelperFunctions.h" name="HelperFunctions.h">
-<area shape="rect" id="node1" title=" " alt="" coords="170,5,297,32"/>
-<area shape="rect" id="node2" href="$_data_structure_8h.html" title=" " alt="" coords="177,80,290,107"/>
-<area shape="rect" id="node3" href="$_d_a_t_e_8_h.html" title=" " alt="" coords="5,155,64,181"/>
-<area shape="rect" id="node4" href="$_t_i_m_e_8_h.html" title=" " alt="" coords="88,155,147,181"/>
-<area shape="rect" id="node5" href="$_v_e_c_t_o_r_8_h.html" title=" " alt="" coords="240,229,307,256"/>
-<area shape="rect" id="node7" href="$_map_8h.html" title=" " alt="" coords="171,155,229,181"/>
-<area shape="rect" id="node9" href="$_b_s_t_8h.html" title=" " alt="" coords="304,155,363,181"/>
-<area shape="rect" id="node11" title=" " alt="" coords="387,155,442,181"/>
-<area shape="rect" id="node6" title=" " alt="" coords="245,304,301,331"/>
-<area shape="rect" id="node8" title=" " alt="" coords="169,229,215,256"/>
-<area shape="rect" id="node10" href="$_node_8h.html" title=" " alt="" coords="331,229,394,256"/>
+<map id="Helper Functions/HelperFunctions.h" name="Helper Functions/HelperFunctions.h">
+<area shape="rect" id="node1" title="Contains all functions that calculate the required metrics related to weather data." alt="" coords="291,5,521,32"/>
+<area shape="rect" id="node2" href="$datastructure_8h.html" title=" " alt="" coords="258,80,383,121"/>
+<area shape="rect" id="node12" href="$_v_e_c_t_o_r_8_h.html" title=" " alt="" coords="429,80,554,121"/>
+<area shape="rect" id="node3" href="$_map_8h.html" title=" " alt="" coords="86,169,145,196"/>
+<area shape="rect" id="node6" href="$_a_v_l_8_h.html" title=" " alt="" coords="175,169,235,196"/>
+<area shape="rect" id="node8" href="$_weather_record_8h.html" title=" " alt="" coords="259,169,382,196"/>
+<area shape="rect" id="node11" title=" " alt="" coords="407,169,461,196"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,244,52,271"/>
+<area shape="rect" id="node5" title=" " alt="" coords="76,244,155,271"/>
+<area shape="rect" id="node7" href="$_node_8h.html" title=" " alt="" coords="179,244,241,271"/>
+<area shape="rect" id="node9" href="$_d_a_t_e_8_h.html" title=" " alt="" coords="277,244,337,271"/>
+<area shape="rect" id="node10" href="$_t_i_m_e_8_h.html" title=" " alt="" coords="362,244,423,271"/>
+<area shape="rect" id="node13" title=" " alt="" coords="486,169,542,196"/>
 </map>

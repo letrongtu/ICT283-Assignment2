@@ -1,52 +1,52 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title=" " alt="" coords="5,535,56,561"/>
-<area shape="rect" id="node2" href="$_menu_functions_8cpp.html#aacbe1694510caf7651fea605959180c4" title="Contains all menu&#45;related functions including displaying the menu, handling choices,..." alt="" coords="146,651,201,677"/>
-<area shape="rect" id="node40" href="$_file_name_reader_8cpp.html#abb388dcb5bcf8927fbce050041896fcb" title="Contains all functions need to read the input file name." alt="" coords="104,417,243,444"/>
-<area shape="rect" id="node3" href="$_menu_functions_8cpp.html#ac255327aabdea8f3331510cb82394a44" title=" " alt="" coords="291,676,399,703"/>
-<area shape="rect" id="node38" href="$_helper_functions_8cpp.html#aaecae98220d32d4f42172d7d865d1ddd" title="Contains all functions that calculate the required thing related to weather data." alt="" coords="301,1015,388,1041"/>
-<area shape="rect" id="node39" href="$_menu_functions_8cpp.html#aba5bd9067aa6f261123165a337c7957d" title=" " alt="" coords="303,625,387,652"/>
-<area shape="rect" id="node4" href="$_menu_functions_8cpp.html#a37b8e11fe7642a1ec706a438d524d199" title=" " alt="" coords="457,651,575,677"/>
-<area shape="rect" id="node22" href="$_menu_functions_8cpp.html#add2de9ea68056159710d684994f87e24" title=" " alt="" coords="452,701,580,728"/>
-<area shape="rect" id="node31" href="$_menu_functions_8cpp.html#a1883d746b4d16c5a0e29c8daaf9c93cb" title=" " alt="" coords="447,541,585,568"/>
-<area shape="rect" id="node33" href="$_menu_functions_8cpp.html#a406951e717f06b22ee289463f51ae02c" title=" " alt="" coords="455,936,577,963"/>
-<area shape="rect" id="node5" href="$class_speed_collector.html#a5e3b5ad3482266b916360f74ab4a76f6" title=" " alt="" coords="646,811,831,853"/>
-<area shape="rect" id="node7" href="$class_map.html#a940dcce0b4490af7406db9fe95a7927f" title="Retrieves the value corresponding to a key." alt="" coords="705,309,772,336"/>
-<area shape="rect" id="node8" href="$class_speed_collector.html#ac433497a8661f928211ee2fbd3f26346" title=" " alt="" coords="665,877,812,904"/>
-<area shape="rect" id="node10" href="$class_map.html#a21817f63324636803318e47c2a88b02e" title="Checks if the map contains a key." alt="" coords="687,360,791,387"/>
-<area shape="rect" id="node11" href="$_menu_functions_8cpp.html#a44c57b1a7fea1601e8402a8200c1e555" title=" " alt="" coords="683,411,795,437"/>
-<area shape="rect" id="node16" href="$class_speed_collector.html#a6b37a0a3727fa908f751d2d342349b1a" title=" " alt="" coords="633,760,844,787"/>
-<area shape="rect" id="node17" href="$_helper_functions_8cpp.html#a346bb9af3ac12b57fd793d6a897c46f6" title=" " alt="" coords="697,1060,780,1087"/>
-<area shape="rect" id="node20" href="$_helper_functions_8cpp.html#a963a1de6c5f3d4fe5a052af2f83be316" title=" " alt="" coords="701,512,776,539"/>
-<area shape="rect" id="node6" href="$class_vector.html#a87f73b09903e16a1caaaae559a04036a" title="add the element at the end of the array" alt="" coords="937,755,1026,781"/>
-<area shape="rect" id="node9" href="$class_vector.html#a06640b5a57e692928364c727def3c5de" title="Function to delete all elements in the vector." alt="" coords="932,877,1031,904"/>
-<area shape="rect" id="node12" href="$_helper_functions_8cpp.html#a44468ca3edb66d1f67cfdca110afa5c7" title=" " alt="" coords="1119,385,1239,412"/>
-<area shape="rect" id="node13" href="$class_vector.html#a6649abb641317b77f343b51e11fa6db7" title="function to return the number of element stored in the array" alt="" coords="1287,436,1381,463"/>
-<area shape="rect" id="node14" href="$_helper_functions_8cpp.html#a7db2f6bf2a3667a2a875c0808dfe41ae" title=" " alt="" coords="892,284,1071,311"/>
-<area shape="rect" id="node15" href="$_output_functions_8cpp.html#a28e05cc5cad358a4e0de1c451be60386" title="Contains all needed output functions." alt="" coords="919,385,1044,412"/>
-<area shape="rect" id="node18" href="$_validator_8cpp.html#ac5bd0a571f7bd173f55c1dfc6fee07c8" title=" " alt="" coords="933,1009,1030,1036"/>
-<area shape="rect" id="node19" href="$_validator_8cpp.html#a23c4e1c0702aa77ed10a60a29acb5f09" title="Contains all functions that do the validations of the user input." alt="" coords="928,1060,1035,1087"/>
-<area shape="rect" id="node21" href="$_validator_8cpp.html#a61544b32391e0579f222c45b1a0af56a" title=" " alt="" coords="937,639,1025,665"/>
-<area shape="rect" id="node23" href="$class_temperature_collector.html#a07b9238d17f1964da90d63c7db68688c" title=" " alt="" coords="666,629,811,670"/>
-<area shape="rect" id="node24" href="$class_solar_rad_collector.html#a4a59667c9d105b18a16a33e6b0672914" title=" " alt="" coords="667,929,810,970"/>
-<area shape="rect" id="node25" href="$class_solar_rad_collector.html#a74c7b3aca5a41e8b1f61246a8638a7ff" title=" " alt="" coords="671,994,806,1035"/>
-<area shape="rect" id="node26" href="$class_temperature_collector.html#a8d95e2593fc0ed34e1ec05bed5f24389" title=" " alt="" coords="666,694,811,735"/>
-<area shape="rect" id="node27" href="$_menu_functions_8cpp.html#a6a33b59754eb697fee1b6b309005c22f" title=" " alt="" coords="677,461,800,488"/>
-<area shape="rect" id="node29" href="$class_solar_rad_collector.html#aff526fed05bef9a91be58080f7a5734f" title=" " alt="" coords="671,1111,806,1153"/>
-<area shape="rect" id="node30" href="$class_temperature_collector.html#ada927d97bf364b0bc462b50d7bafd034" title=" " alt="" coords="666,563,811,605"/>
-<area shape="rect" id="node28" href="$_helper_functions_8cpp.html#a72123685500842e3cd92ffa891109b86" title=" " alt="" coords="930,537,1033,564"/>
-<area shape="rect" id="node32" href="$_menu_functions_8cpp.html#a737f4db754e20737d01730595066e6cb" title=" " alt="" coords="672,208,805,235"/>
-<area shape="rect" id="node34" href="$class_map.html#a3f31e719d41dd3d8ecfad559339678f1" title="Returns an iterator to the beginning." alt="" coords="695,1228,782,1255"/>
-<area shape="rect" id="node35" href="$_helper_functions_8cpp.html#a2edf70cda092f7761323ec0cd986dc88" title=" " alt="" coords="900,1111,1063,1137"/>
-<area shape="rect" id="node36" href="$class_map.html#a07bccdb62ff24632be0e9ffdf64d63b7" title="Returns an iterator to the end." alt="" coords="701,1279,777,1305"/>
-<area shape="rect" id="node37" href="$_output_functions_8cpp.html#a242d9033ce722c5c49f45e06f40a5014" title=" " alt="" coords="665,1177,812,1204"/>
-<area shape="rect" id="node41" href="$_data_processor_8cpp.html#a3aa48e98a9a9a17cc54a71b708c2bb73" title="Contains all functions that read and store the read data from data file." alt="" coords="307,259,382,285"/>
-<area shape="rect" id="node42" href="$class_date.html#af2dcc6ce51dbb2bd798499a149bdffb7" title="Get the month." alt="" coords="459,461,573,488"/>
-<area shape="rect" id="node43" href="$_data_processor_8cpp.html#ab4581d7aa00f7725ca5fbe6e3c9c78b8" title=" " alt="" coords="483,208,549,235"/>
-<area shape="rect" id="node44" href="$class_date.html#ad79ce504482f317ddcfdc4ecad77671f" title="Get the year." alt="" coords="463,5,569,32"/>
-<area shape="rect" id="node45" href="$class_map.html#a225903c0291cf978e27be5a58f399a14" title="Inserts a key&#45;value pair into the map." alt="" coords="473,56,559,83"/>
-<area shape="rect" id="node46" href="$_data_processor_8cpp.html#a654cf13adaa6a67a76c17f5035f9d860" title=" " alt="" coords="475,107,557,133"/>
-<area shape="rect" id="node47" href="$_data_processor_8cpp.html#a5e308cfc5494209d39fb14a440d7484a" title=" " alt="" coords="461,411,571,437"/>
-<area shape="rect" id="node48" href="$_data_processor_8cpp.html#ab42b21c42fab65c4f2708c107babd11a" title=" " alt="" coords="472,157,560,184"/>
-<area shape="rect" id="node49" href="$_data_processor_8cpp.html#af0c8f5105b9ac3fe0f8744c7ba51de1f" title=" " alt="" coords="447,259,585,285"/>
-<area shape="rect" id="node50" href="$_data_processor_8cpp.html#a2d99b03343534baef0bb07effb8760cd" title=" " alt="" coords="676,157,801,184"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,541,56,567"/>
+<area shape="rect" id="node2" href="$_menu_functions_8cpp.html#aacbe1694510caf7651fea605959180c4" title="Displays the menu and processes user choices." alt="" coords="146,437,201,463"/>
+<area shape="rect" id="node40" href="$_file_name_reader_8cpp.html#afd4947a3303689855ee12d8c1924a4f8" title="Reads weather data from a file and stores it in the WeatherLog structure." alt="" coords="104,743,243,770"/>
+<area shape="rect" id="node3" href="$_menu_functions_8cpp.html#ac255327aabdea8f3331510cb82394a44" title="Processes the user&#39;s choice from the menu." alt="" coords="291,361,399,387"/>
+<area shape="rect" id="node38" href="$_helper_functions_8cpp.html#aaecae98220d32d4f42172d7d865d1ddd" title="Reads and returns the user&#39;s choice from the menu." alt="" coords="301,462,388,489"/>
+<area shape="rect" id="node39" href="$_menu_functions_8cpp.html#aba5bd9067aa6f261123165a337c7957d" title="Displays the menu options." alt="" coords="303,411,387,438"/>
+<area shape="rect" id="node4" href="$_menu_functions_8cpp.html#a37b8e11fe7642a1ec706a438d524d199" title="Handles the first case from the menu." alt="" coords="457,329,575,355"/>
+<area shape="rect" id="node24" href="$_menu_functions_8cpp.html#add2de9ea68056159710d684994f87e24" title="Handles the fourth case from the menu." alt="" coords="452,386,580,413"/>
+<area shape="rect" id="node30" href="$_menu_functions_8cpp.html#a1883d746b4d16c5a0e29c8daaf9c93cb" title="Handles the second case from the menu." alt="" coords="447,266,585,293"/>
+<area shape="rect" id="node33" href="$_menu_functions_8cpp.html#a406951e717f06b22ee289463f51ae02c" title="Handles the third case from the menu." alt="" coords="455,667,577,694"/>
+<area shape="rect" id="node5" href="$class_data_collector.html#adaa20c3dd27a5c3f27663aee1a2f9586" title="Accumulates weather data from a weather record." alt="" coords="633,591,836,618"/>
+<area shape="rect" id="node7" href="$_menu_functions_8cpp.html#af986638098590cc6664e431f0fed64ff" title="Accumulates wind speed data from weather records." alt="" coords="671,693,798,719"/>
+<area shape="rect" id="node9" href="$class_map.html#a940dcce0b4490af7406db9fe95a7927f" title="Retrieves the value corresponding to a key." alt="" coords="701,85,768,111"/>
+<area shape="rect" id="node10" href="$class_data_collector.html#a94d4dbad7f883044c964097748d4bb0f" title="Clears the weather data vector." alt="" coords="667,287,803,314"/>
+<area shape="rect" id="node12" href="$class_map.html#a21817f63324636803318e47c2a88b02e" title="Checks if the map contains a key." alt="" coords="683,135,787,162"/>
+<area shape="rect" id="node13" href="$_menu_functions_8cpp.html#a44c57b1a7fea1601e8402a8200c1e555" title="Outputs the wind speed data for a specific month and year." alt="" coords="907,186,1019,213"/>
+<area shape="rect" id="node18" href="$class_data_collector.html#ae26069a0ee1535f3a1b99ab3afb61231" title="Retrieves the weather data." alt="" coords="658,338,811,365"/>
+<area shape="rect" id="node19" href="$_helper_functions_8cpp.html#a346bb9af3ac12b57fd793d6a897c46f6" title="Reads and returns the user&#39;s input for the month." alt="" coords="693,490,776,517"/>
+<area shape="rect" id="node22" href="$_helper_functions_8cpp.html#a963a1de6c5f3d4fe5a052af2f83be316" title="Reads and returns the user&#39;s input for the year." alt="" coords="697,237,772,263"/>
+<area shape="rect" id="node6" href="$class_vector.html#a87f73b09903e16a1caaaae559a04036a" title="add the element at the end of the array" alt="" coords="919,642,1008,669"/>
+<area shape="rect" id="node8" href="$class_vector.html#a6649abb641317b77f343b51e11fa6db7" title="function to return the number of element stored in the array" alt="" coords="1515,465,1609,491"/>
+<area shape="rect" id="node11" href="$class_vector.html#a06640b5a57e692928364c727def3c5de" title="Function to delete all elements in the vector." alt="" coords="914,287,1013,314"/>
+<area shape="rect" id="node14" href="$_helper_functions_8cpp.html#a44468ca3edb66d1f67cfdca110afa5c7" title="Calculates and returns the average of the values in the array." alt="" coords="1332,389,1452,415"/>
+<area shape="rect" id="node15" href="$_helper_functions_8cpp.html#a7db2f6bf2a3667a2a875c0808dfe41ae" title="Calculates and returns the standard deviation of the values in the array." alt="" coords="1091,287,1269,314"/>
+<area shape="rect" id="node17" href="$_output_functions_8cpp.html#a28e05cc5cad358a4e0de1c451be60386" title="Outputs the average wind speed and standard deviation for a given month and year." alt="" coords="1117,237,1243,263"/>
+<area shape="rect" id="node16" href="$_helper_functions_8cpp.html#a9d5f7796334cb753305c810e4d5679f3" title="Calculates and returns the sum of squared differences from the mean." alt="" coords="1317,287,1467,314"/>
+<area shape="rect" id="node20" href="$_validator_8cpp.html#ac5bd0a571f7bd173f55c1dfc6fee07c8" title="Validates if the given month is valid." alt="" coords="915,389,1012,415"/>
+<area shape="rect" id="node21" href="$_validator_8cpp.html#a8abc8d32ee3eac481a888bca15aae270" title="Checks if the input string represents a valid positive number." alt="" coords="910,338,1017,365"/>
+<area shape="rect" id="node23" href="$_validator_8cpp.html#a61544b32391e0579f222c45b1a0af56a" title="Validates if the given year is valid." alt="" coords="919,237,1007,263"/>
+<area shape="rect" id="node25" href="$_menu_functions_8cpp.html#aaf2ea38b1647a246dd49c10754d1eb7f" title="Accumulates air temperature data from weather records." alt="" coords="666,642,803,669"/>
+<area shape="rect" id="node26" href="$_menu_functions_8cpp.html#a2f9e98d280b2aae5da8709092dd863cb" title="Accumulates solar radiation data from weather records." alt="" coords="663,743,806,770"/>
+<area shape="rect" id="node27" href="$_menu_functions_8cpp.html#a8d644809d7717137e40a2be761196d06" title="Outputs the weather data to a file for a specific month." alt="" coords="673,541,796,567"/>
+<area shape="rect" id="node28" href="$_helper_functions_8cpp.html#adf45bdc6425cc718344cedfed6365bec" title="Calculates and returns the total sum of the values in the array." alt="" coords="1341,541,1443,567"/>
+<area shape="rect" id="node29" href="$_menu_functions_8cpp.html#a45eea4e69e493cc98c63fff4700ff8b7" title="Outputs the average, standard deviation, and mean absolute deviation of a vector to a file." alt="" coords="884,439,1043,466"/>
+<area shape="rect" id="node31" href="$_menu_functions_8cpp.html#aa7a8c45983c2e3202886ac2116d5de8d" title="Outputs the temperature data for a specific month." alt="" coords="897,85,1030,111"/>
+<area shape="rect" id="node32" href="$_output_functions_8cpp.html#ac58382caeb19288bf8125dc801edbe0d" title="Outputs the average air temperature and standard deviation for a given month." alt="" coords="1127,85,1233,111"/>
+<area shape="rect" id="node34" href="$class_map.html#a3f31e719d41dd3d8ecfad559339678f1" title="Returns an iterator to the beginning." alt="" coords="691,895,778,922"/>
+<area shape="rect" id="node35" href="$_helper_functions_8cpp.html#a2edf70cda092f7761323ec0cd986dc88" title="Calculates and returns the correlation coefficient between two arrays." alt="" coords="1099,591,1261,618"/>
+<area shape="rect" id="node36" href="$class_map.html#a07bccdb62ff24632be0e9ffdf64d63b7" title="Returns an iterator to the end." alt="" coords="697,946,773,973"/>
+<area shape="rect" id="node37" href="$_output_functions_8cpp.html#a242d9033ce722c5c49f45e06f40a5014" title="Outputs the correlation coefficients of wind speed, air temperature, and solar radiation for a given ..." alt="" coords="661,845,808,871"/>
+<area shape="rect" id="node41" href="$dataprocessor_8cpp.html#aba10983b697e65438e53ca66a9459ac2" title="Reads weather data from a file and stores it in the WeatherLog." alt="" coords="307,845,382,871"/>
+<area shape="rect" id="node42" href="$class_date.html#af2dcc6ce51dbb2bd798499a149bdffb7" title="Get the month." alt="" coords="459,1022,573,1049"/>
+<area shape="rect" id="node43" href="$class_date.html#ad79ce504482f317ddcfdc4ecad77671f" title="Get the year." alt="" coords="463,819,569,846"/>
+<area shape="rect" id="node44" href="$class_map.html#a225903c0291cf978e27be5a58f399a14" title="Inserts a key&#45;value pair into the map." alt="" coords="691,997,778,1023"/>
+<area shape="rect" id="node45" href="$dataprocessor_8cpp.html#a619f7c3667f5e9c57259178c0bf17a11" title="Validates the headers of the weather data file." alt="" coords="461,165,571,191"/>
+<area shape="rect" id="node46" href="$dataprocessor_8cpp.html#acab6295a587ed8bd315fb0cb0e859167" title="Reads the header of the weather data file and fills the provided map with header names and their indi..." alt="" coords="472,921,560,947"/>
+<area shape="rect" id="node47" href="$dataprocessor_8cpp.html#a746f4310314b880c1443e868109a5105" title="Reads a weather record from a line and a header map." alt="" coords="447,971,585,998"/>
+<area shape="rect" id="node48" href="$dataprocessor_8cpp.html#a6303080316244e76a4dc1d407b0f16b5" title="Reads a date and time from a template string." alt="" coords="672,1047,797,1074"/>
+<area shape="rect" id="node49" href="$dataprocessor_8cpp.html#afdf156e8d6316a19a1f0374eb6bb31ac" title="Reads a date from a template string." alt="" coords="926,1022,1001,1049"/>
+<area shape="rect" id="node50" href="$dataprocessor_8cpp.html#ab736b8937fc7ab05ca65923faa7a2c2c" title="Reads a time from a template string." alt="" coords="926,1073,1001,1099"/>
 </map>

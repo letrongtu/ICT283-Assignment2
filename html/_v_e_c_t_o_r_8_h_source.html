@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Assignment 2: VECTOR.H Source File</title>
+<title>Assignment 2: Data Structures/VECTOR.H Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,44 +91,44 @@ $(document).ready(function(){initNavTree('_v_e_c_t_o_r_8_h_source.html',''); ini
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="_v_e_c_t_o_r_8_h.html#a736843cf23c0d4e809b81ad733196535">    8</a></span>&#160;<span class="keyword">using</span> <a class="code" href="_data_structure_8h.html#a736843cf23c0d4e809b81ad733196535">LongInt</a> = <span class="keywordtype">long</span> <span class="keywordtype">long</span> int;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * @class Vector</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * @brief Vector class representing a dynamic array.</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * @author Trong Tu Le</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * @version 1</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * @version 2</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * remove setElementAtIndex function</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * add operator to set the element at specified index</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * add 1 more Constructor</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * adjust the name of the variables of the class, and rename getSize() to size()</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * adjust ~Vector Destructor  (setting the capacity and size to 0)</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * add operator =</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * change int -&gt; LongInt (long long int) for a larger range</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * @version 3</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * add Clear function</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> * @version 4</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> * adjust the name of private variables of the class, and rename the size() function</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"> * @version 5</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> * fix the parameterized constructor to handle the case when cap is negative number</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"> * @version 6</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> * remove grow function, 2 constructors, and 2 members of the class</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"> * modify the class so it encapsulates std::vector</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"> * @version 7</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"> * add copy constructor</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"> * add assign operator</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="_v_e_c_t_o_r_8_h.html#a736843cf23c0d4e809b81ad733196535">    6</a></span>&#160;<span class="keyword">using</span> <a class="code" href="_v_e_c_t_o_r_8_h.html#a736843cf23c0d4e809b81ad733196535">LongInt</a> = <span class="keywordtype">long</span> <span class="keywordtype">long</span> int;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * @class Vector</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * @brief Vector class representing a dynamic array.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * @author Trong Tu Le</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * @version 1</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * @version 2</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * remove setElementAtIndex function</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * add operator to set the element at specified index</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * add 1 more Constructor</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * adjust the name of the variables of the class, and rename getSize() to size()</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * adjust ~Vector Destructor  (setting the capacity and size to 0)</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * add operator =</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * change int -&gt; LongInt (long long int) for a larger range</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> * @version 3</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * add Clear function</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * @version 4</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> * adjust the name of private variables of the class, and rename the size() function</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> * @version 5</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"> * fix the parameterized constructor to handle the case when cap is negative number</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> * @version 6</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> * remove grow function, 2 constructors, and 2 members of the class</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"> * modify the class so it encapsulates std::vector</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"> * @version 7</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"> * add copy constructor</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"> * add assign operator</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"> * @brief Template class representing a dynamic array.</span></div>
@@ -142,20 +142,20 @@ $(document).ready(function(){initNavTree('_v_e_c_t_o_r_8_h_source.html',''); ini
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">         * @brief Default Constructor</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">         *</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="class_vector.html">Vector</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="class_vector.html#a39d6069675db4ecfc1ab81d440da759a">Vector</a>();</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">        /**</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">         * @brief Copy Constructor</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">         *</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">         * @param other - The other Vector to copy from</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="class_vector.html">Vector</a>(<span class="keyword">const</span> <a class="code" href="class_vector.html">Vector&lt;T&gt;</a>&amp; other);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="class_vector.html#a39d6069675db4ecfc1ab81d440da759a">Vector</a>(<span class="keyword">const</span> <a class="code" href="class_vector.html">Vector&lt;T&gt;</a>&amp; other);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">        /**</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">         * @brief Destructor to release dynamically allocated memory.</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        ~<a class="code" href="class_vector.html">Vector</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <a class="code" href="class_vector.html#afd524fac19e6d3d69db5198ffe2952b0">~Vector</a>();</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">        /**</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">         * @brief Assignment operator</span></div>
@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('_v_e_c_t_o_r_8_h_source.html',''); ini
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">         * @param other - The other Vector to assign from</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">         * @return Reference to this Vector</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">         */</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="class_vector.html">Vector&lt;T&gt;</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="class_vector.html">Vector&lt;T&gt;</a>&amp; other);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="class_vector.html">Vector&lt;T&gt;</a>&amp; <a class="code" href="class_vector.html#ab592a44e241c3641bbdb0e19b450d73c">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_vector.html">Vector&lt;T&gt;</a>&amp; other);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">        /**</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">         * @brief add the element at the end of the array</span></div>
@@ -172,14 +172,14 @@ $(document).ready(function(){initNavTree('_v_e_c_t_o_r_8_h_source.html',''); ini
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">         *</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">         * @return void</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">        */</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordtype">void</span> add(<span class="keyword">const</span> T&amp; element);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_vector.html#a87f73b09903e16a1caaaae559a04036a">add</a>(<span class="keyword">const</span> T&amp; element);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">        /**</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">         * @brief function to return the number of element stored in the array</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">         *</span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">         * @return  the number of elements stored in the array</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">        */</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <a class="code" href="_data_structure_8h.html#a736843cf23c0d4e809b81ad733196535">LongInt</a> Size() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <a class="code" href="_v_e_c_t_o_r_8_h.html#a736843cf23c0d4e809b81ad733196535">LongInt</a> <a class="code" href="class_vector.html#a6649abb641317b77f343b51e11fa6db7">Size</a>() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">        /**</span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">         * @brief operator to access the element at the specified index.</span></div>
@@ -188,7 +188,7 @@ $(document).ready(function(){initNavTree('_v_e_c_t_o_r_8_h_source.html',''); ini
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">         *</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">         * @return the element at the specified index</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">        */</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keyword">const</span> T&amp; operator[](<a class="code" href="_data_structure_8h.html#a736843cf23c0d4e809b81ad733196535">LongInt</a> index) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keyword">const</span> T&amp; <a class="code" href="class_vector.html#aa9985d953e9d6c22294d2e7f6519ac4e">operator[]</a>(<a class="code" href="_v_e_c_t_o_r_8_h.html#a736843cf23c0d4e809b81ad733196535">LongInt</a> index) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">        /**</span></div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">         * @brief operator to set the element at the specified index</span></div>
@@ -197,17 +197,17 @@ $(document).ready(function(){initNavTree('_v_e_c_t_o_r_8_h_source.html',''); ini
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">         *</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">         * return the element at the specified index</span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">        */</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        T&amp; operator[](<a class="code" href="_data_structure_8h.html#a736843cf23c0d4e809b81ad733196535">LongInt</a> index);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        T&amp; <a class="code" href="class_vector.html#aa9985d953e9d6c22294d2e7f6519ac4e">operator[]</a>(<a class="code" href="_v_e_c_t_o_r_8_h.html#a736843cf23c0d4e809b81ad733196535">LongInt</a> index);</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">        /**</span></div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">         *  @brief Function to delete all elements in the vector</span></div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">         *</span></div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">         *  @return void</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">        */</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordtype">void</span> Clear();</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_vector.html#a06640b5a57e692928364c727def3c5de">Clear</a>();</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="class_vector.html#af8db56611321a3a264d1f8a511073b11">  122</a></span>&#160;        vector&lt;T&gt; <a class="code" href="class_vector.html#af8db56611321a3a264d1f8a511073b11">vec</a>; <span class="comment">/// vector</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="class_vector.html#a17a84f8b6e3ddb98be282192514eaf03">  122</a></span>&#160;        std::vector&lt;T&gt; <a class="code" href="class_vector.html#a17a84f8b6e3ddb98be282192514eaf03">vec</a>; <span class="comment">/// vector</span></div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment"></span>};</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
@@ -239,7 +239,7 @@ $(document).ready(function(){initNavTree('_v_e_c_t_o_r_8_h_source.html',''); ini
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
 <div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="class_vector.html#ab592a44e241c3641bbdb0e19b450d73c">  152</a></span>&#160;<a class="code" href="class_vector.html">Vector&lt;T&gt;</a>&amp; <a class="code" href="class_vector.html#ab592a44e241c3641bbdb0e19b450d73c">Vector&lt;T&gt;::operator=</a>(<span class="keyword">const</span> <a class="code" href="class_vector.html">Vector&lt;T&gt;</a>&amp; other) {</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;other) {</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        vec = other.<a class="code" href="class_vector.html#af8db56611321a3a264d1f8a511073b11">vec</a>;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        vec = other.<a class="code" href="class_vector.html#a17a84f8b6e3ddb98be282192514eaf03">vec</a>;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    }</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;}</div>
@@ -256,7 +256,7 @@ $(document).ready(function(){initNavTree('_v_e_c_t_o_r_8_h_source.html',''); ini
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment">// Getter for size</span></div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="class_vector.html#a6649abb641317b77f343b51e11fa6db7">  171</a></span>&#160;<a class="code" href="_data_structure_8h.html#a736843cf23c0d4e809b81ad733196535">LongInt</a> <a class="code" href="class_vector.html#a6649abb641317b77f343b51e11fa6db7">Vector&lt;T&gt;::Size</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="class_vector.html#a6649abb641317b77f343b51e11fa6db7">  171</a></span>&#160;<a class="code" href="_v_e_c_t_o_r_8_h.html#a736843cf23c0d4e809b81ad733196535">LongInt</a> <a class="code" href="class_vector.html#a6649abb641317b77f343b51e11fa6db7">Vector&lt;T&gt;::Size</a>()<span class="keyword"> const</span>{</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordflow">return</span> vec.size();</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;}</div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
@@ -264,7 +264,7 @@ $(document).ready(function(){initNavTree('_v_e_c_t_o_r_8_h_source.html',''); ini
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment">// Operator to access the element at specified index</span></div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="class_vector.html#aa9985d953e9d6c22294d2e7f6519ac4e">  179</a></span>&#160;<span class="keyword">const</span> T&amp; <a class="code" href="class_vector.html#aa9985d953e9d6c22294d2e7f6519ac4e">Vector&lt;T&gt;::operator[]</a>(<a class="code" href="_data_structure_8h.html#a736843cf23c0d4e809b81ad733196535">LongInt</a> index)<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00179"></a><span class="lineno"><a class="line" href="class_vector.html#aa9985d953e9d6c22294d2e7f6519ac4e">  179</a></span>&#160;<span class="keyword">const</span> T&amp; <a class="code" href="class_vector.html#aa9985d953e9d6c22294d2e7f6519ac4e">Vector&lt;T&gt;::operator[]</a>(<a class="code" href="_v_e_c_t_o_r_8_h.html#a736843cf23c0d4e809b81ad733196535">LongInt</a> index)<span class="keyword"> const</span>{</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordflow">return</span> vec[index];</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;}</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
@@ -272,7 +272,7 @@ $(document).ready(function(){initNavTree('_v_e_c_t_o_r_8_h_source.html',''); ini
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment">// Operator to set the element at the specified index</span></div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="class_vector.html#a856bb42b8d9f42a5f6c1917c20872e34">  187</a></span>&#160;T&amp; <a class="code" href="class_vector.html#aa9985d953e9d6c22294d2e7f6519ac4e">Vector&lt;T&gt;::operator[]</a>(<a class="code" href="_data_structure_8h.html#a736843cf23c0d4e809b81ad733196535">LongInt</a> index){</div>
+<div class="line"><a name="l00187"></a><span class="lineno"><a class="line" href="class_vector.html#a856bb42b8d9f42a5f6c1917c20872e34">  187</a></span>&#160;T&amp; <a class="code" href="class_vector.html#aa9985d953e9d6c22294d2e7f6519ac4e">Vector&lt;T&gt;::operator[]</a>(<a class="code" href="_v_e_c_t_o_r_8_h.html#a736843cf23c0d4e809b81ad733196535">LongInt</a> index){</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordflow">return</span> vec[index];</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;}</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
@@ -291,9 +291,9 @@ $(document).ready(function(){initNavTree('_v_e_c_t_o_r_8_h_source.html',''); ini
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_vector_html_a87f73b09903e16a1caaaae559a04036a"><div class="ttname"><a href="class_vector.html#a87f73b09903e16a1caaaae559a04036a">Vector::add</a></div><div class="ttdeci">void add(const T &amp;element)</div><div class="ttdoc">add the element at the end of the array</div><div class="ttdef"><b>Definition:</b> <a href="_v_e_c_t_o_r_8_h_source.html#l00163">VECTOR.H:163</a></div></div>
 <div class="ttc" id="aclass_vector_html_afd524fac19e6d3d69db5198ffe2952b0"><div class="ttname"><a href="class_vector.html#afd524fac19e6d3d69db5198ffe2952b0">Vector::~Vector</a></div><div class="ttdeci">~Vector()</div><div class="ttdoc">Destructor to release dynamically allocated memory.</div><div class="ttdef"><b>Definition:</b> <a href="_v_e_c_t_o_r_8_h_source.html#l00143">VECTOR.H:143</a></div></div>
-<div class="ttc" id="aclass_vector_html_af8db56611321a3a264d1f8a511073b11"><div class="ttname"><a href="class_vector.html#af8db56611321a3a264d1f8a511073b11">Vector::vec</a></div><div class="ttdeci">vector&lt; T &gt; vec</div><div class="ttdef"><b>Definition:</b> <a href="_v_e_c_t_o_r_8_h_source.html#l00122">VECTOR.H:122</a></div></div>
-<div class="ttc" id="a_data_structure_8h_html_a736843cf23c0d4e809b81ad733196535"><div class="ttname"><a href="_data_structure_8h.html#a736843cf23c0d4e809b81ad733196535">LongInt</a></div><div class="ttdeci">long long int LongInt</div><div class="ttdoc">Contains needed variables and data structures.</div><div class="ttdef"><b>Definition:</b> <a href="_data_structure_8h_source.html#l00022">DataStructure.h:22</a></div></div>
+<div class="ttc" id="aclass_vector_html_a17a84f8b6e3ddb98be282192514eaf03"><div class="ttname"><a href="class_vector.html#a17a84f8b6e3ddb98be282192514eaf03">Vector::vec</a></div><div class="ttdeci">std::vector&lt; T &gt; vec</div><div class="ttdef"><b>Definition:</b> <a href="_v_e_c_t_o_r_8_h_source.html#l00122">VECTOR.H:122</a></div></div>
 <div class="ttc" id="aclass_vector_html_aa9985d953e9d6c22294d2e7f6519ac4e"><div class="ttname"><a href="class_vector.html#aa9985d953e9d6c22294d2e7f6519ac4e">Vector::operator[]</a></div><div class="ttdeci">const T &amp; operator[](LongInt index) const</div><div class="ttdoc">operator to access the element at the specified index.</div><div class="ttdef"><b>Definition:</b> <a href="_v_e_c_t_o_r_8_h_source.html#l00179">VECTOR.H:179</a></div></div>
+<div class="ttc" id="a_v_e_c_t_o_r_8_h_html_a736843cf23c0d4e809b81ad733196535"><div class="ttname"><a href="_v_e_c_t_o_r_8_h.html#a736843cf23c0d4e809b81ad733196535">LongInt</a></div><div class="ttdeci">long long int LongInt</div><div class="ttdef"><b>Definition:</b> <a href="_v_e_c_t_o_r_8_h_source.html#l00006">VECTOR.H:6</a></div></div>
 <div class="ttc" id="aclass_vector_html_a06640b5a57e692928364c727def3c5de"><div class="ttname"><a href="class_vector.html#a06640b5a57e692928364c727def3c5de">Vector::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdoc">Function to delete all elements in the vector.</div><div class="ttdef"><b>Definition:</b> <a href="_v_e_c_t_o_r_8_h_source.html#l00195">VECTOR.H:195</a></div></div>
 <div class="ttc" id="aclass_vector_html_a6649abb641317b77f343b51e11fa6db7"><div class="ttname"><a href="class_vector.html#a6649abb641317b77f343b51e11fa6db7">Vector::Size</a></div><div class="ttdeci">LongInt Size() const</div><div class="ttdoc">function to return the number of element stored in the array</div><div class="ttdef"><b>Definition:</b> <a href="_v_e_c_t_o_r_8_h_source.html#l00171">VECTOR.H:171</a></div></div>
 <div class="ttc" id="aclass_vector_html"><div class="ttname"><a href="class_vector.html">Vector</a></div><div class="ttdoc">Template class representing a dynamic array.</div><div class="ttdef"><b>Definition:</b> <a href="_v_e_c_t_o_r_8_h_source.html#l00051">VECTOR.H:51</a></div></div>
@@ -302,7 +302,7 @@ $(document).ready(function(){initNavTree('_v_e_c_t_o_r_8_h_source.html',''); ini
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="_v_e_c_t_o_r_8_h.html">VECTOR.H</a></li>
+    <li class="navelem"><a class="el" href="dir_eba6c4f3d24434e9664df7bc9c250d72.html">Data Structures</a></li><li class="navelem"><a class="el" href="_v_e_c_t_o_r_8_h.html">VECTOR.H</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

@@ -1,4 +1,4 @@
 <map id="calculateAverage" name="calculateAverage">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,125,32"/>
+<area shape="rect" id="node1" title="Calculates and returns the average of the values in the array." alt="" coords="5,5,125,32"/>
 <area shape="rect" id="node2" href="$class_vector.html#a6649abb641317b77f343b51e11fa6db7" title="function to return the number of element stored in the array" alt="" coords="173,5,268,32"/>
 </map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Assignment 2: HelperFunctions.cpp Source File</title>
+<title>Assignment 2: Helper Functions/HelperFunctions.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,224 +91,225 @@ $(document).ready(function(){initNavTree('_helper_functions_8cpp_source.html',''
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Contains all functions that do the specified thing</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// Version 1 - Trong Tu Le</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_helper_functions_8h.html">HelperFunctions.h</a>&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_validator_8h.html">Validator.h</a>&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// Function to read the choice.</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="_helper_functions_8h.html#aaecae98220d32d4f42172d7d865d1ddd">   16</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="_helper_functions_8cpp.html#aaecae98220d32d4f42172d7d865d1ddd">readChoice</a>(){</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">string</span> choice = <span class="stringliteral">&quot; &quot;</span>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">bool</span> valid = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">while</span>(!valid){</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Enter your choice: &quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        cin &gt;&gt; choice;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        valid = <a class="code" href="_validator_8cpp.html#a23c4e1c0702aa77ed10a60a29acb5f09">isValidNumber</a>(choice);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">if</span>(!valid){</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;-------------------------------------------------------------------------------------------------------------------&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;!!!Please enter a positive integer!!!&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;-------------------------------------------------------------------------------------------------------------------&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        }</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;-------------------------------------------------------------------------------------------------------------------&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> stoi(choice);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">// Function to read the year.</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="_helper_functions_8h.html#a963a1de6c5f3d4fe5a052af2f83be316">   41</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="_helper_functions_8cpp.html#a963a1de6c5f3d4fe5a052af2f83be316">readYear</a>(){</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">string</span> year = <span class="stringliteral">&quot; &quot;</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">bool</span> valid = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">while</span>(!valid){</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Enter a year: &quot;</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        cin &gt;&gt; year;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        valid = <a class="code" href="_validator_8cpp.html#a23c4e1c0702aa77ed10a60a29acb5f09">isValidNumber</a>(year);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">if</span>(!valid){</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;-------------------------------------------------------------------------------------------------------------------&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;!!!Please enter a positive integer!!!&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;-------------------------------------------------------------------------------------------------------------------&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            valid = <a class="code" href="_validator_8cpp.html#a61544b32391e0579f222c45b1a0af56a">isValidYear</a>(stoi(year));</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">if</span>(!valid){</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;-------------------------------------------------------------------------------------------------------------------&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;!!!The year must be between 0 to 9999!!!&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;-------------------------------------------------------------------------------------------------------------------&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_helper_functions_8h.html">HelperFunctions.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_validator_8h.html">Validator.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Function to read the choice.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="_helper_functions_8h.html#aaecae98220d32d4f42172d7d865d1ddd">   17</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="_helper_functions_8cpp.html#aaecae98220d32d4f42172d7d865d1ddd">readChoice</a>(){</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    std::string choice = <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">bool</span> valid = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">while</span>(!valid){</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Enter your choice: &quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        std::cin &gt;&gt; choice;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        valid = <a class="code" href="_validator_8cpp.html#a8abc8d32ee3eac481a888bca15aae270">isValidNumber</a>(choice);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">if</span>(!valid){</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;-------------------------------------------------------------------------------------------------------------------&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;!!!Please enter a positive integer!!!&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;-------------------------------------------------------------------------------------------------------------------&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;-------------------------------------------------------------------------------------------------------------------&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">return</span> stoi(choice);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">// Function to read the year.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="_helper_functions_8h.html#a963a1de6c5f3d4fe5a052af2f83be316">   42</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="_helper_functions_8cpp.html#a963a1de6c5f3d4fe5a052af2f83be316">readYear</a>(){</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    std::string year = <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">bool</span> valid = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">while</span>(!valid){</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Enter a year: &quot;</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        std::cin &gt;&gt; year;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        valid = <a class="code" href="_validator_8cpp.html#a8abc8d32ee3eac481a888bca15aae270">isValidNumber</a>(year);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">if</span>(!valid){</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;-------------------------------------------------------------------------------------------------------------------&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;!!!Please enter a positive integer!!!&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;-------------------------------------------------------------------------------------------------------------------&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            valid = <a class="code" href="_validator_8cpp.html#a61544b32391e0579f222c45b1a0af56a">isValidYear</a>(stoi(year));</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">if</span>(!valid){</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;-------------------------------------------------------------------------------------------------------------------&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;!!!The year must be between 0 to 9999!!!&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;-------------------------------------------------------------------------------------------------------------------&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span> stoi(year);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">// Function to read the month.</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="_helper_functions_8h.html#a346bb9af3ac12b57fd793d6a897c46f6">   73</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="_helper_functions_8cpp.html#a346bb9af3ac12b57fd793d6a897c46f6">readMonth</a>(){</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">string</span> month = <span class="stringliteral">&quot; &quot;</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">bool</span> valid = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">while</span>(!valid){</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Enter a month: &quot;</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        cin &gt;&gt; month;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        valid = <a class="code" href="_validator_8cpp.html#a23c4e1c0702aa77ed10a60a29acb5f09">isValidNumber</a>(month);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">if</span>(!valid){</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;-------------------------------------------------------------------------------------------------------------------&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;!!!Please enter a positive integer!!!&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;-------------------------------------------------------------------------------------------------------------------&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            valid = <a class="code" href="_validator_8cpp.html#ac5bd0a571f7bd173f55c1dfc6fee07c8">isValidMonth</a>(stoi(month));</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordflow">if</span>(!valid){</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;-------------------------------------------------------------------------------------------------------------------&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;!!!The month must be between 1 to 12!!!&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;-------------------------------------------------------------------------------------------------------------------&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            }</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">return</span> stoi(month);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">// Function to calculate the average of an array</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="_helper_functions_8h.html#a44468ca3edb66d1f67cfdca110afa5c7">  106</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="_helper_functions_8cpp.html#a44468ca3edb66d1f67cfdca110afa5c7">calculateAverage</a>(<span class="keyword">const</span> <a class="code" href="class_vector.html">Vector&lt;double&gt;</a>&amp; array) {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">double</span> sum = 0;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; array.<a class="code" href="class_vector.html#a6649abb641317b77f343b51e11fa6db7">Size</a>(); i++) {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        sum += array[i];</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    }</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">if</span>(array.<a class="code" href="class_vector.html#a6649abb641317b77f343b51e11fa6db7">Size</a>() == 0){</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">else</span>{</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">return</span> sum / array.<a class="code" href="class_vector.html#a6649abb641317b77f343b51e11fa6db7">Size</a>();</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">// Function to calculate the standard deviation of an array</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="_helper_functions_8h.html#a7db2f6bf2a3667a2a875c0808dfe41ae">  123</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="_helper_functions_8cpp.html#a7db2f6bf2a3667a2a875c0808dfe41ae">calculateStandardDeviation</a>(<span class="keyword">const</span> <a class="code" href="class_vector.html">Vector&lt;double&gt;</a>&amp; array) {</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">double</span> mean = <a class="code" href="_helper_functions_8cpp.html#a44468ca3edb66d1f67cfdca110afa5c7">calculateAverage</a>(array);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">double</span> sum = <a class="code" href="_helper_functions_8cpp.html#a9d5f7796334cb753305c810e4d5679f3">calculateSumSquared</a>(array, mean);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">if</span>(array.<a class="code" href="class_vector.html#a6649abb641317b77f343b51e11fa6db7">Size</a>() == 0){</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    }</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordflow">else</span>{</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordflow">return</span> sqrt(sum / array.<a class="code" href="class_vector.html#a6649abb641317b77f343b51e11fa6db7">Size</a>());</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="comment">// Function to calculate the sum of squared differences from the mean speed.</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="_helper_functions_8h.html#a9d5f7796334cb753305c810e4d5679f3">  138</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="_helper_functions_8cpp.html#a9d5f7796334cb753305c810e4d5679f3">calculateSumSquared</a>(<span class="keyword">const</span> <a class="code" href="class_vector.html">Vector&lt;double&gt;</a>&amp; array, <span class="keywordtype">double</span> mean){</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordtype">double</span> sum = 0;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="keywordflow">for</span>(<a class="code" href="_data_structure_8h.html#a736843cf23c0d4e809b81ad733196535">LongInt</a> i = 0; i &lt; array.<a class="code" href="class_vector.html#a6649abb641317b77f343b51e11fa6db7">Size</a>(); i++){</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        sum += (array[i] - mean) * (array[i] - mean);</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    }</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordflow">return</span> sum;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;}</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment">// Function to calculate the sum of all elements.</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno"><a class="line" href="_helper_functions_8h.html#adf45bdc6425cc718344cedfed6365bec">  151</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="_helper_functions_8cpp.html#adf45bdc6425cc718344cedfed6365bec">calculateTotal</a>(<span class="keyword">const</span> <a class="code" href="class_vector.html">Vector&lt;double&gt;</a>&amp; array){</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordtype">double</span> sum = 0;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordflow">for</span>(<a class="code" href="_data_structure_8h.html#a736843cf23c0d4e809b81ad733196535">LongInt</a> i = 0; i &lt; array.<a class="code" href="class_vector.html#a6649abb641317b77f343b51e11fa6db7">Size</a>(); i++){</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        sum += array[i];</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    }</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordflow">return</span> sum;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;}</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="comment">// Function to calculate the correlation coefficient</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno"><a class="line" href="_helper_functions_8h.html#a2edf70cda092f7761323ec0cd986dc88">  164</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="_helper_functions_8cpp.html#a2edf70cda092f7761323ec0cd986dc88">calculateCorrelationCoef</a>(<span class="keyword">const</span> <a class="code" href="class_vector.html">Vector&lt;double&gt;</a>&amp; array1, <span class="keyword">const</span> <a class="code" href="class_vector.html">Vector&lt;double&gt;</a>&amp; array2){</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordflow">if</span>(array1.<a class="code" href="class_vector.html#a6649abb641317b77f343b51e11fa6db7">Size</a>() != array2.<a class="code" href="class_vector.html#a6649abb641317b77f343b51e11fa6db7">Size</a>()){</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    }</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordtype">double</span> array1Avg = <a class="code" href="_helper_functions_8cpp.html#a44468ca3edb66d1f67cfdca110afa5c7">calculateAverage</a>(array1);</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordtype">double</span> array2Avg = <a class="code" href="_helper_functions_8cpp.html#a44468ca3edb66d1f67cfdca110afa5c7">calculateAverage</a>(array2);</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordtype">double</span> numerator = 0;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordtype">double</span> sumX = 0;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordtype">double</span> sumY = 0;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; array1.<a class="code" href="class_vector.html#a6649abb641317b77f343b51e11fa6db7">Size</a>(); i++){</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        numerator += (array1[i] - array1Avg) * (array2[i] - array2Avg);</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        sumX += (array1[i] - array1Avg) * (array1[i] - array1Avg);</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        sumY += (array2[i] - array2Avg) * (array2[i] - array2Avg);</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    }</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordtype">double</span> denominator = sqrt(sumX * sumY);</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160; </div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordflow">return</span> numerator/denominator;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;}</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160; </div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="comment">// Function to calculate the mean absolute deviation</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno"><a class="line" href="_helper_functions_8h.html#a72123685500842e3cd92ffa891109b86">  189</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="_helper_functions_8cpp.html#a72123685500842e3cd92ffa891109b86">calculateMAD</a>(<span class="keyword">const</span> <a class="code" href="class_vector.html">Vector&lt;double&gt;</a>&amp;array){</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordtype">double</span> avg = <a class="code" href="_helper_functions_8cpp.html#a44468ca3edb66d1f67cfdca110afa5c7">calculateAverage</a>(array);</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordtype">double</span> sum = 0;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; array.<a class="code" href="class_vector.html#a6649abb641317b77f343b51e11fa6db7">Size</a>(); i++){</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        sum += fabs(array[i] - avg);</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    }</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordflow">return</span> sum/array.<a class="code" href="class_vector.html#a6649abb641317b77f343b51e11fa6db7">Size</a>();</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;}</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">return</span> stoi(year);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">// Function to read the month.</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="_helper_functions_8h.html#a346bb9af3ac12b57fd793d6a897c46f6">   74</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="_helper_functions_8cpp.html#a346bb9af3ac12b57fd793d6a897c46f6">readMonth</a>(){</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    std::string month = <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">bool</span> valid = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">while</span>(!valid){</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Enter a month: &quot;</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        std::cin &gt;&gt; month;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        valid = <a class="code" href="_validator_8cpp.html#a8abc8d32ee3eac481a888bca15aae270">isValidNumber</a>(month);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">if</span>(!valid){</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;-------------------------------------------------------------------------------------------------------------------&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;!!!Please enter a positive integer!!!&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;-------------------------------------------------------------------------------------------------------------------&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            valid = <a class="code" href="_validator_8cpp.html#ac5bd0a571f7bd173f55c1dfc6fee07c8">isValidMonth</a>(stoi(month));</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="keywordflow">if</span>(!valid){</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;-------------------------------------------------------------------------------------------------------------------&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;!!!The month must be between 1 to 12!!!&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;-------------------------------------------------------------------------------------------------------------------&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">return</span> stoi(month);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">// Function to calculate the average of an array</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="_helper_functions_8h.html#a44468ca3edb66d1f67cfdca110afa5c7">  107</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="_helper_functions_8cpp.html#a44468ca3edb66d1f67cfdca110afa5c7">calculateAverage</a>(<span class="keyword">const</span> <a class="code" href="class_vector.html">Vector&lt;double&gt;</a>&amp; array) {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">double</span> sum = 0;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; array.<a class="code" href="class_vector.html#a6649abb641317b77f343b51e11fa6db7">Size</a>(); i++) {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        sum += array[i];</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">if</span>(array.<a class="code" href="class_vector.html#a6649abb641317b77f343b51e11fa6db7">Size</a>() == 0){</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">return</span> sum / array.<a class="code" href="class_vector.html#a6649abb641317b77f343b51e11fa6db7">Size</a>();</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment">// Function to calculate the standard deviation of an array</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="_helper_functions_8h.html#a7db2f6bf2a3667a2a875c0808dfe41ae">  124</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="_helper_functions_8cpp.html#a7db2f6bf2a3667a2a875c0808dfe41ae">calculateStandardDeviation</a>(<span class="keyword">const</span> <a class="code" href="class_vector.html">Vector&lt;double&gt;</a>&amp; array) {</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">double</span> mean = <a class="code" href="_helper_functions_8cpp.html#a44468ca3edb66d1f67cfdca110afa5c7">calculateAverage</a>(array);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">double</span> sum = <a class="code" href="_helper_functions_8cpp.html#a9d5f7796334cb753305c810e4d5679f3">calculateSumSquared</a>(array, mean);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">if</span>(array.<a class="code" href="class_vector.html#a6649abb641317b77f343b51e11fa6db7">Size</a>() == 0){</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    }</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">return</span> sqrt(sum / array.<a class="code" href="class_vector.html#a6649abb641317b77f343b51e11fa6db7">Size</a>());</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="comment">// Function to calculate the sum of squared differences from the mean speed.</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="line" href="_helper_functions_8h.html#a9d5f7796334cb753305c810e4d5679f3">  139</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="_helper_functions_8cpp.html#a9d5f7796334cb753305c810e4d5679f3">calculateSumSquared</a>(<span class="keyword">const</span> <a class="code" href="class_vector.html">Vector&lt;double&gt;</a>&amp; array, <span class="keywordtype">double</span> mean){</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordtype">double</span> sum = 0;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordflow">for</span>(<a class="code" href="_v_e_c_t_o_r_8_h.html#a736843cf23c0d4e809b81ad733196535">LongInt</a> i = 0; i &lt; array.<a class="code" href="class_vector.html#a6649abb641317b77f343b51e11fa6db7">Size</a>(); i++){</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        sum += (array[i] - mean) * (array[i] - mean);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    }</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordflow">return</span> sum;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;}</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment">// Function to calculate the sum of all elements.</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno"><a class="line" href="_helper_functions_8h.html#adf45bdc6425cc718344cedfed6365bec">  152</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="_helper_functions_8cpp.html#adf45bdc6425cc718344cedfed6365bec">calculateTotal</a>(<span class="keyword">const</span> <a class="code" href="class_vector.html">Vector&lt;double&gt;</a>&amp; array){</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordtype">double</span> sum = 0;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordflow">for</span>(<a class="code" href="_v_e_c_t_o_r_8_h.html#a736843cf23c0d4e809b81ad733196535">LongInt</a> i = 0; i &lt; array.<a class="code" href="class_vector.html#a6649abb641317b77f343b51e11fa6db7">Size</a>(); i++){</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        sum += array[i];</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">return</span> sum;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;}</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment">// Function to calculate the correlation coefficient</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="_helper_functions_8h.html#a2edf70cda092f7761323ec0cd986dc88">  165</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="_helper_functions_8cpp.html#a2edf70cda092f7761323ec0cd986dc88">calculateCorrelationCoef</a>(<span class="keyword">const</span> <a class="code" href="class_vector.html">Vector&lt;double&gt;</a>&amp; array1, <span class="keyword">const</span> <a class="code" href="class_vector.html">Vector&lt;double&gt;</a>&amp; array2){</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordflow">if</span>(array1.<a class="code" href="class_vector.html#a6649abb641317b77f343b51e11fa6db7">Size</a>() != array2.<a class="code" href="class_vector.html#a6649abb641317b77f343b51e11fa6db7">Size</a>()){</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    }</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordtype">double</span> array1Avg = <a class="code" href="_helper_functions_8cpp.html#a44468ca3edb66d1f67cfdca110afa5c7">calculateAverage</a>(array1);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordtype">double</span> array2Avg = <a class="code" href="_helper_functions_8cpp.html#a44468ca3edb66d1f67cfdca110afa5c7">calculateAverage</a>(array2);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordtype">double</span> numerator = 0;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordtype">double</span> sumX = 0;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordtype">double</span> sumY = 0;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; array1.<a class="code" href="class_vector.html#a6649abb641317b77f343b51e11fa6db7">Size</a>(); i++){</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        numerator += (array1[i] - array1Avg) * (array2[i] - array2Avg);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        sumX += (array1[i] - array1Avg) * (array1[i] - array1Avg);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        sumY += (array2[i] - array2Avg) * (array2[i] - array2Avg);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    }</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keywordtype">double</span> denominator = sqrt(sumX * sumY);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordflow">return</span> numerator/denominator;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;}</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="comment">// Function to calculate the mean absolute deviation</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno"><a class="line" href="_helper_functions_8h.html#a72123685500842e3cd92ffa891109b86">  190</a></span>&#160;<span class="keywordtype">double</span> <a class="code" href="_helper_functions_8cpp.html#a72123685500842e3cd92ffa891109b86">calculateMAD</a>(<span class="keyword">const</span> <a class="code" href="class_vector.html">Vector&lt;double&gt;</a>&amp;array){</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordtype">double</span> avg = <a class="code" href="_helper_functions_8cpp.html#a44468ca3edb66d1f67cfdca110afa5c7">calculateAverage</a>(array);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordtype">double</span> sum = 0;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; array.<a class="code" href="class_vector.html#a6649abb641317b77f343b51e11fa6db7">Size</a>(); i++){</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        sum += fabs(array[i] - avg);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    }</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordflow">return</span> sum/array.<a class="code" href="class_vector.html#a6649abb641317b77f343b51e11fa6db7">Size</a>();</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;}</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="a_helper_functions_8cpp_html_a7db2f6bf2a3667a2a875c0808dfe41ae"><div class="ttname"><a href="_helper_functions_8cpp.html#a7db2f6bf2a3667a2a875c0808dfe41ae">calculateStandardDeviation</a></div><div class="ttdeci">double calculateStandardDeviation(const Vector&lt; double &gt; &amp;array)</div><div class="ttdef"><b>Definition:</b> <a href="_helper_functions_8cpp_source.html#l00123">HelperFunctions.cpp:123</a></div></div>
-<div class="ttc" id="a_helper_functions_8cpp_html_a963a1de6c5f3d4fe5a052af2f83be316"><div class="ttname"><a href="_helper_functions_8cpp.html#a963a1de6c5f3d4fe5a052af2f83be316">readYear</a></div><div class="ttdeci">int readYear()</div><div class="ttdef"><b>Definition:</b> <a href="_helper_functions_8cpp_source.html#l00041">HelperFunctions.cpp:41</a></div></div>
-<div class="ttc" id="a_validator_8cpp_html_a61544b32391e0579f222c45b1a0af56a"><div class="ttname"><a href="_validator_8cpp.html#a61544b32391e0579f222c45b1a0af56a">isValidYear</a></div><div class="ttdeci">bool isValidYear(int year)</div><div class="ttdef"><b>Definition:</b> <a href="_validator_8cpp_source.html#l00038">Validator.cpp:38</a></div></div>
-<div class="ttc" id="a_data_structure_8h_html_a736843cf23c0d4e809b81ad733196535"><div class="ttname"><a href="_data_structure_8h.html#a736843cf23c0d4e809b81ad733196535">LongInt</a></div><div class="ttdeci">long long int LongInt</div><div class="ttdoc">Contains needed variables and data structures.</div><div class="ttdef"><b>Definition:</b> <a href="_data_structure_8h_source.html#l00022">DataStructure.h:22</a></div></div>
-<div class="ttc" id="a_helper_functions_8cpp_html_a72123685500842e3cd92ffa891109b86"><div class="ttname"><a href="_helper_functions_8cpp.html#a72123685500842e3cd92ffa891109b86">calculateMAD</a></div><div class="ttdeci">double calculateMAD(const Vector&lt; double &gt; &amp;array)</div><div class="ttdef"><b>Definition:</b> <a href="_helper_functions_8cpp_source.html#l00189">HelperFunctions.cpp:189</a></div></div>
-<div class="ttc" id="a_validator_8cpp_html_ac5bd0a571f7bd173f55c1dfc6fee07c8"><div class="ttname"><a href="_validator_8cpp.html#ac5bd0a571f7bd173f55c1dfc6fee07c8">isValidMonth</a></div><div class="ttdeci">bool isValidMonth(int month)</div><div class="ttdef"><b>Definition:</b> <a href="_validator_8cpp_source.html#l00045">Validator.cpp:45</a></div></div>
-<div class="ttc" id="a_helper_functions_8h_html"><div class="ttname"><a href="_helper_functions_8h.html">HelperFunctions.h</a></div></div>
-<div class="ttc" id="a_validator_8cpp_html_a23c4e1c0702aa77ed10a60a29acb5f09"><div class="ttname"><a href="_validator_8cpp.html#a23c4e1c0702aa77ed10a60a29acb5f09">isValidNumber</a></div><div class="ttdeci">bool isValidNumber(const string &amp;string)</div><div class="ttdoc">Contains all functions that do the validations of the user input.</div><div class="ttdef"><b>Definition:</b> <a href="_validator_8cpp_source.html#l00013">Validator.cpp:13</a></div></div>
-<div class="ttc" id="a_helper_functions_8cpp_html_a346bb9af3ac12b57fd793d6a897c46f6"><div class="ttname"><a href="_helper_functions_8cpp.html#a346bb9af3ac12b57fd793d6a897c46f6">readMonth</a></div><div class="ttdeci">int readMonth()</div><div class="ttdef"><b>Definition:</b> <a href="_helper_functions_8cpp_source.html#l00073">HelperFunctions.cpp:73</a></div></div>
-<div class="ttc" id="a_helper_functions_8cpp_html_a44468ca3edb66d1f67cfdca110afa5c7"><div class="ttname"><a href="_helper_functions_8cpp.html#a44468ca3edb66d1f67cfdca110afa5c7">calculateAverage</a></div><div class="ttdeci">double calculateAverage(const Vector&lt; double &gt; &amp;array)</div><div class="ttdef"><b>Definition:</b> <a href="_helper_functions_8cpp_source.html#l00106">HelperFunctions.cpp:106</a></div></div>
+<div class="ttc" id="a_helper_functions_8cpp_html_a7db2f6bf2a3667a2a875c0808dfe41ae"><div class="ttname"><a href="_helper_functions_8cpp.html#a7db2f6bf2a3667a2a875c0808dfe41ae">calculateStandardDeviation</a></div><div class="ttdeci">double calculateStandardDeviation(const Vector&lt; double &gt; &amp;array)</div><div class="ttdoc">Calculates and returns the standard deviation of the values in the array.</div><div class="ttdef"><b>Definition:</b> <a href="_helper_functions_8cpp_source.html#l00124">HelperFunctions.cpp:124</a></div></div>
+<div class="ttc" id="a_helper_functions_8cpp_html_a963a1de6c5f3d4fe5a052af2f83be316"><div class="ttname"><a href="_helper_functions_8cpp.html#a963a1de6c5f3d4fe5a052af2f83be316">readYear</a></div><div class="ttdeci">int readYear()</div><div class="ttdoc">Reads and returns the user's input for the year.</div><div class="ttdef"><b>Definition:</b> <a href="_helper_functions_8cpp_source.html#l00042">HelperFunctions.cpp:42</a></div></div>
+<div class="ttc" id="a_validator_8cpp_html_a61544b32391e0579f222c45b1a0af56a"><div class="ttname"><a href="_validator_8cpp.html#a61544b32391e0579f222c45b1a0af56a">isValidYear</a></div><div class="ttdeci">bool isValidYear(int year)</div><div class="ttdoc">Validates if the given year is valid.</div><div class="ttdef"><b>Definition:</b> <a href="_validator_8cpp_source.html#l00043">Validator.cpp:43</a></div></div>
+<div class="ttc" id="a_v_e_c_t_o_r_8_h_html_a736843cf23c0d4e809b81ad733196535"><div class="ttname"><a href="_v_e_c_t_o_r_8_h.html#a736843cf23c0d4e809b81ad733196535">LongInt</a></div><div class="ttdeci">long long int LongInt</div><div class="ttdef"><b>Definition:</b> <a href="_v_e_c_t_o_r_8_h_source.html#l00006">VECTOR.H:6</a></div></div>
+<div class="ttc" id="a_helper_functions_8cpp_html_a72123685500842e3cd92ffa891109b86"><div class="ttname"><a href="_helper_functions_8cpp.html#a72123685500842e3cd92ffa891109b86">calculateMAD</a></div><div class="ttdeci">double calculateMAD(const Vector&lt; double &gt; &amp;array)</div><div class="ttdoc">Calculates and returns the Mean Absolute Deviation (MAD) of the values in the array.</div><div class="ttdef"><b>Definition:</b> <a href="_helper_functions_8cpp_source.html#l00190">HelperFunctions.cpp:190</a></div></div>
+<div class="ttc" id="a_validator_8cpp_html_ac5bd0a571f7bd173f55c1dfc6fee07c8"><div class="ttname"><a href="_validator_8cpp.html#ac5bd0a571f7bd173f55c1dfc6fee07c8">isValidMonth</a></div><div class="ttdeci">bool isValidMonth(int month)</div><div class="ttdoc">Validates if the given month is valid.</div><div class="ttdef"><b>Definition:</b> <a href="_validator_8cpp_source.html#l00054">Validator.cpp:54</a></div></div>
+<div class="ttc" id="a_helper_functions_8h_html"><div class="ttname"><a href="_helper_functions_8h.html">HelperFunctions.h</a></div><div class="ttdoc">Contains all functions that calculate the required metrics related to weather data.</div></div>
+<div class="ttc" id="a_helper_functions_8cpp_html_a346bb9af3ac12b57fd793d6a897c46f6"><div class="ttname"><a href="_helper_functions_8cpp.html#a346bb9af3ac12b57fd793d6a897c46f6">readMonth</a></div><div class="ttdeci">int readMonth()</div><div class="ttdoc">Reads and returns the user's input for the month.</div><div class="ttdef"><b>Definition:</b> <a href="_helper_functions_8cpp_source.html#l00074">HelperFunctions.cpp:74</a></div></div>
+<div class="ttc" id="a_helper_functions_8cpp_html_a44468ca3edb66d1f67cfdca110afa5c7"><div class="ttname"><a href="_helper_functions_8cpp.html#a44468ca3edb66d1f67cfdca110afa5c7">calculateAverage</a></div><div class="ttdeci">double calculateAverage(const Vector&lt; double &gt; &amp;array)</div><div class="ttdoc">Calculates and returns the average of the values in the array.</div><div class="ttdef"><b>Definition:</b> <a href="_helper_functions_8cpp_source.html#l00107">HelperFunctions.cpp:107</a></div></div>
 <div class="ttc" id="aclass_vector_html_a6649abb641317b77f343b51e11fa6db7"><div class="ttname"><a href="class_vector.html#a6649abb641317b77f343b51e11fa6db7">Vector::Size</a></div><div class="ttdeci">LongInt Size() const</div><div class="ttdoc">function to return the number of element stored in the array</div><div class="ttdef"><b>Definition:</b> <a href="_v_e_c_t_o_r_8_h_source.html#l00171">VECTOR.H:171</a></div></div>
-<div class="ttc" id="a_validator_8h_html"><div class="ttname"><a href="_validator_8h.html">Validator.h</a></div></div>
-<div class="ttc" id="a_helper_functions_8cpp_html_aaecae98220d32d4f42172d7d865d1ddd"><div class="ttname"><a href="_helper_functions_8cpp.html#aaecae98220d32d4f42172d7d865d1ddd">readChoice</a></div><div class="ttdeci">int readChoice()</div><div class="ttdoc">Contains all functions that calculate the required thing related to weather data.</div><div class="ttdef"><b>Definition:</b> <a href="_helper_functions_8cpp_source.html#l00016">HelperFunctions.cpp:16</a></div></div>
-<div class="ttc" id="aclass_vector_html"><div class="ttname"><a href="class_vector.html">Vector&lt; double &gt;</a></div></div>
-<div class="ttc" id="a_helper_functions_8cpp_html_a2edf70cda092f7761323ec0cd986dc88"><div class="ttname"><a href="_helper_functions_8cpp.html#a2edf70cda092f7761323ec0cd986dc88">calculateCorrelationCoef</a></div><div class="ttdeci">double calculateCorrelationCoef(const Vector&lt; double &gt; &amp;array1, const Vector&lt; double &gt; &amp;array2)</div><div class="ttdef"><b>Definition:</b> <a href="_helper_functions_8cpp_source.html#l00164">HelperFunctions.cpp:164</a></div></div>
-<div class="ttc" id="a_helper_functions_8cpp_html_adf45bdc6425cc718344cedfed6365bec"><div class="ttname"><a href="_helper_functions_8cpp.html#adf45bdc6425cc718344cedfed6365bec">calculateTotal</a></div><div class="ttdeci">double calculateTotal(const Vector&lt; double &gt; &amp;array)</div><div class="ttdef"><b>Definition:</b> <a href="_helper_functions_8cpp_source.html#l00151">HelperFunctions.cpp:151</a></div></div>
-<div class="ttc" id="a_helper_functions_8cpp_html_a9d5f7796334cb753305c810e4d5679f3"><div class="ttname"><a href="_helper_functions_8cpp.html#a9d5f7796334cb753305c810e4d5679f3">calculateSumSquared</a></div><div class="ttdeci">double calculateSumSquared(const Vector&lt; double &gt; &amp;array, double mean)</div><div class="ttdef"><b>Definition:</b> <a href="_helper_functions_8cpp_source.html#l00138">HelperFunctions.cpp:138</a></div></div>
+<div class="ttc" id="a_validator_8cpp_html_a8abc8d32ee3eac481a888bca15aae270"><div class="ttname"><a href="_validator_8cpp.html#a8abc8d32ee3eac481a888bca15aae270">isValidNumber</a></div><div class="ttdeci">bool isValidNumber(const std::string &amp;string)</div><div class="ttdoc">Checks if the input string represents a valid positive number.</div><div class="ttdef"><b>Definition:</b> <a href="_validator_8cpp_source.html#l00014">Validator.cpp:14</a></div></div>
+<div class="ttc" id="a_validator_8h_html"><div class="ttname"><a href="_validator_8h.html">Validator.h</a></div><div class="ttdoc">Contains all functions that perform validations of the user input.</div></div>
+<div class="ttc" id="a_helper_functions_8cpp_html_aaecae98220d32d4f42172d7d865d1ddd"><div class="ttname"><a href="_helper_functions_8cpp.html#aaecae98220d32d4f42172d7d865d1ddd">readChoice</a></div><div class="ttdeci">int readChoice()</div><div class="ttdoc">Reads and returns the user's choice from the menu.</div><div class="ttdef"><b>Definition:</b> <a href="_helper_functions_8cpp_source.html#l00017">HelperFunctions.cpp:17</a></div></div>
+<div class="ttc" id="aclass_vector_html"><div class="ttname"><a href="class_vector.html">Vector</a></div><div class="ttdoc">Template class representing a dynamic array.</div><div class="ttdef"><b>Definition:</b> <a href="_v_e_c_t_o_r_8_h_source.html#l00051">VECTOR.H:51</a></div></div>
+<div class="ttc" id="a_helper_functions_8cpp_html_a2edf70cda092f7761323ec0cd986dc88"><div class="ttname"><a href="_helper_functions_8cpp.html#a2edf70cda092f7761323ec0cd986dc88">calculateCorrelationCoef</a></div><div class="ttdeci">double calculateCorrelationCoef(const Vector&lt; double &gt; &amp;array1, const Vector&lt; double &gt; &amp;array2)</div><div class="ttdoc">Calculates and returns the correlation coefficient between two arrays.</div><div class="ttdef"><b>Definition:</b> <a href="_helper_functions_8cpp_source.html#l00165">HelperFunctions.cpp:165</a></div></div>
+<div class="ttc" id="a_helper_functions_8cpp_html_adf45bdc6425cc718344cedfed6365bec"><div class="ttname"><a href="_helper_functions_8cpp.html#adf45bdc6425cc718344cedfed6365bec">calculateTotal</a></div><div class="ttdeci">double calculateTotal(const Vector&lt; double &gt; &amp;array)</div><div class="ttdoc">Calculates and returns the total sum of the values in the array.</div><div class="ttdef"><b>Definition:</b> <a href="_helper_functions_8cpp_source.html#l00152">HelperFunctions.cpp:152</a></div></div>
+<div class="ttc" id="a_helper_functions_8cpp_html_a9d5f7796334cb753305c810e4d5679f3"><div class="ttname"><a href="_helper_functions_8cpp.html#a9d5f7796334cb753305c810e4d5679f3">calculateSumSquared</a></div><div class="ttdeci">double calculateSumSquared(const Vector&lt; double &gt; &amp;array, double mean)</div><div class="ttdoc">Calculates and returns the sum of squared differences from the mean.</div><div class="ttdef"><b>Definition:</b> <a href="_helper_functions_8cpp_source.html#l00139">HelperFunctions.cpp:139</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="_helper_functions_8cpp.html">HelperFunctions.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_66cdafd4b8fef3224b778e635b8d32e2.html">Helper Functions</a></li><li class="navelem"><a class="el" href="_helper_functions_8cpp.html">HelperFunctions.cpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

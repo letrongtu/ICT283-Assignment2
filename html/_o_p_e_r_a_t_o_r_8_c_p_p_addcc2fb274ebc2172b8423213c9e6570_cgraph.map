@@ -1,0 +1,5 @@
+<map id="operator&gt;" name="operator&gt;">
+<area shape="rect" id="node1" title="Greater than operator for Time." alt="" coords="5,31,83,57"/>
+<area shape="rect" id="node2" href="$class_time.html#aaf65e0dc73514ffab9b3dd643cef9bdb" title="Get the hour." alt="" coords="137,5,243,32"/>
+<area shape="rect" id="node3" href="$class_time.html#a86302564cc0783b402dc5f0e137a43c1" title="Get the minute." alt="" coords="131,56,249,83"/>
+</map>

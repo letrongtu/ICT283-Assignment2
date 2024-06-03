@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Assignment 2: DataProcessor.h File Reference</title>
+<title>Assignment 2: Data Processor/DataProcessor.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -88,38 +88,46 @@ $(document).ready(function(){initNavTree('_data_processor_8h.html',''); initResi
 <div class="title">DataProcessor.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="_data_structure_8h_source.html">DataStructure.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_v_e_c_t_o_r_8_h_source.html">vector.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_d_a_t_e_8_h_source.html">date.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_t_i_m_e_8_h_source.html">time.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_map_8h_source.html">Map.h</a>&quot;</code><br />
+
+<p>Contains all functions that read and store the read data from a data file.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="datastructure_8h_source.html">../Data Structures/DataStructure.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_v_e_c_t_o_r_8_h_source.html">../Data Structures/vector.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_d_a_t_e_8_h_source.html">../Data Structures/Date.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_t_i_m_e_8_h_source.html">../Data Structures/Time.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_map_8h_source.html">../Data Structures/Map.h</a>&quot;</code><br />
 <code>#include &lt;string&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for DataProcessor.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="_data_processor_8h__incl.png" border="0" usemap="#_data_processor_8h" alt=""/></div>
-<map name="_data_processor_8h" id="_data_processor_8h">
-<area shape="rect" title=" " alt="" coords="225,5,343,32"/>
-<area shape="rect" href="_data_structure_8h.html" title=" " alt="" coords="181,80,294,107"/>
-<area shape="rect" href="_d_a_t_e_8_h.html" title=" " alt="" coords="5,155,64,181"/>
-<area shape="rect" href="_t_i_m_e_8_h.html" title=" " alt="" coords="88,155,147,181"/>
-<area shape="rect" href="_v_e_c_t_o_r_8_h.html" title=" " alt="" coords="244,229,311,256"/>
-<area shape="rect" href="_map_8h.html" title=" " alt="" coords="435,155,493,181"/>
-<area shape="rect" title=" " alt="" coords="305,155,359,181"/>
-<area shape="rect" href="_b_s_t_8h.html" title=" " alt="" coords="171,155,229,181"/>
-<area shape="rect" title=" " alt="" coords="249,304,305,331"/>
-<area shape="rect" title=" " alt="" coords="441,229,487,256"/>
-<area shape="rect" href="_node_8h.html" title=" " alt="" coords="157,229,219,256"/>
+<div class="center"><img src="_data_processor_8h__incl.png" border="0" usemap="#_data_01_processor_2_data_processor_8h" alt=""/></div>
+<map name="_data_01_processor_2_data_processor_8h" id="_data_01_processor_2_data_processor_8h">
+<area shape="rect" title="Contains all functions that read and store the read data from a data file." alt="" coords="387,5,601,32"/>
+<area shape="rect" href="datastructure_8h.html" title=" " alt="" coords="253,80,378,121"/>
+<area shape="rect" href="_map_8h.html" title=" " alt="" coords="86,169,145,196"/>
+<area shape="rect" href="_d_a_t_e_8_h.html" title=" " alt="" coords="357,244,417,271"/>
+<area shape="rect" href="_t_i_m_e_8_h.html" title=" " alt="" coords="478,244,539,271"/>
+<area shape="rect" title=" " alt="" coords="401,169,456,196"/>
+<area shape="rect" href="_v_e_c_t_o_r_8_h.html" title=" " alt="" coords="582,80,707,121"/>
+<area shape="rect" title=" " alt="" coords="732,87,797,114"/>
+<area shape="rect" href="_a_v_l_8_h.html" title=" " alt="" coords="169,169,229,196"/>
+<area shape="rect" href="_weather_record_8h.html" title=" " alt="" coords="254,169,377,196"/>
+<area shape="rect" title=" " alt="" coords="5,244,52,271"/>
+<area shape="rect" title=" " alt="" coords="76,244,155,271"/>
+<area shape="rect" href="_node_8h.html" title=" " alt="" coords="179,244,241,271"/>
+<area shape="rect" title=" " alt="" coords="617,169,673,196"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="_data_processor_8h__dep__incl.png" border="0" usemap="#_data_processor_8hdep" alt=""/></div>
-<map name="_data_processor_8hdep" id="_data_processor_8hdep">
-<area shape="rect" title=" " alt="" coords="94,5,213,32"/>
-<area shape="rect" href="_data_processor_8cpp.html" title=" " alt="" coords="5,80,139,107"/>
-<area shape="rect" href="_file_name_reader_8cpp.html" title=" " alt="" coords="163,80,306,107"/>
+<div class="center"><img src="_data_processor_8h__dep__incl.png" border="0" usemap="#_data_01_processor_2_data_processor_8hdep" alt=""/></div>
+<map name="_data_01_processor_2_data_processor_8hdep" id="_data_01_processor_2_data_processor_8hdep">
+<area shape="rect" title="Contains all functions that read and store the read data from a data file." alt="" coords="159,5,373,32"/>
+<area shape="rect" href="dataprocessor_8cpp.html" title=" " alt="" coords="5,80,228,107"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html" title=" " alt="" coords="128,155,404,196"/>
+<area shape="rect" href="_file_name_reader_8cpp.html" title=" " alt="" coords="303,80,541,107"/>
 </map>
 </div>
 </div>
@@ -127,126 +135,38 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3aa48e98a9a9a17cc54a71b708c2bb73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_data_processor_8h.html#a3aa48e98a9a9a17cc54a71b708c2bb73">readData</a> (const string &amp;fileName, <a class="el" href="_data_structure_8h.html#aac270128d7c179840909e8523232f3a0">WeatherLog</a> &amp;weather_data)</td></tr>
-<tr class="memdesc:a3aa48e98a9a9a17cc54a71b708c2bb73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains all functions that read and store the read data from data file.  <a href="_data_processor_8h.html#a3aa48e98a9a9a17cc54a71b708c2bb73">More...</a><br /></td></tr>
-<tr class="separator:a3aa48e98a9a9a17cc54a71b708c2bb73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab42b21c42fab65c4f2708c107babd11a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_map.html">Map</a>&lt; string, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_data_processor_8h.html#ab42b21c42fab65c4f2708c107babd11a">readHeader</a> (ifstream &amp;inFile)</td></tr>
-<tr class="separator:ab42b21c42fab65c4f2708c107babd11a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e308cfc5494209d39fb14a440d7484a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_data_processor_8h.html#a5e308cfc5494209d39fb14a440d7484a">isValidHeaders</a> (const <a class="el" href="class_map.html">Map</a>&lt; string, int &gt; &amp;headerMap)</td></tr>
-<tr class="separator:a5e308cfc5494209d39fb14a440d7484a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4581d7aa00f7725ca5fbe6e3c9c78b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector.html">Vector</a>&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_data_processor_8h.html#ab4581d7aa00f7725ca5fbe6e3c9c78b8">getRow</a> (const string &amp;row)</td></tr>
-<tr class="separator:ab4581d7aa00f7725ca5fbe6e3c9c78b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a654cf13adaa6a67a76c17f5035f9d860"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_data_processor_8h.html#a654cf13adaa6a67a76c17f5035f9d860">isValidCell</a> (const string &amp;cell)</td></tr>
-<tr class="separator:a654cf13adaa6a67a76c17f5035f9d860"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0c8f5105b9ac3fe0f8744c7ba51de1f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_data_processor_8h.html#af0c8f5105b9ac3fe0f8744c7ba51de1f">readWeatherRecord</a> (const <a class="el" href="class_vector.html">Vector</a>&lt; string &gt; &amp;rows, const <a class="el" href="class_map.html">Map</a>&lt; string, int &gt; &amp;headerMap, <a class="el" href="struct_weather_record.html">WeatherRecord</a> &amp;record)</td></tr>
-<tr class="separator:af0c8f5105b9ac3fe0f8744c7ba51de1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d99b03343534baef0bb07effb8760cd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_data_processor_8h.html#a2d99b03343534baef0bb07effb8760cd">readDateAndTime</a> (const string &amp;dateTimeTemplate, <a class="el" href="class_date.html">Date</a> &amp;date, <a class="el" href="class_time.html">Time</a> &amp;time)</td></tr>
-<tr class="separator:a2d99b03343534baef0bb07effb8760cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad4fffef2d6663efb9fb038fb6979fd28"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_data_processor_8h.html#ad4fffef2d6663efb9fb038fb6979fd28">readDate</a> (const string &amp;dateTemplate, <a class="el" href="class_date.html">Date</a> &amp;date)</td></tr>
-<tr class="separator:ad4fffef2d6663efb9fb038fb6979fd28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a1b67153a042c1913994557b6237c67"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_data_processor_8h.html#a5a1b67153a042c1913994557b6237c67">readTime</a> (const string &amp;timeTemplate, <a class="el" href="class_time.html">Time</a> &amp;time)</td></tr>
-<tr class="separator:a5a1b67153a042c1913994557b6237c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba10983b697e65438e53ca66a9459ac2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_data_processor_8h.html#aba10983b697e65438e53ca66a9459ac2">readData</a> (const std::string &amp;fileName, <a class="el" href="datastructure_8h.html#a30e13b56b8d5783b8eed2f4a0044eb6d">WeatherLog</a> &amp;weather_data)</td></tr>
+<tr class="memdesc:aba10983b697e65438e53ca66a9459ac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads weather data from a file and stores it in the WeatherLog.  <a href="_data_processor_8h.html#aba10983b697e65438e53ca66a9459ac2">More...</a><br /></td></tr>
+<tr class="separator:aba10983b697e65438e53ca66a9459ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acab6295a587ed8bd315fb0cb0e859167"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_data_processor_8h.html#acab6295a587ed8bd315fb0cb0e859167">readHeader</a> (std::ifstream &amp;inFile, <a class="el" href="class_map.html">Map</a>&lt; std::string, int &gt; &amp;headerMap)</td></tr>
+<tr class="memdesc:acab6295a587ed8bd315fb0cb0e859167"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the header of the weather data file and fills the provided map with header names and their indices.  <a href="_data_processor_8h.html#acab6295a587ed8bd315fb0cb0e859167">More...</a><br /></td></tr>
+<tr class="separator:acab6295a587ed8bd315fb0cb0e859167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a619f7c3667f5e9c57259178c0bf17a11"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_data_processor_8h.html#a619f7c3667f5e9c57259178c0bf17a11">isValidHeaders</a> (const <a class="el" href="class_map.html">Map</a>&lt; std::string, int &gt; &amp;headerMap)</td></tr>
+<tr class="memdesc:a619f7c3667f5e9c57259178c0bf17a11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates the headers of the weather data file.  <a href="_data_processor_8h.html#a619f7c3667f5e9c57259178c0bf17a11">More...</a><br /></td></tr>
+<tr class="separator:a619f7c3667f5e9c57259178c0bf17a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a746f4310314b880c1443e868109a5105"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_data_processor_8h.html#a746f4310314b880c1443e868109a5105">readWeatherRecord</a> (const std::string &amp;line, int wastIndex, int speedIndex, int solarRadIndex, int airTempIndex, <a class="el" href="struct_weather_record.html">WeatherRecord</a> &amp;record)</td></tr>
+<tr class="memdesc:a746f4310314b880c1443e868109a5105"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a weather record from a line and a header map.  <a href="_data_processor_8h.html#a746f4310314b880c1443e868109a5105">More...</a><br /></td></tr>
+<tr class="separator:a746f4310314b880c1443e868109a5105"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6303080316244e76a4dc1d407b0f16b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_data_processor_8h.html#a6303080316244e76a4dc1d407b0f16b5">readDateAndTime</a> (const std::string &amp;dateTimeTemplate, <a class="el" href="class_date.html">Date</a> &amp;date, <a class="el" href="class_time.html">Time</a> &amp;time)</td></tr>
+<tr class="memdesc:a6303080316244e76a4dc1d407b0f16b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a date and time from a template string.  <a href="_data_processor_8h.html#a6303080316244e76a4dc1d407b0f16b5">More...</a><br /></td></tr>
+<tr class="separator:a6303080316244e76a4dc1d407b0f16b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afdf156e8d6316a19a1f0374eb6bb31ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_data_processor_8h.html#afdf156e8d6316a19a1f0374eb6bb31ac">readDate</a> (const std::string &amp;dateTemplate, <a class="el" href="class_date.html">Date</a> &amp;date)</td></tr>
+<tr class="memdesc:afdf156e8d6316a19a1f0374eb6bb31ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a date from a template string.  <a href="_data_processor_8h.html#afdf156e8d6316a19a1f0374eb6bb31ac">More...</a><br /></td></tr>
+<tr class="separator:afdf156e8d6316a19a1f0374eb6bb31ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab736b8937fc7ab05ca65923faa7a2c2c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_data_processor_8h.html#ab736b8937fc7ab05ca65923faa7a2c2c">readTime</a> (const std::string &amp;timeTemplate, <a class="el" href="class_time.html">Time</a> &amp;time)</td></tr>
+<tr class="memdesc:ab736b8937fc7ab05ca65923faa7a2c2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a time from a template string.  <a href="_data_processor_8h.html#ab736b8937fc7ab05ca65923faa7a2c2c">More...</a><br /></td></tr>
+<tr class="separator:ab736b8937fc7ab05ca65923faa7a2c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="ab4581d7aa00f7725ca5fbe6e3c9c78b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4581d7aa00f7725ca5fbe6e3c9c78b8">&#9670;&nbsp;</a></span>getRow()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Contains all functions that read and store the read data from a data file. </p>
+<p>This module provides functionality to read weather data from a file, process it, and store it in the WeatherLog data structure.</p>
+<dl class="section author"><dt>Author</dt><dd>Trong Tu Le </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>01 </dd></dl>
 
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_vector.html">Vector</a>&lt;string&gt; getRow </td>
-          <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>row</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_data_processor_8cpp_source.html#l00107">107</a> of file <a class="el" href="_data_processor_8cpp_source.html">DataProcessor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                                        {</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <a class="code" href="class_vector.html">Vector&lt;string&gt;</a> cells;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    stringstream ss(row);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">string</span> cell;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">while</span>(getline(ss, cell, <span class="charliteral">&#39;,&#39;</span>)){</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        cells.<a class="code" href="class_vector.html#a87f73b09903e16a1caaaae559a04036a">add</a>(cell);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">return</span> cells;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_v_e_c_t_o_r_8_h_source.html#l00163">Vector&lt; T &gt;::add()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="_data_processor_8cpp_source.html#l00017">readData()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_data_processor_8h_ab4581d7aa00f7725ca5fbe6e3c9c78b8_cgraph.png" border="0" usemap="#_data_processor_8h_ab4581d7aa00f7725ca5fbe6e3c9c78b8_cgraph" alt=""/></div>
-<map name="_data_processor_8h_ab4581d7aa00f7725ca5fbe6e3c9c78b8_cgraph" id="_data_processor_8h_ab4581d7aa00f7725ca5fbe6e3c9c78b8_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,71,32"/>
-<area shape="rect" href="class_vector.html#a87f73b09903e16a1caaaae559a04036a" title="add the element at the end of the array" alt="" coords="119,5,208,32"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_data_processor_8h_ab4581d7aa00f7725ca5fbe6e3c9c78b8_icgraph.png" border="0" usemap="#_data_processor_8h_ab4581d7aa00f7725ca5fbe6e3c9c78b8_icgraph" alt=""/></div>
-<map name="_data_processor_8h_ab4581d7aa00f7725ca5fbe6e3c9c78b8_icgraph" id="_data_processor_8h_ab4581d7aa00f7725ca5fbe6e3c9c78b8_icgraph">
-<area shape="rect" title=" " alt="" coords="413,5,479,32"/>
-<area shape="rect" href="_data_processor_8h.html#a3aa48e98a9a9a17cc54a71b708c2bb73" title="Contains all functions that read and store the read data from data file." alt="" coords="291,5,365,32"/>
-<area shape="rect" href="_file_name_reader_8h.html#abb388dcb5bcf8927fbce050041896fcb" title="Contains all functions need to read the input file name." alt="" coords="104,5,243,32"/>
-<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a654cf13adaa6a67a76c17f5035f9d860"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a654cf13adaa6a67a76c17f5035f9d860">&#9670;&nbsp;</a></span>isValidCell()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool isValidCell </td>
-          <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
-          <td class="paramname"><em>cell</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="_data_processor_8cpp_source.html#l00120">120</a> of file <a class="el" href="_data_processor_8cpp_source.html">DataProcessor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                                     {</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordflow">if</span>(cell == <span class="stringliteral">&quot;&quot;</span> || cell == <span class="stringliteral">&quot;N/A&quot;</span>){</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">else</span>{</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
-</div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="_data_processor_8cpp_source.html#l00017">readData()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="_data_processor_8h_a654cf13adaa6a67a76c17f5035f9d860_icgraph.png" border="0" usemap="#_data_processor_8h_a654cf13adaa6a67a76c17f5035f9d860_icgraph" alt=""/></div>
-<map name="_data_processor_8h_a654cf13adaa6a67a76c17f5035f9d860_icgraph" id="_data_processor_8h_a654cf13adaa6a67a76c17f5035f9d860_icgraph">
-<area shape="rect" title=" " alt="" coords="413,5,496,32"/>
-<area shape="rect" href="_data_processor_8h.html#a3aa48e98a9a9a17cc54a71b708c2bb73" title="Contains all functions that read and store the read data from data file." alt="" coords="291,5,365,32"/>
-<area shape="rect" href="_file_name_reader_8h.html#abb388dcb5bcf8927fbce050041896fcb" title="Contains all functions need to read the input file name." alt="" coords="104,5,243,32"/>
-<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a5e308cfc5494209d39fb14a440d7484a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e308cfc5494209d39fb14a440d7484a">&#9670;&nbsp;</a></span>isValidHeaders()</h2>
+<p class="definition">Definition in file <a class="el" href="_data_processor_8h_source.html">DataProcessor.h</a>.</p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a619f7c3667f5e9c57259178c0bf17a11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a619f7c3667f5e9c57259178c0bf17a11">&#9670;&nbsp;</a></span>isValidHeaders()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -254,54 +174,62 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">bool isValidHeaders </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_map.html">Map</a>&lt; string, int &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="class_map.html">Map</a>&lt; std::string, int &gt; &amp;&#160;</td>
           <td class="paramname"><em>headerMap</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_data_processor_8cpp_source.html#l00095">95</a> of file <a class="el" href="_data_processor_8cpp_source.html">DataProcessor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                                                      {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">if</span> (headerMap.<a class="code" href="class_map.html#a21817f63324636803318e47c2a88b02e">contains</a>(<span class="stringliteral">&quot;WAST&quot;</span>)||</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        headerMap.<a class="code" href="class_map.html#a21817f63324636803318e47c2a88b02e">contains</a>(<span class="stringliteral">&quot;S&quot;</span>) ||</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        headerMap.<a class="code" href="class_map.html#a21817f63324636803318e47c2a88b02e">contains</a>(<span class="stringliteral">&quot;SR&quot;</span>) ||</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        headerMap.<a class="code" href="class_map.html#a21817f63324636803318e47c2a88b02e">contains</a>(<span class="stringliteral">&quot;T&quot;</span>)) {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">else</span>{</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_map_8h_source.html#l00187">Map&lt; K, V &gt;::contains()</a>.</p>
+<p>Validates the headers of the weather data file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">headerMap</td><td>The map containing the header names and their indices. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the required headers are present, false otherwise. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_data_processor_8cpp_source.html#l00017">readData()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dataprocessor_8cpp_source.html#l00072">72</a> of file <a class="el" href="dataprocessor_8cpp_source.html">dataprocessor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                                          {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> headerMap.<a class="code" href="class_map.html#a21817f63324636803318e47c2a88b02e">contains</a>(<span class="stringliteral">&quot;WAST&quot;</span>) &amp;&amp;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;           headerMap.<a class="code" href="class_map.html#a21817f63324636803318e47c2a88b02e">contains</a>(<span class="stringliteral">&quot;S&quot;</span>) &amp;&amp;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;           headerMap.<a class="code" href="class_map.html#a21817f63324636803318e47c2a88b02e">contains</a>(<span class="stringliteral">&quot;SR&quot;</span>) &amp;&amp;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;           headerMap.<a class="code" href="class_map.html#a21817f63324636803318e47c2a88b02e">contains</a>(<span class="stringliteral">&quot;T&quot;</span>);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_map_8h_source.html#l00200">Map&lt; K, V &gt;::contains()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dataprocessor_8cpp_source.html#l00009">readData()</a>, and <a class="el" href="_test_data_processor_functions_8cpp_source.html#l00091">TestIsValidHeadersFunction()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="_data_processor_8h_a5e308cfc5494209d39fb14a440d7484a_cgraph.png" border="0" usemap="#_data_processor_8h_a5e308cfc5494209d39fb14a440d7484a_cgraph" alt=""/></div>
-<map name="_data_processor_8h_a5e308cfc5494209d39fb14a440d7484a_cgraph" id="_data_processor_8h_a5e308cfc5494209d39fb14a440d7484a_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,115,32"/>
+<div class="center"><img src="_data_processor_8h_a619f7c3667f5e9c57259178c0bf17a11_cgraph.png" border="0" usemap="#_data_processor_8h_a619f7c3667f5e9c57259178c0bf17a11_cgraph" alt=""/></div>
+<map name="_data_processor_8h_a619f7c3667f5e9c57259178c0bf17a11_cgraph" id="_data_processor_8h_a619f7c3667f5e9c57259178c0bf17a11_cgraph">
+<area shape="rect" title="Validates the headers of the weather data file." alt="" coords="5,5,115,32"/>
 <area shape="rect" href="class_map.html#a21817f63324636803318e47c2a88b02e" title="Checks if the map contains a key." alt="" coords="163,5,267,32"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="_data_processor_8h_a5e308cfc5494209d39fb14a440d7484a_icgraph.png" border="0" usemap="#_data_processor_8h_a5e308cfc5494209d39fb14a440d7484a_icgraph" alt=""/></div>
-<map name="_data_processor_8h_a5e308cfc5494209d39fb14a440d7484a_icgraph" id="_data_processor_8h_a5e308cfc5494209d39fb14a440d7484a_icgraph">
-<area shape="rect" title=" " alt="" coords="413,5,523,32"/>
-<area shape="rect" href="_data_processor_8h.html#a3aa48e98a9a9a17cc54a71b708c2bb73" title="Contains all functions that read and store the read data from data file." alt="" coords="291,5,365,32"/>
-<area shape="rect" href="_file_name_reader_8h.html#abb388dcb5bcf8927fbce050041896fcb" title="Contains all functions need to read the input file name." alt="" coords="104,5,243,32"/>
-<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+<div class="center"><img src="_data_processor_8h_a619f7c3667f5e9c57259178c0bf17a11_icgraph.png" border="0" usemap="#_data_processor_8h_a619f7c3667f5e9c57259178c0bf17a11_icgraph" alt=""/></div>
+<map name="_data_processor_8h_a619f7c3667f5e9c57259178c0bf17a11_icgraph" id="_data_processor_8h_a619f7c3667f5e9c57259178c0bf17a11_icgraph">
+<area shape="rect" title="Validates the headers of the weather data file." alt="" coords="805,132,915,159"/>
+<area shape="rect" href="_data_processor_8h.html#aba10983b697e65438e53ca66a9459ac2" title="Reads weather data from a file and stores it in the WeatherLog." alt="" coords="628,107,703,133"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html#ac5f95c7e9025378d63548ab86ffe10a1" title=" " alt="" coords="573,157,757,184"/>
+<area shape="rect" href="_file_name_reader_8h.html#afd4947a3303689855ee12d8c1924a4f8" title="Reads weather data from a file and stores it in the WeatherLog structure." alt="" coords="379,56,517,83"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html#a2ba9f68c4217c76bc5c5dac17c143472" title=" " alt="" coords="371,107,525,133"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="188,5,239,32"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html#a60828f98521f764f44f88752682a537a" title=" " alt="" coords="104,56,323,83"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,107,56,133"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a3aa48e98a9a9a17cc54a71b708c2bb73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3aa48e98a9a9a17cc54a71b708c2bb73">&#9670;&nbsp;</a></span>readData()</h2>
+<a id="aba10983b697e65438e53ca66a9459ac2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba10983b697e65438e53ca66a9459ac2">&#9670;&nbsp;</a></span>readData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -309,13 +237,13 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void readData </td>
           <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>fileName</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="_data_structure_8h.html#aac270128d7c179840909e8523232f3a0">WeatherLog</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="datastructure_8h.html#a30e13b56b8d5783b8eed2f4a0044eb6d">WeatherLog</a> &amp;&#160;</td>
           <td class="paramname"><em>weather_data</em>&#160;</td>
         </tr>
         <tr>
@@ -326,118 +254,109 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Contains all functions that read and store the read data from data file. </p>
-<dl class="section author"><dt>Author</dt><dd>Trong Tu Le </dd></dl>
-<dl class="section version"><dt>Version</dt><dd>01 </dd></dl>
+<p>Reads weather data from a file and stores it in the WeatherLog. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fileName</td><td>The name of the file to read data from. </td></tr>
+    <tr><td class="paramname">weather_data</td><td>The WeatherLog to store the weather records. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="_data_processor_8cpp_source.html#l00017">17</a> of file <a class="el" href="_data_processor_8cpp_source.html">DataProcessor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                                                               {</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;Reading file: &quot;</span> &lt;&lt; fileName &lt;&lt; endl;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">string</span> fullFileName = <span class="stringliteral">&quot;data/&quot;</span> + fileName;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    ifstream inFile(fullFileName);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">if</span> (!inFile.is_open()) {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Error opening file: &quot;</span> &lt;&lt; fileName &lt;&lt; endl;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_map.html">Map&lt;string, int&gt;</a> headerMap = <a class="code" href="_data_processor_8cpp.html#ab42b21c42fab65c4f2708c107babd11a">readHeader</a>(inFile);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="_data_processor_8cpp.html#a5e308cfc5494209d39fb14a440d7484a">isValidHeaders</a>(headerMap)){</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Required headers missing in file: &quot;</span> &lt;&lt; fileName &lt;&lt; endl;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">string</span> line;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">int</span> lineRead = 0;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">int</span> lineDrop = 0;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordflow">while</span>(getline(inFile, line)){</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="code" href="struct_weather_record.html">WeatherRecord</a> record;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="class_vector.html">Vector&lt;string&gt;</a> rows = <a class="code" href="_data_processor_8cpp.html#ab4581d7aa00f7725ca5fbe6e3c9c78b8">getRow</a>(line);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="_data_processor_8cpp.html#a654cf13adaa6a67a76c17f5035f9d860">isValidCell</a>(rows[headerMap.<a class="code" href="class_map.html#a940dcce0b4490af7406db9fe95a7927f">at</a>(<span class="stringliteral">&quot;WAST&quot;</span>)]) &amp;&amp; <a class="code" href="_data_processor_8cpp.html#a654cf13adaa6a67a76c17f5035f9d860">isValidCell</a>(rows[headerMap.<a class="code" href="class_map.html#a940dcce0b4490af7406db9fe95a7927f">at</a>(<span class="stringliteral">&quot;S&quot;</span>)]) &amp;&amp; <a class="code" href="_data_processor_8cpp.html#a654cf13adaa6a67a76c17f5035f9d860">isValidCell</a>(rows[headerMap.<a class="code" href="class_map.html#a940dcce0b4490af7406db9fe95a7927f">at</a>(<span class="stringliteral">&quot;SR&quot;</span>)]) &amp;&amp; <a class="code" href="_data_processor_8cpp.html#a654cf13adaa6a67a76c17f5035f9d860">isValidCell</a>(rows[headerMap.<a class="code" href="class_map.html#a940dcce0b4490af7406db9fe95a7927f">at</a>(<span class="stringliteral">&quot;T&quot;</span>)])){</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="_data_processor_8cpp.html#af0c8f5105b9ac3fe0f8744c7ba51de1f">readWeatherRecord</a>(rows, headerMap, record)) {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <span class="keywordtype">int</span> year = record.<a class="code" href="struct_weather_record.html#a70f012d48746320340d318fe747104ee">date</a>.<a class="code" href="class_date.html#ad79ce504482f317ddcfdc4ecad77671f">GetYear</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <span class="keywordtype">int</span> month = record.<a class="code" href="struct_weather_record.html#a70f012d48746320340d318fe747104ee">date</a>.<a class="code" href="class_date.html#af2dcc6ce51dbb2bd798499a149bdffb7">GetMonth</a>();</div>
+<p class="definition">Definition at line <a class="el" href="dataprocessor_8cpp_source.html#l00009">9</a> of file <a class="el" href="dataprocessor_8cpp_source.html">dataprocessor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;                                                                   {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Reading file: &quot;</span> &lt;&lt; fileName &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    std::string fullFileName = <span class="stringliteral">&quot;data/&quot;</span> + fileName;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    std::ifstream inFile(fullFileName);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">if</span> (!inFile.is_open()) {</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Error opening file: &quot;</span> &lt;&lt; fileName &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    }</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="class_map.html">Map&lt;std::string, int&gt;</a> headerMap;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="dataprocessor_8cpp.html#acab6295a587ed8bd315fb0cb0e859167">readHeader</a>(inFile, headerMap);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="dataprocessor_8cpp.html#a619f7c3667f5e9c57259178c0bf17a11">isValidHeaders</a>(headerMap)) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Required headers missing in file: &quot;</span> &lt;&lt; fileName &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">int</span> lineRead = 0;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">int</span> lineDropped = 0;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    std::string line;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="struct_weather_record.html">WeatherRecord</a> record;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> wastIndex = headerMap.<a class="code" href="class_map.html#a940dcce0b4490af7406db9fe95a7927f">at</a>(<span class="stringliteral">&quot;WAST&quot;</span>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> speedIndex = headerMap.<a class="code" href="class_map.html#a940dcce0b4490af7406db9fe95a7927f">at</a>(<span class="stringliteral">&quot;S&quot;</span>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> solarRadIndex = headerMap.<a class="code" href="class_map.html#a940dcce0b4490af7406db9fe95a7927f">at</a>(<span class="stringliteral">&quot;SR&quot;</span>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span> airTempIndex = headerMap.<a class="code" href="class_map.html#a940dcce0b4490af7406db9fe95a7927f">at</a>(<span class="stringliteral">&quot;T&quot;</span>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">while</span> (std::getline(inFile, line)) {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="dataprocessor_8cpp.html#a746f4310314b880c1443e868109a5105">readWeatherRecord</a>(line, wastIndex, speedIndex, solarRadIndex, airTempIndex, record)) {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            weather_data[record.<a class="code" href="struct_weather_record.html#a70f012d48746320340d318fe747104ee">date</a>.<a class="code" href="class_date.html#ad79ce504482f317ddcfdc4ecad77671f">GetYear</a>()][record.<a class="code" href="struct_weather_record.html#a70f012d48746320340d318fe747104ee">date</a>.<a class="code" href="class_date.html#af2dcc6ce51dbb2bd798499a149bdffb7">GetMonth</a>()].<a class="code" href="class_map.html#a225903c0291cf978e27be5a58f399a14">insert</a>(record);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            lineRead++;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            lineDropped++;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <span class="keywordflow">if</span>(!weather_data[year].contains(month)){</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                    weather_data[year][month] =  <a class="code" href="class_b_s_t.html">BST&lt;WeatherRecord&gt;</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                <span class="keywordflow">if</span>(!weather_data.<a class="code" href="class_map.html#a21817f63324636803318e47c2a88b02e">contains</a>(year)){</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                    weather_data[year] =  <a class="code" href="class_map.html">Map&lt;int, BST&lt;WeatherRecord&gt;</a>&gt;();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                }</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                weather_data[year][month].<a class="code" href="class_map.html#a225903c0291cf978e27be5a58f399a14">insert</a>(record);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                lineRead++;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">else</span>{</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                lineDrop++;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">else</span>{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            lineDrop++;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    inFile.close();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;&lt;&lt;&lt;Data read successfully&gt;&gt;&gt;&quot;</span> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;         &lt;&lt; <span class="stringliteral">&quot;Line Read: &quot;</span> &lt;&lt; lineRead &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;         &lt;&lt; <span class="stringliteral">&quot;Line Drop: &quot;</span> &lt;&lt; lineDrop &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;         &lt;&lt; <span class="stringliteral">&quot;-------------------------------------------------------------------------------------------------------------------&quot;</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;         &lt;&lt; endl;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    inFile.close();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;&lt;&lt;&lt;Data read successfully&gt;&gt;&gt;\n&quot;</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;              &lt;&lt; <span class="stringliteral">&quot;Line Read: &quot;</span> &lt;&lt; lineRead &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;              &lt;&lt; <span class="stringliteral">&quot;Line Dropped: &quot;</span> &lt;&lt; lineDropped &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;              &lt;&lt; <span class="stringliteral">&quot;-------------------------------------------------------------------------------------------------------------------&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_map_8h_source.html#l00178">Map&lt; K, V &gt;::at()</a>, <a class="el" href="_map_8h_source.html#l00187">Map&lt; K, V &gt;::contains()</a>, <a class="el" href="_data_structure_8h_source.html#l00041">WeatherRecord::date</a>, <a class="el" href="_d_a_t_e_8_c_p_p_source.html#l00044">Date::GetMonth()</a>, <a class="el" href="_data_processor_8cpp_source.html#l00107">getRow()</a>, <a class="el" href="_d_a_t_e_8_c_p_p_source.html#l00058">Date::GetYear()</a>, <a class="el" href="_map_8h_source.html#l00170">Map&lt; K, V &gt;::insert()</a>, <a class="el" href="_data_processor_8cpp_source.html#l00120">isValidCell()</a>, <a class="el" href="_data_processor_8cpp_source.html#l00095">isValidHeaders()</a>, <a class="el" href="_data_processor_8cpp_source.html#l00077">readHeader()</a>, and <a class="el" href="_data_processor_8cpp_source.html#l00129">readWeatherRecord()</a>.</p>
+<p class="reference">References <a class="el" href="_map_8h_source.html#l00188">Map&lt; K, V &gt;::at()</a>, <a class="el" href="_weather_record_8h_source.html#l00015">WeatherRecord::date</a>, <a class="el" href="_d_a_t_e_8_c_p_p_source.html#l00043">Date::GetMonth()</a>, <a class="el" href="_d_a_t_e_8_c_p_p_source.html#l00057">Date::GetYear()</a>, <a class="el" href="_map_8h_source.html#l00180">Map&lt; K, V &gt;::insert()</a>, <a class="el" href="dataprocessor_8cpp_source.html#l00072">isValidHeaders()</a>, <a class="el" href="dataprocessor_8cpp_source.html#l00056">readHeader()</a>, and <a class="el" href="dataprocessor_8cpp_source.html#l00082">readWeatherRecord()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_file_name_reader_8cpp_source.html#l00017">readFileFromSource()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_file_name_reader_8cpp_source.html#l00017">readFileFromSource()</a>, and <a class="el" href="_test_data_processor_functions_8cpp_source.html#l00152">TestReadDataFunction()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="_data_processor_8h_a3aa48e98a9a9a17cc54a71b708c2bb73_cgraph.png" border="0" usemap="#_data_processor_8h_a3aa48e98a9a9a17cc54a71b708c2bb73_cgraph" alt=""/></div>
-<map name="_data_processor_8h_a3aa48e98a9a9a17cc54a71b708c2bb73_cgraph" id="_data_processor_8h_a3aa48e98a9a9a17cc54a71b708c2bb73_cgraph">
-<area shape="rect" title="Contains all functions that read and store the read data from data file." alt="" coords="5,233,80,260"/>
-<area shape="rect" href="class_map.html#a940dcce0b4490af7406db9fe95a7927f" title="Retrieves the value corresponding to a key." alt="" coords="343,385,409,412"/>
-<area shape="rect" href="class_map.html#a21817f63324636803318e47c2a88b02e" title="Checks if the map contains a key." alt="" coords="324,107,428,133"/>
-<area shape="rect" href="class_date.html#af2dcc6ce51dbb2bd798499a149bdffb7" title="Get the month." alt="" coords="139,107,254,133"/>
-<area shape="rect" href="_data_processor_8cpp.html#ab4581d7aa00f7725ca5fbe6e3c9c78b8" title=" " alt="" coords="164,5,229,32"/>
-<area shape="rect" href="class_date.html#ad79ce504482f317ddcfdc4ecad77671f" title="Get the year." alt="" coords="144,208,249,235"/>
-<area shape="rect" href="class_map.html#a225903c0291cf978e27be5a58f399a14" title="Inserts a key&#45;value pair into the map." alt="" coords="153,259,240,285"/>
-<area shape="rect" href="_data_processor_8cpp.html#a654cf13adaa6a67a76c17f5035f9d860" title=" " alt="" coords="155,309,238,336"/>
-<area shape="rect" href="_data_processor_8cpp.html#a5e308cfc5494209d39fb14a440d7484a" title=" " alt="" coords="142,56,251,83"/>
-<area shape="rect" href="_data_processor_8cpp.html#ab42b21c42fab65c4f2708c107babd11a" title=" " alt="" coords="153,411,241,437"/>
-<area shape="rect" href="_data_processor_8cpp.html#af0c8f5105b9ac3fe0f8744c7ba51de1f" title=" " alt="" coords="128,461,265,488"/>
-<area shape="rect" href="class_vector.html#a87f73b09903e16a1caaaae559a04036a" title="add the element at the end of the array" alt="" coords="331,5,421,32"/>
-<area shape="rect" href="_data_processor_8cpp.html#a2d99b03343534baef0bb07effb8760cd" title=" " alt="" coords="313,461,439,488"/>
-<area shape="rect" href="_data_processor_8cpp.html#ad4fffef2d6663efb9fb038fb6979fd28" title=" " alt="" coords="487,411,561,437"/>
-<area shape="rect" href="_data_processor_8cpp.html#a5a1b67153a042c1913994557b6237c67" title=" " alt="" coords="487,537,561,564"/>
-<area shape="rect" href="_validator_8cpp.html#acd5665d75328e4daed639814334542d1" title=" " alt="" coords="624,461,712,488"/>
-<area shape="rect" href="class_date.html#ac75fa21654d30e90c2cdb74dd5033803" title="Set the day." alt="" coords="616,309,720,336"/>
-<area shape="rect" href="class_date.html#ae47ff4dbe38076b995703ecb4aa5c602" title="Set the month." alt="" coords="611,360,725,387"/>
-<area shape="rect" href="class_date.html#ae77d46d475c904d1fabcb91933034514" title="Set the year." alt="" coords="616,411,720,437"/>
-<area shape="rect" href="_validator_8cpp.html#ac5bd0a571f7bd173f55c1dfc6fee07c8" title=" " alt="" coords="775,436,872,463"/>
-<area shape="rect" href="_validator_8cpp.html#a61544b32391e0579f222c45b1a0af56a" title=" " alt="" coords="779,487,867,513"/>
-<area shape="rect" href="_validator_8cpp.html#a78df34cd0e5e380d00b530031c514891" title=" " alt="" coords="623,563,713,589"/>
-<area shape="rect" href="class_time.html#ab8c6582ad99c617c821ad3d10b9a872e" title="Set the hour." alt="" coords="615,613,721,640"/>
-<area shape="rect" href="class_time.html#a08cdbeef8e01ad48aadab6db90665d85" title="Set the minute." alt="" coords="609,512,727,539"/>
+<div class="center"><img src="_data_processor_8h_aba10983b697e65438e53ca66a9459ac2_cgraph.png" border="0" usemap="#_data_processor_8h_aba10983b697e65438e53ca66a9459ac2_cgraph" alt=""/></div>
+<map name="_data_processor_8h_aba10983b697e65438e53ca66a9459ac2_cgraph" id="_data_processor_8h_aba10983b697e65438e53ca66a9459ac2_cgraph">
+<area shape="rect" title="Reads weather data from a file and stores it in the WeatherLog." alt="" coords="5,157,80,184"/>
+<area shape="rect" href="class_map.html#a940dcce0b4490af7406db9fe95a7927f" title="Retrieves the value corresponding to a key." alt="" coords="163,5,230,32"/>
+<area shape="rect" href="class_date.html#af2dcc6ce51dbb2bd798499a149bdffb7" title="Get the month." alt="" coords="139,56,254,83"/>
+<area shape="rect" href="class_date.html#ad79ce504482f317ddcfdc4ecad77671f" title="Get the year." alt="" coords="144,107,249,133"/>
+<area shape="rect" href="class_map.html#a225903c0291cf978e27be5a58f399a14" title="Inserts a key&#45;value pair into the map." alt="" coords="333,183,419,209"/>
+<area shape="rect" href="dataprocessor_8cpp.html#a619f7c3667f5e9c57259178c0bf17a11" title="Validates the headers of the weather data file." alt="" coords="142,259,251,285"/>
+<area shape="rect" href="dataprocessor_8cpp.html#acab6295a587ed8bd315fb0cb0e859167" title="Reads the header of the weather data file and fills the provided map with header names and their indi..." alt="" coords="153,208,241,235"/>
+<area shape="rect" href="dataprocessor_8cpp.html#a746f4310314b880c1443e868109a5105" title="Reads a weather record from a line and a header map." alt="" coords="128,309,265,336"/>
+<area shape="rect" href="class_map.html#a21817f63324636803318e47c2a88b02e" title="Checks if the map contains a key." alt="" coords="324,259,428,285"/>
+<area shape="rect" href="dataprocessor_8cpp.html#a6303080316244e76a4dc1d407b0f16b5" title="Reads a date and time from a template string." alt="" coords="313,309,439,336"/>
+<area shape="rect" href="dataprocessor_8cpp.html#afdf156e8d6316a19a1f0374eb6bb31ac" title="Reads a date from a template string." alt="" coords="487,259,561,285"/>
+<area shape="rect" href="dataprocessor_8cpp.html#ab736b8937fc7ab05ca65923faa7a2c2c" title="Reads a time from a template string." alt="" coords="487,385,561,412"/>
+<area shape="rect" href="_validator_8cpp.html#acd5665d75328e4daed639814334542d1" title="Validates if the given day, month, and year form a valid date." alt="" coords="624,157,712,184"/>
+<area shape="rect" href="class_date.html#ac75fa21654d30e90c2cdb74dd5033803" title="Set the day." alt="" coords="616,208,720,235"/>
+<area shape="rect" href="class_date.html#ae47ff4dbe38076b995703ecb4aa5c602" title="Set the month." alt="" coords="611,259,725,285"/>
+<area shape="rect" href="class_date.html#ae77d46d475c904d1fabcb91933034514" title="Set the year." alt="" coords="616,309,720,336"/>
+<area shape="rect" href="_validator_8cpp.html#ac5bd0a571f7bd173f55c1dfc6fee07c8" title="Validates if the given month is valid." alt="" coords="775,132,872,159"/>
+<area shape="rect" href="_validator_8cpp.html#a61544b32391e0579f222c45b1a0af56a" title="Validates if the given year is valid." alt="" coords="779,183,867,209"/>
+<area shape="rect" href="_validator_8cpp.html#a78df34cd0e5e380d00b530031c514891" title="Validates if the given hour and minute form a valid time." alt="" coords="623,360,713,387"/>
+<area shape="rect" href="class_time.html#ab8c6582ad99c617c821ad3d10b9a872e" title="Set the hour." alt="" coords="615,411,721,437"/>
+<area shape="rect" href="class_time.html#a08cdbeef8e01ad48aadab6db90665d85" title="Set the minute." alt="" coords="609,461,727,488"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="_data_processor_8h_a3aa48e98a9a9a17cc54a71b708c2bb73_icgraph.png" border="0" usemap="#_data_processor_8h_a3aa48e98a9a9a17cc54a71b708c2bb73_icgraph" alt=""/></div>
-<map name="_data_processor_8h_a3aa48e98a9a9a17cc54a71b708c2bb73_icgraph" id="_data_processor_8h_a3aa48e98a9a9a17cc54a71b708c2bb73_icgraph">
-<area shape="rect" title="Contains all functions that read and store the read data from data file." alt="" coords="291,5,365,32"/>
-<area shape="rect" href="_file_name_reader_8h.html#abb388dcb5bcf8927fbce050041896fcb" title="Contains all functions need to read the input file name." alt="" coords="104,5,243,32"/>
-<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+<div class="center"><img src="_data_processor_8h_aba10983b697e65438e53ca66a9459ac2_icgraph.png" border="0" usemap="#_data_processor_8h_aba10983b697e65438e53ca66a9459ac2_icgraph" alt=""/></div>
+<map name="_data_processor_8h_aba10983b697e65438e53ca66a9459ac2_icgraph" id="_data_processor_8h_aba10983b697e65438e53ca66a9459ac2_icgraph">
+<area shape="rect" title="Reads weather data from a file and stores it in the WeatherLog." alt="" coords="573,81,648,108"/>
+<area shape="rect" href="_file_name_reader_8h.html#afd4947a3303689855ee12d8c1924a4f8" title="Reads weather data from a file and stores it in the WeatherLog structure." alt="" coords="379,56,517,83"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html#a2ba9f68c4217c76bc5c5dac17c143472" title=" " alt="" coords="371,107,525,133"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="188,5,239,32"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html#a60828f98521f764f44f88752682a537a" title=" " alt="" coords="104,56,323,83"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,81,56,108"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ad4fffef2d6663efb9fb038fb6979fd28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad4fffef2d6663efb9fb038fb6979fd28">&#9670;&nbsp;</a></span>readDate()</h2>
+<a id="afdf156e8d6316a19a1f0374eb6bb31ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afdf156e8d6316a19a1f0374eb6bb31ac">&#9670;&nbsp;</a></span>readDate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -445,7 +364,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">bool readDate </td>
           <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>dateTemplate</em>, </td>
         </tr>
         <tr>
@@ -462,63 +381,79 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_data_processor_8cpp_source.html#l00162">162</a> of file <a class="el" href="_data_processor_8cpp_source.html">DataProcessor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                                                     {</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    istringstream ss(dateTemplate);</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordtype">int</span> day, month, year;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordtype">char</span> firstDelimiter, secondDelimiter;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">if</span>(!(ss &gt;&gt; day &gt;&gt; firstDelimiter &gt;&gt; month &gt;&gt; secondDelimiter &gt;&gt; year) || (firstDelimiter != <span class="charliteral">&#39;/&#39;</span>) || (secondDelimiter != <span class="charliteral">&#39;/&#39;</span>)){</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    }</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160; </div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="_validator_8cpp.html#acd5665d75328e4daed639814334542d1">isValidDate</a>(day, month, year)){</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    }</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    date.<a class="code" href="class_date.html#ac75fa21654d30e90c2cdb74dd5033803">SetDate</a>(day);</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    date.<a class="code" href="class_date.html#ae47ff4dbe38076b995703ecb4aa5c602">SetMonth</a>(month);</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    date.<a class="code" href="class_date.html#ae77d46d475c904d1fabcb91933034514">SetYear</a>(year);</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_validator_8cpp_source.html#l00020">isValidDate()</a>, <a class="el" href="_d_a_t_e_8_c_p_p_source.html#l00037">Date::SetDate()</a>, <a class="el" href="_d_a_t_e_8_c_p_p_source.html#l00051">Date::SetMonth()</a>, and <a class="el" href="_d_a_t_e_8_c_p_p_source.html#l00065">Date::SetYear()</a>.</p>
+<p>Reads a date from a template string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dateTemplate</td><td>The template string containing the date. </td></tr>
+    <tr><td class="paramname">date</td><td>The <a class="el" href="class_date.html" title="Represents a date including date, month and year.">Date</a> object to store the parsed date. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the date was successfully read, false otherwise. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_data_processor_8cpp_source.html#l00146">readDateAndTime()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dataprocessor_8cpp_source.html#l00129">129</a> of file <a class="el" href="dataprocessor_8cpp_source.html">dataprocessor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                                                         {</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    std::istringstream ss(dateTemplate);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordtype">int</span> day, month, year;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordtype">char</span> firstDelimiter, secondDelimiter;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">if</span> (!(ss &gt;&gt; day &gt;&gt; firstDelimiter &gt;&gt; month &gt;&gt; secondDelimiter &gt;&gt; year) ||</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        (firstDelimiter != <span class="charliteral">&#39;/&#39;</span>) || (secondDelimiter != <span class="charliteral">&#39;/&#39;</span>)) {</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    }</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="_validator_8cpp.html#acd5665d75328e4daed639814334542d1">isValidDate</a>(day, month, year)) {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    date.<a class="code" href="class_date.html#ac75fa21654d30e90c2cdb74dd5033803">SetDate</a>(day);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    date.<a class="code" href="class_date.html#ae47ff4dbe38076b995703ecb4aa5c602">SetMonth</a>(month);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    date.<a class="code" href="class_date.html#ae77d46d475c904d1fabcb91933034514">SetYear</a>(year);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_validator_8cpp_source.html#l00022">isValidDate()</a>, <a class="el" href="_d_a_t_e_8_c_p_p_source.html#l00036">Date::SetDate()</a>, <a class="el" href="_d_a_t_e_8_c_p_p_source.html#l00050">Date::SetMonth()</a>, and <a class="el" href="_d_a_t_e_8_c_p_p_source.html#l00064">Date::SetYear()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dataprocessor_8cpp_source.html#l00115">readDateAndTime()</a>, and <a class="el" href="_test_data_processor_functions_8cpp_source.html#l00038">TestReadDateFunction()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="_data_processor_8h_ad4fffef2d6663efb9fb038fb6979fd28_cgraph.png" border="0" usemap="#_data_processor_8h_ad4fffef2d6663efb9fb038fb6979fd28_cgraph" alt=""/></div>
-<map name="_data_processor_8h_ad4fffef2d6663efb9fb038fb6979fd28_cgraph" id="_data_processor_8h_ad4fffef2d6663efb9fb038fb6979fd28_cgraph">
-<area shape="rect" title=" " alt="" coords="5,107,80,133"/>
-<area shape="rect" href="_validator_8cpp.html#acd5665d75328e4daed639814334542d1" title=" " alt="" coords="141,31,229,57"/>
+<div class="center"><img src="_data_processor_8h_afdf156e8d6316a19a1f0374eb6bb31ac_cgraph.png" border="0" usemap="#_data_processor_8h_afdf156e8d6316a19a1f0374eb6bb31ac_cgraph" alt=""/></div>
+<map name="_data_processor_8h_afdf156e8d6316a19a1f0374eb6bb31ac_cgraph" id="_data_processor_8h_afdf156e8d6316a19a1f0374eb6bb31ac_cgraph">
+<area shape="rect" title="Reads a date from a template string." alt="" coords="5,107,80,133"/>
+<area shape="rect" href="_validator_8cpp.html#acd5665d75328e4daed639814334542d1" title="Validates if the given day, month, and year form a valid date." alt="" coords="141,31,229,57"/>
 <area shape="rect" href="class_date.html#ac75fa21654d30e90c2cdb74dd5033803" title="Set the day." alt="" coords="133,81,237,108"/>
 <area shape="rect" href="class_date.html#ae47ff4dbe38076b995703ecb4aa5c602" title="Set the month." alt="" coords="128,132,241,159"/>
 <area shape="rect" href="class_date.html#ae77d46d475c904d1fabcb91933034514" title="Set the year." alt="" coords="133,183,237,209"/>
-<area shape="rect" href="_validator_8cpp.html#ac5bd0a571f7bd173f55c1dfc6fee07c8" title=" " alt="" coords="289,5,387,32"/>
-<area shape="rect" href="_validator_8cpp.html#a61544b32391e0579f222c45b1a0af56a" title=" " alt="" coords="294,56,382,83"/>
+<area shape="rect" href="_validator_8cpp.html#ac5bd0a571f7bd173f55c1dfc6fee07c8" title="Validates if the given month is valid." alt="" coords="289,5,387,32"/>
+<area shape="rect" href="_validator_8cpp.html#a61544b32391e0579f222c45b1a0af56a" title="Validates if the given year is valid." alt="" coords="294,56,382,83"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="_data_processor_8h_ad4fffef2d6663efb9fb038fb6979fd28_icgraph.png" border="0" usemap="#_data_processor_8h_ad4fffef2d6663efb9fb038fb6979fd28_icgraph" alt=""/></div>
-<map name="_data_processor_8h_ad4fffef2d6663efb9fb038fb6979fd28_icgraph" id="_data_processor_8h_ad4fffef2d6663efb9fb038fb6979fd28_icgraph">
-<area shape="rect" title=" " alt="" coords="772,5,847,32"/>
-<area shape="rect" href="_data_processor_8h.html#a2d99b03343534baef0bb07effb8760cd" title=" " alt="" coords="599,5,724,32"/>
-<area shape="rect" href="_data_processor_8h.html#af0c8f5105b9ac3fe0f8744c7ba51de1f" title=" " alt="" coords="413,5,551,32"/>
-<area shape="rect" href="_data_processor_8h.html#a3aa48e98a9a9a17cc54a71b708c2bb73" title="Contains all functions that read and store the read data from data file." alt="" coords="291,5,365,32"/>
-<area shape="rect" href="_file_name_reader_8h.html#abb388dcb5bcf8927fbce050041896fcb" title="Contains all functions need to read the input file name." alt="" coords="104,5,243,32"/>
-<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+<div class="center"><img src="_data_processor_8h_afdf156e8d6316a19a1f0374eb6bb31ac_icgraph.png" border="0" usemap="#_data_processor_8h_afdf156e8d6316a19a1f0374eb6bb31ac_icgraph" alt=""/></div>
+<map name="_data_processor_8h_afdf156e8d6316a19a1f0374eb6bb31ac_icgraph" id="_data_processor_8h_afdf156e8d6316a19a1f0374eb6bb31ac_icgraph">
+<area shape="rect" title="Reads a date from a template string." alt="" coords="1295,233,1369,260"/>
+<area shape="rect" href="_data_processor_8h.html#a6303080316244e76a4dc1d407b0f16b5" title="Reads a date and time from a template string." alt="" coords="1107,208,1232,235"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html#a619de1434a691d5338c1fddf23e91fda" title=" " alt="" coords="1092,259,1247,285"/>
+<area shape="rect" href="_data_processor_8h.html#a746f4310314b880c1443e868109a5105" title="Reads a weather record from a line and a header map." alt="" coords="873,157,1010,184"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html#a3092bfc4564304ad54a5dde2f7e7ab02" title=" " alt="" coords="839,208,1044,235"/>
+<area shape="rect" href="_data_processor_8h.html#aba10983b697e65438e53ca66a9459ac2" title="Reads weather data from a file and stores it in the WeatherLog." alt="" coords="645,107,719,133"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html#a5e98205bf8226b70bb2290e95eb50f82" title=" " alt="" coords="573,157,791,184"/>
+<area shape="rect" href="_file_name_reader_8h.html#afd4947a3303689855ee12d8c1924a4f8" title="Reads weather data from a file and stores it in the WeatherLog structure." alt="" coords="379,56,517,83"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html#a2ba9f68c4217c76bc5c5dac17c143472" title=" " alt="" coords="371,107,525,133"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="188,5,239,32"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html#a60828f98521f764f44f88752682a537a" title=" " alt="" coords="104,56,323,83"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,157,56,184"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a2d99b03343534baef0bb07effb8760cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d99b03343534baef0bb07effb8760cd">&#9670;&nbsp;</a></span>readDateAndTime()</h2>
+<a id="a6303080316244e76a4dc1d407b0f16b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6303080316244e76a4dc1d407b0f16b5">&#9670;&nbsp;</a></span>readDateAndTime()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -526,7 +461,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">bool readDateAndTime </td>
           <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>dateTimeTemplate</em>, </td>
         </tr>
         <tr>
@@ -549,41 +484,47 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_data_processor_8cpp_source.html#l00146">146</a> of file <a class="el" href="_data_processor_8cpp_source.html">DataProcessor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                                                                            {</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    istringstream ss(dateTimeTemplate);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keywordtype">string</span> dateTemplate, timeTemplate;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordflow">if</span>(!(getline(ss, dateTemplate, <span class="charliteral">&#39; &#39;</span>) &amp;&amp; getline(ss, timeTemplate))){</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    }</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordflow">if</span>(!(<a class="code" href="_data_processor_8cpp.html#ad4fffef2d6663efb9fb038fb6979fd28">readDate</a>(dateTemplate, date) &amp;&amp; <a class="code" href="_data_processor_8cpp.html#a5a1b67153a042c1913994557b6237c67">readTime</a>(timeTemplate, time))){</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_data_processor_8cpp_source.html#l00162">readDate()</a>, and <a class="el" href="_data_processor_8cpp_source.html#l00183">readTime()</a>.</p>
+<p>Reads a date and time from a template string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dateTimeTemplate</td><td>The template string containing the date and time. </td></tr>
+    <tr><td class="paramname">date</td><td>The <a class="el" href="class_date.html" title="Represents a date including date, month and year.">Date</a> object to store the parsed date. </td></tr>
+    <tr><td class="paramname">time</td><td>The <a class="el" href="class_time.html" title="Represents a time with hour and minute.">Time</a> object to store the parsed time. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the date and time were successfully read, false otherwise. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_data_processor_8cpp_source.html#l00129">readWeatherRecord()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dataprocessor_8cpp_source.html#l00115">115</a> of file <a class="el" href="dataprocessor_8cpp_source.html">dataprocessor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                                                                                {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    std::istringstream ss(dateTimeTemplate);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    std::string dateTemplate, timeTemplate;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">if</span> (!(std::getline(ss, dateTemplate, <span class="charliteral">&#39; &#39;</span>) &amp;&amp; std::getline(ss, timeTemplate))) {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="dataprocessor_8cpp.html#afdf156e8d6316a19a1f0374eb6bb31ac">readDate</a>(dateTemplate, date) &amp;&amp; <a class="code" href="dataprocessor_8cpp.html#ab736b8937fc7ab05ca65923faa7a2c2c">readTime</a>(timeTemplate, time);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="dataprocessor_8cpp_source.html#l00129">readDate()</a>, and <a class="el" href="dataprocessor_8cpp_source.html#l00153">readTime()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dataprocessor_8cpp_source.html#l00082">readWeatherRecord()</a>, and <a class="el" href="_test_data_processor_functions_8cpp_source.html#l00053">TestReadDateAndTimeFunction()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="_data_processor_8h_a2d99b03343534baef0bb07effb8760cd_cgraph.png" border="0" usemap="#_data_processor_8h_a2d99b03343534baef0bb07effb8760cd_cgraph" alt=""/></div>
-<map name="_data_processor_8h_a2d99b03343534baef0bb07effb8760cd_cgraph" id="_data_processor_8h_a2d99b03343534baef0bb07effb8760cd_cgraph">
-<area shape="rect" title=" " alt="" coords="5,183,131,209"/>
-<area shape="rect" href="_data_processor_8cpp.html#ad4fffef2d6663efb9fb038fb6979fd28" title=" " alt="" coords="179,132,253,159"/>
-<area shape="rect" href="_data_processor_8cpp.html#a5a1b67153a042c1913994557b6237c67" title=" " alt="" coords="179,259,253,285"/>
-<area shape="rect" href="_validator_8cpp.html#acd5665d75328e4daed639814334542d1" title=" " alt="" coords="316,31,404,57"/>
+<div class="center"><img src="_data_processor_8h_a6303080316244e76a4dc1d407b0f16b5_cgraph.png" border="0" usemap="#_data_processor_8h_a6303080316244e76a4dc1d407b0f16b5_cgraph" alt=""/></div>
+<map name="_data_processor_8h_a6303080316244e76a4dc1d407b0f16b5_cgraph" id="_data_processor_8h_a6303080316244e76a4dc1d407b0f16b5_cgraph">
+<area shape="rect" title="Reads a date and time from a template string." alt="" coords="5,183,131,209"/>
+<area shape="rect" href="dataprocessor_8cpp.html#afdf156e8d6316a19a1f0374eb6bb31ac" title="Reads a date from a template string." alt="" coords="179,132,253,159"/>
+<area shape="rect" href="dataprocessor_8cpp.html#ab736b8937fc7ab05ca65923faa7a2c2c" title="Reads a time from a template string." alt="" coords="179,259,253,285"/>
+<area shape="rect" href="_validator_8cpp.html#acd5665d75328e4daed639814334542d1" title="Validates if the given day, month, and year form a valid date." alt="" coords="316,31,404,57"/>
 <area shape="rect" href="class_date.html#ac75fa21654d30e90c2cdb74dd5033803" title="Set the day." alt="" coords="308,81,412,108"/>
 <area shape="rect" href="class_date.html#ae47ff4dbe38076b995703ecb4aa5c602" title="Set the month." alt="" coords="303,132,417,159"/>
 <area shape="rect" href="class_date.html#ae77d46d475c904d1fabcb91933034514" title="Set the year." alt="" coords="308,183,412,209"/>
-<area shape="rect" href="_validator_8cpp.html#ac5bd0a571f7bd173f55c1dfc6fee07c8" title=" " alt="" coords="467,5,564,32"/>
-<area shape="rect" href="_validator_8cpp.html#a61544b32391e0579f222c45b1a0af56a" title=" " alt="" coords="471,56,559,83"/>
-<area shape="rect" href="_validator_8cpp.html#a78df34cd0e5e380d00b530031c514891" title=" " alt="" coords="315,233,405,260"/>
+<area shape="rect" href="_validator_8cpp.html#ac5bd0a571f7bd173f55c1dfc6fee07c8" title="Validates if the given month is valid." alt="" coords="467,5,564,32"/>
+<area shape="rect" href="_validator_8cpp.html#a61544b32391e0579f222c45b1a0af56a" title="Validates if the given year is valid." alt="" coords="471,56,559,83"/>
+<area shape="rect" href="_validator_8cpp.html#a78df34cd0e5e380d00b530031c514891" title="Validates if the given hour and minute form a valid time." alt="" coords="315,233,405,260"/>
 <area shape="rect" href="class_time.html#ab8c6582ad99c617c821ad3d10b9a872e" title="Set the hour." alt="" coords="307,284,413,311"/>
 <area shape="rect" href="class_time.html#a08cdbeef8e01ad48aadab6db90665d85" title="Set the minute." alt="" coords="301,335,419,361"/>
 </map>
@@ -591,70 +532,104 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="_data_processor_8h_a2d99b03343534baef0bb07effb8760cd_icgraph.png" border="0" usemap="#_data_processor_8h_a2d99b03343534baef0bb07effb8760cd_icgraph" alt=""/></div>
-<map name="_data_processor_8h_a2d99b03343534baef0bb07effb8760cd_icgraph" id="_data_processor_8h_a2d99b03343534baef0bb07effb8760cd_icgraph">
-<area shape="rect" title=" " alt="" coords="599,5,724,32"/>
-<area shape="rect" href="_data_processor_8h.html#af0c8f5105b9ac3fe0f8744c7ba51de1f" title=" " alt="" coords="413,5,551,32"/>
-<area shape="rect" href="_data_processor_8h.html#a3aa48e98a9a9a17cc54a71b708c2bb73" title="Contains all functions that read and store the read data from data file." alt="" coords="291,5,365,32"/>
-<area shape="rect" href="_file_name_reader_8h.html#abb388dcb5bcf8927fbce050041896fcb" title="Contains all functions need to read the input file name." alt="" coords="104,5,243,32"/>
-<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+<div class="center"><img src="_data_processor_8h_a6303080316244e76a4dc1d407b0f16b5_icgraph.png" border="0" usemap="#_data_processor_8h_a6303080316244e76a4dc1d407b0f16b5_icgraph" alt=""/></div>
+<map name="_data_processor_8h_a6303080316244e76a4dc1d407b0f16b5_icgraph" id="_data_processor_8h_a6303080316244e76a4dc1d407b0f16b5_icgraph">
+<area shape="rect" title="Reads a date and time from a template string." alt="" coords="1092,183,1217,209"/>
+<area shape="rect" href="_data_processor_8h.html#a746f4310314b880c1443e868109a5105" title="Reads a weather record from a line and a header map." alt="" coords="873,157,1010,184"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html#a3092bfc4564304ad54a5dde2f7e7ab02" title=" " alt="" coords="839,208,1044,235"/>
+<area shape="rect" href="_data_processor_8h.html#aba10983b697e65438e53ca66a9459ac2" title="Reads weather data from a file and stores it in the WeatherLog." alt="" coords="645,107,719,133"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html#a5e98205bf8226b70bb2290e95eb50f82" title=" " alt="" coords="573,157,791,184"/>
+<area shape="rect" href="_file_name_reader_8h.html#afd4947a3303689855ee12d8c1924a4f8" title="Reads weather data from a file and stores it in the WeatherLog structure." alt="" coords="379,56,517,83"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html#a2ba9f68c4217c76bc5c5dac17c143472" title=" " alt="" coords="371,107,525,133"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="188,5,239,32"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html#a60828f98521f764f44f88752682a537a" title=" " alt="" coords="104,56,323,83"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,132,56,159"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ab42b21c42fab65c4f2708c107babd11a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab42b21c42fab65c4f2708c107babd11a">&#9670;&nbsp;</a></span>readHeader()</h2>
+<a id="acab6295a587ed8bd315fb0cb0e859167"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acab6295a587ed8bd315fb0cb0e859167">&#9670;&nbsp;</a></span>readHeader()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_map.html">Map</a>&lt;string, int&gt; readHeader </td>
+          <td class="memname">void readHeader </td>
           <td>(</td>
-          <td class="paramtype">ifstream &amp;&#160;</td>
-          <td class="paramname"><em>inFile</em></td><td>)</td>
+          <td class="paramtype">std::ifstream &amp;&#160;</td>
+          <td class="paramname"><em>inFile</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="class_map.html">Map</a>&lt; std::string, int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>headerMap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_data_processor_8cpp_source.html#l00077">77</a> of file <a class="el" href="_data_processor_8cpp_source.html">DataProcessor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                              {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="class_map.html">Map&lt;string, int&gt;</a> headerMap;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">string</span> line;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    getline(inFile, line);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    istringstream headerStream(line);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">string</span> header;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">int</span> index = 0;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">while</span> (getline(headerStream, header, <span class="charliteral">&#39;,&#39;</span>)) {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        headerMap[header] = index;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        index++;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> headerMap;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
+<p>Reads the header of the weather data file and fills the provided map with header names and their indices. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inFile</td><td>The input file stream. </td></tr>
+    <tr><td class="paramname">headerMap</td><td>The map to store the header names and their indices. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="dataprocessor_8cpp_source.html#l00056">56</a> of file <a class="el" href="dataprocessor_8cpp_source.html">dataprocessor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                                                     {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    std::string line;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    std::getline(inFile, line);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    std::istringstream headerStream(line);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    std::string header;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">int</span> index = 0;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">while</span> (std::getline(headerStream, header, <span class="charliteral">&#39;,&#39;</span>)) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        headerMap.<a class="code" href="class_map.html#a225903c0291cf978e27be5a58f399a14">insert</a>(header, index++);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="_data_processor_8cpp_source.html#l00017">readData()</a>.</p>
+<p class="reference">References <a class="el" href="_map_8h_source.html#l00180">Map&lt; K, V &gt;::insert()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dataprocessor_8cpp_source.html#l00009">readData()</a>, and <a class="el" href="_test_data_processor_functions_8cpp_source.html#l00114">TestReadHeaderFunction()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_data_processor_8h_acab6295a587ed8bd315fb0cb0e859167_cgraph.png" border="0" usemap="#_data_processor_8h_acab6295a587ed8bd315fb0cb0e859167_cgraph" alt=""/></div>
+<map name="_data_processor_8h_acab6295a587ed8bd315fb0cb0e859167_cgraph" id="_data_processor_8h_acab6295a587ed8bd315fb0cb0e859167_cgraph">
+<area shape="rect" title="Reads the header of the weather data file and fills the provided map with header names and their indi..." alt="" coords="5,5,93,32"/>
+<area shape="rect" href="class_map.html#a225903c0291cf978e27be5a58f399a14" title="Inserts a key&#45;value pair into the map." alt="" coords="141,5,228,32"/>
+</map>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="_data_processor_8h_ab42b21c42fab65c4f2708c107babd11a_icgraph.png" border="0" usemap="#_data_processor_8h_ab42b21c42fab65c4f2708c107babd11a_icgraph" alt=""/></div>
-<map name="_data_processor_8h_ab42b21c42fab65c4f2708c107babd11a_icgraph" id="_data_processor_8h_ab42b21c42fab65c4f2708c107babd11a_icgraph">
-<area shape="rect" title=" " alt="" coords="413,5,501,32"/>
-<area shape="rect" href="_data_processor_8h.html#a3aa48e98a9a9a17cc54a71b708c2bb73" title="Contains all functions that read and store the read data from data file." alt="" coords="291,5,365,32"/>
-<area shape="rect" href="_file_name_reader_8h.html#abb388dcb5bcf8927fbce050041896fcb" title="Contains all functions need to read the input file name." alt="" coords="104,5,243,32"/>
-<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+<div class="center"><img src="_data_processor_8h_acab6295a587ed8bd315fb0cb0e859167_icgraph.png" border="0" usemap="#_data_processor_8h_acab6295a587ed8bd315fb0cb0e859167_icgraph" alt=""/></div>
+<map name="_data_processor_8h_acab6295a587ed8bd315fb0cb0e859167_icgraph" id="_data_processor_8h_acab6295a587ed8bd315fb0cb0e859167_icgraph">
+<area shape="rect" title="Reads the header of the weather data file and fills the provided map with header names and their indi..." alt="" coords="789,132,877,159"/>
+<area shape="rect" href="_data_processor_8h.html#aba10983b697e65438e53ca66a9459ac2" title="Reads weather data from a file and stores it in the WeatherLog." alt="" coords="620,107,695,133"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html#aec13c5dc9a1d431142ebb4f766e6b2ff" title=" " alt="" coords="573,157,741,184"/>
+<area shape="rect" href="_file_name_reader_8h.html#afd4947a3303689855ee12d8c1924a4f8" title="Reads weather data from a file and stores it in the WeatherLog structure." alt="" coords="379,56,517,83"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html#a2ba9f68c4217c76bc5c5dac17c143472" title=" " alt="" coords="371,107,525,133"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="188,5,239,32"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html#a60828f98521f764f44f88752682a537a" title=" " alt="" coords="104,56,323,83"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,107,56,133"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a5a1b67153a042c1913994557b6237c67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a1b67153a042c1913994557b6237c67">&#9670;&nbsp;</a></span>readTime()</h2>
+<a id="ab736b8937fc7ab05ca65923faa7a2c2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab736b8937fc7ab05ca65923faa7a2c2c">&#9670;&nbsp;</a></span>readTime()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -662,7 +637,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">bool readTime </td>
           <td>(</td>
-          <td class="paramtype">const string &amp;&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>timeTemplate</em>, </td>
         </tr>
         <tr>
@@ -679,37 +654,46 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_data_processor_8cpp_source.html#l00183">183</a> of file <a class="el" href="_data_processor_8cpp_source.html">DataProcessor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                                                     {</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    istringstream ss(timeTemplate);</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordtype">int</span> hour, minute;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keywordtype">char</span> delimiter;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordflow">if</span>(!(ss &gt;&gt; hour &gt;&gt; delimiter &gt;&gt; minute) || (delimiter != <span class="charliteral">&#39;:&#39;</span>)){</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    }</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="_validator_8cpp.html#a78df34cd0e5e380d00b530031c514891">isValidTime</a>(hour, minute)){</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    }</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    time.<a class="code" href="class_time.html#ab8c6582ad99c617c821ad3d10b9a872e">SetHour</a>(hour);</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    time.<a class="code" href="class_time.html#a08cdbeef8e01ad48aadab6db90665d85">SetMinute</a>(minute);</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_validator_8cpp_source.html#l00053">isValidTime()</a>, <a class="el" href="_t_i_m_e_8_c_p_p_source.html#l00036">Time::SetHour()</a>, and <a class="el" href="_t_i_m_e_8_c_p_p_source.html#l00050">Time::SetMinute()</a>.</p>
+<p>Reads a time from a template string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeTemplate</td><td>The template string containing the time. </td></tr>
+    <tr><td class="paramname">time</td><td>The <a class="el" href="class_time.html" title="Represents a time with hour and minute.">Time</a> object to store the parsed time. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the time was successfully read, false otherwise. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_data_processor_8cpp_source.html#l00146">readDateAndTime()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dataprocessor_8cpp_source.html#l00153">153</a> of file <a class="el" href="dataprocessor_8cpp_source.html">dataprocessor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;                                                         {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    std::istringstream ss(timeTemplate);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordtype">int</span> hour, minute;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordtype">char</span> delimiter;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordflow">if</span> (!(ss &gt;&gt; hour &gt;&gt; delimiter &gt;&gt; minute) || (delimiter != <span class="charliteral">&#39;:&#39;</span>)) {</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    }</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="_validator_8cpp.html#a78df34cd0e5e380d00b530031c514891">isValidTime</a>(hour, minute)) {</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    }</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    time.<a class="code" href="class_time.html#ab8c6582ad99c617c821ad3d10b9a872e">SetHour</a>(hour);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    time.<a class="code" href="class_time.html#a08cdbeef8e01ad48aadab6db90665d85">SetMinute</a>(minute);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_validator_8cpp_source.html#l00065">isValidTime()</a>, <a class="el" href="_t_i_m_e_8_c_p_p_source.html#l00036">Time::SetHour()</a>, and <a class="el" href="_t_i_m_e_8_c_p_p_source.html#l00050">Time::SetMinute()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dataprocessor_8cpp_source.html#l00115">readDateAndTime()</a>, and <a class="el" href="_test_data_processor_functions_8cpp_source.html#l00023">TestReadTimeFunction()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="_data_processor_8h_a5a1b67153a042c1913994557b6237c67_cgraph.png" border="0" usemap="#_data_processor_8h_a5a1b67153a042c1913994557b6237c67_cgraph" alt=""/></div>
-<map name="_data_processor_8h_a5a1b67153a042c1913994557b6237c67_cgraph" id="_data_processor_8h_a5a1b67153a042c1913994557b6237c67_cgraph">
-<area shape="rect" title=" " alt="" coords="5,56,80,83"/>
-<area shape="rect" href="_validator_8cpp.html#a78df34cd0e5e380d00b530031c514891" title=" " alt="" coords="142,5,231,32"/>
+<div class="center"><img src="_data_processor_8h_ab736b8937fc7ab05ca65923faa7a2c2c_cgraph.png" border="0" usemap="#_data_processor_8h_ab736b8937fc7ab05ca65923faa7a2c2c_cgraph" alt=""/></div>
+<map name="_data_processor_8h_ab736b8937fc7ab05ca65923faa7a2c2c_cgraph" id="_data_processor_8h_ab736b8937fc7ab05ca65923faa7a2c2c_cgraph">
+<area shape="rect" title="Reads a time from a template string." alt="" coords="5,56,80,83"/>
+<area shape="rect" href="_validator_8cpp.html#a78df34cd0e5e380d00b530031c514891" title="Validates if the given hour and minute form a valid time." alt="" coords="142,5,231,32"/>
 <area shape="rect" href="class_time.html#ab8c6582ad99c617c821ad3d10b9a872e" title="Set the hour." alt="" coords="134,56,239,83"/>
 <area shape="rect" href="class_time.html#a08cdbeef8e01ad48aadab6db90665d85" title="Set the minute." alt="" coords="128,107,245,133"/>
 </map>
@@ -717,21 +701,27 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="_data_processor_8h_a5a1b67153a042c1913994557b6237c67_icgraph.png" border="0" usemap="#_data_processor_8h_a5a1b67153a042c1913994557b6237c67_icgraph" alt=""/></div>
-<map name="_data_processor_8h_a5a1b67153a042c1913994557b6237c67_icgraph" id="_data_processor_8h_a5a1b67153a042c1913994557b6237c67_icgraph">
-<area shape="rect" title=" " alt="" coords="772,5,847,32"/>
-<area shape="rect" href="_data_processor_8h.html#a2d99b03343534baef0bb07effb8760cd" title=" " alt="" coords="599,5,724,32"/>
-<area shape="rect" href="_data_processor_8h.html#af0c8f5105b9ac3fe0f8744c7ba51de1f" title=" " alt="" coords="413,5,551,32"/>
-<area shape="rect" href="_data_processor_8h.html#a3aa48e98a9a9a17cc54a71b708c2bb73" title="Contains all functions that read and store the read data from data file." alt="" coords="291,5,365,32"/>
-<area shape="rect" href="_file_name_reader_8h.html#abb388dcb5bcf8927fbce050041896fcb" title="Contains all functions need to read the input file name." alt="" coords="104,5,243,32"/>
-<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+<div class="center"><img src="_data_processor_8h_ab736b8937fc7ab05ca65923faa7a2c2c_icgraph.png" border="0" usemap="#_data_processor_8h_ab736b8937fc7ab05ca65923faa7a2c2c_icgraph" alt=""/></div>
+<map name="_data_processor_8h_ab736b8937fc7ab05ca65923faa7a2c2c_icgraph" id="_data_processor_8h_ab736b8937fc7ab05ca65923faa7a2c2c_icgraph">
+<area shape="rect" title="Reads a time from a template string." alt="" coords="1295,233,1369,260"/>
+<area shape="rect" href="_data_processor_8h.html#a6303080316244e76a4dc1d407b0f16b5" title="Reads a date and time from a template string." alt="" coords="1107,208,1232,235"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html#ad93a903971c99df16a17a90a3eeeee33" title=" " alt="" coords="1092,259,1247,285"/>
+<area shape="rect" href="_data_processor_8h.html#a746f4310314b880c1443e868109a5105" title="Reads a weather record from a line and a header map." alt="" coords="873,157,1010,184"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html#a3092bfc4564304ad54a5dde2f7e7ab02" title=" " alt="" coords="839,208,1044,235"/>
+<area shape="rect" href="_data_processor_8h.html#aba10983b697e65438e53ca66a9459ac2" title="Reads weather data from a file and stores it in the WeatherLog." alt="" coords="645,107,719,133"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html#a5e98205bf8226b70bb2290e95eb50f82" title=" " alt="" coords="573,157,791,184"/>
+<area shape="rect" href="_file_name_reader_8h.html#afd4947a3303689855ee12d8c1924a4f8" title="Reads weather data from a file and stores it in the WeatherLog structure." alt="" coords="379,56,517,83"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html#a2ba9f68c4217c76bc5c5dac17c143472" title=" " alt="" coords="371,107,525,133"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="188,5,239,32"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html#a60828f98521f764f44f88752682a537a" title=" " alt="" coords="104,56,323,83"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,157,56,184"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="af0c8f5105b9ac3fe0f8744c7ba51de1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0c8f5105b9ac3fe0f8744c7ba51de1f">&#9670;&nbsp;</a></span>readWeatherRecord()</h2>
+<a id="a746f4310314b880c1443e868109a5105"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a746f4310314b880c1443e868109a5105">&#9670;&nbsp;</a></span>readWeatherRecord()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -739,14 +729,32 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">bool readWeatherRecord </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_vector.html">Vector</a>&lt; string &gt; &amp;&#160;</td>
-          <td class="paramname"><em>rows</em>, </td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_map.html">Map</a>&lt; string, int &gt; &amp;&#160;</td>
-          <td class="paramname"><em>headerMap</em>, </td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>wastIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>speedIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>solarRadIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>airTempIndex</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -762,44 +770,70 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_data_processor_8cpp_source.html#l00129">129</a> of file <a class="el" href="_data_processor_8cpp_source.html">DataProcessor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                                                                                                            {</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="_data_processor_8cpp.html#a2d99b03343534baef0bb07effb8760cd">readDateAndTime</a>(rows[headerMap.<a class="code" href="class_map.html#a940dcce0b4490af7406db9fe95a7927f">at</a>(<span class="stringliteral">&quot;WAST&quot;</span>)], record.<a class="code" href="struct_weather_record.html#a70f012d48746320340d318fe747104ee">date</a>, record.<a class="code" href="struct_weather_record.html#a27baa40f24e123076f82613dcb26bc0f">time</a>)){</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">try</span>{</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        record.<a class="code" href="struct_weather_record.html#a659efe8ecf8b99162a095730943e6821">speed</a> = stod(rows[headerMap.<a class="code" href="class_map.html#a940dcce0b4490af7406db9fe95a7927f">at</a>(<span class="stringliteral">&quot;S&quot;</span>)]);</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        record.<a class="code" href="struct_weather_record.html#a79d361cefdd03af9d499cbe943178235">airTemp</a> = stod(rows[headerMap.<a class="code" href="class_map.html#a940dcce0b4490af7406db9fe95a7927f">at</a>(<span class="stringliteral">&quot;SR&quot;</span>)]);</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        record.<a class="code" href="struct_weather_record.html#a45cbec06a76f8b4708f770deb9ae67e2">solarRad</a> = stod(rows[headerMap.<a class="code" href="class_map.html#a940dcce0b4490af7406db9fe95a7927f">at</a>(<span class="stringliteral">&quot;T&quot;</span>)]);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    }</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordflow">catch</span> (<span class="keyword">const</span> invalid_argument&amp; e){</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    }</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="_data_structure_8h_source.html#l00045">WeatherRecord::airTemp</a>, <a class="el" href="_map_8h_source.html#l00178">Map&lt; K, V &gt;::at()</a>, <a class="el" href="_data_structure_8h_source.html#l00041">WeatherRecord::date</a>, <a class="el" href="_data_processor_8cpp_source.html#l00146">readDateAndTime()</a>, <a class="el" href="_data_structure_8h_source.html#l00044">WeatherRecord::solarRad</a>, <a class="el" href="_data_structure_8h_source.html#l00043">WeatherRecord::speed</a>, and <a class="el" href="_data_structure_8h_source.html#l00042">WeatherRecord::time</a>.</p>
+<p>Reads a weather record from a line and a header map. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">line</td><td>The line from the weather data file. </td></tr>
+    <tr><td class="paramname">wastIndex</td><td>The index of the WAST header. </td></tr>
+    <tr><td class="paramname">speedIndex</td><td>The index of the speed header. </td></tr>
+    <tr><td class="paramname">solarRadIndex</td><td>The index of the solar radiation header. </td></tr>
+    <tr><td class="paramname">airTempIndex</td><td>The index of the air temperature header. </td></tr>
+    <tr><td class="paramname">record</td><td>The <a class="el" href="struct_weather_record.html" title="A struct to store weather record.">WeatherRecord</a> to store the parsed data. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the record was successfully read, false otherwise. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="_data_processor_8cpp_source.html#l00017">readData()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="dataprocessor_8cpp_source.html#l00082">82</a> of file <a class="el" href="dataprocessor_8cpp_source.html">dataprocessor.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                                                                                                                         {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    std::istringstream lineStream(line);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    std::string cell;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">int</span> currentIndex = 0;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">while</span> (std::getline(lineStream, cell, <span class="charliteral">&#39;,&#39;</span>)) {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">try</span> {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordflow">if</span> (currentIndex == wastIndex) {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <span class="keywordflow">if</span> (!<a class="code" href="dataprocessor_8cpp.html#a6303080316244e76a4dc1d407b0f16b5">readDateAndTime</a>(cell, record.<a class="code" href="struct_weather_record.html#a70f012d48746320340d318fe747104ee">date</a>, record.<a class="code" href="struct_weather_record.html#a27baa40f24e123076f82613dcb26bc0f">time</a>)) {</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            }</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (currentIndex == speedIndex) {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                record.<a class="code" href="struct_weather_record.html#a659efe8ecf8b99162a095730943e6821">speed</a> = std::stod(cell);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (currentIndex == solarRadIndex) {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                record.<a class="code" href="struct_weather_record.html#a45cbec06a76f8b4708f770deb9ae67e2">solarRad</a> = std::stod(cell);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span> (currentIndex == airTempIndex) {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                record.<a class="code" href="struct_weather_record.html#a79d361cefdd03af9d499cbe943178235">airTemp</a> = std::stod(cell);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::invalid_argument&amp; e) {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        currentIndex++;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="_weather_record_8h_source.html#l00019">WeatherRecord::airTemp</a>, <a class="el" href="_weather_record_8h_source.html#l00015">WeatherRecord::date</a>, <a class="el" href="dataprocessor_8cpp_source.html#l00115">readDateAndTime()</a>, <a class="el" href="_weather_record_8h_source.html#l00018">WeatherRecord::solarRad</a>, <a class="el" href="_weather_record_8h_source.html#l00017">WeatherRecord::speed</a>, and <a class="el" href="_weather_record_8h_source.html#l00016">WeatherRecord::time</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="dataprocessor_8cpp_source.html#l00009">readData()</a>, and <a class="el" href="_test_data_processor_functions_8cpp_source.html#l00070">TestReadWeatherRecordFunction()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="_data_processor_8h_af0c8f5105b9ac3fe0f8744c7ba51de1f_cgraph.png" border="0" usemap="#_data_processor_8h_af0c8f5105b9ac3fe0f8744c7ba51de1f_cgraph" alt=""/></div>
-<map name="_data_processor_8h_af0c8f5105b9ac3fe0f8744c7ba51de1f_cgraph" id="_data_processor_8h_af0c8f5105b9ac3fe0f8744c7ba51de1f_cgraph">
-<area shape="rect" title=" " alt="" coords="5,157,143,184"/>
-<area shape="rect" href="class_map.html#a940dcce0b4490af7406db9fe95a7927f" title="Retrieves the value corresponding to a key." alt="" coords="220,132,287,159"/>
-<area shape="rect" href="_data_processor_8cpp.html#a2d99b03343534baef0bb07effb8760cd" title=" " alt="" coords="191,183,316,209"/>
-<area shape="rect" href="_data_processor_8cpp.html#ad4fffef2d6663efb9fb038fb6979fd28" title=" " alt="" coords="364,132,439,159"/>
-<area shape="rect" href="_data_processor_8cpp.html#a5a1b67153a042c1913994557b6237c67" title=" " alt="" coords="364,259,439,285"/>
-<area shape="rect" href="_validator_8cpp.html#acd5665d75328e4daed639814334542d1" title=" " alt="" coords="501,31,589,57"/>
+<div class="center"><img src="_data_processor_8h_a746f4310314b880c1443e868109a5105_cgraph.png" border="0" usemap="#_data_processor_8h_a746f4310314b880c1443e868109a5105_cgraph" alt=""/></div>
+<map name="_data_processor_8h_a746f4310314b880c1443e868109a5105_cgraph" id="_data_processor_8h_a746f4310314b880c1443e868109a5105_cgraph">
+<area shape="rect" title="Reads a weather record from a line and a header map." alt="" coords="5,183,143,209"/>
+<area shape="rect" href="dataprocessor_8cpp.html#a6303080316244e76a4dc1d407b0f16b5" title="Reads a date and time from a template string." alt="" coords="191,183,316,209"/>
+<area shape="rect" href="dataprocessor_8cpp.html#afdf156e8d6316a19a1f0374eb6bb31ac" title="Reads a date from a template string." alt="" coords="364,132,439,159"/>
+<area shape="rect" href="dataprocessor_8cpp.html#ab736b8937fc7ab05ca65923faa7a2c2c" title="Reads a time from a template string." alt="" coords="364,259,439,285"/>
+<area shape="rect" href="_validator_8cpp.html#acd5665d75328e4daed639814334542d1" title="Validates if the given day, month, and year form a valid date." alt="" coords="501,31,589,57"/>
 <area shape="rect" href="class_date.html#ac75fa21654d30e90c2cdb74dd5033803" title="Set the day." alt="" coords="493,81,597,108"/>
 <area shape="rect" href="class_date.html#ae47ff4dbe38076b995703ecb4aa5c602" title="Set the month." alt="" coords="489,132,602,159"/>
 <area shape="rect" href="class_date.html#ae77d46d475c904d1fabcb91933034514" title="Set the year." alt="" coords="493,183,597,209"/>
-<area shape="rect" href="_validator_8cpp.html#ac5bd0a571f7bd173f55c1dfc6fee07c8" title=" " alt="" coords="652,5,749,32"/>
-<area shape="rect" href="_validator_8cpp.html#a61544b32391e0579f222c45b1a0af56a" title=" " alt="" coords="657,56,745,83"/>
-<area shape="rect" href="_validator_8cpp.html#a78df34cd0e5e380d00b530031c514891" title=" " alt="" coords="501,233,590,260"/>
+<area shape="rect" href="_validator_8cpp.html#ac5bd0a571f7bd173f55c1dfc6fee07c8" title="Validates if the given month is valid." alt="" coords="652,5,749,32"/>
+<area shape="rect" href="_validator_8cpp.html#a61544b32391e0579f222c45b1a0af56a" title="Validates if the given year is valid." alt="" coords="657,56,745,83"/>
+<area shape="rect" href="_validator_8cpp.html#a78df34cd0e5e380d00b530031c514891" title="Validates if the given hour and minute form a valid time." alt="" coords="501,233,590,260"/>
 <area shape="rect" href="class_time.html#ab8c6582ad99c617c821ad3d10b9a872e" title="Set the hour." alt="" coords="493,284,598,311"/>
 <area shape="rect" href="class_time.html#a08cdbeef8e01ad48aadab6db90665d85" title="Set the minute." alt="" coords="487,335,604,361"/>
 </map>
@@ -807,12 +841,16 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="_data_processor_8h_af0c8f5105b9ac3fe0f8744c7ba51de1f_icgraph.png" border="0" usemap="#_data_processor_8h_af0c8f5105b9ac3fe0f8744c7ba51de1f_icgraph" alt=""/></div>
-<map name="_data_processor_8h_af0c8f5105b9ac3fe0f8744c7ba51de1f_icgraph" id="_data_processor_8h_af0c8f5105b9ac3fe0f8744c7ba51de1f_icgraph">
-<area shape="rect" title=" " alt="" coords="413,5,551,32"/>
-<area shape="rect" href="_data_processor_8h.html#a3aa48e98a9a9a17cc54a71b708c2bb73" title="Contains all functions that read and store the read data from data file." alt="" coords="291,5,365,32"/>
-<area shape="rect" href="_file_name_reader_8h.html#abb388dcb5bcf8927fbce050041896fcb" title="Contains all functions need to read the input file name." alt="" coords="104,5,243,32"/>
-<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+<div class="center"><img src="_data_processor_8h_a746f4310314b880c1443e868109a5105_icgraph.png" border="0" usemap="#_data_processor_8h_a746f4310314b880c1443e868109a5105_icgraph" alt=""/></div>
+<map name="_data_processor_8h_a746f4310314b880c1443e868109a5105_icgraph" id="_data_processor_8h_a746f4310314b880c1443e868109a5105_icgraph">
+<area shape="rect" title="Reads a weather record from a line and a header map." alt="" coords="839,132,976,159"/>
+<area shape="rect" href="_data_processor_8h.html#aba10983b697e65438e53ca66a9459ac2" title="Reads weather data from a file and stores it in the WeatherLog." alt="" coords="645,107,719,133"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html#a5e98205bf8226b70bb2290e95eb50f82" title=" " alt="" coords="573,157,791,184"/>
+<area shape="rect" href="_file_name_reader_8h.html#afd4947a3303689855ee12d8c1924a4f8" title="Reads weather data from a file and stores it in the WeatherLog structure." alt="" coords="379,56,517,83"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html#a2ba9f68c4217c76bc5c5dac17c143472" title=" " alt="" coords="371,107,525,133"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="188,5,239,32"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html#a60828f98521f764f44f88752682a537a" title=" " alt="" coords="104,56,323,83"/>
+<area shape="rect" href="_test_data_processor_functions_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,107,56,133"/>
 </map>
 </div>
 
@@ -820,40 +858,35 @@ Here is the caller graph for this function:</div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astruct_weather_record_html_a45cbec06a76f8b4708f770deb9ae67e2"><div class="ttname"><a href="struct_weather_record.html#a45cbec06a76f8b4708f770deb9ae67e2">WeatherRecord::solarRad</a></div><div class="ttdeci">double solarRad</div><div class="ttdoc">record wind speed</div><div class="ttdef"><b>Definition:</b> <a href="_data_structure_8h_source.html#l00044">DataStructure.h:44</a></div></div>
-<div class="ttc" id="aclass_vector_html_a87f73b09903e16a1caaaae559a04036a"><div class="ttname"><a href="class_vector.html#a87f73b09903e16a1caaaae559a04036a">Vector::add</a></div><div class="ttdeci">void add(const T &amp;element)</div><div class="ttdoc">add the element at the end of the array</div><div class="ttdef"><b>Definition:</b> <a href="_v_e_c_t_o_r_8_h_source.html#l00163">VECTOR.H:163</a></div></div>
-<div class="ttc" id="a_data_processor_8cpp_html_a5a1b67153a042c1913994557b6237c67"><div class="ttname"><a href="_data_processor_8cpp.html#a5a1b67153a042c1913994557b6237c67">readTime</a></div><div class="ttdeci">bool readTime(const string &amp;timeTemplate, Time &amp;time)</div><div class="ttdef"><b>Definition:</b> <a href="_data_processor_8cpp_source.html#l00183">DataProcessor.cpp:183</a></div></div>
-<div class="ttc" id="a_data_processor_8cpp_html_ad4fffef2d6663efb9fb038fb6979fd28"><div class="ttname"><a href="_data_processor_8cpp.html#ad4fffef2d6663efb9fb038fb6979fd28">readDate</a></div><div class="ttdeci">bool readDate(const string &amp;dateTemplate, Date &amp;date)</div><div class="ttdef"><b>Definition:</b> <a href="_data_processor_8cpp_source.html#l00162">DataProcessor.cpp:162</a></div></div>
-<div class="ttc" id="a_data_processor_8cpp_html_ab4581d7aa00f7725ca5fbe6e3c9c78b8"><div class="ttname"><a href="_data_processor_8cpp.html#ab4581d7aa00f7725ca5fbe6e3c9c78b8">getRow</a></div><div class="ttdeci">Vector&lt; string &gt; getRow(const string &amp;row)</div><div class="ttdef"><b>Definition:</b> <a href="_data_processor_8cpp_source.html#l00107">DataProcessor.cpp:107</a></div></div>
-<div class="ttc" id="aclass_map_html_a21817f63324636803318e47c2a88b02e"><div class="ttname"><a href="class_map.html#a21817f63324636803318e47c2a88b02e">Map::contains</a></div><div class="ttdeci">bool contains(const K &amp;key) const</div><div class="ttdoc">Checks if the map contains a key.</div><div class="ttdef"><b>Definition:</b> <a href="_map_8h_source.html#l00187">Map.h:187</a></div></div>
-<div class="ttc" id="aclass_date_html_ae47ff4dbe38076b995703ecb4aa5c602"><div class="ttname"><a href="class_date.html#ae47ff4dbe38076b995703ecb4aa5c602">Date::SetMonth</a></div><div class="ttdeci">void SetMonth(int m)</div><div class="ttdoc">Set the month.</div><div class="ttdef"><b>Definition:</b> <a href="_d_a_t_e_8_c_p_p_source.html#l00051">DATE.CPP:51</a></div></div>
-<div class="ttc" id="aclass_date_html_ad79ce504482f317ddcfdc4ecad77671f"><div class="ttname"><a href="class_date.html#ad79ce504482f317ddcfdc4ecad77671f">Date::GetYear</a></div><div class="ttdeci">int GetYear() const</div><div class="ttdoc">Get the year.</div><div class="ttdef"><b>Definition:</b> <a href="_d_a_t_e_8_c_p_p_source.html#l00058">DATE.CPP:58</a></div></div>
-<div class="ttc" id="aclass_date_html_ae77d46d475c904d1fabcb91933034514"><div class="ttname"><a href="class_date.html#ae77d46d475c904d1fabcb91933034514">Date::SetYear</a></div><div class="ttdeci">void SetYear(int y)</div><div class="ttdoc">Set the year.</div><div class="ttdef"><b>Definition:</b> <a href="_d_a_t_e_8_c_p_p_source.html#l00065">DATE.CPP:65</a></div></div>
-<div class="ttc" id="astruct_weather_record_html"><div class="ttname"><a href="struct_weather_record.html">WeatherRecord</a></div><div class="ttdoc">A struct to store weather record.</div><div class="ttdef"><b>Definition:</b> <a href="_data_structure_8h_source.html#l00040">DataStructure.h:40</a></div></div>
-<div class="ttc" id="a_data_processor_8cpp_html_ab42b21c42fab65c4f2708c107babd11a"><div class="ttname"><a href="_data_processor_8cpp.html#ab42b21c42fab65c4f2708c107babd11a">readHeader</a></div><div class="ttdeci">Map&lt; string, int &gt; readHeader(ifstream &amp;inFile)</div><div class="ttdef"><b>Definition:</b> <a href="_data_processor_8cpp_source.html#l00077">DataProcessor.cpp:77</a></div></div>
-<div class="ttc" id="aclass_date_html_ac75fa21654d30e90c2cdb74dd5033803"><div class="ttname"><a href="class_date.html#ac75fa21654d30e90c2cdb74dd5033803">Date::SetDate</a></div><div class="ttdeci">void SetDate(int d)</div><div class="ttdoc">Set the day.</div><div class="ttdef"><b>Definition:</b> <a href="_d_a_t_e_8_c_p_p_source.html#l00037">DATE.CPP:37</a></div></div>
-<div class="ttc" id="a_data_processor_8cpp_html_a654cf13adaa6a67a76c17f5035f9d860"><div class="ttname"><a href="_data_processor_8cpp.html#a654cf13adaa6a67a76c17f5035f9d860">isValidCell</a></div><div class="ttdeci">bool isValidCell(const string &amp;cell)</div><div class="ttdef"><b>Definition:</b> <a href="_data_processor_8cpp_source.html#l00120">DataProcessor.cpp:120</a></div></div>
-<div class="ttc" id="astruct_weather_record_html_a27baa40f24e123076f82613dcb26bc0f"><div class="ttname"><a href="struct_weather_record.html#a27baa40f24e123076f82613dcb26bc0f">WeatherRecord::time</a></div><div class="ttdeci">Time time</div><div class="ttdoc">record date</div><div class="ttdef"><b>Definition:</b> <a href="_data_structure_8h_source.html#l00042">DataStructure.h:42</a></div></div>
-<div class="ttc" id="astruct_weather_record_html_a79d361cefdd03af9d499cbe943178235"><div class="ttname"><a href="struct_weather_record.html#a79d361cefdd03af9d499cbe943178235">WeatherRecord::airTemp</a></div><div class="ttdeci">double airTemp</div><div class="ttdoc">record solar radiation</div><div class="ttdef"><b>Definition:</b> <a href="_data_structure_8h_source.html#l00045">DataStructure.h:45</a></div></div>
-<div class="ttc" id="astruct_weather_record_html_a659efe8ecf8b99162a095730943e6821"><div class="ttname"><a href="struct_weather_record.html#a659efe8ecf8b99162a095730943e6821">WeatherRecord::speed</a></div><div class="ttdeci">double speed</div><div class="ttdoc">record time</div><div class="ttdef"><b>Definition:</b> <a href="_data_structure_8h_source.html#l00043">DataStructure.h:43</a></div></div>
-<div class="ttc" id="aclass_map_html_a940dcce0b4490af7406db9fe95a7927f"><div class="ttname"><a href="class_map.html#a940dcce0b4490af7406db9fe95a7927f">Map::at</a></div><div class="ttdeci">const V &amp; at(const K &amp;key) const</div><div class="ttdoc">Retrieves the value corresponding to a key.</div><div class="ttdef"><b>Definition:</b> <a href="_map_8h_source.html#l00178">Map.h:178</a></div></div>
-<div class="ttc" id="a_validator_8cpp_html_acd5665d75328e4daed639814334542d1"><div class="ttname"><a href="_validator_8cpp.html#acd5665d75328e4daed639814334542d1">isValidDate</a></div><div class="ttdeci">bool isValidDate(int day, int month, int year)</div><div class="ttdef"><b>Definition:</b> <a href="_validator_8cpp_source.html#l00020">Validator.cpp:20</a></div></div>
+<div class="ttc" id="astruct_weather_record_html_a45cbec06a76f8b4708f770deb9ae67e2"><div class="ttname"><a href="struct_weather_record.html#a45cbec06a76f8b4708f770deb9ae67e2">WeatherRecord::solarRad</a></div><div class="ttdeci">double solarRad</div><div class="ttdoc">record wind speed</div><div class="ttdef"><b>Definition:</b> <a href="_weather_record_8h_source.html#l00018">WeatherRecord.h:18</a></div></div>
+<div class="ttc" id="aclass_map_html_a21817f63324636803318e47c2a88b02e"><div class="ttname"><a href="class_map.html#a21817f63324636803318e47c2a88b02e">Map::contains</a></div><div class="ttdeci">bool contains(const K &amp;key) const</div><div class="ttdoc">Checks if the map contains a key.</div><div class="ttdef"><b>Definition:</b> <a href="_map_8h_source.html#l00200">Map.h:200</a></div></div>
+<div class="ttc" id="aclass_date_html_ae47ff4dbe38076b995703ecb4aa5c602"><div class="ttname"><a href="class_date.html#ae47ff4dbe38076b995703ecb4aa5c602">Date::SetMonth</a></div><div class="ttdeci">void SetMonth(int m)</div><div class="ttdoc">Set the month.</div><div class="ttdef"><b>Definition:</b> <a href="_d_a_t_e_8_c_p_p_source.html#l00050">DATE.CPP:50</a></div></div>
+<div class="ttc" id="aclass_date_html_ad79ce504482f317ddcfdc4ecad77671f"><div class="ttname"><a href="class_date.html#ad79ce504482f317ddcfdc4ecad77671f">Date::GetYear</a></div><div class="ttdeci">int GetYear() const</div><div class="ttdoc">Get the year.</div><div class="ttdef"><b>Definition:</b> <a href="_d_a_t_e_8_c_p_p_source.html#l00057">DATE.CPP:57</a></div></div>
+<div class="ttc" id="adataprocessor_8cpp_html_afdf156e8d6316a19a1f0374eb6bb31ac"><div class="ttname"><a href="dataprocessor_8cpp.html#afdf156e8d6316a19a1f0374eb6bb31ac">readDate</a></div><div class="ttdeci">bool readDate(const std::string &amp;dateTemplate, Date &amp;date)</div><div class="ttdoc">Reads a date from a template string.</div><div class="ttdef"><b>Definition:</b> <a href="dataprocessor_8cpp_source.html#l00129">dataprocessor.cpp:129</a></div></div>
+<div class="ttc" id="aclass_date_html_ae77d46d475c904d1fabcb91933034514"><div class="ttname"><a href="class_date.html#ae77d46d475c904d1fabcb91933034514">Date::SetYear</a></div><div class="ttdeci">void SetYear(int y)</div><div class="ttdoc">Set the year.</div><div class="ttdef"><b>Definition:</b> <a href="_d_a_t_e_8_c_p_p_source.html#l00064">DATE.CPP:64</a></div></div>
+<div class="ttc" id="astruct_weather_record_html"><div class="ttname"><a href="struct_weather_record.html">WeatherRecord</a></div><div class="ttdoc">A struct to store weather record.</div><div class="ttdef"><b>Definition:</b> <a href="_weather_record_8h_source.html#l00014">WeatherRecord.h:14</a></div></div>
+<div class="ttc" id="adataprocessor_8cpp_html_acab6295a587ed8bd315fb0cb0e859167"><div class="ttname"><a href="dataprocessor_8cpp.html#acab6295a587ed8bd315fb0cb0e859167">readHeader</a></div><div class="ttdeci">void readHeader(std::ifstream &amp;inFile, Map&lt; std::string, int &gt; &amp;headerMap)</div><div class="ttdoc">Reads the header of the weather data file and fills the provided map with header names and their indi...</div><div class="ttdef"><b>Definition:</b> <a href="dataprocessor_8cpp_source.html#l00056">dataprocessor.cpp:56</a></div></div>
+<div class="ttc" id="aclass_date_html_ac75fa21654d30e90c2cdb74dd5033803"><div class="ttname"><a href="class_date.html#ac75fa21654d30e90c2cdb74dd5033803">Date::SetDate</a></div><div class="ttdeci">void SetDate(int d)</div><div class="ttdoc">Set the day.</div><div class="ttdef"><b>Definition:</b> <a href="_d_a_t_e_8_c_p_p_source.html#l00036">DATE.CPP:36</a></div></div>
+<div class="ttc" id="astruct_weather_record_html_a27baa40f24e123076f82613dcb26bc0f"><div class="ttname"><a href="struct_weather_record.html#a27baa40f24e123076f82613dcb26bc0f">WeatherRecord::time</a></div><div class="ttdeci">Time time</div><div class="ttdoc">record date</div><div class="ttdef"><b>Definition:</b> <a href="_weather_record_8h_source.html#l00016">WeatherRecord.h:16</a></div></div>
+<div class="ttc" id="adataprocessor_8cpp_html_a619f7c3667f5e9c57259178c0bf17a11"><div class="ttname"><a href="dataprocessor_8cpp.html#a619f7c3667f5e9c57259178c0bf17a11">isValidHeaders</a></div><div class="ttdeci">bool isValidHeaders(const Map&lt; std::string, int &gt; &amp;headerMap)</div><div class="ttdoc">Validates the headers of the weather data file.</div><div class="ttdef"><b>Definition:</b> <a href="dataprocessor_8cpp_source.html#l00072">dataprocessor.cpp:72</a></div></div>
+<div class="ttc" id="astruct_weather_record_html_a79d361cefdd03af9d499cbe943178235"><div class="ttname"><a href="struct_weather_record.html#a79d361cefdd03af9d499cbe943178235">WeatherRecord::airTemp</a></div><div class="ttdeci">double airTemp</div><div class="ttdoc">record solar radiation</div><div class="ttdef"><b>Definition:</b> <a href="_weather_record_8h_source.html#l00019">WeatherRecord.h:19</a></div></div>
+<div class="ttc" id="astruct_weather_record_html_a659efe8ecf8b99162a095730943e6821"><div class="ttname"><a href="struct_weather_record.html#a659efe8ecf8b99162a095730943e6821">WeatherRecord::speed</a></div><div class="ttdeci">double speed</div><div class="ttdoc">record time</div><div class="ttdef"><b>Definition:</b> <a href="_weather_record_8h_source.html#l00017">WeatherRecord.h:17</a></div></div>
+<div class="ttc" id="aclass_map_html_a940dcce0b4490af7406db9fe95a7927f"><div class="ttname"><a href="class_map.html#a940dcce0b4490af7406db9fe95a7927f">Map::at</a></div><div class="ttdeci">const V &amp; at(const K &amp;key) const</div><div class="ttdoc">Retrieves the value corresponding to a key.</div><div class="ttdef"><b>Definition:</b> <a href="_map_8h_source.html#l00188">Map.h:188</a></div></div>
+<div class="ttc" id="a_validator_8cpp_html_acd5665d75328e4daed639814334542d1"><div class="ttname"><a href="_validator_8cpp.html#acd5665d75328e4daed639814334542d1">isValidDate</a></div><div class="ttdeci">bool isValidDate(int day, int month, int year)</div><div class="ttdoc">Validates if the given day, month, and year form a valid date.</div><div class="ttdef"><b>Definition:</b> <a href="_validator_8cpp_source.html#l00022">Validator.cpp:22</a></div></div>
 <div class="ttc" id="aclass_time_html_ab8c6582ad99c617c821ad3d10b9a872e"><div class="ttname"><a href="class_time.html#ab8c6582ad99c617c821ad3d10b9a872e">Time::SetHour</a></div><div class="ttdeci">void SetHour(int h)</div><div class="ttdoc">Set the hour.</div><div class="ttdef"><b>Definition:</b> <a href="_t_i_m_e_8_c_p_p_source.html#l00036">TIME.CPP:36</a></div></div>
-<div class="ttc" id="aclass_b_s_t_html"><div class="ttname"><a href="class_b_s_t.html">BST</a></div><div class="ttdoc">Template class for Binary Search Tree.</div><div class="ttdef"><b>Definition:</b> <a href="_b_s_t_8h_source.html#l00016">BST.h:16</a></div></div>
-<div class="ttc" id="a_data_processor_8cpp_html_a2d99b03343534baef0bb07effb8760cd"><div class="ttname"><a href="_data_processor_8cpp.html#a2d99b03343534baef0bb07effb8760cd">readDateAndTime</a></div><div class="ttdeci">bool readDateAndTime(const string &amp;dateTimeTemplate, Date &amp;date, Time &amp;time)</div><div class="ttdef"><b>Definition:</b> <a href="_data_processor_8cpp_source.html#l00146">DataProcessor.cpp:146</a></div></div>
-<div class="ttc" id="aclass_vector_html"><div class="ttname"><a href="class_vector.html">Vector</a></div><div class="ttdoc">Template class representing a dynamic array.</div><div class="ttdef"><b>Definition:</b> <a href="_v_e_c_t_o_r_8_h_source.html#l00051">VECTOR.H:51</a></div></div>
+<div class="ttc" id="adataprocessor_8cpp_html_a6303080316244e76a4dc1d407b0f16b5"><div class="ttname"><a href="dataprocessor_8cpp.html#a6303080316244e76a4dc1d407b0f16b5">readDateAndTime</a></div><div class="ttdeci">bool readDateAndTime(const std::string &amp;dateTimeTemplate, Date &amp;date, Time &amp;time)</div><div class="ttdoc">Reads a date and time from a template string.</div><div class="ttdef"><b>Definition:</b> <a href="dataprocessor_8cpp_source.html#l00115">dataprocessor.cpp:115</a></div></div>
 <div class="ttc" id="aclass_time_html_a08cdbeef8e01ad48aadab6db90665d85"><div class="ttname"><a href="class_time.html#a08cdbeef8e01ad48aadab6db90665d85">Time::SetMinute</a></div><div class="ttdeci">void SetMinute(int m)</div><div class="ttdoc">Set the minute.</div><div class="ttdef"><b>Definition:</b> <a href="_t_i_m_e_8_c_p_p_source.html#l00050">TIME.CPP:50</a></div></div>
-<div class="ttc" id="astruct_weather_record_html_a70f012d48746320340d318fe747104ee"><div class="ttname"><a href="struct_weather_record.html#a70f012d48746320340d318fe747104ee">WeatherRecord::date</a></div><div class="ttdeci">Date date</div><div class="ttdef"><b>Definition:</b> <a href="_data_structure_8h_source.html#l00041">DataStructure.h:41</a></div></div>
-<div class="ttc" id="a_data_processor_8cpp_html_a5e308cfc5494209d39fb14a440d7484a"><div class="ttname"><a href="_data_processor_8cpp.html#a5e308cfc5494209d39fb14a440d7484a">isValidHeaders</a></div><div class="ttdeci">bool isValidHeaders(const Map&lt; string, int &gt; &amp;headerMap)</div><div class="ttdef"><b>Definition:</b> <a href="_data_processor_8cpp_source.html#l00095">DataProcessor.cpp:95</a></div></div>
-<div class="ttc" id="aclass_map_html_a225903c0291cf978e27be5a58f399a14"><div class="ttname"><a href="class_map.html#a225903c0291cf978e27be5a58f399a14">Map::insert</a></div><div class="ttdeci">void insert(const K &amp;key, const V &amp;value)</div><div class="ttdoc">Inserts a key-value pair into the map.</div><div class="ttdef"><b>Definition:</b> <a href="_map_8h_source.html#l00170">Map.h:170</a></div></div>
-<div class="ttc" id="a_data_processor_8cpp_html_af0c8f5105b9ac3fe0f8744c7ba51de1f"><div class="ttname"><a href="_data_processor_8cpp.html#af0c8f5105b9ac3fe0f8744c7ba51de1f">readWeatherRecord</a></div><div class="ttdeci">bool readWeatherRecord(const Vector&lt; string &gt; &amp;rows, const Map&lt; string, int &gt; &amp;headerMap, WeatherRecord &amp;record)</div><div class="ttdef"><b>Definition:</b> <a href="_data_processor_8cpp_source.html#l00129">DataProcessor.cpp:129</a></div></div>
-<div class="ttc" id="a_validator_8cpp_html_a78df34cd0e5e380d00b530031c514891"><div class="ttname"><a href="_validator_8cpp.html#a78df34cd0e5e380d00b530031c514891">isValidTime</a></div><div class="ttdeci">bool isValidTime(int hour, int minute)</div><div class="ttdef"><b>Definition:</b> <a href="_validator_8cpp_source.html#l00053">Validator.cpp:53</a></div></div>
-<div class="ttc" id="aclass_map_html"><div class="ttname"><a href="class_map.html">Map</a></div><div class="ttdoc">A templated map class that wraps around std::map.</div><div class="ttdef"><b>Definition:</b> <a href="_map_8h_source.html#l00018">Map.h:18</a></div></div>
-<div class="ttc" id="aclass_date_html_af2dcc6ce51dbb2bd798499a149bdffb7"><div class="ttname"><a href="class_date.html#af2dcc6ce51dbb2bd798499a149bdffb7">Date::GetMonth</a></div><div class="ttdeci">int GetMonth() const</div><div class="ttdoc">Get the month.</div><div class="ttdef"><b>Definition:</b> <a href="_d_a_t_e_8_c_p_p_source.html#l00044">DATE.CPP:44</a></div></div>
+<div class="ttc" id="adataprocessor_8cpp_html_a746f4310314b880c1443e868109a5105"><div class="ttname"><a href="dataprocessor_8cpp.html#a746f4310314b880c1443e868109a5105">readWeatherRecord</a></div><div class="ttdeci">bool readWeatherRecord(const std::string &amp;line, int wastIndex, int speedIndex, int solarRadIndex, int airTempIndex, WeatherRecord &amp;record)</div><div class="ttdoc">Reads a weather record from a line and a header map.</div><div class="ttdef"><b>Definition:</b> <a href="dataprocessor_8cpp_source.html#l00082">dataprocessor.cpp:82</a></div></div>
+<div class="ttc" id="astruct_weather_record_html_a70f012d48746320340d318fe747104ee"><div class="ttname"><a href="struct_weather_record.html#a70f012d48746320340d318fe747104ee">WeatherRecord::date</a></div><div class="ttdeci">Date date</div><div class="ttdef"><b>Definition:</b> <a href="_weather_record_8h_source.html#l00015">WeatherRecord.h:15</a></div></div>
+<div class="ttc" id="aclass_map_html_a225903c0291cf978e27be5a58f399a14"><div class="ttname"><a href="class_map.html#a225903c0291cf978e27be5a58f399a14">Map::insert</a></div><div class="ttdeci">void insert(const K &amp;key, const V &amp;value)</div><div class="ttdoc">Inserts a key-value pair into the map.</div><div class="ttdef"><b>Definition:</b> <a href="_map_8h_source.html#l00180">Map.h:180</a></div></div>
+<div class="ttc" id="adataprocessor_8cpp_html_ab736b8937fc7ab05ca65923faa7a2c2c"><div class="ttname"><a href="dataprocessor_8cpp.html#ab736b8937fc7ab05ca65923faa7a2c2c">readTime</a></div><div class="ttdeci">bool readTime(const std::string &amp;timeTemplate, Time &amp;time)</div><div class="ttdoc">Reads a time from a template string.</div><div class="ttdef"><b>Definition:</b> <a href="dataprocessor_8cpp_source.html#l00153">dataprocessor.cpp:153</a></div></div>
+<div class="ttc" id="a_validator_8cpp_html_a78df34cd0e5e380d00b530031c514891"><div class="ttname"><a href="_validator_8cpp.html#a78df34cd0e5e380d00b530031c514891">isValidTime</a></div><div class="ttdeci">bool isValidTime(int hour, int minute)</div><div class="ttdoc">Validates if the given hour and minute form a valid time.</div><div class="ttdef"><b>Definition:</b> <a href="_validator_8cpp_source.html#l00065">Validator.cpp:65</a></div></div>
+<div class="ttc" id="aclass_map_html"><div class="ttname"><a href="class_map.html">Map</a></div><div class="ttdoc">A templated map class that wraps around std::map.</div><div class="ttdef"><b>Definition:</b> <a href="_map_8h_source.html#l00016">Map.h:16</a></div></div>
+<div class="ttc" id="aclass_date_html_af2dcc6ce51dbb2bd798499a149bdffb7"><div class="ttname"><a href="class_date.html#af2dcc6ce51dbb2bd798499a149bdffb7">Date::GetMonth</a></div><div class="ttdeci">int GetMonth() const</div><div class="ttdoc">Get the month.</div><div class="ttdef"><b>Definition:</b> <a href="_d_a_t_e_8_c_p_p_source.html#l00043">DATE.CPP:43</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="_data_processor_8h.html">DataProcessor.h</a></li>
+    <li class="navelem"><a class="el" href="dir_70988c32f245dd8ce1f815200cea5d3d.html">Data Processor</a></li><li class="navelem"><a class="el" href="_data_processor_8h.html">DataProcessor.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

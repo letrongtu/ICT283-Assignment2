@@ -1,0 +1,40 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,323,56,349"/>
+<area shape="rect" id="node2" href="$_test_data_processor_functions_8cpp.html#ac5f95c7e9025378d63548ab86ffe10a1" title=" " alt="" coords="590,56,774,83"/>
+<area shape="rect" id="node6" href="$_test_data_processor_functions_8cpp.html#a2ba9f68c4217c76bc5c5dac17c143472" title=" " alt="" coords="371,297,525,324"/>
+<area shape="rect" id="node28" href="$_test_data_processor_functions_8cpp.html#a3092bfc4564304ad54a5dde2f7e7ab02" title=" " alt="" coords="579,551,785,577"/>
+<area shape="rect" id="node31" href="$_test_data_processor_functions_8cpp.html#a619de1434a691d5338c1fddf23e91fda" title=" " alt="" coords="605,360,759,387"/>
+<area shape="rect" id="node32" href="$_test_data_processor_functions_8cpp.html#a60828f98521f764f44f88752682a537a" title=" " alt="" coords="104,247,323,273"/>
+<area shape="rect" id="node34" href="$_test_data_processor_functions_8cpp.html#aec13c5dc9a1d431142ebb4f766e6b2ff" title=" " alt="" coords="129,424,297,451"/>
+<area shape="rect" id="node37" href="$_test_data_processor_functions_8cpp.html#ad93a903971c99df16a17a90a3eeeee33" title=" " alt="" coords="605,601,759,628"/>
+<area shape="rect" id="node38" href="$_test_data_processor_functions_8cpp.html#a5e98205bf8226b70bb2290e95eb50f82" title=" " alt="" coords="573,411,791,437"/>
+<area shape="rect" id="node3" href="$class_map.html#a225903c0291cf978e27be5a58f399a14" title="Inserts a key&#45;value pair into the map." alt="" coords="1043,107,1130,133"/>
+<area shape="rect" id="node4" href="$dataprocessor_8cpp.html#a619f7c3667f5e9c57259178c0bf17a11" title="Validates the headers of the weather data file." alt="" coords="853,5,962,32"/>
+<area shape="rect" id="node5" href="$class_map.html#a21817f63324636803318e47c2a88b02e" title="Checks if the map contains a key." alt="" coords="1035,5,1139,32"/>
+<area shape="rect" id="node7" href="$_test_data_processor_functions_8cpp.html#a027db8506b94b5145086f02fd20fed6a" title=" " alt="" coords="628,461,736,488"/>
+<area shape="rect" id="node12" href="$dataprocessor_8cpp.html#aba10983b697e65438e53ca66a9459ac2" title="Reads weather data from a file and stores it in the WeatherLog." alt="" coords="645,247,719,273"/>
+<area shape="rect" id="node8" href="$class_time.html#aaf65e0dc73514ffab9b3dd643cef9bdb" title="Get the hour." alt="" coords="854,563,961,589"/>
+<area shape="rect" id="node9" href="$class_time.html#a86302564cc0783b402dc5f0e137a43c1" title="Get the minute." alt="" coords="848,613,967,640"/>
+<area shape="rect" id="node10" href="$class_date.html#af2dcc6ce51dbb2bd798499a149bdffb7" title="Get the month." alt="" coords="850,411,965,437"/>
+<area shape="rect" id="node11" href="$class_date.html#ad79ce504482f317ddcfdc4ecad77671f" title="Get the year." alt="" coords="855,360,960,387"/>
+<area shape="rect" id="node13" href="$class_map.html#a940dcce0b4490af7406db9fe95a7927f" title="Retrieves the value corresponding to a key." alt="" coords="874,157,941,184"/>
+<area shape="rect" id="node14" href="$dataprocessor_8cpp.html#acab6295a587ed8bd315fb0cb0e859167" title="Reads the header of the weather data file and fills the provided map with header names and their indi..." alt="" coords="863,107,951,133"/>
+<area shape="rect" id="node15" href="$dataprocessor_8cpp.html#a746f4310314b880c1443e868109a5105" title="Reads a weather record from a line and a header map." alt="" coords="839,309,976,336"/>
+<area shape="rect" id="node16" href="$dataprocessor_8cpp.html#a6303080316244e76a4dc1d407b0f16b5" title="Reads a date and time from a template string." alt="" coords="1024,360,1149,387"/>
+<area shape="rect" id="node17" href="$dataprocessor_8cpp.html#afdf156e8d6316a19a1f0374eb6bb31ac" title="Reads a date from a template string." alt="" coords="1197,309,1272,336"/>
+<area shape="rect" id="node24" href="$dataprocessor_8cpp.html#ab736b8937fc7ab05ca65923faa7a2c2c" title="Reads a time from a template string." alt="" coords="1197,563,1272,589"/>
+<area shape="rect" id="node18" href="$_validator_8cpp.html#acd5665d75328e4daed639814334542d1" title="Validates if the given day, month, and year form a valid date." alt="" coords="1335,284,1423,311"/>
+<area shape="rect" id="node21" href="$class_date.html#ac75fa21654d30e90c2cdb74dd5033803" title="Set the day." alt="" coords="1327,335,1431,361"/>
+<area shape="rect" id="node22" href="$class_date.html#ae47ff4dbe38076b995703ecb4aa5c602" title="Set the month." alt="" coords="1322,385,1435,412"/>
+<area shape="rect" id="node23" href="$class_date.html#ae77d46d475c904d1fabcb91933034514" title="Set the year." alt="" coords="1327,233,1431,260"/>
+<area shape="rect" id="node19" href="$_validator_8cpp.html#ac5bd0a571f7bd173f55c1dfc6fee07c8" title="Validates if the given month is valid." alt="" coords="1485,259,1583,285"/>
+<area shape="rect" id="node20" href="$_validator_8cpp.html#a61544b32391e0579f222c45b1a0af56a" title="Validates if the given year is valid." alt="" coords="1490,309,1578,336"/>
+<area shape="rect" id="node25" href="$_validator_8cpp.html#a78df34cd0e5e380d00b530031c514891" title="Validates if the given hour and minute form a valid time." alt="" coords="1334,613,1423,640"/>
+<area shape="rect" id="node26" href="$class_time.html#ab8c6582ad99c617c821ad3d10b9a872e" title="Set the hour." alt="" coords="1326,512,1431,539"/>
+<area shape="rect" id="node27" href="$class_time.html#a08cdbeef8e01ad48aadab6db90665d85" title="Set the minute." alt="" coords="1320,563,1437,589"/>
+<area shape="rect" id="node29" href="$class_date.html#acefdd8c1fe76f0d5deb612a4070d7bf8" title="Get the day." alt="" coords="855,461,960,488"/>
+<area shape="rect" id="node30" href="$test_a_v_l_8cpp.html#a28a57600eb2bb523dd43e4a25cc8b3ea" title=" " alt="" coords="880,512,935,539"/>
+<area shape="rect" id="node33" href="$_file_name_reader_8cpp.html#afd4947a3303689855ee12d8c1924a4f8" title="Reads weather data from a file and stores it in the WeatherLog structure." alt="" coords="379,247,517,273"/>
+<area shape="rect" id="node35" href="$class_map.html#a3f31e719d41dd3d8ecfad559339678f1" title="Returns an iterator to the beginning." alt="" coords="405,500,491,527"/>
+<area shape="rect" id="node36" href="$class_map.html#a07bccdb62ff24632be0e9ffdf64d63b7" title="Returns an iterator to the end." alt="" coords="410,449,486,476"/>
+</map>

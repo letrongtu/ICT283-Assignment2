@@ -7,6 +7,7 @@
 //---------------------------------------------------------------------------------
 
 /**
+ * @file WeatherRecord.h
  * @struct WeatherRecord
  * @brief A struct to store weather record
  */

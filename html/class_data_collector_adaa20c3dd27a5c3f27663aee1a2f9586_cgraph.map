@@ -1,0 +1,4 @@
+<map id="DataCollector::accumulateData" name="DataCollector::accumulateData">
+<area shape="rect" id="node1" title="Accumulates weather data from a weather record." alt="" coords="5,5,208,32"/>
+<area shape="rect" id="node2" href="$class_vector.html#a87f73b09903e16a1caaaae559a04036a" title="add the element at the end of the array" alt="" coords="256,5,345,32"/>
+</map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Lab06: Week 6/lab06/WeatherRecord.h Source File</title>
+<title>Assignment 2: Data Structures/WeatherRecord.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Lab06
+   <div id="projectname">Assignment 2
    </div>
-   <div id="projectbrief">Lab06</div>
+   <div id="projectbrief">Assignment 2</div>
   </td>
  </tr>
  </tbody>
@@ -89,162 +89,54 @@ $(document).ready(function(){initNavTree('_weather_record_8h_source.html',''); i
 <a href="_weather_record_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef WEATHERRECORD_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define WEATHERRECORD_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_d_a_t_e_8_h.html">date.h</a>&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_t_i_m_e_8_h.html">time.h</a>&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * @class WeatherRecord</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * @brief Encapsulates weather data including date, time, wind speed, solar radiation, and ambient air temperature.</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * @author Trong Tu Le</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * @version 1</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * Each WeatherRecord object holds a date and time of recording, along with wind speed, solar radiation, and ambient air temperature.</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * The class provides both getters and setters for all data fields to ensure encapsulated and safe access to the data.</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_weather_record.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_weather_record.html">WeatherRecord</a> {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:<span class="comment"></span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">     *  @brief Default constructor. Initializes all data members to their default values.</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">    */</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_weather_record.html#a6967bd142870f7f2cffc5b18ed6e2352">WeatherRecord</a>();</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">     * @brief Parameterized constructor.Initializes all data members to the given values.</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">     * @param d Date</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">     * @param t Time</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">     * @param s wind speed</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">     * @param sR solar radiation</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">     * @param aT air temperature</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">    */</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="class_weather_record.html#a6967bd142870f7f2cffc5b18ed6e2352">WeatherRecord</a>(<a class="code" href="class_date.html">Date</a> d, <a class="code" href="class_time.html">Time</a> t, <span class="keywordtype">float</span> s, <span class="keywordtype">float</span> sR, <span class="keywordtype">float</span> aT);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">     * @brief Get the date object.</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">     * @return Date&amp; Reference to the Date object.</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">    */</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="class_date.html">Date</a> <a class="code" href="class_weather_record.html#aa70a3cb33acf4b973191882f901df959">getDate</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">     * @brief Set the Date object.</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">     * @param d The Date object to set.</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">     * @return void</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_weather_record.html#aefc2680355ed0b7c39ea3fa2023fe033">setDate</a>(<a class="code" href="class_date.html">Date</a> d);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">     * @brief Get the Time object.</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">     * @return Time&amp; Reference to the Time object.</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="class_time.html">Time</a> <a class="code" href="class_weather_record.html#a2b292f229b6e09f2ba074f4449962336">getTime</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">     * @brief Set the Time object.</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">     * @param t The Time object to set.</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">     * @return void</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_weather_record.html#a1a5773a975934de746b181e489753e94">setTime</a>(<a class="code" href="class_time.html">Time</a> t);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">     * @brief Get the wind speed.</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">     * @return float The wind speed in meters per second.</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_weather_record.html#a365a8108f8e49b2aad961a40f034d97e">getSpeed</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">     * @brief Set the wind speed.</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">     * @param s The wind speed in meters per second to set.</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">     * @return void</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_weather_record.html#a4a09e0a1a5180b6a951b72bd577dcb1d">setSpeed</a>(<span class="keywordtype">float</span> s);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">     * @brief Get the solar radiation.</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">     * @return float The solar radiation in watts per square meter.</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_weather_record.html#aa4c728433f4b06d772cf09dc39e93882">getSolarRad</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">     * @brief Set the solar radiation.</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">     * @param sR The solar radiation in watts per square meter to set.</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">     * @return void</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_weather_record.html#a00d10291b9e359bad1837a0d9747ba5f">setSolarRad</a>(<span class="keywordtype">float</span> sR);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">     * @brief Get the air temperature.</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">     * @return float The air temperature</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_weather_record.html#abc9be43840db8131954c0162442f6e39">getAirTemp</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">    /**</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">     * @brief Set the air temperature.</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">     * @param aT The air temperature</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment">     *</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">     * @return void</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_weather_record.html#a754bcc3c7832d901a65b3d62c6476c48">setAirTemp</a>(<span class="keywordtype">float</span> aT);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00123"></a><span class="lineno"><a class="line" href="class_weather_record.html#a96fc19e483eef31a1abc60e9ee3463d5">  123</a></span>&#160;    <a class="code" href="class_date.html">Date</a> <a class="code" href="class_weather_record.html#a96fc19e483eef31a1abc60e9ee3463d5">_date</a>; <span class="comment">/// The recorded date</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="class_weather_record.html#aa91cc84ea5eb9575afeaf9c3a052021d">  124</a></span>&#160;<span class="comment"></span>    <a class="code" href="class_time.html">Time</a> <a class="code" href="class_weather_record.html#aa91cc84ea5eb9575afeaf9c3a052021d">_time</a>; <span class="comment">/// The recorded time</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="class_weather_record.html#a6c017354f9f40f70b356de2040ec4baa">  125</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">float</span> <a class="code" href="class_weather_record.html#a6c017354f9f40f70b356de2040ec4baa">_speed</a>; <span class="comment">/// The wind speed</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno"><a class="line" href="class_weather_record.html#a92e21a5d078c5bab3ad2125aca71e077">  126</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">float</span> <a class="code" href="class_weather_record.html#a92e21a5d078c5bab3ad2125aca71e077">_solarRad</a>; <span class="comment">/// The solar radiation</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="class_weather_record.html#ac1323865ec7be03c027a39a327bcc373">  127</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">float</span> <a class="code" href="class_weather_record.html#ac1323865ec7be03c027a39a327bcc373">_airTemp</a>; <span class="comment">/// The ambient air temperature</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment"></span>};</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_d_a_t_e_8_h.html">Date.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_t_i_m_e_8_h.html">Time.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * @file WeatherRecord.h</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * @struct WeatherRecord</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * @brief A struct to store weather record</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="struct_weather_record.html">   14</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_weather_record.html">WeatherRecord</a> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="struct_weather_record.html#a70f012d48746320340d318fe747104ee">   15</a></span>&#160;    <a class="code" href="class_date.html">Date</a> <a class="code" href="struct_weather_record.html#a70f012d48746320340d318fe747104ee">date</a>;        <span class="comment">/// record date</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="struct_weather_record.html#a27baa40f24e123076f82613dcb26bc0f">   16</a></span>&#160;<span class="comment"></span>    <a class="code" href="class_time.html">Time</a> <a class="code" href="struct_weather_record.html#a27baa40f24e123076f82613dcb26bc0f">time</a>;        <span class="comment">/// record time</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="struct_weather_record.html#a659efe8ecf8b99162a095730943e6821">   17</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">double</span> <a class="code" href="struct_weather_record.html#a659efe8ecf8b99162a095730943e6821">speed</a>;     <span class="comment">/// record wind speed</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="struct_weather_record.html#a45cbec06a76f8b4708f770deb9ae67e2">   18</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">double</span> <a class="code" href="struct_weather_record.html#a45cbec06a76f8b4708f770deb9ae67e2">solarRad</a>;  <span class="comment">/// record solar radiation</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="struct_weather_record.html#a79d361cefdd03af9d499cbe943178235">   19</a></span>&#160;<span class="comment"></span>    <span class="keywordtype">double</span> <a class="code" href="struct_weather_record.html#a79d361cefdd03af9d499cbe943178235">airTemp</a>;   <span class="comment">/// record air temperature</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"></span><span class="comment"></span> </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">     * @brief Constructor for WeatherRecord</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">     * @param d Date of the record</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">     * @param t Time of the record</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">     * @param s Wind speed of the record</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">     * @param sr Solar radiation of the record</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">     * @param at Air temperature of the record</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="struct_weather_record.html#a05a298bd8dfc1e708a0029b4b2dbf4ec">WeatherRecord</a>(<span class="keyword">const</span> <a class="code" href="class_date.html">Date</a>&amp; d = <a class="code" href="class_date.html">Date</a>(), <span class="keyword">const</span> <a class="code" href="class_time.html">Time</a>&amp; t = <a class="code" href="class_time.html">Time</a>(), <span class="keywordtype">double</span> s = 0, <span class="keywordtype">double</span> sr = 0, <span class="keywordtype">double</span> at = 0);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_weather_record_html_a96fc19e483eef31a1abc60e9ee3463d5"><div class="ttname"><a href="class_weather_record.html#a96fc19e483eef31a1abc60e9ee3463d5">WeatherRecord::_date</a></div><div class="ttdeci">Date _date</div><div class="ttdef"><b>Definition:</b> <a href="_weather_record_8h_source.html#l00123">WeatherRecord.h:123</a></div></div>
-<div class="ttc" id="aclass_weather_record_html_a4a09e0a1a5180b6a951b72bd577dcb1d"><div class="ttname"><a href="class_weather_record.html#a4a09e0a1a5180b6a951b72bd577dcb1d">WeatherRecord::setSpeed</a></div><div class="ttdeci">void setSpeed(float s)</div><div class="ttdoc">Set the wind speed.</div><div class="ttdef"><b>Definition:</b> <a href="_weather_record_8cpp_source.html#l00064">WeatherRecord.cpp:64</a></div></div>
-<div class="ttc" id="aclass_weather_record_html_aa70a3cb33acf4b973191882f901df959"><div class="ttname"><a href="class_weather_record.html#aa70a3cb33acf4b973191882f901df959">WeatherRecord::getDate</a></div><div class="ttdeci">Date getDate() const</div><div class="ttdoc">Get the date object.</div><div class="ttdef"><b>Definition:</b> <a href="_weather_record_8cpp_source.html#l00029">WeatherRecord.cpp:29</a></div></div>
-<div class="ttc" id="aclass_weather_record_html_aa4c728433f4b06d772cf09dc39e93882"><div class="ttname"><a href="class_weather_record.html#aa4c728433f4b06d772cf09dc39e93882">WeatherRecord::getSolarRad</a></div><div class="ttdeci">float getSolarRad() const</div><div class="ttdoc">Get the solar radiation.</div><div class="ttdef"><b>Definition:</b> <a href="_weather_record_8cpp_source.html#l00071">WeatherRecord.cpp:71</a></div></div>
-<div class="ttc" id="aclass_weather_record_html_a2b292f229b6e09f2ba074f4449962336"><div class="ttname"><a href="class_weather_record.html#a2b292f229b6e09f2ba074f4449962336">WeatherRecord::getTime</a></div><div class="ttdeci">Time getTime() const</div><div class="ttdoc">Get the Time object.</div><div class="ttdef"><b>Definition:</b> <a href="_weather_record_8cpp_source.html#l00043">WeatherRecord.cpp:43</a></div></div>
-<div class="ttc" id="aclass_weather_record_html_a365a8108f8e49b2aad961a40f034d97e"><div class="ttname"><a href="class_weather_record.html#a365a8108f8e49b2aad961a40f034d97e">WeatherRecord::getSpeed</a></div><div class="ttdeci">float getSpeed() const</div><div class="ttdoc">Get the wind speed.</div><div class="ttdef"><b>Definition:</b> <a href="_weather_record_8cpp_source.html#l00057">WeatherRecord.cpp:57</a></div></div>
-<div class="ttc" id="aclass_weather_record_html_a00d10291b9e359bad1837a0d9747ba5f"><div class="ttname"><a href="class_weather_record.html#a00d10291b9e359bad1837a0d9747ba5f">WeatherRecord::setSolarRad</a></div><div class="ttdeci">void setSolarRad(float sR)</div><div class="ttdoc">Set the solar radiation.</div><div class="ttdef"><b>Definition:</b> <a href="_weather_record_8cpp_source.html#l00078">WeatherRecord.cpp:78</a></div></div>
-<div class="ttc" id="aclass_weather_record_html"><div class="ttname"><a href="class_weather_record.html">WeatherRecord</a></div><div class="ttdoc">Encapsulates weather data including date, time, wind speed, solar radiation, and ambient air temperat...</div><div class="ttdef"><b>Definition:</b> <a href="_weather_record_8h_source.html#l00023">WeatherRecord.h:23</a></div></div>
-<div class="ttc" id="aclass_time_html"><div class="ttname"><a href="class_time.html">Time</a></div><div class="ttdoc">Represents a time with hour and minute.</div><div class="ttdef"><b>Definition:</b> <a href="_t_i_m_e_8_h_source.html#l00015">TIME.H:15</a></div></div>
+<div class="ttc" id="astruct_weather_record_html_a45cbec06a76f8b4708f770deb9ae67e2"><div class="ttname"><a href="struct_weather_record.html#a45cbec06a76f8b4708f770deb9ae67e2">WeatherRecord::solarRad</a></div><div class="ttdeci">double solarRad</div><div class="ttdoc">record wind speed</div><div class="ttdef"><b>Definition:</b> <a href="_weather_record_8h_source.html#l00018">WeatherRecord.h:18</a></div></div>
+<div class="ttc" id="astruct_weather_record_html"><div class="ttname"><a href="struct_weather_record.html">WeatherRecord</a></div><div class="ttdoc">A struct to store weather record.</div><div class="ttdef"><b>Definition:</b> <a href="_weather_record_8h_source.html#l00014">WeatherRecord.h:14</a></div></div>
+<div class="ttc" id="aclass_time_html"><div class="ttname"><a href="class_time.html">Time</a></div><div class="ttdoc">Represents a time with hour and minute.</div><div class="ttdef"><b>Definition:</b> <a href="_t_i_m_e_8_h_source.html#l00017">TIME.H:17</a></div></div>
 <div class="ttc" id="a_t_i_m_e_8_h_html"><div class="ttname"><a href="_t_i_m_e_8_h.html">TIME.H</a></div></div>
-<div class="ttc" id="aclass_weather_record_html_aefc2680355ed0b7c39ea3fa2023fe033"><div class="ttname"><a href="class_weather_record.html#aefc2680355ed0b7c39ea3fa2023fe033">WeatherRecord::setDate</a></div><div class="ttdeci">void setDate(Date d)</div><div class="ttdoc">Set the Date object.</div><div class="ttdef"><b>Definition:</b> <a href="_weather_record_8cpp_source.html#l00036">WeatherRecord.cpp:36</a></div></div>
-<div class="ttc" id="aclass_weather_record_html_a6967bd142870f7f2cffc5b18ed6e2352"><div class="ttname"><a href="class_weather_record.html#a6967bd142870f7f2cffc5b18ed6e2352">WeatherRecord::WeatherRecord</a></div><div class="ttdeci">WeatherRecord()</div><div class="ttdoc">Default constructor. Initializes all data members to their default values.</div><div class="ttdef"><b>Definition:</b> <a href="_weather_record_8cpp_source.html#l00017">WeatherRecord.cpp:17</a></div></div>
-<div class="ttc" id="aclass_weather_record_html_a6c017354f9f40f70b356de2040ec4baa"><div class="ttname"><a href="class_weather_record.html#a6c017354f9f40f70b356de2040ec4baa">WeatherRecord::_speed</a></div><div class="ttdeci">float _speed</div><div class="ttdoc">The recorded time.</div><div class="ttdef"><b>Definition:</b> <a href="_weather_record_8h_source.html#l00125">WeatherRecord.h:125</a></div></div>
-<div class="ttc" id="aclass_weather_record_html_a754bcc3c7832d901a65b3d62c6476c48"><div class="ttname"><a href="class_weather_record.html#a754bcc3c7832d901a65b3d62c6476c48">WeatherRecord::setAirTemp</a></div><div class="ttdeci">void setAirTemp(float aT)</div><div class="ttdoc">Set the air temperature.</div><div class="ttdef"><b>Definition:</b> <a href="_weather_record_8cpp_source.html#l00092">WeatherRecord.cpp:92</a></div></div>
-<div class="ttc" id="aclass_weather_record_html_abc9be43840db8131954c0162442f6e39"><div class="ttname"><a href="class_weather_record.html#abc9be43840db8131954c0162442f6e39">WeatherRecord::getAirTemp</a></div><div class="ttdeci">float getAirTemp() const</div><div class="ttdoc">Get the air temperature.</div><div class="ttdef"><b>Definition:</b> <a href="_weather_record_8cpp_source.html#l00085">WeatherRecord.cpp:85</a></div></div>
-<div class="ttc" id="aclass_weather_record_html_a1a5773a975934de746b181e489753e94"><div class="ttname"><a href="class_weather_record.html#a1a5773a975934de746b181e489753e94">WeatherRecord::setTime</a></div><div class="ttdeci">void setTime(Time t)</div><div class="ttdoc">Set the Time object.</div><div class="ttdef"><b>Definition:</b> <a href="_weather_record_8cpp_source.html#l00050">WeatherRecord.cpp:50</a></div></div>
-<div class="ttc" id="aclass_weather_record_html_a92e21a5d078c5bab3ad2125aca71e077"><div class="ttname"><a href="class_weather_record.html#a92e21a5d078c5bab3ad2125aca71e077">WeatherRecord::_solarRad</a></div><div class="ttdeci">float _solarRad</div><div class="ttdoc">The wind speed.</div><div class="ttdef"><b>Definition:</b> <a href="_weather_record_8h_source.html#l00126">WeatherRecord.h:126</a></div></div>
+<div class="ttc" id="astruct_weather_record_html_a27baa40f24e123076f82613dcb26bc0f"><div class="ttname"><a href="struct_weather_record.html#a27baa40f24e123076f82613dcb26bc0f">WeatherRecord::time</a></div><div class="ttdeci">Time time</div><div class="ttdoc">record date</div><div class="ttdef"><b>Definition:</b> <a href="_weather_record_8h_source.html#l00016">WeatherRecord.h:16</a></div></div>
+<div class="ttc" id="astruct_weather_record_html_a79d361cefdd03af9d499cbe943178235"><div class="ttname"><a href="struct_weather_record.html#a79d361cefdd03af9d499cbe943178235">WeatherRecord::airTemp</a></div><div class="ttdeci">double airTemp</div><div class="ttdoc">record solar radiation</div><div class="ttdef"><b>Definition:</b> <a href="_weather_record_8h_source.html#l00019">WeatherRecord.h:19</a></div></div>
+<div class="ttc" id="astruct_weather_record_html_a659efe8ecf8b99162a095730943e6821"><div class="ttname"><a href="struct_weather_record.html#a659efe8ecf8b99162a095730943e6821">WeatherRecord::speed</a></div><div class="ttdeci">double speed</div><div class="ttdoc">record time</div><div class="ttdef"><b>Definition:</b> <a href="_weather_record_8h_source.html#l00017">WeatherRecord.h:17</a></div></div>
+<div class="ttc" id="astruct_weather_record_html_a70f012d48746320340d318fe747104ee"><div class="ttname"><a href="struct_weather_record.html#a70f012d48746320340d318fe747104ee">WeatherRecord::date</a></div><div class="ttdeci">Date date</div><div class="ttdef"><b>Definition:</b> <a href="_weather_record_8h_source.html#l00015">WeatherRecord.h:15</a></div></div>
+<div class="ttc" id="astruct_weather_record_html_a05a298bd8dfc1e708a0029b4b2dbf4ec"><div class="ttname"><a href="struct_weather_record.html#a05a298bd8dfc1e708a0029b4b2dbf4ec">WeatherRecord::WeatherRecord</a></div><div class="ttdeci">WeatherRecord(const Date &amp;d=Date(), const Time &amp;t=Time(), double s=0, double sr=0, double at=0)</div><div class="ttdoc">record air temperature</div><div class="ttdef"><b>Definition:</b> <a href="_weather_record_8cpp_source.html#l00006">WeatherRecord.cpp:6</a></div></div>
 <div class="ttc" id="a_d_a_t_e_8_h_html"><div class="ttname"><a href="_d_a_t_e_8_h.html">DATE.H</a></div></div>
-<div class="ttc" id="aclass_weather_record_html_aa91cc84ea5eb9575afeaf9c3a052021d"><div class="ttname"><a href="class_weather_record.html#aa91cc84ea5eb9575afeaf9c3a052021d">WeatherRecord::_time</a></div><div class="ttdeci">Time _time</div><div class="ttdoc">The recorded date.</div><div class="ttdef"><b>Definition:</b> <a href="_weather_record_8h_source.html#l00124">WeatherRecord.h:124</a></div></div>
-<div class="ttc" id="aclass_weather_record_html_ac1323865ec7be03c027a39a327bcc373"><div class="ttname"><a href="class_weather_record.html#ac1323865ec7be03c027a39a327bcc373">WeatherRecord::_airTemp</a></div><div class="ttdeci">float _airTemp</div><div class="ttdoc">The solar radiation.</div><div class="ttdef"><b>Definition:</b> <a href="_weather_record_8h_source.html#l00127">WeatherRecord.h:127</a></div></div>
-<div class="ttc" id="aclass_date_html"><div class="ttname"><a href="class_date.html">Date</a></div><div class="ttdoc">Represents a date including date, month and year.</div><div class="ttdef"><b>Definition:</b> <a href="_d_a_t_e_8_h_source.html#l00028">DATE.H:28</a></div></div>
+<div class="ttc" id="aclass_date_html"><div class="ttname"><a href="class_date.html">Date</a></div><div class="ttdoc">Represents a date including date, month and year.</div><div class="ttdef"><b>Definition:</b> <a href="_d_a_t_e_8_h_source.html#l00018">DATE.H:18</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4935a802ad2a23705892d107f9cbddd3.html">Week 6</a></li><li class="navelem"><a class="el" href="dir_88e940c0467eeaf88ce0431d41694218.html">lab06</a></li><li class="navelem"><a class="el" href="_weather_record_8h.html">WeatherRecord.h</a></li>
+    <li class="navelem"><a class="el" href="dir_eba6c4f3d24434e9664df7bc9c250d72.html">Data Structures</a></li><li class="navelem"><a class="el" href="_weather_record_8h.html">WeatherRecord.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

@@ -7,7 +7,7 @@
 
 /**
 	 * @brief Contains all functions need to read the input file name
-	 *
+	 * @file FileNameReader.h
 	 * @author Trong Tu Le
 	 * @version 01
 	 */

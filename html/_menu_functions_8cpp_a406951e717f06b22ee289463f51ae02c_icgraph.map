@@ -1,6 +1,9 @@
 <map id="thirdCaseHandler" name="thirdCaseHandler">
-<area shape="rect" id="node1" title=" " alt="" coords="363,5,484,32"/>
-<area shape="rect" id="node2" href="$_menu_functions_8h.html#ac255327aabdea8f3331510cb82394a44" title=" " alt="" coords="207,5,315,32"/>
-<area shape="rect" id="node3" href="$_menu_functions_8h.html#aacbe1694510caf7651fea605959180c4" title="Contains all menu&#45;related functions including displaying the menu, handling choices,..." alt="" coords="104,5,159,32"/>
-<area shape="rect" id="node4" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+<area shape="rect" id="node1" title="Handles the third case from the menu." alt="" coords="579,81,700,108"/>
+<area shape="rect" id="node2" href="$_menu_functions_8h.html#ac255327aabdea8f3331510cb82394a44" title="Processes the user&#39;s choice from the menu." alt="" coords="423,56,531,83"/>
+<area shape="rect" id="node7" href="$_test_menu_8cpp.html#ab4634b1f4a8b8d9fb71389c10870e458" title=" " alt="" coords="228,107,375,133"/>
+<area shape="rect" id="node3" href="$_menu_functions_8h.html#aacbe1694510caf7651fea605959180c4" title="Displays the menu and processes user choices." alt="" coords="274,56,329,83"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="117,5,167,32"/>
+<area shape="rect" id="node5" href="$_test_menu_8cpp.html#aa5f9d8702556c317f863cc2b616c0135" title=" " alt="" coords="104,56,180,83"/>
+<area shape="rect" id="node6" href="$_test_menu_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,81,56,108"/>
 </map>

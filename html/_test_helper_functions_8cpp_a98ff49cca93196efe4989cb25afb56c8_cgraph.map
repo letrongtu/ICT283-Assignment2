@@ -1,0 +1,6 @@
+<map id="TestCalculateTotal" name="TestCalculateTotal">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,135,57"/>
+<area shape="rect" id="node2" href="$class_vector.html#a87f73b09903e16a1caaaae559a04036a" title="add the element at the end of the array" alt="" coords="189,5,279,32"/>
+<area shape="rect" id="node3" href="$_helper_functions_8cpp.html#adf45bdc6425cc718344cedfed6365bec" title="Calculates and returns the total sum of the values in the array." alt="" coords="183,56,285,83"/>
+<area shape="rect" id="node4" href="$class_vector.html#a6649abb641317b77f343b51e11fa6db7" title="function to return the number of element stored in the array" alt="" coords="333,56,428,83"/>
+</map>

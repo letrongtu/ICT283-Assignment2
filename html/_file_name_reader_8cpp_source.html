@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Assignment 2: FileNameReader.cpp Source File</title>
+<title>Assignment 2: Data Processor/FileNameReader.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,27 +91,27 @@ $(document).ready(function(){initNavTree('_file_name_reader_8cpp_source.html',''
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Contains all functions need to read the input file name</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// Version 1 - Trong Tu Le</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_file_name_reader_8h.html">FileNameReader.h</a>&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_data_processor_8h.html">DataProcessor.h</a>&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// Function to read the file name and open the input stream using the file name.</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="_file_name_reader_8h.html#abb388dcb5bcf8927fbce050041896fcb">   17</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_file_name_reader_8cpp.html#abb388dcb5bcf8927fbce050041896fcb">readFileFromSource</a>(<span class="keyword">const</span> <span class="keywordtype">string</span>&amp; sourceFile, <a class="code" href="class_map.html">WeatherLog</a>&amp; weather_data){</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    ifstream sourceInput(sourceFile);</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_file_name_reader_8h.html">FileNameReader.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_data_processor_8h.html">DataProcessor.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// Reads weather data from a file and stores it in the WeatherLog structure.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="_file_name_reader_8h.html#afd4947a3303689855ee12d8c1924a4f8">   17</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_file_name_reader_8cpp.html#afd4947a3303689855ee12d8c1924a4f8">readFileFromSource</a>(<span class="keyword">const</span> std::string&amp; sourceFile, <a class="code" href="class_map.html">WeatherLog</a>&amp; weather_data){</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    std::ifstream sourceInput(sourceFile);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">if</span> (!sourceInput) {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;Error opening file: &quot;</span> &lt;&lt; sourceFile &lt;&lt; endl;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Error opening file: &quot;</span> &lt;&lt; sourceFile &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">string</span> fileName;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">while</span> (getline(sourceInput, fileName)) {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="_data_processor_8cpp.html#a3aa48e98a9a9a17cc54a71b708c2bb73">readData</a>(fileName, weather_data);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    std::string fileName;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">while</span> (std::getline(sourceInput, fileName)) {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="dataprocessor_8cpp.html#aba10983b697e65438e53ca66a9459ac2">readData</a>(fileName, weather_data);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    }</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    sourceInput.close();</div>
@@ -120,15 +120,15 @@ $(document).ready(function(){initNavTree('_file_name_reader_8cpp_source.html',''
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="a_data_processor_8h_html"><div class="ttname"><a href="_data_processor_8h.html">DataProcessor.h</a></div></div>
-<div class="ttc" id="a_file_name_reader_8cpp_html_abb388dcb5bcf8927fbce050041896fcb"><div class="ttname"><a href="_file_name_reader_8cpp.html#abb388dcb5bcf8927fbce050041896fcb">readFileFromSource</a></div><div class="ttdeci">void readFileFromSource(const string &amp;sourceFile, WeatherLog &amp;weather_data)</div><div class="ttdoc">Contains all functions need to read the input file name.</div><div class="ttdef"><b>Definition:</b> <a href="_file_name_reader_8cpp_source.html#l00017">FileNameReader.cpp:17</a></div></div>
-<div class="ttc" id="a_file_name_reader_8h_html"><div class="ttname"><a href="_file_name_reader_8h.html">FileNameReader.h</a></div></div>
-<div class="ttc" id="a_data_processor_8cpp_html_a3aa48e98a9a9a17cc54a71b708c2bb73"><div class="ttname"><a href="_data_processor_8cpp.html#a3aa48e98a9a9a17cc54a71b708c2bb73">readData</a></div><div class="ttdeci">void readData(const string &amp;fileName, WeatherLog &amp;weather_data)</div><div class="ttdoc">Contains all functions that read and store the read data from data file.</div><div class="ttdef"><b>Definition:</b> <a href="_data_processor_8cpp_source.html#l00017">DataProcessor.cpp:17</a></div></div>
-<div class="ttc" id="aclass_map_html"><div class="ttname"><a href="class_map.html">Map</a></div><div class="ttdoc">A templated map class that wraps around std::map.</div><div class="ttdef"><b>Definition:</b> <a href="_map_8h_source.html#l00018">Map.h:18</a></div></div>
+<div class="ttc" id="a_data_processor_8h_html"><div class="ttname"><a href="_data_processor_8h.html">DataProcessor.h</a></div><div class="ttdoc">Contains all functions that read and store the read data from a data file.</div></div>
+<div class="ttc" id="a_file_name_reader_8h_html"><div class="ttname"><a href="_file_name_reader_8h.html">FileNameReader.h</a></div><div class="ttdoc">Contains all functions need to read the input file name.</div></div>
+<div class="ttc" id="adataprocessor_8cpp_html_aba10983b697e65438e53ca66a9459ac2"><div class="ttname"><a href="dataprocessor_8cpp.html#aba10983b697e65438e53ca66a9459ac2">readData</a></div><div class="ttdeci">void readData(const std::string &amp;fileName, WeatherLog &amp;weather_data)</div><div class="ttdoc">Reads weather data from a file and stores it in the WeatherLog.</div><div class="ttdef"><b>Definition:</b> <a href="dataprocessor_8cpp_source.html#l00009">dataprocessor.cpp:9</a></div></div>
+<div class="ttc" id="a_file_name_reader_8cpp_html_afd4947a3303689855ee12d8c1924a4f8"><div class="ttname"><a href="_file_name_reader_8cpp.html#afd4947a3303689855ee12d8c1924a4f8">readFileFromSource</a></div><div class="ttdeci">void readFileFromSource(const std::string &amp;sourceFile, WeatherLog &amp;weather_data)</div><div class="ttdoc">Reads weather data from a file and stores it in the WeatherLog structure.</div><div class="ttdef"><b>Definition:</b> <a href="_file_name_reader_8cpp_source.html#l00017">FileNameReader.cpp:17</a></div></div>
+<div class="ttc" id="aclass_map_html"><div class="ttname"><a href="class_map.html">Map</a></div><div class="ttdoc">A templated map class that wraps around std::map.</div><div class="ttdef"><b>Definition:</b> <a href="_map_8h_source.html#l00016">Map.h:16</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="_file_name_reader_8cpp.html">FileNameReader.cpp</a></li>
+    <li class="navelem"><a class="el" href="dir_70988c32f245dd8ce1f815200cea5d3d.html">Data Processor</a></li><li class="navelem"><a class="el" href="_file_name_reader_8cpp.html">FileNameReader.cpp</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>

@@ -100,15 +100,15 @@ Collaboration diagram for Node&lt; T &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_node__coll__graph.png" border="0" usemap="#_node_3_01_t_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="_node_3_01_t_01_4_coll__map" id="_node_3_01_t_01_4_coll__map">
-<area shape="rect" title="Template struct for the node used in the Binary Search Tree." alt="" coords="5,5,88,83"/>
+<area shape="rect" title="Template struct for the node used in the Binary Search Tree." alt="" coords="5,5,88,97"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2bebda964569abfada8565f276de11c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_node.html#a2bebda964569abfada8565f276de11c2">Node</a> (const T &amp;value=T(), <a class="el" href="struct_node.html">Node</a> *leftChild=nullptr, <a class="el" href="struct_node.html">Node</a> *rightChild=nullptr)</td></tr>
-<tr class="memdesc:a2bebda964569abfada8565f276de11c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Right child.  <a href="struct_node.html#a2bebda964569abfada8565f276de11c2">More...</a><br /></td></tr>
-<tr class="separator:a2bebda964569abfada8565f276de11c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8777564ac750994023fe7c2954fefdec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_node.html#a8777564ac750994023fe7c2954fefdec">Node</a> (const T &amp;value=T(), <a class="el" href="struct_node.html">Node</a> *leftChild=nullptr, <a class="el" href="struct_node.html">Node</a> *rightChild=nullptr, int hei=1)</td></tr>
+<tr class="memdesc:a8777564ac750994023fe7c2954fefdec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Height of the node in the tree.  <a href="struct_node.html#a8777564ac750994023fe7c2954fefdec">More...</a><br /></td></tr>
+<tr class="separator:a8777564ac750994023fe7c2954fefdec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -118,14 +118,18 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a6596c7ac17ecafff5522310c0da3a828"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data value.  <a href="struct_node.html#a6596c7ac17ecafff5522310c0da3a828">More...</a><br /></td></tr>
 <tr class="separator:a6596c7ac17ecafff5522310c0da3a828"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4009a1138f2f04372037fbec63406f11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_node.html">Node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_node.html#a4009a1138f2f04372037fbec63406f11">right</a></td></tr>
-<tr class="memdesc:a4009a1138f2f04372037fbec63406f11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Left child.  <a href="struct_node.html#a4009a1138f2f04372037fbec63406f11">More...</a><br /></td></tr>
+<tr class="memdesc:a4009a1138f2f04372037fbec63406f11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the left child.  <a href="struct_node.html#a4009a1138f2f04372037fbec63406f11">More...</a><br /></td></tr>
 <tr class="separator:a4009a1138f2f04372037fbec63406f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15b477d75fdc30cac4847dab9c954568"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_node.html#a15b477d75fdc30cac4847dab9c954568">height</a></td></tr>
+<tr class="memdesc:a15b477d75fdc30cac4847dab9c954568"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the right child.  <a href="struct_node.html#a15b477d75fdc30cac4847dab9c954568">More...</a><br /></td></tr>
+<tr class="separator:a15b477d75fdc30cac4847dab9c954568"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class T&gt;<br />
 struct Node&lt; T &gt;</h3>
 
 <p>Template struct for the node used in the Binary Search Tree. </p>
+<p>This structure defines a node in a binary search tree, holding a value of any type, and pointers to its left and right children.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">T</td><td>Data type of the elements stored in the node. </td></tr>
@@ -133,10 +137,10 @@ struct Node&lt; T &gt;</h3>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00009">9</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00013">13</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a2bebda964569abfada8565f276de11c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bebda964569abfada8565f276de11c2">&#9670;&nbsp;</a></span>Node()</h2>
+<a id="a8777564ac750994023fe7c2954fefdec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8777564ac750994023fe7c2954fefdec">&#9670;&nbsp;</a></span>Node()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -162,7 +166,13 @@ template&lt;class T &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="struct_node.html">Node</a>&lt; T &gt; *&#160;</td>
-          <td class="paramname"><em>rightChild</em> = <code>nullptr</code>&#160;</td>
+          <td class="paramname"><em>rightChild</em> = <code>nullptr</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>hei</em> = <code>1</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -177,12 +187,21 @@ template&lt;class T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Right child. </p>
-<p>Constructor </p>
+<p>Height of the node in the tree. </p>
+<p>Constructor to initialize a node with a value and optional children pointers.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>The value to be stored in the node. </td></tr>
+    <tr><td class="paramname">leftChild</td><td>Pointer to the left child node (default is nullptr). </td></tr>
+    <tr><td class="paramname">rightChild</td><td>Pointer to the right child node (default is nullptr). </td></tr>
+    <tr><td class="paramname">hei</td><td>Height of the node in the tree </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00021">21</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    : <a class="code" href="struct_node.html#ac450c71a8677a38d306361f9ced518d3">data</a>(value), <a class="code" href="struct_node.html#a6596c7ac17ecafff5522310c0da3a828">left</a>(leftChild), <a class="code" href="struct_node.html#a4009a1138f2f04372037fbec63406f11">right</a>(rightChild) {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00034">34</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    : <a class="code" href="struct_node.html#ac450c71a8677a38d306361f9ced518d3">data</a>(value), <a class="code" href="struct_node.html#a6596c7ac17ecafff5522310c0da3a828">left</a>(leftChild), <a class="code" href="struct_node.html#a4009a1138f2f04372037fbec63406f11">right</a>(rightChild), <a class="code" href="struct_node.html#a15b477d75fdc30cac4847dab9c954568">height</a>(hei){</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -201,9 +220,31 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00010">10</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00014">14</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_b_s_t_8h_source.html#l00152">BST&lt; T &gt;::copyHelper()</a>, <a class="el" href="_b_s_t_8h_source.html#l00261">BST&lt; T &gt;::inOrderHelper()</a>, <a class="el" href="_b_s_t_8h_source.html#l00301">BST&lt; T &gt;::postOrderHelper()</a>, <a class="el" href="_b_s_t_8h_source.html#l00281">BST&lt; T &gt;::preOrderHelper()</a>, and <a class="el" href="_b_s_t_8h_source.html#l00234">BST&lt; T &gt;::searchHelper()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_a_v_l_8_h_source.html#l00190">AVL&lt; T &gt;::copyHelper()</a>, <a class="el" href="_a_v_l_8_h_source.html#l00323">AVL&lt; T &gt;::inOrderHelper()</a>, <a class="el" href="_a_v_l_8_h_source.html#l00246">AVL&lt; T &gt;::insertHelper()</a>, <a class="el" href="_a_v_l_8_h_source.html#l00363">AVL&lt; T &gt;::postOrderHelper()</a>, <a class="el" href="_a_v_l_8_h_source.html#l00343">AVL&lt; T &gt;::preOrderHelper()</a>, and <a class="el" href="_a_v_l_8_h_source.html#l00296">AVL&lt; T &gt;::searchHelper()</a>.</p>
+
+</div>
+</div>
+<a id="a15b477d75fdc30cac4847dab9c954568"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15b477d75fdc30cac4847dab9c954568">&#9670;&nbsp;</a></span>height</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="struct_node.html">Node</a>&lt; T &gt;::height</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pointer to the right child. </p>
+
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00017">17</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="_a_v_l_8_h_source.html#l00376">AVL&lt; T &gt;::height()</a>, <a class="el" href="_a_v_l_8_h_source.html#l00246">AVL&lt; T &gt;::insertHelper()</a>, <a class="el" href="_a_v_l_8_h_source.html#l00409">AVL&lt; T &gt;::leftRotate()</a>, and <a class="el" href="_a_v_l_8_h_source.html#l00392">AVL&lt; T &gt;::rightRotate()</a>.</p>
 
 </div>
 </div>
@@ -223,9 +264,9 @@ template&lt;class T &gt; </div>
 
 <p>Data value. </p>
 
-<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00011">11</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00015">15</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_b_s_t_8h_source.html#l00190">BST&lt; T &gt;::clear()</a>, <a class="el" href="_b_s_t_8h_source.html#l00152">BST&lt; T &gt;::copyHelper()</a>, <a class="el" href="_b_s_t_8h_source.html#l00261">BST&lt; T &gt;::inOrderHelper()</a>, <a class="el" href="_b_s_t_8h_source.html#l00210">BST&lt; T &gt;::insertHelper()</a>, <a class="el" href="_b_s_t_8h_source.html#l00301">BST&lt; T &gt;::postOrderHelper()</a>, <a class="el" href="_b_s_t_8h_source.html#l00281">BST&lt; T &gt;::preOrderHelper()</a>, and <a class="el" href="_b_s_t_8h_source.html#l00234">BST&lt; T &gt;::searchHelper()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_a_v_l_8_h_source.html#l00226">AVL&lt; T &gt;::clear()</a>, <a class="el" href="_a_v_l_8_h_source.html#l00190">AVL&lt; T &gt;::copyHelper()</a>, <a class="el" href="_a_v_l_8_h_source.html#l00384">AVL&lt; T &gt;::getBalance()</a>, <a class="el" href="_a_v_l_8_h_source.html#l00323">AVL&lt; T &gt;::inOrderHelper()</a>, <a class="el" href="_a_v_l_8_h_source.html#l00246">AVL&lt; T &gt;::insertHelper()</a>, <a class="el" href="_a_v_l_8_h_source.html#l00409">AVL&lt; T &gt;::leftRotate()</a>, <a class="el" href="_a_v_l_8_h_source.html#l00363">AVL&lt; T &gt;::postOrderHelper()</a>, <a class="el" href="_a_v_l_8_h_source.html#l00343">AVL&lt; T &gt;::preOrderHelper()</a>, <a class="el" href="_a_v_l_8_h_source.html#l00392">AVL&lt; T &gt;::rightRotate()</a>, and <a class="el" href="_a_v_l_8_h_source.html#l00296">AVL&lt; T &gt;::searchHelper()</a>.</p>
 
 </div>
 </div>
@@ -243,22 +284,23 @@ template&lt;class T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Left child. </p>
+<p>Pointer to the left child. </p>
 
-<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00012">12</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_node_8h_source.html#l00016">16</a> of file <a class="el" href="_node_8h_source.html">Node.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_b_s_t_8h_source.html#l00190">BST&lt; T &gt;::clear()</a>, <a class="el" href="_b_s_t_8h_source.html#l00152">BST&lt; T &gt;::copyHelper()</a>, <a class="el" href="_b_s_t_8h_source.html#l00261">BST&lt; T &gt;::inOrderHelper()</a>, <a class="el" href="_b_s_t_8h_source.html#l00210">BST&lt; T &gt;::insertHelper()</a>, <a class="el" href="_b_s_t_8h_source.html#l00301">BST&lt; T &gt;::postOrderHelper()</a>, <a class="el" href="_b_s_t_8h_source.html#l00281">BST&lt; T &gt;::preOrderHelper()</a>, and <a class="el" href="_b_s_t_8h_source.html#l00234">BST&lt; T &gt;::searchHelper()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_a_v_l_8_h_source.html#l00226">AVL&lt; T &gt;::clear()</a>, <a class="el" href="_a_v_l_8_h_source.html#l00190">AVL&lt; T &gt;::copyHelper()</a>, <a class="el" href="_a_v_l_8_h_source.html#l00384">AVL&lt; T &gt;::getBalance()</a>, <a class="el" href="_a_v_l_8_h_source.html#l00323">AVL&lt; T &gt;::inOrderHelper()</a>, <a class="el" href="_a_v_l_8_h_source.html#l00246">AVL&lt; T &gt;::insertHelper()</a>, <a class="el" href="_a_v_l_8_h_source.html#l00409">AVL&lt; T &gt;::leftRotate()</a>, <a class="el" href="_a_v_l_8_h_source.html#l00363">AVL&lt; T &gt;::postOrderHelper()</a>, <a class="el" href="_a_v_l_8_h_source.html#l00343">AVL&lt; T &gt;::preOrderHelper()</a>, <a class="el" href="_a_v_l_8_h_source.html#l00392">AVL&lt; T &gt;::rightRotate()</a>, and <a class="el" href="_a_v_l_8_h_source.html#l00296">AVL&lt; T &gt;::searchHelper()</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="_node_8h_source.html">Node.h</a></li>
+<li>Data Structures/<a class="el" href="_node_8h_source.html">Node.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="astruct_node_html_ac450c71a8677a38d306361f9ced518d3"><div class="ttname"><a href="struct_node.html#ac450c71a8677a38d306361f9ced518d3">Node::data</a></div><div class="ttdeci">T data</div><div class="ttdef"><b>Definition:</b> <a href="_node_8h_source.html#l00010">Node.h:10</a></div></div>
-<div class="ttc" id="astruct_node_html_a4009a1138f2f04372037fbec63406f11"><div class="ttname"><a href="struct_node.html#a4009a1138f2f04372037fbec63406f11">Node::right</a></div><div class="ttdeci">Node * right</div><div class="ttdoc">Left child.</div><div class="ttdef"><b>Definition:</b> <a href="_node_8h_source.html#l00012">Node.h:12</a></div></div>
-<div class="ttc" id="astruct_node_html_a6596c7ac17ecafff5522310c0da3a828"><div class="ttname"><a href="struct_node.html#a6596c7ac17ecafff5522310c0da3a828">Node::left</a></div><div class="ttdeci">Node * left</div><div class="ttdoc">Data value.</div><div class="ttdef"><b>Definition:</b> <a href="_node_8h_source.html#l00011">Node.h:11</a></div></div>
+<div class="ttc" id="astruct_node_html_ac450c71a8677a38d306361f9ced518d3"><div class="ttname"><a href="struct_node.html#ac450c71a8677a38d306361f9ced518d3">Node::data</a></div><div class="ttdeci">T data</div><div class="ttdef"><b>Definition:</b> <a href="_node_8h_source.html#l00014">Node.h:14</a></div></div>
+<div class="ttc" id="astruct_node_html_a4009a1138f2f04372037fbec63406f11"><div class="ttname"><a href="struct_node.html#a4009a1138f2f04372037fbec63406f11">Node::right</a></div><div class="ttdeci">Node * right</div><div class="ttdoc">Pointer to the left child.</div><div class="ttdef"><b>Definition:</b> <a href="_node_8h_source.html#l00016">Node.h:16</a></div></div>
+<div class="ttc" id="astruct_node_html_a15b477d75fdc30cac4847dab9c954568"><div class="ttname"><a href="struct_node.html#a15b477d75fdc30cac4847dab9c954568">Node::height</a></div><div class="ttdeci">int height</div><div class="ttdoc">Pointer to the right child.</div><div class="ttdef"><b>Definition:</b> <a href="_node_8h_source.html#l00017">Node.h:17</a></div></div>
+<div class="ttc" id="astruct_node_html_a6596c7ac17ecafff5522310c0da3a828"><div class="ttname"><a href="struct_node.html#a6596c7ac17ecafff5522310c0da3a828">Node::left</a></div><div class="ttdeci">Node * left</div><div class="ttdoc">Data value.</div><div class="ttdef"><b>Definition:</b> <a href="_node_8h_source.html#l00015">Node.h:15</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

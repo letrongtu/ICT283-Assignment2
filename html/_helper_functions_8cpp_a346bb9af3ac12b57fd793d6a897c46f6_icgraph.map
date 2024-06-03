@@ -1,8 +1,12 @@
 <map id="readMonth" name="readMonth">
-<area shape="rect" id="node1" title=" " alt="" coords="532,31,615,57"/>
-<area shape="rect" id="node2" href="$_menu_functions_8h.html#a37b8e11fe7642a1ec706a438d524d199" title=" " alt="" coords="365,5,482,32"/>
-<area shape="rect" id="node6" href="$_menu_functions_8h.html#a406951e717f06b22ee289463f51ae02c" title=" " alt="" coords="363,56,484,83"/>
-<area shape="rect" id="node3" href="$_menu_functions_8h.html#ac255327aabdea8f3331510cb82394a44" title=" " alt="" coords="207,31,315,57"/>
-<area shape="rect" id="node4" href="$_menu_functions_8h.html#aacbe1694510caf7651fea605959180c4" title="Contains all menu&#45;related functions including displaying the menu, handling choices,..." alt="" coords="104,31,159,57"/>
-<area shape="rect" id="node5" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,56,57"/>
+<area shape="rect" id="node1" title="Reads and returns the user&#39;s input for the month." alt="" coords="784,87,867,113"/>
+<area shape="rect" id="node2" href="$_menu_functions_8h.html#a37b8e11fe7642a1ec706a438d524d199" title="Handles the first case from the menu." alt="" coords="617,61,734,88"/>
+<area shape="rect" id="node9" href="$_menu_functions_8h.html#a406951e717f06b22ee289463f51ae02c" title="Handles the third case from the menu." alt="" coords="615,112,736,139"/>
+<area shape="rect" id="node3" href="$_menu_functions_8h.html#ac255327aabdea8f3331510cb82394a44" title="Processes the user&#39;s choice from the menu." alt="" coords="439,75,547,101"/>
+<area shape="rect" id="node8" href="$_test_menu_8cpp.html#add9a5bc519c5d8902a0d97a0bf3227e2" title=" " alt="" coords="228,5,372,32"/>
+<area shape="rect" id="node4" href="$_menu_functions_8h.html#aacbe1694510caf7651fea605959180c4" title="Displays the menu and processes user choices." alt="" coords="273,75,327,101"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="117,96,167,123"/>
+<area shape="rect" id="node6" href="$_test_menu_8cpp.html#aa5f9d8702556c317f863cc2b616c0135" title=" " alt="" coords="104,45,180,72"/>
+<area shape="rect" id="node7" href="$_test_menu_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,45,56,72"/>
+<area shape="rect" id="node10" href="$_test_menu_8cpp.html#ab4634b1f4a8b8d9fb71389c10870e458" title=" " alt="" coords="420,137,567,164"/>
 </map>

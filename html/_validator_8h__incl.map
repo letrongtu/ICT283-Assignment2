@@ -1,4 +1,4 @@
-<map id="Validator.h" name="Validator.h">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,89,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="20,80,75,107"/>
+<map id="Helper Functions/Validator.h" name="Helper Functions/Validator.h">
+<area shape="rect" id="node1" title="Contains all functions that perform validations of the user input." alt="" coords="5,5,192,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="71,80,126,107"/>
 </map>

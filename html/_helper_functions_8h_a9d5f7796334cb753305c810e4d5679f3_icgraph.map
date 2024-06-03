@@ -1,15 +1,22 @@
 <map id="calculateSumSquared" name="calculateSumSquared">
-<area shape="rect" id="node1" title=" " alt="" coords="957,101,1107,128"/>
-<area shape="rect" id="node2" href="$_helper_functions_8h.html#a7db2f6bf2a3667a2a875c0808dfe41ae" title=" " alt="" coords="731,69,909,96"/>
-<area shape="rect" id="node12" href="$_test_calculate_functions_8cpp.html#a9a45a70c331a276d8ba40b08147c01a3" title=" " alt="" coords="733,132,907,159"/>
-<area shape="rect" id="node3" href="$_menu_functions_8h.html#a44c57b1a7fea1601e8402a8200c1e555" title=" " alt="" coords="560,5,672,32"/>
-<area shape="rect" id="node8" href="$_menu_functions_8h.html#a6a33b59754eb697fee1b6b309005c22f" title=" " alt="" coords="555,56,677,83"/>
-<area shape="rect" id="node10" href="$_menu_functions_8h.html#a737f4db754e20737d01730595066e6cb" title=" " alt="" coords="549,107,683,133"/>
-<area shape="rect" id="node4" href="$_menu_functions_8h.html#a37b8e11fe7642a1ec706a438d524d199" title=" " alt="" coords="373,5,491,32"/>
-<area shape="rect" id="node5" href="$_menu_functions_8h.html#ac255327aabdea8f3331510cb82394a44" title=" " alt="" coords="207,56,315,83"/>
-<area shape="rect" id="node6" href="$_menu_functions_8h.html#aacbe1694510caf7651fea605959180c4" title="Contains all menu&#45;related functions including displaying the menu, handling choices,..." alt="" coords="104,56,159,83"/>
-<area shape="rect" id="node7" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,56,83"/>
-<area shape="rect" id="node9" href="$_menu_functions_8h.html#add2de9ea68056159710d684994f87e24" title=" " alt="" coords="368,56,496,83"/>
-<area shape="rect" id="node11" href="$_menu_functions_8h.html#a1883d746b4d16c5a0e29c8daaf9c93cb" title=" " alt="" coords="363,107,501,133"/>
-<area shape="rect" id="node13" href="$_test_calculate_functions_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="591,157,641,184"/>
+<area shape="rect" id="node1" title="Calculates and returns the sum of squared differences from the mean." alt="" coords="1479,227,1628,254"/>
+<area shape="rect" id="node2" href="$_helper_functions_8h.html#a7db2f6bf2a3667a2a875c0808dfe41ae" title="Calculates and returns the standard deviation of the values in the array." alt="" coords="1252,188,1431,215"/>
+<area shape="rect" id="node20" href="$_test_helper_functions_8cpp.html#a720571bf40ead5f319a088568a47faa0" title=" " alt="" coords="1253,264,1429,291"/>
+<area shape="rect" id="node3" href="$_menu_functions_8h.html#a44c57b1a7fea1601e8402a8200c1e555" title="Outputs the wind speed data for a specific month and year." alt="" coords="1045,188,1157,215"/>
+<area shape="rect" id="node11" href="$_menu_functions_8h.html#a45eea4e69e493cc98c63fff4700ff8b7" title="Outputs the average, standard deviation, and mean absolute deviation of a vector to a file." alt="" coords="1022,87,1181,114"/>
+<area shape="rect" id="node15" href="$_menu_functions_8h.html#aa7a8c45983c2e3202886ac2116d5de8d" title="Outputs the temperature data for a specific month." alt="" coords="1035,138,1168,164"/>
+<area shape="rect" id="node18" href="$_test_helper_functions_8cpp.html#a2af585ab85ecfb494e13ff6eff92e803" title=" " alt="" coords="999,239,1204,266"/>
+<area shape="rect" id="node4" href="$_menu_functions_8h.html#a37b8e11fe7642a1ec706a438d524d199" title="Handles the first case from the menu." alt="" coords="652,188,769,215"/>
+<area shape="rect" id="node5" href="$_menu_functions_8h.html#ac255327aabdea8f3331510cb82394a44" title="Processes the user&#39;s choice from the menu." alt="" coords="458,87,566,114"/>
+<area shape="rect" id="node10" href="$_test_menu_8cpp.html#add9a5bc519c5d8902a0d97a0bf3227e2" title=" " alt="" coords="233,188,377,215"/>
+<area shape="rect" id="node6" href="$_menu_functions_8h.html#aacbe1694510caf7651fea605959180c4" title="Displays the menu and processes user choices." alt="" coords="278,87,333,114"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="117,36,167,63"/>
+<area shape="rect" id="node8" href="$_test_menu_8cpp.html#aa5f9d8702556c317f863cc2b616c0135" title=" " alt="" coords="104,87,180,114"/>
+<area shape="rect" id="node9" href="$_test_menu_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,112,56,139"/>
+<area shape="rect" id="node12" href="$_menu_functions_8h.html#a8d644809d7717137e40a2be761196d06" title="Outputs the weather data to a file for a specific month." alt="" coords="828,87,951,114"/>
+<area shape="rect" id="node13" href="$_menu_functions_8h.html#add2de9ea68056159710d684994f87e24" title="Handles the fourth case from the menu." alt="" coords="647,87,775,114"/>
+<area shape="rect" id="node14" href="$_test_menu_8cpp.html#a5cdc8bf7eb4319532cdf3aa40ef6a3e5" title=" " alt="" coords="228,11,383,38"/>
+<area shape="rect" id="node16" href="$_menu_functions_8h.html#a1883d746b4d16c5a0e29c8daaf9c93cb" title="Handles the second case from the menu." alt="" coords="641,138,780,164"/>
+<area shape="rect" id="node17" href="$_test_menu_8cpp.html#ad33536ac9fd9d2a33d15ddf0a835a8f9" title=" " alt="" coords="431,138,593,164"/>
+<area shape="rect" id="node19" href="$_test_helper_functions_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="864,264,915,291"/>
 </map>

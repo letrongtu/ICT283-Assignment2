@@ -1,0 +1,4 @@
+<map id="DataCollector::clear" name="DataCollector::clear">
+<area shape="rect" id="node1" title="Clears the weather data vector." alt="" coords="5,5,141,32"/>
+<area shape="rect" id="node2" href="$class_vector.html#a06640b5a57e692928364c727def3c5de" title="Function to delete all elements in the vector." alt="" coords="189,5,288,32"/>
+</map>

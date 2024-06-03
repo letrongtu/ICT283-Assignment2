@@ -1,0 +1,10 @@
+<map id="readWeatherRecord" name="readWeatherRecord">
+<area shape="rect" id="node1" title="Reads a weather record from a line and a header map." alt="" coords="839,132,976,159"/>
+<area shape="rect" id="node2" href="$_data_processor_8h.html#aba10983b697e65438e53ca66a9459ac2" title="Reads weather data from a file and stores it in the WeatherLog." alt="" coords="645,107,719,133"/>
+<area shape="rect" id="node8" href="$_test_data_processor_functions_8cpp.html#a5e98205bf8226b70bb2290e95eb50f82" title=" " alt="" coords="573,157,791,184"/>
+<area shape="rect" id="node3" href="$_file_name_reader_8h.html#afd4947a3303689855ee12d8c1924a4f8" title="Reads weather data from a file and stores it in the WeatherLog structure." alt="" coords="379,56,517,83"/>
+<area shape="rect" id="node7" href="$_test_data_processor_functions_8cpp.html#a2ba9f68c4217c76bc5c5dac17c143472" title=" " alt="" coords="371,107,525,133"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="188,5,239,32"/>
+<area shape="rect" id="node5" href="$_test_data_processor_functions_8cpp.html#a60828f98521f764f44f88752682a537a" title=" " alt="" coords="104,56,323,83"/>
+<area shape="rect" id="node6" href="$_test_data_processor_functions_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,107,56,133"/>
+</map>

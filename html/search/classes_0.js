@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bst_167',['BST',['../class_b_s_t.html',1,'']]]
+  ['avl_204',['AVL',['../class_a_v_l.html',1,'']]]
 ];

@@ -2,8 +2,23 @@
 <results version="2">
     <cppcheck version="2.14.0" />
     <errors>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;WeatherRecord::speed&apos; is never used." verbose="struct member &apos;WeatherRecord::speed&apos; is never used." cwe="563" file0="Data Structures/WeatherRecord.h">
+            <location file="Data Structures\WeatherRecord.h" line="16" column="12" />
+            <symbol>WeatherRecord::speed</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;WeatherRecord::solarRad&apos; is never used." verbose="struct member &apos;WeatherRecord::solarRad&apos; is never used." cwe="563" file0="Data Structures/WeatherRecord.h">
+            <location file="Data Structures\WeatherRecord.h" line="17" column="12" />
+            <symbol>WeatherRecord::solarRad</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;WeatherRecord::airTemp&apos; is never used." verbose="struct member &apos;WeatherRecord::airTemp&apos; is never used." cwe="563" file0="Data Structures/WeatherRecord.h">
+            <location file="Data Structures\WeatherRecord.h" line="18" column="12" />
+            <symbol>WeatherRecord::airTemp</symbol>
+        </error>
         <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;map&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;map&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
             <location file="Data Structures\Map.h" line="5" column="0" />
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;stdexcept&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;stdexcept&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="Data Structures\Map.h" line="6" column="0" />
         </error>
         <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
             <location file="Data Structures\datastructure.h" line="8" column="0" />
@@ -15,28 +30,51 @@
             <location file="Helper Functions\Validator.h" line="4" column="0" />
         </error>
         <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="Helper Functions\HelperFunctions.cpp" line="9" column="0" />
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
             <location file="Helper Functions\HelperFunctions.cpp" line="10" column="0" />
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;cmath&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;cmath&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
             <location file="Helper Functions\HelperFunctions.cpp" line="11" column="0" />
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="Output Functions\OutputFunctions.cpp" line="7" column="0" />
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;cmath&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;cmath&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="Helper Functions\HelperFunctions.cpp" line="12" column="0" />
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iomanip&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iomanip&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="Output Functions\OutputFunctions.cpp" line="8" column="0" />
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="Data Processor\DataProcessor.h" line="9" column="0" />
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;fstream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;fstream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="Data Processor\DataProcessor.h" line="10" column="0" />
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="Data Processor\FileNameReader.cpp" line="10" column="0" />
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;fstream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;fstream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="Data Processor\FileNameReader.cpp" line="11" column="0" />
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="Data Processor\FileNameReader.cpp" line="12" column="0" />
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;regex&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;regex&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="Helper Functions\Validator.cpp" line="9" column="0" />
         </error>
         <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;fstream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;fstream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
             <location file="Menu Functions\MenuFunctions.h" line="6" column="0" />
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="main.cpp" line="7" column="0" />
+        <error id="unusedStructMember" severity="style" msg="class member &apos;Time::hour&apos; is never used." verbose="class member &apos;Time::hour&apos; is never used." cwe="563" file0="Data Structures/TIME.H">
+            <location file="Data Structures\TIME.H" line="64" column="9" />
+            <symbol>Time::hour</symbol>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;regex&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;regex&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="Helper Functions\Validator.cpp" line="8" column="0" />
+        <error id="unusedStructMember" severity="style" msg="class member &apos;Time::minute&apos; is never used." verbose="class member &apos;Time::minute&apos; is never used." cwe="563" file0="Data Structures/TIME.H">
+            <location file="Data Structures\TIME.H" line="65" column="9" />
+            <symbol>Time::minute</symbol>
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="Data Processor\dataprocessor.cpp" line="4" column="0" />
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;fstream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;fstream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="Data Processor\dataprocessor.cpp" line="5" column="0" />
+        </error>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;sstream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;sstream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="Data Processor\dataprocessor.cpp" line="6" column="0" />
         </error>
         <error id="unusedStructMember" severity="style" msg="class member &apos;Date::date&apos; is never used." verbose="class member &apos;Date::date&apos; is never used." cwe="563" file0="Data Structures/DATE.H">
             <location file="Data Structures\DATE.H" line="79" column="9" />
@@ -50,41 +88,11 @@
             <location file="Data Structures\DATE.H" line="81" column="9" />
             <symbol>Date::year</symbol>
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="Data Processor\DataProcessor.h" line="9" column="0" />
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;fstream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;fstream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="Data Processor\DataProcessor.h" line="10" column="0" />
-        </error>
         <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="Data Processor\DataProcessor.cpp" line="5" column="0" />
+            <location file="Output Functions\OutputFunctions.cpp" line="8" column="0" />
         </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;fstream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;fstream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="Data Processor\DataProcessor.cpp" line="6" column="0" />
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;sstream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;sstream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="Data Processor\DataProcessor.cpp" line="7" column="0" />
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="Data Processor\FileNameReader.cpp" line="9" column="0" />
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;fstream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;fstream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="Data Processor\FileNameReader.cpp" line="10" column="0" />
-        </error>
-        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;string&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
-            <location file="Data Processor\FileNameReader.cpp" line="11" column="0" />
-        </error>
-        <error id="unusedStructMember" severity="style" msg="struct member &apos;WeatherRecord::speed&apos; is never used." verbose="struct member &apos;WeatherRecord::speed&apos; is never used." cwe="563" file0="Data Structures/WeatherRecord.h">
-            <location file="Data Structures\WeatherRecord.h" line="14" column="12" />
-            <symbol>WeatherRecord::speed</symbol>
-        </error>
-        <error id="unusedStructMember" severity="style" msg="struct member &apos;WeatherRecord::solarRad&apos; is never used." verbose="struct member &apos;WeatherRecord::solarRad&apos; is never used." cwe="563" file0="Data Structures/WeatherRecord.h">
-            <location file="Data Structures\WeatherRecord.h" line="15" column="12" />
-            <symbol>WeatherRecord::solarRad</symbol>
-        </error>
-        <error id="unusedStructMember" severity="style" msg="struct member &apos;WeatherRecord::airTemp&apos; is never used." verbose="struct member &apos;WeatherRecord::airTemp&apos; is never used." cwe="563" file0="Data Structures/WeatherRecord.h">
-            <location file="Data Structures\WeatherRecord.h" line="16" column="12" />
-            <symbol>WeatherRecord::airTemp</symbol>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iomanip&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iomanip&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="Output Functions\OutputFunctions.cpp" line="9" column="0" />
         </error>
         <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
             <location file="Menu Functions\MenuFunctions.cpp" line="12" column="0" />
@@ -92,24 +100,19 @@
         <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iomanip&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iomanip&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
             <location file="Menu Functions\MenuFunctions.cpp" line="13" column="0" />
         </error>
-        <error id="unusedStructMember" severity="style" msg="class member &apos;Time::hour&apos; is never used." verbose="class member &apos;Time::hour&apos; is never used." cwe="563" file0="Data Structures/TIME.H">
-            <location file="Data Structures\TIME.H" line="62" column="9" />
-            <symbol>Time::hour</symbol>
-        </error>
-        <error id="unusedStructMember" severity="style" msg="class member &apos;Time::minute&apos; is never used." verbose="class member &apos;Time::minute&apos; is never used." cwe="563" file0="Data Structures/TIME.H">
-            <location file="Data Structures\TIME.H" line="63" column="9" />
-            <symbol>Time::minute</symbol>
+        <error id="missingIncludeSystem" severity="information" msg="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results." verbose="Include file: &lt;iostream&gt; not found. Please note: Cppcheck does not need standard library headers to get proper results.">
+            <location file="main.cpp" line="7" column="0" />
         </error>
         <error id="unusedFunction" severity="style" msg="The function &apos;search&apos; is never used." verbose="The function &apos;search&apos; is never used." cwe="561">
-            <location file="Data Structures\AVL.H" line="286" column="0" />
+            <location file="Data Structures\AVL.H" line="288" column="0" />
             <symbol>search</symbol>
         </error>
         <error id="unusedFunction" severity="style" msg="The function &apos;preOrder&apos; is never used." verbose="The function &apos;preOrder&apos; is never used." cwe="561">
-            <location file="Data Structures\AVL.H" line="333" column="0" />
+            <location file="Data Structures\AVL.H" line="335" column="0" />
             <symbol>preOrder</symbol>
         </error>
         <error id="unusedFunction" severity="style" msg="The function &apos;postOrder&apos; is never used." verbose="The function &apos;postOrder&apos; is never used." cwe="561">
-            <location file="Data Structures\AVL.H" line="353" column="0" />
+            <location file="Data Structures\AVL.H" line="355" column="0" />
             <symbol>postOrder</symbol>
         </error>
         <error id="checkersReport" severity="information" msg="Active checkers: 163/712 (use --checkers-report=&lt;filename&gt; to see details)" verbose="Active checkers: 163/712 (use --checkers-report=&lt;filename&gt; to see details)" />

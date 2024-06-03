@@ -1,5 +1,6 @@
-<map id="MenuFunctions.h" name="MenuFunctions.h">
-<area shape="rect" id="node1" title=" " alt="" coords="45,5,168,32"/>
+<map id="Menu Functions/MenuFunctions.h" name="Menu Functions/MenuFunctions.h">
+<area shape="rect" id="node1" title="Contains all menu&#45;related functions including displaying the menu, handling choices,..." alt="" coords="112,5,331,32"/>
 <area shape="rect" id="node2" href="$main_8cpp.html" title=" " alt="" coords="5,80,80,107"/>
-<area shape="rect" id="node3" href="$_menu_functions_8cpp.html" title=" " alt="" coords="104,80,240,107"/>
+<area shape="rect" id="node3" href="$_menu_functions_8cpp.html" title=" " alt="" coords="105,80,338,107"/>
+<area shape="rect" id="node4" href="$_test_menu_8cpp.html" title=" " alt="" coords="215,155,383,196"/>
 </map>

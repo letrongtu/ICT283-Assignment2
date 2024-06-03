@@ -1,0 +1,10 @@
+<map id="TestReadTimeFunction" name="TestReadTimeFunction">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,160,108"/>
+<area shape="rect" id="node2" href="$class_time.html#aaf65e0dc73514ffab9b3dd643cef9bdb" title="Get the hour." alt="" coords="214,5,321,32"/>
+<area shape="rect" id="node3" href="$class_time.html#a86302564cc0783b402dc5f0e137a43c1" title="Get the minute." alt="" coords="208,56,327,83"/>
+<area shape="rect" id="node4" href="$dataprocessor_8cpp.html#ab736b8937fc7ab05ca65923faa7a2c2c" title="Reads a time from a template string." alt="" coords="230,107,305,133"/>
+<area shape="rect" id="node8" href="$test_a_v_l_8cpp.html#a28a57600eb2bb523dd43e4a25cc8b3ea" title=" " alt="" coords="240,157,295,184"/>
+<area shape="rect" id="node5" href="$_validator_8cpp.html#a78df34cd0e5e380d00b530031c514891" title="Validates if the given hour and minute form a valid time." alt="" coords="389,56,478,83"/>
+<area shape="rect" id="node6" href="$class_time.html#ab8c6582ad99c617c821ad3d10b9a872e" title="Set the hour." alt="" coords="381,107,486,133"/>
+<area shape="rect" id="node7" href="$class_time.html#a08cdbeef8e01ad48aadab6db90665d85" title="Set the minute." alt="" coords="375,157,492,184"/>
+</map>

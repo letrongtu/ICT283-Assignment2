@@ -1,7 +1,10 @@
-<map id="Validator.h" name="Validator.h">
-<area shape="rect" id="node1" title=" " alt="" coords="285,5,369,32"/>
-<area shape="rect" id="node2" href="$_data_processor_8cpp.html" title=" " alt="" coords="5,87,139,114"/>
-<area shape="rect" id="node3" href="$_helper_functions_8cpp.html" title=" " alt="" coords="163,87,304,114"/>
-<area shape="rect" id="node4" href="$_test_validate_functions_8cpp.html" title=" " alt="" coords="329,80,511,121"/>
-<area shape="rect" id="node5" href="$_validator_8cpp.html" title=" " alt="" coords="536,87,635,114"/>
+<map id="Helper Functions/Validator.h" name="Helper Functions/Validator.h">
+<area shape="rect" id="node1" title="Contains all functions that perform validations of the user input." alt="" coords="382,5,569,32"/>
+<area shape="rect" id="node2" href="$dataprocessor_8cpp.html" title=" " alt="" coords="5,80,228,107"/>
+<area shape="rect" id="node3" href="$_test_data_processor_functions_8cpp.html" title=" " alt="" coords="61,155,337,196"/>
+<area shape="rect" id="node4" href="$_helper_functions_8cpp.html" title=" " alt="" coords="354,80,597,107"/>
+<area shape="rect" id="node5" href="$_test_helper_functions_8cpp.html" title=" " alt="" coords="362,155,589,196"/>
+<area shape="rect" id="node6" href="$_test_menu_8cpp.html" title=" " alt="" coords="613,155,781,196"/>
+<area shape="rect" id="node7" href="$_validator_8cpp.html" title=" " alt="" coords="621,80,821,107"/>
+<area shape="rect" id="node8" href="$_test_validatet_functions_8cpp.html" title=" " alt="" coords="805,155,1047,196"/>
 </map>

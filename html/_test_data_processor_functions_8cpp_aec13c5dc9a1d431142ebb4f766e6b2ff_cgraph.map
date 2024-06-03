@@ -1,0 +1,7 @@
+<map id="TestReadHeaderFunction" name="TestReadHeaderFunction">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,173,83"/>
+<area shape="rect" id="node2" href="$class_map.html#a3f31e719d41dd3d8ecfad559339678f1" title="Returns an iterator to the beginning." alt="" coords="222,5,309,32"/>
+<area shape="rect" id="node3" href="$class_map.html#a07bccdb62ff24632be0e9ffdf64d63b7" title="Returns an iterator to the end." alt="" coords="227,56,303,83"/>
+<area shape="rect" id="node4" href="$dataprocessor_8cpp.html#acab6295a587ed8bd315fb0cb0e859167" title="Reads the header of the weather data file and fills the provided map with header names and their indi..." alt="" coords="221,107,309,133"/>
+<area shape="rect" id="node5" href="$class_map.html#a225903c0291cf978e27be5a58f399a14" title="Inserts a key&#45;value pair into the map." alt="" coords="357,107,444,133"/>
+</map>

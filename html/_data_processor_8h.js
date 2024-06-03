@@ -1,12 +1,10 @@
 var _data_processor_8h =
 [
-    [ "getRow", "_data_processor_8h.html#ab4581d7aa00f7725ca5fbe6e3c9c78b8", null ],
-    [ "isValidCell", "_data_processor_8h.html#a654cf13adaa6a67a76c17f5035f9d860", null ],
-    [ "isValidHeaders", "_data_processor_8h.html#a5e308cfc5494209d39fb14a440d7484a", null ],
-    [ "readData", "_data_processor_8h.html#a3aa48e98a9a9a17cc54a71b708c2bb73", null ],
-    [ "readDate", "_data_processor_8h.html#ad4fffef2d6663efb9fb038fb6979fd28", null ],
-    [ "readDateAndTime", "_data_processor_8h.html#a2d99b03343534baef0bb07effb8760cd", null ],
-    [ "readHeader", "_data_processor_8h.html#ab42b21c42fab65c4f2708c107babd11a", null ],
-    [ "readTime", "_data_processor_8h.html#a5a1b67153a042c1913994557b6237c67", null ],
-    [ "readWeatherRecord", "_data_processor_8h.html#af0c8f5105b9ac3fe0f8744c7ba51de1f", null ]
+    [ "isValidHeaders", "_data_processor_8h.html#a619f7c3667f5e9c57259178c0bf17a11", null ],
+    [ "readData", "_data_processor_8h.html#aba10983b697e65438e53ca66a9459ac2", null ],
+    [ "readDate", "_data_processor_8h.html#afdf156e8d6316a19a1f0374eb6bb31ac", null ],
+    [ "readDateAndTime", "_data_processor_8h.html#a6303080316244e76a4dc1d407b0f16b5", null ],
+    [ "readHeader", "_data_processor_8h.html#acab6295a587ed8bd315fb0cb0e859167", null ],
+    [ "readTime", "_data_processor_8h.html#ab736b8937fc7ab05ca65923faa7a2c2c", null ],
+    [ "readWeatherRecord", "_data_processor_8h.html#a746f4310314b880c1443e868109a5105", null ]
 ];

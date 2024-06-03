@@ -1,0 +1,8 @@
+<map id="readData" name="readData">
+<area shape="rect" id="node1" title="Reads weather data from a file and stores it in the WeatherLog." alt="" coords="573,81,648,108"/>
+<area shape="rect" id="node2" href="$_file_name_reader_8h.html#afd4947a3303689855ee12d8c1924a4f8" title="Reads weather data from a file and stores it in the WeatherLog structure." alt="" coords="379,56,517,83"/>
+<area shape="rect" id="node6" href="$_test_data_processor_functions_8cpp.html#a2ba9f68c4217c76bc5c5dac17c143472" title=" " alt="" coords="371,107,525,133"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="188,5,239,32"/>
+<area shape="rect" id="node4" href="$_test_data_processor_functions_8cpp.html#a60828f98521f764f44f88752682a537a" title=" " alt="" coords="104,56,323,83"/>
+<area shape="rect" id="node5" href="$_test_data_processor_functions_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,81,56,108"/>
+</map>

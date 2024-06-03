@@ -14,7 +14,8 @@
  * the collected data, clear the data, and get the size of the collected data.
  *
  * @version 01
- * @autor Trong Tu Le
+ * @author Trong Tu Le
+ * @file DataCollector.h
  */
 class DataCollector {
 public:

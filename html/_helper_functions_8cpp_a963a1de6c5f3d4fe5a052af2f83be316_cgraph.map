@@ -1,5 +1,5 @@
 <map id="readYear" name="readYear">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,80,57"/>
-<area shape="rect" id="node2" href="$_validator_8cpp.html#a23c4e1c0702aa77ed10a60a29acb5f09" title="Contains all functions that do the validations of the user input." alt="" coords="128,5,235,32"/>
-<area shape="rect" id="node3" href="$_validator_8cpp.html#a61544b32391e0579f222c45b1a0af56a" title=" " alt="" coords="137,56,225,83"/>
+<area shape="rect" id="node1" title="Reads and returns the user&#39;s input for the year." alt="" coords="5,31,80,57"/>
+<area shape="rect" id="node2" href="$_validator_8cpp.html#a8abc8d32ee3eac481a888bca15aae270" title="Checks if the input string represents a valid positive number." alt="" coords="128,5,235,32"/>
+<area shape="rect" id="node3" href="$_validator_8cpp.html#a61544b32391e0579f222c45b1a0af56a" title="Validates if the given year is valid." alt="" coords="137,56,225,83"/>
 </map>

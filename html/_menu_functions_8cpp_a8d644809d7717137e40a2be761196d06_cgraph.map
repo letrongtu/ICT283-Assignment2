@@ -1,0 +1,10 @@
+<map id="fourthCaseOutput" name="fourthCaseOutput">
+<area shape="rect" id="node1" title="Outputs the weather data to a file for a specific month." alt="" coords="5,68,128,95"/>
+<area shape="rect" id="node2" href="$_helper_functions_8cpp.html#adf45bdc6425cc718344cedfed6365bec" title="Calculates and returns the total sum of the values in the array." alt="" coords="204,17,307,44"/>
+<area shape="rect" id="node3" href="$class_vector.html#a6649abb641317b77f343b51e11fa6db7" title="function to return the number of element stored in the array" alt="" coords="807,169,901,196"/>
+<area shape="rect" id="node4" href="$_menu_functions_8cpp.html#a45eea4e69e493cc98c63fff4700ff8b7" title="Outputs the average, standard deviation, and mean absolute deviation of a vector to a file." alt="" coords="176,169,335,196"/>
+<area shape="rect" id="node5" href="$_helper_functions_8cpp.html#a44468ca3edb66d1f67cfdca110afa5c7" title="Calculates and returns the average of the values in the array." alt="" coords="624,169,744,196"/>
+<area shape="rect" id="node6" href="$_helper_functions_8cpp.html#a72123685500842e3cd92ffa891109b86" title="Calculates and returns the Mean Absolute Deviation (MAD) of the values in the array." alt="" coords="421,119,523,145"/>
+<area shape="rect" id="node7" href="$_helper_functions_8cpp.html#a7db2f6bf2a3667a2a875c0808dfe41ae" title="Calculates and returns the standard deviation of the values in the array." alt="" coords="383,220,561,247"/>
+<area shape="rect" id="node8" href="$_helper_functions_8cpp.html#a9d5f7796334cb753305c810e4d5679f3" title="Calculates and returns the sum of squared differences from the mean." alt="" coords="609,220,759,247"/>
+</map>

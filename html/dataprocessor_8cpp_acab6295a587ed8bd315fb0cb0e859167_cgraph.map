@@ -1,0 +1,4 @@
+<map id="readHeader" name="readHeader">
+<area shape="rect" id="node1" title="Reads the header of the weather data file and fills the provided map with header names and their indi..." alt="" coords="5,5,93,32"/>
+<area shape="rect" id="node2" href="$class_map.html#a225903c0291cf978e27be5a58f399a14" title="Inserts a key&#45;value pair into the map." alt="" coords="141,5,228,32"/>
+</map>

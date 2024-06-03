@@ -1,0 +1,7 @@
+<map id="TestCalculateCorrelationCoef" name="TestCalculateCorrelationCoef">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,195,57"/>
+<area shape="rect" id="node2" href="$class_vector.html#a87f73b09903e16a1caaaae559a04036a" title="add the element at the end of the array" alt="" coords="279,5,369,32"/>
+<area shape="rect" id="node3" href="$_helper_functions_8cpp.html#a2edf70cda092f7761323ec0cd986dc88" title="Calculates and returns the correlation coefficient between two arrays." alt="" coords="243,56,405,83"/>
+<area shape="rect" id="node4" href="$_helper_functions_8cpp.html#a44468ca3edb66d1f67cfdca110afa5c7" title="Calculates and returns the average of the values in the array." alt="" coords="453,31,573,57"/>
+<area shape="rect" id="node5" href="$class_vector.html#a6649abb641317b77f343b51e11fa6db7" title="function to return the number of element stored in the array" alt="" coords="621,56,716,83"/>
+</map>

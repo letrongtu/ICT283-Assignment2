@@ -1,0 +1,22 @@
+<map id="TestReadWeatherRecordFunction" name="TestReadWeatherRecordFunction">
+<area shape="rect" id="node1" title=" " alt="" coords="5,157,223,184"/>
+<area shape="rect" id="node2" href="$class_date.html#acefdd8c1fe76f0d5deb612a4070d7bf8" title="Get the day." alt="" coords="287,5,392,32"/>
+<area shape="rect" id="node3" href="$class_time.html#aaf65e0dc73514ffab9b3dd643cef9bdb" title="Get the hour." alt="" coords="286,56,393,83"/>
+<area shape="rect" id="node4" href="$class_time.html#a86302564cc0783b402dc5f0e137a43c1" title="Get the minute." alt="" coords="280,107,399,133"/>
+<area shape="rect" id="node5" href="$class_date.html#af2dcc6ce51dbb2bd798499a149bdffb7" title="Get the month." alt="" coords="282,157,397,184"/>
+<area shape="rect" id="node6" href="$class_date.html#ad79ce504482f317ddcfdc4ecad77671f" title="Get the year." alt="" coords="287,208,392,235"/>
+<area shape="rect" id="node7" href="$dataprocessor_8cpp.html#a746f4310314b880c1443e868109a5105" title="Reads a weather record from a line and a header map." alt="" coords="271,259,408,285"/>
+<area shape="rect" id="node20" href="$test_a_v_l_8cpp.html#a28a57600eb2bb523dd43e4a25cc8b3ea" title=" " alt="" coords="312,309,367,336"/>
+<area shape="rect" id="node8" href="$dataprocessor_8cpp.html#a6303080316244e76a4dc1d407b0f16b5" title="Reads a date and time from a template string." alt="" coords="456,259,581,285"/>
+<area shape="rect" id="node9" href="$dataprocessor_8cpp.html#afdf156e8d6316a19a1f0374eb6bb31ac" title="Reads a date from a template string." alt="" coords="629,208,704,235"/>
+<area shape="rect" id="node16" href="$dataprocessor_8cpp.html#ab736b8937fc7ab05ca65923faa7a2c2c" title="Reads a time from a template string." alt="" coords="629,335,704,361"/>
+<area shape="rect" id="node10" href="$_validator_8cpp.html#acd5665d75328e4daed639814334542d1" title="Validates if the given day, month, and year form a valid date." alt="" coords="767,107,855,133"/>
+<area shape="rect" id="node13" href="$class_date.html#ac75fa21654d30e90c2cdb74dd5033803" title="Set the day." alt="" coords="759,157,863,184"/>
+<area shape="rect" id="node14" href="$class_date.html#ae47ff4dbe38076b995703ecb4aa5c602" title="Set the month." alt="" coords="754,208,867,235"/>
+<area shape="rect" id="node15" href="$class_date.html#ae77d46d475c904d1fabcb91933034514" title="Set the year." alt="" coords="759,259,863,285"/>
+<area shape="rect" id="node11" href="$_validator_8cpp.html#ac5bd0a571f7bd173f55c1dfc6fee07c8" title="Validates if the given month is valid." alt="" coords="917,81,1015,108"/>
+<area shape="rect" id="node12" href="$_validator_8cpp.html#a61544b32391e0579f222c45b1a0af56a" title="Validates if the given year is valid." alt="" coords="922,132,1010,159"/>
+<area shape="rect" id="node17" href="$_validator_8cpp.html#a78df34cd0e5e380d00b530031c514891" title="Validates if the given hour and minute form a valid time." alt="" coords="766,309,855,336"/>
+<area shape="rect" id="node18" href="$class_time.html#ab8c6582ad99c617c821ad3d10b9a872e" title="Set the hour." alt="" coords="758,360,863,387"/>
+<area shape="rect" id="node19" href="$class_time.html#a08cdbeef8e01ad48aadab6db90665d85" title="Set the minute." alt="" coords="752,411,869,437"/>
+</map>

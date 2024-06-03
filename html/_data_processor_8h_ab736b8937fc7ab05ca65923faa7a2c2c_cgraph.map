@@ -1,0 +1,6 @@
+<map id="readTime" name="readTime">
+<area shape="rect" id="node1" title="Reads a time from a template string." alt="" coords="5,56,80,83"/>
+<area shape="rect" id="node2" href="$_validator_8cpp.html#a78df34cd0e5e380d00b530031c514891" title="Validates if the given hour and minute form a valid time." alt="" coords="142,5,231,32"/>
+<area shape="rect" id="node3" href="$class_time.html#ab8c6582ad99c617c821ad3d10b9a872e" title="Set the hour." alt="" coords="134,56,239,83"/>
+<area shape="rect" id="node4" href="$class_time.html#a08cdbeef8e01ad48aadab6db90665d85" title="Set the minute." alt="" coords="128,107,245,133"/>
+</map>

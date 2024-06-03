@@ -1,0 +1,7 @@
+<map id="outputFunction" name="outputFunction">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,113,108"/>
+<area shape="rect" id="node2" href="$class_time.html#aaf65e0dc73514ffab9b3dd643cef9bdb" title="Get the hour." alt="" coords="167,5,274,32"/>
+<area shape="rect" id="node3" href="$class_time.html#a86302564cc0783b402dc5f0e137a43c1" title="Get the minute." alt="" coords="161,56,280,83"/>
+<area shape="rect" id="node4" href="$class_date.html#af2dcc6ce51dbb2bd798499a149bdffb7" title="Get the month." alt="" coords="163,107,278,133"/>
+<area shape="rect" id="node5" href="$class_date.html#ad79ce504482f317ddcfdc4ecad77671f" title="Get the year." alt="" coords="168,157,273,184"/>
+</map>

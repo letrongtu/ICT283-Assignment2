@@ -1,8 +1,14 @@
 <map id="calculateMAD" name="calculateMAD">
-<area shape="rect" id="node1" title=" " alt="" coords="709,5,812,32"/>
-<area shape="rect" id="node2" href="$_menu_functions_8h.html#a6a33b59754eb697fee1b6b309005c22f" title=" " alt="" coords="539,5,661,32"/>
-<area shape="rect" id="node3" href="$_menu_functions_8h.html#add2de9ea68056159710d684994f87e24" title=" " alt="" coords="363,5,491,32"/>
-<area shape="rect" id="node4" href="$_menu_functions_8h.html#ac255327aabdea8f3331510cb82394a44" title=" " alt="" coords="207,5,315,32"/>
-<area shape="rect" id="node5" href="$_menu_functions_8h.html#aacbe1694510caf7651fea605959180c4" title="Contains all menu&#45;related functions including displaying the menu, handling choices,..." alt="" coords="104,5,159,32"/>
-<area shape="rect" id="node6" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+<area shape="rect" id="node1" title="Calculates and returns the Mean Absolute Deviation (MAD) of the values in the array." alt="" coords="1140,107,1243,133"/>
+<area shape="rect" id="node2" href="$_menu_functions_8h.html#a45eea4e69e493cc98c63fff4700ff8b7" title="Outputs the average, standard deviation, and mean absolute deviation of a vector to a file." alt="" coords="933,81,1092,108"/>
+<area shape="rect" id="node11" href="$_test_helper_functions_8cpp.html#afb99bd13a4d447445d5d263bdc466866" title=" " alt="" coords="947,132,1078,159"/>
+<area shape="rect" id="node3" href="$_menu_functions_8h.html#a8d644809d7717137e40a2be761196d06" title="Outputs the weather data to a file for a specific month." alt="" coords="763,81,885,108"/>
+<area shape="rect" id="node4" href="$_menu_functions_8h.html#add2de9ea68056159710d684994f87e24" title="Handles the fourth case from the menu." alt="" coords="587,81,715,108"/>
+<area shape="rect" id="node5" href="$_menu_functions_8h.html#ac255327aabdea8f3331510cb82394a44" title="Processes the user&#39;s choice from the menu." alt="" coords="431,56,539,83"/>
+<area shape="rect" id="node10" href="$_test_menu_8cpp.html#a5cdc8bf7eb4319532cdf3aa40ef6a3e5" title=" " alt="" coords="228,107,383,133"/>
+<area shape="rect" id="node6" href="$_menu_functions_8h.html#aacbe1694510caf7651fea605959180c4" title="Displays the menu and processes user choices." alt="" coords="278,56,333,83"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="117,5,167,32"/>
+<area shape="rect" id="node8" href="$_test_menu_8cpp.html#aa5f9d8702556c317f863cc2b616c0135" title=" " alt="" coords="104,56,180,83"/>
+<area shape="rect" id="node9" href="$_test_menu_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,81,56,108"/>
+<area shape="rect" id="node12" href="$_test_helper_functions_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="799,132,849,159"/>
 </map>

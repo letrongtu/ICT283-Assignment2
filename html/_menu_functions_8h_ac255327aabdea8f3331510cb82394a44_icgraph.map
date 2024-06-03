@@ -1,5 +1,7 @@
 <map id="processChoice" name="processChoice">
-<area shape="rect" id="node1" title=" " alt="" coords="207,5,315,32"/>
-<area shape="rect" id="node2" href="$_menu_functions_8h.html#aacbe1694510caf7651fea605959180c4" title="Contains all menu&#45;related functions including displaying the menu, handling choices,..." alt="" coords="104,5,159,32"/>
-<area shape="rect" id="node3" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+<area shape="rect" id="node1" title="Processes the user&#39;s choice from the menu." alt="" coords="331,31,439,57"/>
+<area shape="rect" id="node2" href="$_menu_functions_8h.html#aacbe1694510caf7651fea605959180c4" title="Displays the menu and processes user choices." alt="" coords="228,31,283,57"/>
+<area shape="rect" id="node3" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="117,5,167,32"/>
+<area shape="rect" id="node4" href="$_test_menu_8cpp.html#aa5f9d8702556c317f863cc2b616c0135" title=" " alt="" coords="104,56,180,83"/>
+<area shape="rect" id="node5" href="$_test_menu_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,56,83"/>
 </map>

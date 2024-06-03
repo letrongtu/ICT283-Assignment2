@@ -1,26 +1,24 @@
 <map id="fourthCaseHandler" name="fourthCaseHandler">
-<area shape="rect" id="node1" title=" " alt="" coords="5,378,133,405"/>
-<area shape="rect" id="node2" href="$class_temperature_collector.html#a07b9238d17f1964da90d63c7db68688c" title=" " alt="" coords="214,71,359,112"/>
-<area shape="rect" id="node4" href="$class_solar_rad_collector.html#a4a59667c9d105b18a16a33e6b0672914" title=" " alt="" coords="215,136,358,177"/>
-<area shape="rect" id="node5" href="$class_speed_collector.html#a5e3b5ad3482266b916360f74ab4a76f6" title=" " alt="" coords="194,5,379,47"/>
-<area shape="rect" id="node6" href="$class_map.html#a940dcce0b4490af7406db9fe95a7927f" title="Retrieves the value corresponding to a key." alt="" coords="253,202,320,229"/>
-<area shape="rect" id="node7" href="$class_speed_collector.html#ac433497a8661f928211ee2fbd3f26346" title=" " alt="" coords="213,319,360,346"/>
-<area shape="rect" id="node9" href="$class_solar_rad_collector.html#a74c7b3aca5a41e8b1f61246a8638a7ff" title=" " alt="" coords="219,371,354,412"/>
-<area shape="rect" id="node10" href="$class_temperature_collector.html#a8d95e2593fc0ed34e1ec05bed5f24389" title=" " alt="" coords="214,253,359,295"/>
-<area shape="rect" id="node11" href="$class_map.html#a21817f63324636803318e47c2a88b02e" title="Checks if the map contains a key." alt="" coords="235,437,339,463"/>
-<area shape="rect" id="node12" href="$_menu_functions_8cpp.html#a6a33b59754eb697fee1b6b309005c22f" title=" " alt="" coords="225,487,348,514"/>
-<area shape="rect" id="node19" href="$class_solar_rad_collector.html#aff526fed05bef9a91be58080f7a5734f" title=" " alt="" coords="219,539,354,580"/>
-<area shape="rect" id="node20" href="$class_temperature_collector.html#ada927d97bf364b0bc462b50d7bafd034" title=" " alt="" coords="214,604,359,645"/>
-<area shape="rect" id="node21" href="$class_speed_collector.html#a6b37a0a3727fa908f751d2d342349b1a" title=" " alt="" coords="181,670,392,697"/>
-<area shape="rect" id="node22" href="$_helper_functions_8cpp.html#a963a1de6c5f3d4fe5a052af2f83be316" title=" " alt="" coords="249,721,324,747"/>
-<area shape="rect" id="node3" href="$class_vector.html#a87f73b09903e16a1caaaae559a04036a" title="add the element at the end of the array" alt="" coords="485,78,574,105"/>
-<area shape="rect" id="node8" href="$class_vector.html#a06640b5a57e692928364c727def3c5de" title="Function to delete all elements in the vector." alt="" coords="480,319,579,346"/>
-<area shape="rect" id="node13" href="$_helper_functions_8cpp.html#a44468ca3edb66d1f67cfdca110afa5c7" title=" " alt="" coords="681,411,801,438"/>
-<area shape="rect" id="node14" href="$class_vector.html#a6649abb641317b77f343b51e11fa6db7" title="function to return the number of element stored in the array" alt="" coords="864,487,959,514"/>
-<area shape="rect" id="node15" href="$_helper_functions_8cpp.html#a72123685500842e3cd92ffa891109b86" title=" " alt="" coords="478,386,581,413"/>
-<area shape="rect" id="node16" href="$_helper_functions_8cpp.html#a7db2f6bf2a3667a2a875c0808dfe41ae" title=" " alt="" coords="440,487,619,514"/>
-<area shape="rect" id="node18" href="$_helper_functions_8cpp.html#adf45bdc6425cc718344cedfed6365bec" title=" " alt="" coords="690,563,793,590"/>
-<area shape="rect" id="node17" href="$_helper_functions_8cpp.html#a9d5f7796334cb753305c810e4d5679f3" title=" " alt="" coords="667,513,816,539"/>
-<area shape="rect" id="node23" href="$_validator_8cpp.html#a23c4e1c0702aa77ed10a60a29acb5f09" title="Contains all functions that do the validations of the user input." alt="" coords="476,746,583,773"/>
-<area shape="rect" id="node24" href="$_validator_8cpp.html#a61544b32391e0579f222c45b1a0af56a" title=" " alt="" coords="485,695,573,722"/>
+<area shape="rect" id="node1" title="Handles the fourth case from the menu." alt="" coords="5,259,133,285"/>
+<area shape="rect" id="node2" href="$_menu_functions_8cpp.html#aaf2ea38b1647a246dd49c10754d1eb7f" title="Accumulates air temperature data from weather records." alt="" coords="214,5,351,32"/>
+<area shape="rect" id="node5" href="$class_data_collector.html#adaa20c3dd27a5c3f27663aee1a2f9586" title="Accumulates weather data from a weather record." alt="" coords="181,56,384,83"/>
+<area shape="rect" id="node6" href="$_menu_functions_8cpp.html#a2f9e98d280b2aae5da8709092dd863cb" title="Accumulates solar radiation data from weather records." alt="" coords="211,107,354,133"/>
+<area shape="rect" id="node7" href="$_menu_functions_8cpp.html#af986638098590cc6664e431f0fed64ff" title="Accumulates wind speed data from weather records." alt="" coords="219,157,346,184"/>
+<area shape="rect" id="node8" href="$class_map.html#a940dcce0b4490af7406db9fe95a7927f" title="Retrieves the value corresponding to a key." alt="" coords="249,259,316,285"/>
+<area shape="rect" id="node9" href="$class_data_collector.html#a94d4dbad7f883044c964097748d4bb0f" title="Clears the weather data vector." alt="" coords="215,309,351,336"/>
+<area shape="rect" id="node10" href="$class_vector.html#a06640b5a57e692928364c727def3c5de" title="Function to delete all elements in the vector." alt="" coords="462,411,561,437"/>
+<area shape="rect" id="node11" href="$class_map.html#a21817f63324636803318e47c2a88b02e" title="Checks if the map contains a key." alt="" coords="231,411,335,437"/>
+<area shape="rect" id="node12" href="$_menu_functions_8cpp.html#a8d644809d7717137e40a2be761196d06" title="Outputs the weather data to a file for a specific month." alt="" coords="221,208,344,235"/>
+<area shape="rect" id="node19" href="$class_data_collector.html#ae26069a0ee1535f3a1b99ab3afb61231" title="Retrieves the weather data." alt="" coords="206,461,359,488"/>
+<area shape="rect" id="node20" href="$_helper_functions_8cpp.html#a963a1de6c5f3d4fe5a052af2f83be316" title="Reads and returns the user&#39;s input for the year." alt="" coords="245,512,320,539"/>
+<area shape="rect" id="node3" href="$class_vector.html#a87f73b09903e16a1caaaae559a04036a" title="add the element at the end of the array" alt="" coords="467,56,556,83"/>
+<area shape="rect" id="node4" href="$class_vector.html#a6649abb641317b77f343b51e11fa6db7" title="function to return the number of element stored in the array" alt="" coords="1063,284,1157,311"/>
+<area shape="rect" id="node13" href="$_helper_functions_8cpp.html#adf45bdc6425cc718344cedfed6365bec" title="Calculates and returns the total sum of the values in the array." alt="" coords="677,259,779,285"/>
+<area shape="rect" id="node14" href="$_menu_functions_8cpp.html#a45eea4e69e493cc98c63fff4700ff8b7" title="Outputs the average, standard deviation, and mean absolute deviation of a vector to a file." alt="" coords="432,360,591,387"/>
+<area shape="rect" id="node15" href="$_helper_functions_8cpp.html#a44468ca3edb66d1f67cfdca110afa5c7" title="Calculates and returns the average of the values in the array." alt="" coords="880,461,1000,488"/>
+<area shape="rect" id="node16" href="$_helper_functions_8cpp.html#a72123685500842e3cd92ffa891109b86" title="Calculates and returns the Mean Absolute Deviation (MAD) of the values in the array." alt="" coords="677,512,779,539"/>
+<area shape="rect" id="node17" href="$_helper_functions_8cpp.html#a7db2f6bf2a3667a2a875c0808dfe41ae" title="Calculates and returns the standard deviation of the values in the array." alt="" coords="639,360,817,387"/>
+<area shape="rect" id="node18" href="$_helper_functions_8cpp.html#a9d5f7796334cb753305c810e4d5679f3" title="Calculates and returns the sum of squared differences from the mean." alt="" coords="865,360,1015,387"/>
+<area shape="rect" id="node21" href="$_validator_8cpp.html#a8abc8d32ee3eac481a888bca15aae270" title="Checks if the input string represents a valid positive number." alt="" coords="458,487,565,513"/>
+<area shape="rect" id="node22" href="$_validator_8cpp.html#a61544b32391e0579f222c45b1a0af56a" title="Validates if the given year is valid." alt="" coords="467,537,555,564"/>
 </map>

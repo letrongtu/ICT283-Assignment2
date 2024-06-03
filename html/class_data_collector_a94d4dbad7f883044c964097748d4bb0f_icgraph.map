@@ -1,0 +1,16 @@
+<map id="DataCollector::clear" name="DataCollector::clear">
+<area shape="rect" id="node1" title="Clears the weather data vector." alt="" coords="899,148,1035,175"/>
+<area shape="rect" id="node2" href="$_menu_functions_8h.html#a37b8e11fe7642a1ec706a438d524d199" title="Handles the first case from the menu." alt="" coords="723,224,840,251"/>
+<area shape="rect" id="node9" href="$_menu_functions_8h.html#add2de9ea68056159710d684994f87e24" title="Handles the fourth case from the menu." alt="" coords="717,72,845,99"/>
+<area shape="rect" id="node11" href="$_menu_functions_8h.html#a1883d746b4d16c5a0e29c8daaf9c93cb" title="Handles the second case from the menu." alt="" coords="712,123,851,149"/>
+<area shape="rect" id="node13" href="$_menu_functions_8h.html#a406951e717f06b22ee289463f51ae02c" title="Handles the third case from the menu." alt="" coords="721,173,842,200"/>
+<area shape="rect" id="node3" href="$_menu_functions_8h.html#ac255327aabdea8f3331510cb82394a44" title="Processes the user&#39;s choice from the menu." alt="" coords="537,148,645,175"/>
+<area shape="rect" id="node8" href="$_test_menu_8cpp.html#add9a5bc519c5d8902a0d97a0bf3227e2" title=" " alt="" coords="320,256,464,283"/>
+<area shape="rect" id="node4" href="$_menu_functions_8h.html#aacbe1694510caf7651fea605959180c4" title="Displays the menu and processes user choices." alt="" coords="365,148,419,175"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="160,104,211,131"/>
+<area shape="rect" id="node6" href="$_test_menu_8cpp.html#aa5f9d8702556c317f863cc2b616c0135" title=" " alt="" coords="147,155,223,181"/>
+<area shape="rect" id="node7" href="$_test_menu_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,155,56,181"/>
+<area shape="rect" id="node10" href="$_test_menu_8cpp.html#a5cdc8bf7eb4319532cdf3aa40ef6a3e5" title=" " alt="" coords="315,9,469,36"/>
+<area shape="rect" id="node12" href="$_test_menu_8cpp.html#ad33536ac9fd9d2a33d15ddf0a835a8f9" title=" " alt="" coords="104,53,267,80"/>
+<area shape="rect" id="node14" href="$_test_menu_8cpp.html#ab4634b1f4a8b8d9fb71389c10870e458" title=" " alt="" coords="517,203,664,229"/>
+</map>

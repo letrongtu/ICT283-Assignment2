@@ -1,7 +1,10 @@
 <map id="firstCaseOutput" name="firstCaseOutput">
-<area shape="rect" id="node1" title=" " alt="" coords="528,5,640,32"/>
-<area shape="rect" id="node2" href="$_menu_functions_8h.html#a37b8e11fe7642a1ec706a438d524d199" title=" " alt="" coords="363,5,480,32"/>
-<area shape="rect" id="node3" href="$_menu_functions_8h.html#ac255327aabdea8f3331510cb82394a44" title=" " alt="" coords="207,5,315,32"/>
-<area shape="rect" id="node4" href="$_menu_functions_8h.html#aacbe1694510caf7651fea605959180c4" title="Contains all menu&#45;related functions including displaying the menu, handling choices,..." alt="" coords="104,5,159,32"/>
-<area shape="rect" id="node5" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,56,32"/>
+<area shape="rect" id="node1" title="Outputs the wind speed data for a specific month and year." alt="" coords="741,81,853,108"/>
+<area shape="rect" id="node2" href="$_menu_functions_8h.html#a37b8e11fe7642a1ec706a438d524d199" title="Handles the first case from the menu." alt="" coords="576,81,693,108"/>
+<area shape="rect" id="node3" href="$_menu_functions_8h.html#ac255327aabdea8f3331510cb82394a44" title="Processes the user&#39;s choice from the menu." alt="" coords="420,56,528,83"/>
+<area shape="rect" id="node8" href="$_test_menu_8cpp.html#add9a5bc519c5d8902a0d97a0bf3227e2" title=" " alt="" coords="228,107,372,133"/>
+<area shape="rect" id="node4" href="$_menu_functions_8h.html#aacbe1694510caf7651fea605959180c4" title="Displays the menu and processes user choices." alt="" coords="273,56,327,83"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="117,5,167,32"/>
+<area shape="rect" id="node6" href="$_test_menu_8cpp.html#aa5f9d8702556c317f863cc2b616c0135" title=" " alt="" coords="104,56,180,83"/>
+<area shape="rect" id="node7" href="$_test_menu_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,81,56,108"/>
 </map>

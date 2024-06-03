@@ -89,9 +89,9 @@ $(document).ready(function(){initNavTree('main_8cpp_source.html',''); initResiza
 <a href="main_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// MAIN.CPP</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// Main program:</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Open an input file stream, read recorded data, display the menu, and handle the menu options.</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_data_structure_8h.html">DataStructure.h</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_file_name_reader_8h.html">FileNameReader.h</a>&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_menu_functions_8h.html">MenuFunctions.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="datastructure_8h.html">./Data Structures/DataStructure.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_file_name_reader_8h.html">./Data Processor/FileNameReader.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_menu_functions_8h.html">./Menu Functions/MenuFunctions.h</a>&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/**</span></div>
@@ -102,30 +102,30 @@ $(document).ready(function(){initNavTree('main_8cpp_source.html',''); initResiza
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * @version 2</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * Separate additional function declarations and implementations</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   18</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//---------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   19</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>()</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//-----------------------------------------------------</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// Read and Store data</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_map.html">WeatherLog</a> weather_data;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="_file_name_reader_8cpp.html#abb388dcb5bcf8927fbce050041896fcb">readFileFromSource</a>(<span class="stringliteral">&quot;data/data_source.txt&quot;</span>, weather_data);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="_file_name_reader_8cpp.html#afd4947a3303689855ee12d8c1924a4f8">readFileFromSource</a>(<span class="stringliteral">&quot;data/data_source.txt&quot;</span>, weather_data);</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">//-----------------------------------------------------</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// Menu</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="_menu_functions_8cpp.html#aacbe1694510caf7651fea605959180c4">menu</a>(weather_data);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">//-----------------------------------------------------</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;Quit&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Quit&quot;</span> &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="a_menu_functions_8h_html"><div class="ttname"><a href="_menu_functions_8h.html">MenuFunctions.h</a></div></div>
-<div class="ttc" id="amain_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00018">main.cpp:18</a></div></div>
-<div class="ttc" id="a_file_name_reader_8cpp_html_abb388dcb5bcf8927fbce050041896fcb"><div class="ttname"><a href="_file_name_reader_8cpp.html#abb388dcb5bcf8927fbce050041896fcb">readFileFromSource</a></div><div class="ttdeci">void readFileFromSource(const string &amp;sourceFile, WeatherLog &amp;weather_data)</div><div class="ttdoc">Contains all functions need to read the input file name.</div><div class="ttdef"><b>Definition:</b> <a href="_file_name_reader_8cpp_source.html#l00017">FileNameReader.cpp:17</a></div></div>
-<div class="ttc" id="a_menu_functions_8cpp_html_aacbe1694510caf7651fea605959180c4"><div class="ttname"><a href="_menu_functions_8cpp.html#aacbe1694510caf7651fea605959180c4">menu</a></div><div class="ttdeci">void menu(const WeatherLog &amp;weather_data)</div><div class="ttdoc">Contains all menu-related functions including displaying the menu, handling choices,...</div><div class="ttdef"><b>Definition:</b> <a href="_menu_functions_8cpp_source.html#l00020">MenuFunctions.cpp:20</a></div></div>
-<div class="ttc" id="a_file_name_reader_8h_html"><div class="ttname"><a href="_file_name_reader_8h.html">FileNameReader.h</a></div></div>
-<div class="ttc" id="a_data_structure_8h_html"><div class="ttname"><a href="_data_structure_8h.html">DataStructure.h</a></div></div>
-<div class="ttc" id="aclass_map_html"><div class="ttname"><a href="class_map.html">Map</a></div><div class="ttdoc">A templated map class that wraps around std::map.</div><div class="ttdef"><b>Definition:</b> <a href="_map_8h_source.html#l00018">Map.h:18</a></div></div>
+<div class="ttc" id="a_menu_functions_8h_html"><div class="ttname"><a href="_menu_functions_8h.html">MenuFunctions.h</a></div><div class="ttdoc">Contains all menu-related functions including displaying the menu, handling choices,...</div></div>
+<div class="ttc" id="amain_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> <a href="main_8cpp_source.html#l00019">main.cpp:19</a></div></div>
+<div class="ttc" id="a_menu_functions_8cpp_html_aacbe1694510caf7651fea605959180c4"><div class="ttname"><a href="_menu_functions_8cpp.html#aacbe1694510caf7651fea605959180c4">menu</a></div><div class="ttdeci">void menu(const WeatherLog &amp;weather_data)</div><div class="ttdoc">Displays the menu and processes user choices.</div><div class="ttdef"><b>Definition:</b> <a href="_menu_functions_8cpp_source.html#l00018">MenuFunctions.cpp:18</a></div></div>
+<div class="ttc" id="a_file_name_reader_8h_html"><div class="ttname"><a href="_file_name_reader_8h.html">FileNameReader.h</a></div><div class="ttdoc">Contains all functions need to read the input file name.</div></div>
+<div class="ttc" id="adatastructure_8h_html"><div class="ttname"><a href="datastructure_8h.html">datastructure.h</a></div></div>
+<div class="ttc" id="a_file_name_reader_8cpp_html_afd4947a3303689855ee12d8c1924a4f8"><div class="ttname"><a href="_file_name_reader_8cpp.html#afd4947a3303689855ee12d8c1924a4f8">readFileFromSource</a></div><div class="ttdeci">void readFileFromSource(const std::string &amp;sourceFile, WeatherLog &amp;weather_data)</div><div class="ttdoc">Reads weather data from a file and stores it in the WeatherLog structure.</div><div class="ttdef"><b>Definition:</b> <a href="_file_name_reader_8cpp_source.html#l00017">FileNameReader.cpp:17</a></div></div>
+<div class="ttc" id="aclass_map_html"><div class="ttname"><a href="class_map.html">Map</a></div><div class="ttdoc">A templated map class that wraps around std::map.</div><div class="ttdef"><b>Definition:</b> <a href="_map_8h_source.html#l00016">Map.h:16</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

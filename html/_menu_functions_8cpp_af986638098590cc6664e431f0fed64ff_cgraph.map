@@ -1,0 +1,5 @@
+<map id="accumulateSpeed" name="accumulateSpeed">
+<area shape="rect" id="node1" title="Accumulates wind speed data from weather records." alt="" coords="5,31,132,57"/>
+<area shape="rect" id="node2" href="$class_vector.html#a87f73b09903e16a1caaaae559a04036a" title="add the element at the end of the array" alt="" coords="183,5,272,32"/>
+<area shape="rect" id="node3" href="$class_vector.html#a6649abb641317b77f343b51e11fa6db7" title="function to return the number of element stored in the array" alt="" coords="180,56,275,83"/>
+</map>
