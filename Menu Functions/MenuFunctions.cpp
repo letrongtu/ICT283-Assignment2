@@ -186,7 +186,7 @@ void thirdCaseHandler(const WeatherLog& weather_data) {
 
 void accumulateSolarRad(Vector<double>& solarRads, const Vector<WeatherRecord>& data){
     for(LongInt i = 0; i < data.Size(); i++){
-        solarRads.add(data[i].solarRad);
+        solarRads.add(data[i].solarRad*RadiationExchangeRate);
     }
 }
 
