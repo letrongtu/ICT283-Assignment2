@@ -31,17 +31,23 @@ bool operator==(const Date& lhs, const Date& rhs) {
 //----------------------------------------------------------------------------
 // Time
 
+// Less than operator for Time.
 bool operator<(const Time& lhs, const Time& rhs) {
     if(lhs.GetHour() < rhs.GetHour()) return true;
     if(lhs.GetHour() > rhs.GetHour()) return false;
     return lhs.GetMinute() < rhs.GetMinute();
 }
 
+//---------------------------------------------------------------------------------
+
+// Greater than operator for Time.
 bool operator>(const Time& lhs, const Time& rhs) {
     if(lhs.GetHour() > rhs.GetHour()) return true;
     if(lhs.GetHour() < rhs.GetHour()) return false;
     return lhs.GetMinute() > rhs.GetMinute();
 }
+
+//---------------------------------------------------------------------------------
 
 // Equality operator for Time.
 bool operator==(const Time& lhs, const Time& rhs) {

@@ -58,7 +58,6 @@ bool isValidYear(int year);
  * @return true if the month is valid, false otherwise.
  */
 bool isValidMonth(int month);
-
 //---------------------------------------------------------------------------------
 
 #endif

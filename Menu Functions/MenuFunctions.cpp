@@ -162,7 +162,7 @@ void thirdCaseHandler(const WeatherLog& weather_data) {
 
     Vector<double> windSpeeds, temperatures, solarRads;
     std::cout << "-------------------------------------------------------------------------------------------------------------------" << std::endl;
-    for (WeatherLog::const_iterator it = weather_data.begin(); it != weather_data.end(); it++) {
+    for (WeatherLog::const_iterator it = weather_data.begin(); it != weather_data.end(); ++it) {
         if (it->second.contains(month)) {
             it->second.at(month).inOrder(DataCollector::accumulateData);
 
@@ -186,7 +186,7 @@ void thirdCaseHandler(const WeatherLog& weather_data) {
 
 void accumulateSolarRad(Vector<double>& solarRads, const Vector<WeatherRecord>& data){
     for(LongInt i = 0; i < data.Size(); i++){
-        solarRads.add(data[i].solarRad*RadiationExchangeRate);
+        solarRads.add(data[i].solarRad);
     }
 }
 
@@ -240,23 +240,8 @@ void fourthCaseOutput(std::ofstream& outFile, const Vector<double>& windSpeeds, 
     if (!(windSpeeds.Size() == 0 && temperatures.Size() == 0 && solarRadiations.Size() == 0)) {
         outFile << MonthsNames[month - 1] << "," << std::fixed << std::setprecision(1);
 
-        if (windSpeeds.Size() != 0) {
-            double avgWindSpeed = calculateAverage(windSpeeds);
-            double stdevWindSpeed = calculateStandardDeviation(windSpeeds);
-            double madWindSpeed = calculateMAD(windSpeeds);
-            outFile << "\"" << avgWindSpeed << "(" << stdevWindSpeed << ", " << madWindSpeed << ")\",";
-        } else {
-            outFile << ",";
-        }
-
-        if (temperatures.Size() != 0) {
-            double avgTemperature = calculateAverage(temperatures);
-            double stdevTemperature = calculateStandardDeviation(temperatures);
-            double madTemperature = calculateMAD(temperatures);
-            outFile << "\"" << avgTemperature << "(" << stdevTemperature << ", " << madTemperature << ")\",";
-        } else {
-            outFile << ",";
-        }
+        outputToFileAvgSdMAD(outFile, windSpeeds);
+        outputToFileAvgSdMAD(outFile, temperatures);
 
         if (solarRadiations.Size() != 0) {
             double totalRadiation = calculateTotal(solarRadiations);
@@ -266,3 +251,19 @@ void fourthCaseOutput(std::ofstream& outFile, const Vector<double>& windSpeeds, 
         }
     }
 }
+
+//---------------------------------------------------------------------------------
+
+// Outputs the average, standard deviation, and mean absolute deviation of a vector to a file.
+void outputToFileAvgSdMAD(std::ofstream& outFile, const Vector<double>& array){
+    if (array.Size() != 0) {
+        double avg = calculateAverage(array);
+        double stdev = calculateStandardDeviation(array);
+        double mad = calculateMAD(array);
+        outFile << "\"" << avg << "(" << stdev << ", " << mad << ")\",";
+    } else {
+        outFile << ",";
+    }
+}
+
+//---------------------------------------------------------------------------------

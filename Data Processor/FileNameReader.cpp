@@ -3,6 +3,7 @@
 // Contains all functions need to read the input file name
 //
 // Version 1 - Trong Tu Le
+//---------------------------------------------------------------------------------
 
 #include "FileNameReader.h"
 #include "DataProcessor.h"

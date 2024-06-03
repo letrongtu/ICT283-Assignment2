@@ -3,6 +3,7 @@
 // Contains all functions that do the specified thing
 //
 // Version 1 - Trong Tu Le
+//---------------------------------------------------------------------------------
 
 #include "HelperFunctions.h"
 #include "Validator.h"

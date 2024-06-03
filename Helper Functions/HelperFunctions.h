@@ -90,4 +90,6 @@ double calculateCorrelationCoef(const Vector<double>& array1, const Vector<doubl
  */
 double calculateMAD(const Vector<double>& array);
 
+//---------------------------------------------------------------------------------
+
 #endif

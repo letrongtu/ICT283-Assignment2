@@ -14,6 +14,7 @@
  * @version 2
  * Separate additional function declarations and implementations
  */
+//---------------------------------------------------------------------------------
 
 int main()
 {

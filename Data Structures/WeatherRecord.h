@@ -4,6 +4,8 @@
 #include "Date.h"
 #include "Time.h"
 
+//---------------------------------------------------------------------------------
+
 /**
  * @struct WeatherRecord
  * @brief A struct to store weather record
@@ -25,5 +27,7 @@ struct WeatherRecord {
      */
     explicit WeatherRecord(const Date& d = Date(), const Time& t = Time(), double s = 0, double sr = 0, double at = 0);
 };
+
+//---------------------------------------------------------------------------------
 
 #endif

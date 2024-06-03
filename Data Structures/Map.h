@@ -15,7 +15,19 @@ template<class K, class V>
 class Map {
 
 public:
+    /**
+     * @brief Type alias for the iterator.
+     *
+     * This alias provides an iterator type for iterating over elements of the map.
+     */
     using iterator = typename std::map<K, V>::iterator;
+
+    /**
+     * @brief Type alias for the constant iterator.
+     *
+     * This alias provides a constant iterator type for iterating over elements of the map.
+     * It ensures that the elements cannot be modified while iterating.
+     */
     using const_iterator = typename std::map<K, V>::const_iterator;
 
     /**

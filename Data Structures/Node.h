@@ -14,7 +14,7 @@ struct Node {
     T data;       /// Data value
     Node* left;   /// Pointer to the left child
     Node* right;  /// Pointer to the right child
-    int height;
+    int height;   /// Height of the node in the tree
 
     /**
      * @brief Constructor to initialize a node with a value and optional children pointers.
@@ -22,6 +22,7 @@ struct Node {
      * @param value The value to be stored in the node.
      * @param leftChild Pointer to the left child node (default is nullptr).
      * @param rightChild Pointer to the right child node (default is nullptr).
+     * @param hei Height of the node in the tree
      */
     explicit Node(const T& value = T(), Node* leftChild = nullptr, Node* rightChild = nullptr, int hei = 1);
 };

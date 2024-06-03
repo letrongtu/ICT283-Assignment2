@@ -2,6 +2,7 @@
 // Purpose: Contains all needed output functions
 //
 // Version 1 - Trong Tu Le
+//---------------------------------------------------------------------------------
 
 #include "OutputFunctions.h"
 #include <iostream>

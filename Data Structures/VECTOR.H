@@ -40,6 +40,8 @@ using LongInt = long long int;
  * add assign operator
  */
 
+//---------------------------------------------------------------------------------
+
 /**
  * @brief Template class representing a dynamic array.
  *

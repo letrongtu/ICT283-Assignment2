@@ -3,6 +3,7 @@
 // Contains all functions that perform validations of the user input
 //
 // Version 1 - Trong Tu Le
+//---------------------------------------------------------------------------------
 
 #include "Validator.h"
 #include <regex>
@@ -67,3 +68,5 @@ bool isValidTime(int hour, int minute) {
 
     return true;
 }
+
+//---------------------------------------------------------------------------------

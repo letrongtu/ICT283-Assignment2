@@ -38,14 +38,12 @@
 		<Unit filename="Data Processor/DataProcessor.h" />
 		<Unit filename="Data Processor/FileNameReader.cpp" />
 		<Unit filename="Data Processor/FileNameReader.h" />
-		<Unit filename="Data Structures/BST.h" />
+		<Unit filename="Data Structures/AVL.H" />
 		<Unit filename="Data Structures/DATE.CPP" />
 		<Unit filename="Data Structures/DATE.H" />
 		<Unit filename="Data Structures/DataStructure.h" />
 		<Unit filename="Data Structures/Map.h" />
 		<Unit filename="Data Structures/Node.h" />
-		<Unit filename="Data Structures/Pair.cpp" />
-		<Unit filename="Data Structures/Pair.h" />
 		<Unit filename="Data Structures/TIME.CPP" />
 		<Unit filename="Data Structures/TIME.H" />
 		<Unit filename="Data Structures/VECTOR.H" />

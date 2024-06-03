@@ -24,4 +24,6 @@
  */
 void readFileFromSource(const std::string& sourceFile, WeatherLog& weather_data);
 
+//---------------------------------------------------------------------------------
+
 #endif

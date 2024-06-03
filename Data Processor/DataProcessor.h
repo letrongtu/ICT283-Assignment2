@@ -9,16 +9,20 @@
 #include <string>
 #include <fstream>
 
+//---------------------------------------------------------------------------------
+
 /**
  * @brief Contains all functions that read and store the read data from a data file.
  *
  * This module provides functionality to read weather data from a file, process it,
  * and store it in the WeatherLog data structure.
  *
+ * @author Trong Tu Le
  * @version 01
  *
- * @file DataProcessor.h
  */
+
+//---------------------------------------------------------------------------------
 
 /**
  * @brief Reads weather data from a file and stores it in the WeatherLog.
@@ -84,5 +88,7 @@ bool readDate(const std::string& dateTemplate, Date& date);
  * @return True if the time was successfully read, false otherwise.
  */
 bool readTime(const std::string& timeTemplate, Time& time);
+
+//---------------------------------------------------------------------------------
 
 #endif

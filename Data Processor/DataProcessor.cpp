@@ -51,6 +51,9 @@ void readData(const std::string& fileName, WeatherLog& weather_data) {
               << "-------------------------------------------------------------------------------------------------------------------" << std::endl;
 }
 
+//---------------------------------------------------------------------------------
+
+// Reads the header of the weather data file and fills the provided map with header names and their indices.
 void readHeader(std::ifstream& inFile, Map<std::string, int>& headerMap) {
     std::string line;
     std::getline(inFile, line);
@@ -64,6 +67,9 @@ void readHeader(std::ifstream& inFile, Map<std::string, int>& headerMap) {
     }
 }
 
+//---------------------------------------------------------------------------------
+
+// Validates the headers of the weather data file.
 bool isValidHeaders(const Map<std::string, int>& headerMap) {
     return headerMap.contains("WAST") &&
            headerMap.contains("S") &&
@@ -71,37 +77,32 @@ bool isValidHeaders(const Map<std::string, int>& headerMap) {
            headerMap.contains("T");
 }
 
+//---------------------------------------------------------------------------------
+
+// Reads a weather record from a line and a header map.
 bool readWeatherRecord(const std::string& line, int wastIndex, int speedIndex, int solarRadIndex, int airTempIndex, WeatherRecord& record) {
     std::istringstream lineStream(line);
     std::string cell;
     int currentIndex = 0;
 
     while (std::getline(lineStream, cell, ',')) {
-        if (currentIndex == wastIndex) {
-            if (!readDateAndTime(cell, record.date, record.time)) {
-                return false;
+        try {
+            if (currentIndex == wastIndex) {
+                if (!readDateAndTime(cell, record.date, record.time)) {
+                    return false;
+                }
             }
-        }
-        else if (currentIndex == speedIndex) {
-            try {
+            else if (currentIndex == speedIndex) {
                 record.speed = std::stod(cell);
-            } catch (const std::invalid_argument&) {
-                return false;
             }
-        }
-        else if (currentIndex == solarRadIndex) {
-            try {
+            else if (currentIndex == solarRadIndex) {
                 record.solarRad = std::stod(cell);
-            } catch (const std::invalid_argument&) {
-                return false;
             }
-        }
-        else if (currentIndex == airTempIndex) {
-            try {
+            else if (currentIndex == airTempIndex) {
                 record.airTemp = std::stod(cell);
-            } catch (const std::invalid_argument&) {
-                return false;
             }
+        } catch (const std::invalid_argument& e) {
+            return false;
         }
         currentIndex++;
     }
@@ -109,6 +110,9 @@ bool readWeatherRecord(const std::string& line, int wastIndex, int speedIndex, i
     return true;
 }
 
+//---------------------------------------------------------------------------------
+
+// Reads a date and time from a template string.
 bool readDateAndTime(const std::string& dateTimeTemplate, Date& date, Time& time) {
     std::istringstream ss(dateTimeTemplate);
     std::string dateTemplate, timeTemplate;
@@ -120,6 +124,9 @@ bool readDateAndTime(const std::string& dateTimeTemplate, Date& date, Time& time
     return readDate(dateTemplate, date) && readTime(timeTemplate, time);
 }
 
+//---------------------------------------------------------------------------------
+
+// Reads a date from a template string.
 bool readDate(const std::string& dateTemplate, Date& date) {
     std::istringstream ss(dateTemplate);
     int day, month, year;
@@ -141,6 +148,9 @@ bool readDate(const std::string& dateTemplate, Date& date) {
     return true;
 }
 
+//---------------------------------------------------------------------------------
+
+// Reads a time from a template string.
 bool readTime(const std::string& timeTemplate, Time& time) {
     std::istringstream ss(timeTemplate);
     int hour, minute;
@@ -159,3 +169,5 @@ bool readTime(const std::string& timeTemplate, Time& time) {
 
     return true;
 }
+
+//---------------------------------------------------------------------------------

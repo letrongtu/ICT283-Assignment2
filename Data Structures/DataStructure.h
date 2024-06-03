@@ -4,7 +4,6 @@
 #include "Map.h"
 #include "AVL.H"
 #include "WeatherRecord.h"
-#include "Pair.h"
 
 #include <string>
 

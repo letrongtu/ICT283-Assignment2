@@ -5,7 +5,6 @@
 #include "../Data Structures/vector.h"
 #include <fstream>
 
-//---------------------------------------------------------------------------------
 /**
  * @brief Contains all menu-related functions including displaying the menu, handling choices, etc.
  *
@@ -17,6 +16,8 @@
  * @file MenuFunctions.h
  * @author Trong Tu Le
  */
+
+//---------------------------------------------------------------------------------
 
 /**
  * @brief Displays the menu and processes user choices.
@@ -49,6 +50,12 @@ bool processChoice(const WeatherLog& weather_data, int choice);
  */
 void firstCaseHandler(const WeatherLog& weather_data);
 
+/**
+ * @brief Accumulates wind speed data from weather records.
+ *
+ * @param windSpeeds Vector to store accumulated wind speed data.
+ * @param data Vector of WeatherRecord objects.
+ */
 void accumulateSpeed(Vector<double>& windSpeeds, const Vector<WeatherRecord>& data);
 
 /**
@@ -69,14 +76,19 @@ void firstCaseOutput(const Vector<double>& windSpeeds, int month, int year);
  */
 void secondCaseHandler(const WeatherLog& weather_data);
 
+/**
+ * @brief Accumulates air temperature data from weather records.
+ *
+ * @param temperatures Vector to store accumulated air temperature data.
+ * @param data Vector of WeatherRecord objects.
+ */
 void accumulateAirTemp(Vector<double>& temperatures, const Vector<WeatherRecord>& data);
 
 /**
- * @brief Outputs the temperature data for a specific month and year.
+ * @brief Outputs the temperature data for a specific month.
  *
  * @param temperatures A vector containing the air temperature data.
  * @param month The month for which the data is output.
- * @param year The year for which the data is output.
  */
 void secondCaseOutput(const Vector<double>& temperatures, int month);
 
@@ -89,6 +101,12 @@ void secondCaseOutput(const Vector<double>& temperatures, int month);
  */
 void thirdCaseHandler(const WeatherLog& weather_data);
 
+/**
+ * @brief Accumulates solar radiation data from weather records.
+ *
+ * @param solarRads Vector to store accumulated solar radiation data.
+ * @param data Vector of WeatherRecord objects.
+ */
 void accumulateSolarRad(Vector<double>& solarRads, const Vector<WeatherRecord>& data);
 
 /**
@@ -111,5 +129,12 @@ void fourthCaseHandler(const WeatherLog& weather_data);
  */
 void fourthCaseOutput(std::ofstream& outFile, const Vector<double>& windSpeeds, const Vector<double>& temperatures, const Vector<double>& solarRadiations, int month);
 
-//---------------------------------------------------------------------------------
+/**
+ * @brief Outputs the average, standard deviation, and mean absolute deviation of a vector to a file.
+ *
+ * @param outFile The output file stream.
+ * @param array A vector containing the data.
+ */
+void outputToFileAvgSdMAD(std::ofstream& outFile, const Vector<double>& array);
+
 #endif

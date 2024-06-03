@@ -45,5 +45,6 @@ void outputAirTemp(double avg, double sd, int month);
  * @param month The month (1-12).
  */
 void outputCorrelationCoef(double s_t, double s_r, double t_r, int month);
+//---------------------------------------------------------------------------------
 
 #endif
