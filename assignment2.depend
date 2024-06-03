@@ -7,7 +7,7 @@
 	<fstream>
 	<sstream>
 
-1717317714 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data processor\dataprocessor.h
+1717388161 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data processor\dataprocessor.h
 	"../Data Structures/DataStructure.h"
 	"../Data Structures/vector.h"
 	"../Data Structures/Date.h"
@@ -31,7 +31,7 @@
 
 1717312807 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\node.h
 
-1717318186 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\weatherrecord.h
+1717388131 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\weatherrecord.h
 	"Date.h"
 	"Time.h"
 
@@ -44,13 +44,13 @@
 1717383017 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\vector.h
 	<vector>
 
-1717318241 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\helper functions\validator.h
+1717388101 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\helper functions\validator.h
 	<string>
 
-1717375527 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\operator\operator.h
+1717388201 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\operator\operator.h
 	"../Data Structures/DataStructure.h"
 
-1717317677 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data collectors\datacollector.h
+1717388176 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data collectors\datacollector.h
 	"../Data Structures/vector.h"
 	"../Data Structures/DataStructure.h"
 	"../Data Structures/Map.h"
@@ -62,7 +62,7 @@
 	<fstream>
 	<string>
 
-1717383921 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data processor\filenamereader.h
+1717388147 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data processor\filenamereader.h
 	"../Data Structures/DataStructure.h"
 
 1717318143 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data structures\date.cpp
@@ -81,7 +81,7 @@
 	<string>
 	<cmath>
 
-1717318200 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\helper functions\helperfunctions.h
+1717388113 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\helper functions\helperfunctions.h
 	"../Data Structures/DataStructure.h"
 	"../Data Structures/vector.h"
 
@@ -95,7 +95,7 @@
 	"./Menu Functions/MenuFunctions.h"
 	<iostream>
 
-1717318259 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\menu functions\menufunctions.h
+1717388058 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\menu functions\menufunctions.h
 	"../Data Structures/DataStructure.h"
 	"../Data Structures/vector.h"
 	<fstream>
@@ -117,7 +117,7 @@
 	<iostream>
 	<iomanip>
 
-1717375593 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\output functions\outputfunctions.h
+1717388191 u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\output functions\outputfunctions.h
 	"../Data Structures/DataStructure.h"
 
 1717317688 source:u:\murdoch university\semester 4 - 2024\ict283 - data structures and abstractions\assignment 2\assignment2\data collectors\datacollector.cpp
